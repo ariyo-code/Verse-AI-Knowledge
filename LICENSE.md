@@ -1,6 +1,6 @@
 # Verse AI Knowledge — Proprietary License
 
-Copyright (c) 2026 abdullah1552-blip.  
+Copyright (c) 2026 ariyo-code. 
 All rights reserved.
 
 This license applies only to the original content of the **Verse AI Knowledge**
