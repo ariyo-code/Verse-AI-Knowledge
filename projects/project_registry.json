@@ -1,0 +1,14 @@
+{
+  "schema_version": 1,
+  "last_updated": "2026-09-22",
+  "projects": [
+    {
+      "id": "rp-framework",
+      "name": "RP Framework",
+      "status": "planned",
+      "type": "uefn-framework",
+      "description": "Architecture de référence pour systèmes RP Verse réutilisables.",
+      "manifest": "projects/rp-framework/project.json"
+    }
+  ]
+}

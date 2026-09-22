@@ -1,0 +1,63 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "UEFN Real Project Bridge Status",
+  "type": "object",
+  "required": [
+    "project_name",
+    "project_path",
+    "static_scan_only",
+    "verse_file_count",
+    "uefn_compile_verified",
+    "runtime_verified",
+    "multiplayer_verified"
+  ],
+  "properties": {
+    "project_name": {
+      "type": "string"
+    },
+    "project_path": {
+      "type": "string"
+    },
+    "static_scan_only": {
+      "type": "boolean"
+    },
+    "verse_file_count": {
+      "type": "integer",
+      "minimum": 0
+    },
+    "class_count": {
+      "type": "integer",
+      "minimum": 0
+    },
+    "function_count": {
+      "type": "integer",
+      "minimum": 0
+    },
+    "editable_reference_count": {
+      "type": "integer",
+      "minimum": 0
+    },
+    "imports": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "classes": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "uefn_compile_verified": {
+      "type": "boolean"
+    },
+    "runtime_verified": {
+      "type": "boolean"
+    },
+    "multiplayer_verified": {
+      "type": "boolean"
+    }
+  },
+  "additionalProperties": true
+}

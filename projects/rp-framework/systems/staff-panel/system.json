@@ -1,0 +1,60 @@
+{
+  "schema_version": 1,
+  "id": "staff-panel",
+  "name": "Staff Panel",
+  "status": "planned",
+  "purpose": "Panel staff avec liste joueurs, recherche, pagination et actions de modération/gameplay.",
+  "responsibilities": [
+    "player list",
+    "search",
+    "pagination",
+    "revive/heal",
+    "teleport/tp back",
+    "freeze",
+    "invincibility",
+    "vanish",
+    "spectate",
+    "warn/kick/ban/timeout integration",
+    "permissions and audit logs"
+  ],
+  "runtime_state": [
+    "selected player",
+    "pagination state",
+    "search query",
+    "temporary tp-back location",
+    "active staff mode"
+  ],
+  "persistent_state": [
+    "staff permissions only if project chooses persistence",
+    "sanction/audit logs if persistence layer supports them"
+  ],
+  "dependencies": [
+    "UI",
+    "Characters",
+    "Playspaces",
+    "permissions service"
+  ],
+  "related_api": [
+    "player_ui",
+    "fort_character",
+    "fort_playspace",
+    "GetPlayers"
+  ],
+  "edge_cases": [
+    "target leaves before action",
+    "target respawns",
+    "staff loses permission mid-session",
+    "page changes while player list mutates"
+  ],
+  "public_interfaces": [],
+  "events_consumed": [],
+  "events_emitted": [],
+  "files": [],
+  "devices": [],
+  "architecture_decisions": [],
+  "verification": {
+    "compiled": false,
+    "runtime_tested": false,
+    "multiplayer_tested": false
+  }
+}

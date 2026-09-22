@@ -1,0 +1,237 @@
+{
+  "schema_version": 1,
+  "last_updated": "2026-09-22",
+  "tasks": [
+    {
+      "id": "B001-button-event",
+      "title": "Subscribe to button interaction",
+      "level": "static+compile",
+      "goal": "Créer un device Verse avec un button_device @editable et gérer InteractedWithEvent.",
+      "required_concepts": [
+        "creative_device",
+        "button_device",
+        "InteractedWithEvent",
+        "Subscribe",
+        "agent"
+      ],
+      "must_consider": [
+        "imports",
+        "handler signature",
+        "duplicate subscriptions"
+      ],
+      "forbidden": [
+        "invented API"
+      ],
+      "verification": [
+        "static-review",
+        "uefn-compile"
+      ]
+    },
+    {
+      "id": "B002-failable-character",
+      "title": "Safely obtain fort_character",
+      "level": "static+compile",
+      "goal": "Obtenir le fort_character d'un agent sans ignorer le caractère faillible de GetFortCharacter.",
+      "required_concepts": [
+        "GetFortCharacter",
+        "decides",
+        "failure context"
+      ],
+      "must_consider": [
+        "agent without valid character",
+        "respawn"
+      ],
+      "forbidden": [
+        "treating GetFortCharacter as guaranteed"
+      ],
+      "verification": [
+        "static-review",
+        "uefn-compile"
+      ]
+    },
+    {
+      "id": "B003-player-lifecycle",
+      "title": "Player lifecycle service",
+      "level": "static+compile+runtime",
+      "goal": "Initialiser joueurs existants + join + leave et nettoyer l'état.",
+      "required_concepts": [
+        "fort_playspace",
+        "GetPlayers",
+        "PlayerAddedEvent",
+        "PlayerRemovedEvent"
+      ],
+      "must_consider": [
+        "late join",
+        "leave cleanup",
+        "duplicate initialization"
+      ],
+      "forbidden": [
+        "only handling PlayerAddedEvent"
+      ],
+      "verification": [
+        "static-review",
+        "uefn-compile",
+        "runtime"
+      ]
+    },
+    {
+      "id": "B004-player-ui",
+      "title": "Per-player UI",
+      "level": "static+compile+runtime",
+      "goal": "Afficher une UI par joueur et la retirer proprement.",
+      "required_concepts": [
+        "GetPlayerUI",
+        "player_ui",
+        "widget"
+      ],
+      "must_consider": [
+        "GetPlayerUI failure",
+        "duplicate widgets",
+        "leave cleanup"
+      ],
+      "forbidden": [
+        "shared mutable widget without justification"
+      ],
+      "verification": [
+        "static-review",
+        "uefn-compile",
+        "runtime"
+      ]
+    },
+    {
+      "id": "B005-team-lookup",
+      "title": "Get player team",
+      "level": "static+compile",
+      "goal": "Trouver la team d'un agent via fort_team_collection.",
+      "required_concepts": [
+        "GetTeamCollection",
+        "fort_team_collection",
+        "GetTeam"
+      ],
+      "must_consider": [
+        "GetTeam is failable"
+      ],
+      "forbidden": [
+        "invented team manager"
+      ],
+      "verification": [
+        "static-review",
+        "uefn-compile"
+      ]
+    },
+    {
+      "id": "B006-vehicle-lookup",
+      "title": "Find player's vehicle",
+      "level": "static+compile",
+      "goal": "Obtenir le véhicule d'un agent via son fort_character.",
+      "required_concepts": [
+        "GetFortCharacter",
+        "GetVehicle",
+        "fort_vehicle"
+      ],
+      "must_consider": [
+        "both conversions can fail",
+        "player respawn"
+      ],
+      "forbidden": [
+        "assuming every character is in vehicle"
+      ],
+      "verification": [
+        "static-review",
+        "uefn-compile"
+      ]
+    },
+    {
+      "id": "B007-async-race",
+      "title": "Structured async race",
+      "level": "static+compile+runtime",
+      "goal": "Attendre action joueur ou timeout avec concurrence structurée.",
+      "required_concepts": [
+        "race",
+        "suspends"
+      ],
+      "must_consider": [
+        "cancellation",
+        "task lifetime"
+      ],
+      "forbidden": [
+        "unbounded spawn loop"
+      ],
+      "verification": [
+        "static-review",
+        "uefn-compile",
+        "runtime"
+      ]
+    },
+    {
+      "id": "B008-persistence-design",
+      "title": "Persistent profile design",
+      "level": "architecture",
+      "goal": "Concevoir état runtime vs persistent pour profil joueur.",
+      "required_concepts": [
+        "weak_map",
+        "persistable data",
+        "migration"
+      ],
+      "must_consider": [
+        "schema changes",
+        "new player",
+        "existing player"
+      ],
+      "forbidden": [
+        "persisting arbitrary runtime references"
+      ],
+      "verification": [
+        "architecture-review"
+      ]
+    },
+    {
+      "id": "B009-error-learning",
+      "title": "Learn from compiler feedback",
+      "level": "compile",
+      "goal": "À partir d'un vrai message UEFN, rechercher mémoire, corriger, recompiler et enregistrer la preuve.",
+      "required_concepts": [
+        "error memory",
+        "exact message",
+        "compile evidence"
+      ],
+      "must_consider": [
+        "same message may have different causes"
+      ],
+      "forbidden": [
+        "fabricated compiler message",
+        "marking fixed before compile"
+      ],
+      "verification": [
+        "error-memory-entry",
+        "uefn-compile"
+      ]
+    },
+    {
+      "id": "B010-modular-system",
+      "title": "Design modular RP system",
+      "level": "architecture+runtime",
+      "goal": "Ajouter une fonctionnalité RP sans créer un second propriétaire du même état.",
+      "required_concepts": [
+        "project memory",
+        "system ownership",
+        "interfaces"
+      ],
+      "must_consider": [
+        "dependencies",
+        "runtime state",
+        "persistent state",
+        "player lifecycle"
+      ],
+      "forbidden": [
+        "monolithic god device",
+        "duplicate state ownership"
+      ],
+      "verification": [
+        "project-memory-review",
+        "uefn-compile",
+        "runtime"
+      ]
+    }
+  ]
+}

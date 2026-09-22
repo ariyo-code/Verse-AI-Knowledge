@@ -1,0 +1,12 @@
+=== USER TASK ===
+
+Décris ici ce que tu veux créer en Verse.
+
+Contexte utile (optionnel) :
+- type de map :
+- devices déjà placés :
+- code actuel :
+- nombre de joueurs :
+- données persistantes ou non :
+- comportement attendu :
+- erreurs actuelles :

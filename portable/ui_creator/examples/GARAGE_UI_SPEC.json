@@ -1,0 +1,91 @@
+{
+  "screen": "GarageMenu",
+  "input_mode": "All",
+  "style": "dark minimal RP",
+  "root": {
+    "type": "Screen",
+    "id": "GarageRoot",
+    "children": [
+      {
+        "type": "Panel",
+        "id": "MainPanel",
+        "anchor": "Center",
+        "size": [
+          900,
+          600
+        ],
+        "children": [
+          {
+            "type": "Header",
+            "id": "Header",
+            "children": [
+              {
+                "type": "Title",
+                "id": "Title",
+                "text": "Garage",
+                "children": []
+              },
+              {
+                "type": "CloseButton",
+                "id": "Close",
+                "interactive": true,
+                "children": []
+              }
+            ]
+          },
+          {
+            "type": "VerticalList",
+            "id": "VehicleList",
+            "children": []
+          },
+          {
+            "type": "Panel",
+            "id": "DetailsPanel",
+            "children": []
+          },
+          {
+            "type": "HorizontalList",
+            "id": "Actions",
+            "children": [
+              {
+                "type": "PrimaryButton",
+                "id": "SpawnButton",
+                "text": "Sortir",
+                "interactive": true,
+                "children": []
+              },
+              {
+                "type": "SecondaryButton",
+                "id": "StoreButton",
+                "text": "Ranger",
+                "interactive": true,
+                "children": []
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "state": {
+    "page": 0,
+    "selected_vehicle_index": -1
+  },
+  "events": [
+    {
+      "source": "Close",
+      "event": "click",
+      "action": "CloseGarage"
+    },
+    {
+      "source": "SpawnButton",
+      "event": "click",
+      "action": "SpawnSelectedVehicle"
+    },
+    {
+      "source": "StoreButton",
+      "event": "click",
+      "action": "StoreActiveVehicle"
+    }
+  ]
+}
