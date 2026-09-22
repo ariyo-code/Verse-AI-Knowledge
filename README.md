@@ -75,7 +75,7 @@ doit être utilisé à la place d'une API inventée.
 ### 1️⃣ Donne le dépôt à ton IA
 
 ```text
-https://github.com/abdullah1552-blip/Verse-AI-Knowledge
+https://github.com/ariyo-code/Verse-AI-Knowledge
 ```
 
 Puis demande-lui de lire en priorité :
@@ -452,7 +452,7 @@ must be used instead of a fabricated API.
 ### 1️⃣ Give the repository to your AI
 
 ```text
-https://github.com/abdullah1552-blip/Verse-AI-Knowledge
+https://github.com/ariyo-code/Verse-AI-Knowledge
 ```
 
 Ask it to read these files first:
