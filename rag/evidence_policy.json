@@ -1,0 +1,20 @@
+{
+  "schema_version": 1,
+  "roles": {
+    "project_context": "project intent/actual source",
+    "api_evidence": "API presence/signature evidence according to verification level",
+    "lifecycle": "cleanup/lifecycle/concurrency patterns",
+    "error_memory": "observed errors only",
+    "verification": "compile/runtime/MCP procedure",
+    "external_examples": "pattern/upstream evidence only"
+  },
+  "priority": [
+    "UEFN compiler/runtime",
+    "actual project source",
+    "official/current API",
+    "verified repo",
+    "external examples",
+    "planned architecture",
+    "model memory"
+  ]
+}

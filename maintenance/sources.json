@@ -1,0 +1,79 @@
+{
+  "schema_version": 1,
+  "last_updated": "2026-09-22",
+  "last_known_verse_api_version": "42.20",
+  "last_known_release": "42.20",
+  "sources": [
+    {
+      "id": "verse-api-root",
+      "url": "https://dev.epicgames.com/documentation/fortnite/verse-api",
+      "kind": "api-index",
+      "authority": "official-epic",
+      "priority": "critical",
+      "watch": true,
+      "extractors": [
+        "verse_api_version"
+      ],
+      "notes": "Main generated Verse API reference."
+    },
+    {
+      "id": "uefn-whats-new",
+      "url": "https://dev.epicgames.com/documentation/fortnite/whats-new-in-unreal-editor-for-fortnite",
+      "kind": "release-index",
+      "authority": "official-epic",
+      "priority": "critical",
+      "watch": true,
+      "extractors": [
+        "latest_release_version"
+      ],
+      "notes": "Used to notice a newly published ecosystem release."
+    },
+    {
+      "id": "release-42-20",
+      "url": "https://dev.epicgames.com/documentation/fortnite/42-20-fortnite-ecosystem-updates-and-release-notes",
+      "kind": "release-notes",
+      "authority": "official-epic",
+      "priority": "high",
+      "watch": true,
+      "extractors": [],
+      "notes": "Current release snapshot when V9 was created."
+    },
+    {
+      "id": "uefn-mcp",
+      "url": "https://dev.epicgames.com/documentation/fortnite/uefn-mcp",
+      "kind": "workflow-doc",
+      "authority": "official-epic",
+      "priority": "high",
+      "watch": true,
+      "extractors": [],
+      "notes": "Live UEFN agent bridge documentation."
+    },
+    {
+      "id": "verse-style",
+      "url": "https://dev.epicgames.com/documentation/fortnite/verse-code-style-guide-in-unreal-editor-for-fortnite",
+      "kind": "language-guide",
+      "authority": "official-epic",
+      "priority": "medium",
+      "watch": true,
+      "extractors": []
+    },
+    {
+      "id": "verse-persistence",
+      "url": "https://dev.epicgames.com/documentation/fortnite/using-persistable-data-in-verse",
+      "kind": "language-guide",
+      "authority": "official-epic",
+      "priority": "high",
+      "watch": true,
+      "extractors": []
+    },
+    {
+      "id": "verse-debugging",
+      "url": "https://dev.epicgames.com/documentation/fortnite/debugging-and-troubleshooting-in-verse",
+      "kind": "language-guide",
+      "authority": "official-epic",
+      "priority": "high",
+      "watch": true,
+      "extractors": []
+    }
+  ]
+}

@@ -1,0 +1,107 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Verse UI Creator Specification",
+  "type": "object",
+  "required": [
+    "screen",
+    "root",
+    "state",
+    "events"
+  ],
+  "properties": {
+    "screen": {
+      "type": "string"
+    },
+    "input_mode": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "style": {
+      "type": [
+        "string",
+        "object",
+        "null"
+      ]
+    },
+    "root": {
+      "$ref": "#/$defs/component"
+    },
+    "state": {
+      "type": "object"
+    },
+    "events": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "source",
+          "event",
+          "action"
+        ],
+        "properties": {
+          "source": {
+            "type": "string"
+          },
+          "event": {
+            "type": "string"
+          },
+          "action": {
+            "type": "string"
+          },
+          "notes": {
+            "type": "string"
+          }
+        }
+      }
+    }
+  },
+  "$defs": {
+    "component": {
+      "type": "object",
+      "required": [
+        "type",
+        "id"
+      ],
+      "properties": {
+        "type": {
+          "type": "string"
+        },
+        "id": {
+          "type": "string"
+        },
+        "anchor": {
+          "type": [
+            "string",
+            "array",
+            "object",
+            "null"
+          ]
+        },
+        "size": {
+          "type": [
+            "array",
+            "object",
+            "null"
+          ]
+        },
+        "text": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "interactive": {
+          "type": "boolean"
+        },
+        "children": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/component"
+          }
+        }
+      }
+    }
+  }
+}

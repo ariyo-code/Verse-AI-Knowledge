@@ -1,0 +1,61 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "UEFN Verification Evidence",
+  "type": "object",
+  "required": [
+    "artifact",
+    "status",
+    "verse_api",
+    "checks"
+  ],
+  "properties": {
+    "artifact": {
+      "type": "string"
+    },
+    "status": {
+      "enum": [
+        "compiled",
+        "verified",
+        "multiplayer-verified"
+      ]
+    },
+    "verse_api": {
+      "type": "string"
+    },
+    "checked_at": {
+      "type": "string"
+    },
+    "checks": {
+      "type": "object",
+      "properties": {
+        "compiled": {
+          "type": "boolean"
+        },
+        "runtime_tested": {
+          "type": "boolean"
+        },
+        "multiplayer_tested": {
+          "type": "boolean"
+        }
+      },
+      "required": [
+        "compiled",
+        "runtime_tested",
+        "multiplayer_tested"
+      ]
+    },
+    "evidence": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "notes": {
+      "type": [
+        "string",
+        "null"
+      ]
+    }
+  },
+  "additionalProperties": true
+}

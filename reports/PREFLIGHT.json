@@ -1,0 +1,30 @@
+{
+  "passed": true,
+  "checks": [
+    {
+      "name": "schema",
+      "passed": true,
+      "detail": "schema=21"
+    },
+    {
+      "name": "compile queue",
+      "passed": true,
+      "detail": "entries=50"
+    },
+    {
+      "name": "starter corpus",
+      "passed": true,
+      "detail": "local examples=10/395"
+    },
+    {
+      "name": "evidence compiler",
+      "passed": true,
+      "detail": "context compiler present"
+    },
+    {
+      "name": "claim ledger",
+      "passed": true,
+      "detail": "claim ledger present"
+    }
+  ]
+}

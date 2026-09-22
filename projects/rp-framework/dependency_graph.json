@@ -1,0 +1,161 @@
+{
+  "nodes": [
+    {
+      "id": "economy-system",
+      "name": "Economy",
+      "status": "planned"
+    },
+    {
+      "id": "hud-system",
+      "name": "HUD / UI System",
+      "status": "planned"
+    },
+    {
+      "id": "inventory-system",
+      "name": "Inventory System",
+      "status": "planned"
+    },
+    {
+      "id": "phone-system",
+      "name": "RP Phone",
+      "status": "planned"
+    },
+    {
+      "id": "session-system",
+      "name": "Session System",
+      "status": "planned"
+    },
+    {
+      "id": "staff-panel",
+      "name": "Staff Panel",
+      "status": "planned"
+    },
+    {
+      "id": "vehicle-manager",
+      "name": "Vehicle Manager",
+      "status": "planned"
+    },
+    {
+      "id": "whitelist-system",
+      "name": "Whitelist",
+      "status": "planned"
+    }
+  ],
+  "edges": [
+    {
+      "from": "economy-system",
+      "to": "Persistence",
+      "type": "depends-on"
+    },
+    {
+      "from": "economy-system",
+      "to": "Inventory",
+      "type": "depends-on"
+    },
+    {
+      "from": "economy-system",
+      "to": "UI",
+      "type": "depends-on"
+    },
+    {
+      "from": "hud-system",
+      "to": "UnrealEngine.com/Temporary/UI",
+      "type": "depends-on"
+    },
+    {
+      "from": "hud-system",
+      "to": "Fortnite.com/UI",
+      "type": "depends-on"
+    },
+    {
+      "from": "inventory-system",
+      "to": "Persistence",
+      "type": "depends-on"
+    },
+    {
+      "from": "inventory-system",
+      "to": "UI",
+      "type": "depends-on"
+    },
+    {
+      "from": "inventory-system",
+      "to": "item granter/remover or project-specific item layer",
+      "type": "depends-on"
+    },
+    {
+      "from": "phone-system",
+      "to": "UnrealEngine.com/Temporary/UI",
+      "type": "depends-on"
+    },
+    {
+      "from": "phone-system",
+      "to": "Fortnite.com/UI",
+      "type": "depends-on"
+    },
+    {
+      "from": "phone-system",
+      "to": "Playspaces/player lifecycle",
+      "type": "depends-on"
+    },
+    {
+      "from": "session-system",
+      "to": "UI or devices used for interaction",
+      "type": "depends-on"
+    },
+    {
+      "from": "session-system",
+      "to": "Playspaces",
+      "type": "depends-on"
+    },
+    {
+      "from": "session-system",
+      "to": "staff permissions",
+      "type": "depends-on"
+    },
+    {
+      "from": "staff-panel",
+      "to": "UI",
+      "type": "depends-on"
+    },
+    {
+      "from": "staff-panel",
+      "to": "Characters",
+      "type": "depends-on"
+    },
+    {
+      "from": "staff-panel",
+      "to": "Playspaces",
+      "type": "depends-on"
+    },
+    {
+      "from": "staff-panel",
+      "to": "permissions service",
+      "type": "depends-on"
+    },
+    {
+      "from": "vehicle-manager",
+      "to": "Fortnite.com/Vehicles",
+      "type": "depends-on"
+    },
+    {
+      "from": "vehicle-manager",
+      "to": "Fortnite.com/Characters",
+      "type": "depends-on"
+    },
+    {
+      "from": "vehicle-manager",
+      "to": "Fortnite.com/Playspaces",
+      "type": "depends-on"
+    },
+    {
+      "from": "whitelist-system",
+      "to": "Persistence",
+      "type": "depends-on"
+    },
+    {
+      "from": "whitelist-system",
+      "to": "Staff permissions",
+      "type": "depends-on"
+    }
+  ]
+}

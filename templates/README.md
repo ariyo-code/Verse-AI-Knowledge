@@ -1,0 +1,1 @@
+Architecture templates only; compile/runtime verification still required.

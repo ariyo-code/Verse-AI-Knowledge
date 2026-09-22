@@ -1,0 +1,14 @@
+{
+  "status": "template",
+  "responsibilities": [
+    "containers",
+    "weight",
+    "persistence",
+    "anti-dup"
+  ],
+  "tests": [
+    "load/save",
+    "disconnect mid-transfer",
+    "multiplayer contention"
+  ]
+}

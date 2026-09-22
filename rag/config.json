@@ -1,0 +1,48 @@
+{
+  "schema_version": 1,
+  "default_context_budget_chars": 18000,
+  "default_max_results": 12,
+  "weights": {
+    "bm25": 1.0,
+    "path_exact": 4.0,
+    "title_exact": 4.0,
+    "api_symbol_exact": 9.0,
+    "project_match": 5.0,
+    "error_match": 5.0,
+    "routing_match": 3.0,
+    "trust": 4.0,
+    "freshness": 1.5,
+    "verified_status": 2.5
+  },
+  "trust_levels": {
+    "official-current": 1.0,
+    "signature-verified": 1.0,
+    "api-page-verified": 0.95,
+    "module-index-verified": 0.75,
+    "official-guide-presence-verified": 0.7,
+    "multiplayer-verified": 1.0,
+    "verified": 0.95,
+    "compiled": 0.82,
+    "draft": 0.45,
+    "planned": 0.4,
+    "discovered": 0.6,
+    "deprecated": 0.15,
+    "unspecified": 0.5,
+    "external-compiler-claimed": 0.78,
+    "external-community": 0.58,
+    "reference-only": 0.25
+  },
+  "preferred_paths": [
+    "docs/api/",
+    "knowledge/",
+    "projects/",
+    "errors/",
+    "mcp/",
+    "docs/architecture/",
+    "docs/patterns/"
+  ],
+  "excluded_paths": [
+    ".git/",
+    "__pycache__/"
+  ]
+}
