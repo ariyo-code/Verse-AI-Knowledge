@@ -1,3 +1,3 @@
-"""Verse AI Knowledge V22 tooling."""
+"""Verse AI Knowledge V24 tooling."""
 
-__version__ = "22.0.0"
+__version__ = "24.0.0"

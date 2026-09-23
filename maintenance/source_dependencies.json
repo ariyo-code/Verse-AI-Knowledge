@@ -1,261 +1,444 @@
 {
   "generated_by": "tools/index_source_dependencies.py",
-  "source_count": 87,
+  "source_count": 91,
   "sources": {
+    "https://dev.epicgames.com/": [
+      "AI_GUIDE.md",
+      "docs/architecture/V23_API_COVERAGE.md",
+      "rag/index.json",
+      "rag/index.json",
+      "tools/review_api_candidate.py"
+    ],
     "https://dev.epicgames.com/documentation/en-us/fortnite/verse-api": [
-      "docs/SOURCES.md"
+      "docs/SOURCES.md",
+      "maintenance/source_dependencies.json",
+      "rag/index.json"
+    ],
+    "https://dev.epicgames.com/documentation/en-us/fortnite/verse-api/fortnitedotcom/characters/getfortcharacter": [
+      "maintenance/source_dependencies.json",
+      "rag/generated/E002.md",
+      "rag/index.json"
+    ],
+    "https://dev.epicgames.com/documentation/en-us/fortnite/verse-api/fortnitedotcom/devices/getplayspace": [
+      "maintenance/source_dependencies.json",
+      "rag/index.json"
+    ],
+    "https://dev.epicgames.com/documentation/en-us/fortnite/verse-api/unrealenginedotcom/temporary/ui/getplayerui": [
+      "maintenance/source_dependencies.json",
+      "rag/generated/E002.md",
+      "rag/index.json"
     ],
     "https://dev.epicgames.com/documentation/en-us/fortnite/verse-language-book-of-verse-reference": [
-      "docs/SOURCES.md"
+      "docs/SOURCES.md",
+      "maintenance/source_dependencies.json",
+      "rag/index.json"
     ],
     "https://dev.epicgames.com/documentation/en-us/uefn/verse-language-get-started-in-unreal-editor-for-fortnite": [
-      "docs/SOURCES.md"
+      "docs/SOURCES.md",
+      "maintenance/source_dependencies.json",
+      "rag/index.json"
     ],
     "https://dev.epicgames.com/documentation/fortnite/42-00-fortnite-ecosystem-updates-and-release-notes": [
-      "docs/releases/42.00-mcp.md"
+      "docs/releases/42.00-mcp.md",
+      "maintenance/source_dependencies.json",
+      "rag/index.json"
     ],
     "https://dev.epicgames.com/documentation/fortnite/42-20-fortnite-ecosystem-updates-and-release-notes": [
       "docs/releases/42.20.md",
       "docs/uefn/api-versioning.md",
       "errors/deprecations.md",
       "maintenance/baseline.json",
+      "maintenance/source_dependencies.json",
       "maintenance/sources.json",
-      "manifest.json"
+      "manifest.json",
+      "rag/index.json"
     ],
     "https://dev.epicgames.com/documentation/fortnite/basics-of-writing-code-9-failure-and-control-flow-in-verse": [
-      "docs/language/failure-and-effects.md"
+      "docs/language/failure-and-effects.md",
+      "maintenance/source_dependencies.json",
+      "rag/index.json"
     ],
     "https://dev.epicgames.com/documentation/fortnite/change-a-players-point-of-view-with-cameras-in-unreal-editor-for-fortnite": [
       "docs/api/core/cinematic_sequence_device.md",
       "docs/api/core/lock_device.md",
       "docs/api/core/map_indicator_device.md",
-      "knowledge/api_catalog.json"
+      "knowledge/api/verification_queue.json",
+      "knowledge/api_catalog.json",
+      "maintenance/source_dependencies.json",
+      "rag/index.json"
     ],
     "https://dev.epicgames.com/documentation/fortnite/coding-device-interactions-in-verse": [
       "docs/language/concurrency.md",
-      "docs/uefn/events.md"
+      "docs/uefn/events.md",
+      "maintenance/source_dependencies.json",
+      "rag/index.json"
     ],
     "https://dev.epicgames.com/documentation/fortnite/debugging-and-troubleshooting-in-verse": [
       "docs/language/concurrency.md",
       "docs/uefn/debugging.md",
       "maintenance/baseline.json",
+      "maintenance/source_dependencies.json",
       "maintenance/sources.json",
-      "manifest.json"
+      "manifest.json",
+      "rag/index.json"
     ],
     "https://dev.epicgames.com/documentation/fortnite/transforms-in-scene-graph-in-unreal-editor-for-fortnite": [
-      "docs/scenegraph/TRANSFORMS.md"
+      "docs/scenegraph/TRANSFORMS.md",
+      "maintenance/source_dependencies.json",
+      "rag/index.json"
     ],
     "https://dev.epicgames.com/documentation/fortnite/uefn-mcp": [
       "knowledge/api_catalog.json",
       "maintenance/baseline.json",
+      "maintenance/source_dependencies.json",
       "maintenance/sources.json",
       "manifest.json",
       "mcp/CODEX.md",
       "mcp/README.md",
-      "mcp/SETUP.md"
+      "mcp/SETUP.md",
+      "rag/index.json"
     ],
     "https://dev.epicgames.com/documentation/fortnite/using-persistable-data-in-verse": [
       "docs/uefn/persistence.md",
       "maintenance/baseline.json",
+      "maintenance/source_dependencies.json",
       "maintenance/sources.json",
-      "manifest.json"
+      "manifest.json",
+      "rag/index.json"
     ],
     "https://dev.epicgames.com/documentation/fortnite/verse-api": [
       "docs/uefn/api-versioning.md",
+      "knowledge/api/modules.json",
+      "knowledge/api/versions.json",
       "knowledge/module_catalog.json",
       "maintenance/baseline.json",
+      "maintenance/source_dependencies.json",
       "maintenance/sources.json",
-      "manifest.json"
+      "manifest.json",
+      "rag/generated/E002.md",
+      "rag/index.json"
     ],
     "https://dev.epicgames.com/documentation/fortnite/verse-api/fortnitedotcom/characters/fort_character": [
       "docs/api/core/fort_character.md",
       "docs/uefn/characters.md",
-      "knowledge/api_catalog.json"
+      "knowledge/api/verification_queue.json",
+      "knowledge/api_catalog.json",
+      "maintenance/source_dependencies.json",
+      "rag/index.json"
     ],
     "https://dev.epicgames.com/documentation/fortnite/verse-api/fortnitedotcom/characters/getfortcharacter": [
       "docs/api/core/GetFortCharacter.md",
       "docs/language/failure-and-effects.md",
       "docs/uefn/characters.md",
-      "knowledge/api_catalog.json"
+      "knowledge/api_catalog.json",
+      "maintenance/source_dependencies.json",
+      "rag/index.json"
     ],
     "https://dev.epicgames.com/documentation/fortnite/verse-api/fortnitedotcom/devices/audio_player_device": [
       "docs/api/core/audio_player_device.md",
-      "knowledge/api_catalog.json"
+      "knowledge/api/verification_queue.json",
+      "knowledge/api_catalog.json",
+      "maintenance/source_dependencies.json",
+      "rag/index.json"
     ],
     "https://dev.epicgames.com/documentation/fortnite/verse-api/fortnitedotcom/devices/barrier_device": [
       "docs/api/core/barrier_device.md",
-      "knowledge/api_catalog.json"
+      "knowledge/api/verification_queue.json",
+      "knowledge/api_catalog.json",
+      "maintenance/source_dependencies.json",
+      "rag/index.json"
     ],
     "https://dev.epicgames.com/documentation/fortnite/verse-api/fortnitedotcom/devices/button_device": [
       "docs/api/core/button_device.md",
-      "knowledge/api_catalog.json"
+      "knowledge/api/verification_queue.json",
+      "knowledge/api_catalog.json",
+      "maintenance/source_dependencies.json",
+      "rag/index.json"
     ],
     "https://dev.epicgames.com/documentation/fortnite/verse-api/fortnitedotcom/devices/capture_area_device": [
       "docs/api/core/capture_area_device.md",
-      "knowledge/api_catalog.json"
+      "knowledge/api/verification_queue.json",
+      "knowledge/api_catalog.json",
+      "maintenance/source_dependencies.json",
+      "rag/index.json"
     ],
     "https://dev.epicgames.com/documentation/fortnite/verse-api/fortnitedotcom/devices/character_device": [
       "docs/api/core/character_device.md",
-      "knowledge/api_catalog.json"
+      "knowledge/api/verification_queue.json",
+      "knowledge/api_catalog.json",
+      "maintenance/source_dependencies.json",
+      "rag/index.json"
     ],
     "https://dev.epicgames.com/documentation/fortnite/verse-api/fortnitedotcom/devices/class_and_team_selector_device": [
       "docs/api/core/class_and_team_selector_device.md",
-      "knowledge/api_catalog.json"
+      "knowledge/api/verification_queue.json",
+      "knowledge/api_catalog.json",
+      "maintenance/source_dependencies.json",
+      "rag/index.json"
     ],
     "https://dev.epicgames.com/documentation/fortnite/verse-api/fortnitedotcom/devices/conditional_button_device": [
       "docs/api/core/conditional_button_device.md",
-      "knowledge/api_catalog.json"
+      "knowledge/api/verification_queue.json",
+      "knowledge/api_catalog.json",
+      "maintenance/source_dependencies.json",
+      "rag/index.json"
     ],
     "https://dev.epicgames.com/documentation/fortnite/verse-api/fortnitedotcom/devices/conversation_device": [
       "docs/api/core/conversation_device.md",
-      "knowledge/api_catalog.json"
+      "knowledge/api/verification_queue.json",
+      "knowledge/api_catalog.json",
+      "maintenance/source_dependencies.json",
+      "rag/index.json"
     ],
     "https://dev.epicgames.com/documentation/fortnite/verse-api/fortnitedotcom/devices/creative_device": [
       "docs/api/core/creative_device.md",
       "docs/uefn/creative-devices.md",
-      "knowledge/api_catalog.json"
+      "knowledge/api/verification_queue.json",
+      "knowledge/api_catalog.json",
+      "maintenance/source_dependencies.json",
+      "rag/index.json"
     ],
     "https://dev.epicgames.com/documentation/fortnite/verse-api/fortnitedotcom/devices/creative_device_base": [
       "docs/api/core/creative_device_base.md",
       "docs/uefn/creative-devices.md",
-      "knowledge/api_catalog.json"
+      "knowledge/api/verification_queue.json",
+      "knowledge/api_catalog.json",
+      "maintenance/source_dependencies.json",
+      "rag/index.json"
     ],
     "https://dev.epicgames.com/documentation/fortnite/verse-api/fortnitedotcom/devices/creative_object": [
       "docs/api/core/creative_object.md",
       "docs/uefn/creative-devices.md",
-      "knowledge/api_catalog.json"
+      "knowledge/api/verification_queue.json",
+      "knowledge/api_catalog.json",
+      "maintenance/source_dependencies.json",
+      "rag/index.json"
     ],
     "https://dev.epicgames.com/documentation/fortnite/verse-api/fortnitedotcom/devices/damage_volume_device": [
       "docs/api/core/damage_volume_device.md",
-      "knowledge/api_catalog.json"
+      "knowledge/api/verification_queue.json",
+      "knowledge/api_catalog.json",
+      "maintenance/source_dependencies.json",
+      "rag/index.json"
     ],
     "https://dev.epicgames.com/documentation/fortnite/verse-api/fortnitedotcom/devices/elimination_manager_device": [
       "docs/api/core/elimination_manager_device.md",
-      "knowledge/api_catalog.json"
+      "knowledge/api/verification_queue.json",
+      "knowledge/api_catalog.json",
+      "maintenance/source_dependencies.json",
+      "rag/index.json"
     ],
     "https://dev.epicgames.com/documentation/fortnite/verse-api/fortnitedotcom/devices/end_game_device": [
       "docs/api/core/end_game_device.md",
-      "knowledge/api_catalog.json"
+      "knowledge/api/verification_queue.json",
+      "knowledge/api_catalog.json",
+      "maintenance/source_dependencies.json",
+      "rag/index.json"
     ],
     "https://dev.epicgames.com/documentation/fortnite/verse-api/fortnitedotcom/devices/getplayspace": [
       "docs/api/core/GetPlayspace.md",
-      "knowledge/api_catalog.json"
+      "knowledge/api_catalog.json",
+      "maintenance/source_dependencies.json",
+      "rag/index.json"
     ],
     "https://dev.epicgames.com/documentation/fortnite/verse-api/fortnitedotcom/devices/hud_message_device": [
       "docs/api/core/hud_message_device.md",
-      "knowledge/api_catalog.json"
+      "knowledge/api/verification_queue.json",
+      "knowledge/api_catalog.json",
+      "maintenance/source_dependencies.json",
+      "rag/index.json"
     ],
     "https://dev.epicgames.com/documentation/fortnite/verse-api/fortnitedotcom/devices/input_trigger_device": [
       "docs/api/core/input_trigger_device.md",
-      "knowledge/api_catalog.json"
+      "knowledge/api/verification_queue.json",
+      "knowledge/api_catalog.json",
+      "maintenance/source_dependencies.json",
+      "rag/index.json"
     ],
     "https://dev.epicgames.com/documentation/fortnite/verse-api/fortnitedotcom/devices/item_granter_device": [
       "docs/api/core/item_granter_device.md",
-      "knowledge/api_catalog.json"
+      "knowledge/api/verification_queue.json",
+      "knowledge/api_catalog.json",
+      "maintenance/source_dependencies.json",
+      "rag/index.json"
     ],
     "https://dev.epicgames.com/documentation/fortnite/verse-api/fortnitedotcom/devices/item_placer_device": [
       "docs/api/core/item_placer_device.md",
-      "knowledge/api_catalog.json"
+      "knowledge/api/verification_queue.json",
+      "knowledge/api_catalog.json",
+      "maintenance/source_dependencies.json",
+      "rag/index.json"
     ],
     "https://dev.epicgames.com/documentation/fortnite/verse-api/fortnitedotcom/devices/item_remover_device": [
       "docs/api/core/item_remover_device.md",
-      "knowledge/api_catalog.json"
+      "knowledge/api/verification_queue.json",
+      "knowledge/api_catalog.json",
+      "maintenance/source_dependencies.json",
+      "rag/index.json"
     ],
     "https://dev.epicgames.com/documentation/fortnite/verse-api/fortnitedotcom/devices/map_controller_device": [
       "docs/api/core/map_controller_device.md",
-      "knowledge/api_catalog.json"
+      "knowledge/api/verification_queue.json",
+      "knowledge/api_catalog.json",
+      "maintenance/source_dependencies.json",
+      "rag/index.json"
     ],
     "https://dev.epicgames.com/documentation/fortnite/verse-api/fortnitedotcom/devices/mutator_zone_device": [
       "docs/api/core/mutator_zone_device.md",
-      "knowledge/api_catalog.json"
+      "knowledge/api/verification_queue.json",
+      "knowledge/api_catalog.json",
+      "maintenance/source_dependencies.json",
+      "rag/index.json"
     ],
     "https://dev.epicgames.com/documentation/fortnite/verse-api/fortnitedotcom/devices/player_reference_device": [
       "docs/api/core/player_reference_device.md",
-      "knowledge/api_catalog.json"
+      "knowledge/api/verification_queue.json",
+      "knowledge/api_catalog.json",
+      "maintenance/source_dependencies.json",
+      "rag/index.json"
     ],
     "https://dev.epicgames.com/documentation/fortnite/verse-api/fortnitedotcom/devices/player_spawner_device": [
       "docs/api/core/player_spawner_device.md",
-      "knowledge/api_catalog.json"
+      "knowledge/api/verification_queue.json",
+      "knowledge/api_catalog.json",
+      "maintenance/source_dependencies.json",
+      "rag/index.json"
     ],
     "https://dev.epicgames.com/documentation/fortnite/verse-api/fortnitedotcom/devices/popup_dialog_device": [
       "docs/api/core/popup_dialog_device.md",
-      "knowledge/api_catalog.json"
+      "knowledge/api/verification_queue.json",
+      "knowledge/api_catalog.json",
+      "maintenance/source_dependencies.json",
+      "rag/index.json"
     ],
     "https://dev.epicgames.com/documentation/fortnite/verse-api/fortnitedotcom/devices/prop_manipulator_device": [
       "docs/api/core/prop_manipulator_device.md",
-      "knowledge/api_catalog.json"
+      "knowledge/api/verification_queue.json",
+      "knowledge/api_catalog.json",
+      "maintenance/source_dependencies.json",
+      "rag/index.json"
     ],
     "https://dev.epicgames.com/documentation/fortnite/verse-api/fortnitedotcom/devices/score_manager_device": [
       "docs/api/core/score_manager_device.md",
-      "knowledge/api_catalog.json"
+      "knowledge/api/verification_queue.json",
+      "knowledge/api_catalog.json",
+      "maintenance/source_dependencies.json",
+      "rag/index.json"
     ],
     "https://dev.epicgames.com/documentation/fortnite/verse-api/fortnitedotcom/devices/sentry_device": [
       "docs/api/core/sentry_device.md",
-      "knowledge/api_catalog.json"
+      "knowledge/api/verification_queue.json",
+      "knowledge/api_catalog.json",
+      "maintenance/source_dependencies.json",
+      "rag/index.json"
     ],
     "https://dev.epicgames.com/documentation/fortnite/verse-api/fortnitedotcom/devices/support_a_creator_device": [
-      "docs/api/deprecated/support_a_creator_device.md"
+      "docs/api/deprecated/support_a_creator_device.md",
+      "maintenance/source_dependencies.json",
+      "rag/index.json"
     ],
     "https://dev.epicgames.com/documentation/fortnite/verse-api/fortnitedotcom/devices/switch_device": [
       "docs/api/core/switch_device.md",
-      "knowledge/api_catalog.json"
+      "knowledge/api/verification_queue.json",
+      "knowledge/api_catalog.json",
+      "maintenance/source_dependencies.json",
+      "rag/index.json"
     ],
     "https://dev.epicgames.com/documentation/fortnite/verse-api/fortnitedotcom/devices/team_settings_and_inventory_device": [
       "docs/api/core/team_settings_and_inventory_device.md",
-      "knowledge/api_catalog.json"
+      "knowledge/api/verification_queue.json",
+      "knowledge/api_catalog.json",
+      "maintenance/source_dependencies.json",
+      "rag/index.json"
     ],
     "https://dev.epicgames.com/documentation/fortnite/verse-api/fortnitedotcom/devices/teleporter_device": [
       "docs/api/core/teleporter_device.md",
-      "knowledge/api_catalog.json"
+      "knowledge/api/verification_queue.json",
+      "knowledge/api_catalog.json",
+      "maintenance/source_dependencies.json",
+      "rag/index.json"
     ],
     "https://dev.epicgames.com/documentation/fortnite/verse-api/fortnitedotcom/devices/tracker_device": [
       "docs/api/core/tracker_device.md",
-      "knowledge/api_catalog.json"
+      "knowledge/api/verification_queue.json",
+      "knowledge/api_catalog.json",
+      "maintenance/source_dependencies.json",
+      "rag/index.json"
     ],
     "https://dev.epicgames.com/documentation/fortnite/verse-api/fortnitedotcom/devices/trigger_base_device": [
       "docs/api/core/trigger_base_device.md",
-      "knowledge/api_catalog.json"
+      "knowledge/api/verification_queue.json",
+      "knowledge/api_catalog.json",
+      "maintenance/source_dependencies.json",
+      "rag/index.json"
     ],
     "https://dev.epicgames.com/documentation/fortnite/verse-api/fortnitedotcom/devices/trigger_device": [
       "docs/api/core/trigger_device.md",
-      "knowledge/api_catalog.json"
+      "knowledge/api/verification_queue.json",
+      "knowledge/api_catalog.json",
+      "maintenance/source_dependencies.json",
+      "rag/index.json"
     ],
     "https://dev.epicgames.com/documentation/fortnite/verse-api/fortnitedotcom/devices/vfx_creator_device": [
       "docs/api/core/vfx_creator_device.md",
-      "knowledge/api_catalog.json"
+      "knowledge/api/verification_queue.json",
+      "knowledge/api_catalog.json",
+      "maintenance/source_dependencies.json",
+      "rag/index.json"
     ],
     "https://dev.epicgames.com/documentation/fortnite/verse-api/fortnitedotcom/devices/vfx_spawner_device": [
       "docs/api/core/vfx_spawner_device.md",
-      "knowledge/api_catalog.json"
+      "knowledge/api/verification_queue.json",
+      "knowledge/api_catalog.json",
+      "maintenance/source_dependencies.json",
+      "rag/index.json"
     ],
     "https://dev.epicgames.com/documentation/fortnite/verse-api/fortnitedotcom/devices/volume_device": [
       "docs/api/core/volume_device.md",
-      "knowledge/api_catalog.json"
+      "knowledge/api/verification_queue.json",
+      "knowledge/api_catalog.json",
+      "maintenance/source_dependencies.json",
+      "rag/index.json"
     ],
     "https://dev.epicgames.com/documentation/fortnite/verse-api/fortnitedotcom/playspaces/fort_playspace": [
       "docs/api/core/fort_playspace.md",
-      "knowledge/api_catalog.json"
+      "knowledge/api/verification_queue.json",
+      "knowledge/api_catalog.json",
+      "maintenance/source_dependencies.json",
+      "rag/index.json"
     ],
     "https://dev.epicgames.com/documentation/fortnite/verse-api/fortnitedotcom/teams": [
       "docs/api/core/team_attitude.md",
-      "knowledge/api_catalog.json"
+      "knowledge/api/verification_queue.json",
+      "knowledge/api_catalog.json",
+      "maintenance/source_dependencies.json",
+      "rag/index.json"
     ],
     "https://dev.epicgames.com/documentation/fortnite/verse-api/fortnitedotcom/teams/fort_team_collection": [
       "docs/api/core/fort_team_collection.md",
       "docs/teams/fort_team_collection.md",
-      "knowledge/api_catalog.json"
+      "knowledge/api/verification_queue.json",
+      "knowledge/api_catalog.json",
+      "maintenance/source_dependencies.json",
+      "rag/index.json"
     ],
     "https://dev.epicgames.com/documentation/fortnite/verse-api/fortnitedotcom/teams/fort_team_collection/addtoteam": [
       "docs/api/core/fort_team_collection.AddToTeam.md",
-      "knowledge/api_catalog.json"
+      "knowledge/api_catalog.json",
+      "maintenance/source_dependencies.json",
+      "rag/index.json"
     ],
     "https://dev.epicgames.com/documentation/fortnite/verse-api/fortnitedotcom/teams/fort_team_collection/getteam": [
       "docs/api/core/fort_team_collection.GetTeam.md",
-      "knowledge/api_catalog.json"
+      "knowledge/api_catalog.json",
+      "maintenance/source_dependencies.json",
+      "rag/index.json"
     ],
     "https://dev.epicgames.com/documentation/fortnite/verse-api/fortnitedotcom/teams/fort_team_collection/getteams": [
       "docs/api/core/fort_team_collection.GetTeams.md",
-      "knowledge/api_catalog.json"
+      "knowledge/api_catalog.json",
+      "maintenance/source_dependencies.json",
+      "rag/index.json"
     ],
     "https://dev.epicgames.com/documentation/fortnite/verse-api/fortnitedotcom/ui": [
       "docs/api/core/button_loud.md",
@@ -287,28 +470,45 @@
       "docs/api/core/text_block.md",
       "docs/api/core/text_button_base.md",
       "docs/ui/CURRENT_UI_API.md",
-      "knowledge/api_catalog.json"
+      "knowledge/api/verification_queue.json",
+      "knowledge/api_catalog.json",
+      "maintenance/source_dependencies.json",
+      "rag/index.json"
     ],
     "https://dev.epicgames.com/documentation/fortnite/verse-api/fortnitedotcom/vehicles": [
       "docs/api/core/fort_vehicle_seat.md",
-      "knowledge/api_catalog.json"
+      "knowledge/api/verification_queue.json",
+      "knowledge/api_catalog.json",
+      "maintenance/source_dependencies.json",
+      "rag/index.json"
     ],
     "https://dev.epicgames.com/documentation/fortnite/verse-api/fortnitedotcom/vehicles/fort_vehicle": [
       "docs/api/core/fort_vehicle.md",
       "docs/vehicles/fort_vehicle.md",
-      "knowledge/api_catalog.json"
+      "knowledge/api/verification_queue.json",
+      "knowledge/api_catalog.json",
+      "maintenance/source_dependencies.json",
+      "rag/index.json"
     ],
     "https://dev.epicgames.com/documentation/fortnite/verse-api/fortnitedotcom/vehicles/fort_vehicle/getdrivers": [
       "docs/api/core/fort_vehicle.GetDrivers.md",
-      "knowledge/api_catalog.json"
+      "knowledge/api_catalog.json",
+      "maintenance/source_dependencies.json",
+      "rag/generated/E001.md",
+      "rag/index.json"
     ],
     "https://dev.epicgames.com/documentation/fortnite/verse-api/fortnitedotcom/vehicles/fort_vehicle/getseats": [
       "docs/api/core/fort_vehicle.GetSeats.md",
-      "knowledge/api_catalog.json"
+      "knowledge/api_catalog.json",
+      "maintenance/source_dependencies.json",
+      "rag/index.json"
     ],
     "https://dev.epicgames.com/documentation/fortnite/verse-api/fortnitedotcom/vehicles/getvehicle": [
       "docs/api/core/GetVehicle.md",
-      "knowledge/api_catalog.json"
+      "knowledge/api_catalog.json",
+      "maintenance/source_dependencies.json",
+      "rag/generated/E001.md",
+      "rag/index.json"
     ],
     "https://dev.epicgames.com/documentation/fortnite/verse-api/unrealenginedotcom/temporary/ui": [
       "docs/api/core/MakeCanvasSlot.md",
@@ -329,55 +529,95 @@
       "docs/api/core/widget_message.md",
       "docs/api/core/widget_visibility.md",
       "docs/ui/CURRENT_UI_API.md",
-      "knowledge/api_catalog.json"
+      "knowledge/api/verification_queue.json",
+      "knowledge/api_catalog.json",
+      "maintenance/source_dependencies.json",
+      "rag/generated/E003.md",
+      "rag/index.json"
     ],
     "https://dev.epicgames.com/documentation/fortnite/verse-api/unrealenginedotcom/temporary/ui/button": [
       "docs/api/core/button.md",
-      "knowledge/api_catalog.json"
+      "knowledge/api/verification_queue.json",
+      "knowledge/api_catalog.json",
+      "maintenance/source_dependencies.json",
+      "rag/index.json"
     ],
     "https://dev.epicgames.com/documentation/fortnite/verse-api/unrealenginedotcom/temporary/ui/canvas": [
       "docs/api/core/canvas.md",
-      "knowledge/api_catalog.json"
+      "knowledge/api/verification_queue.json",
+      "knowledge/api_catalog.json",
+      "maintenance/source_dependencies.json",
+      "rag/index.json"
     ],
     "https://dev.epicgames.com/documentation/fortnite/verse-api/unrealenginedotcom/temporary/ui/canvas_slot": [
       "docs/api/core/canvas_slot.md",
-      "knowledge/api_catalog.json"
+      "knowledge/api/verification_queue.json",
+      "knowledge/api_catalog.json",
+      "maintenance/source_dependencies.json",
+      "rag/index.json"
     ],
     "https://dev.epicgames.com/documentation/fortnite/verse-api/unrealenginedotcom/temporary/ui/color_block": [
       "docs/api/core/color_block.md",
-      "knowledge/api_catalog.json"
+      "knowledge/api/verification_queue.json",
+      "knowledge/api_catalog.json",
+      "maintenance/source_dependencies.json",
+      "rag/index.json"
     ],
     "https://dev.epicgames.com/documentation/fortnite/verse-api/unrealenginedotcom/temporary/ui/getplayerui": [
       "docs/api/core/GetPlayerUI.md",
-      "knowledge/api_catalog.json"
+      "knowledge/api_catalog.json",
+      "maintenance/source_dependencies.json",
+      "rag/index.json"
     ],
     "https://dev.epicgames.com/documentation/fortnite/verse-api/unrealenginedotcom/temporary/ui/material_block": [
       "docs/api/core/material_block.md",
-      "knowledge/api_catalog.json"
+      "knowledge/api/verification_queue.json",
+      "knowledge/api_catalog.json",
+      "maintenance/source_dependencies.json",
+      "rag/index.json"
     ],
     "https://dev.epicgames.com/documentation/fortnite/verse-api/unrealenginedotcom/temporary/ui/overlay": [
       "docs/api/core/overlay.md",
-      "knowledge/api_catalog.json"
+      "knowledge/api/verification_queue.json",
+      "knowledge/api_catalog.json",
+      "maintenance/source_dependencies.json",
+      "rag/index.json"
     ],
     "https://dev.epicgames.com/documentation/fortnite/verse-api/unrealenginedotcom/temporary/ui/player_ui": [
       "docs/api/core/player_ui.md",
-      "knowledge/api_catalog.json"
+      "knowledge/api/verification_queue.json",
+      "knowledge/api_catalog.json",
+      "maintenance/source_dependencies.json",
+      "rag/generated/E003.md",
+      "rag/index.json"
     ],
     "https://dev.epicgames.com/documentation/fortnite/verse-api/unrealenginedotcom/temporary/ui/stack_box": [
       "docs/api/core/stack_box.md",
-      "knowledge/api_catalog.json"
+      "knowledge/api/verification_queue.json",
+      "knowledge/api_catalog.json",
+      "maintenance/source_dependencies.json",
+      "rag/index.json"
     ],
     "https://dev.epicgames.com/documentation/fortnite/verse-api/unrealenginedotcom/temporary/ui/stack_box_slot": [
       "docs/api/core/stack_box_slot.md",
-      "knowledge/api_catalog.json"
+      "knowledge/api/verification_queue.json",
+      "knowledge/api_catalog.json",
+      "maintenance/source_dependencies.json",
+      "rag/index.json"
     ],
     "https://dev.epicgames.com/documentation/fortnite/verse-api/unrealenginedotcom/temporary/ui/texture_block": [
       "docs/api/core/texture_block.md",
-      "knowledge/api_catalog.json"
+      "knowledge/api/verification_queue.json",
+      "knowledge/api_catalog.json",
+      "maintenance/source_dependencies.json",
+      "rag/index.json"
     ],
     "https://dev.epicgames.com/documentation/fortnite/verse-api/unrealenginedotcom/temporary/ui/widget": [
       "docs/api/core/widget.md",
-      "knowledge/api_catalog.json"
+      "knowledge/api/verification_queue.json",
+      "knowledge/api_catalog.json",
+      "maintenance/source_dependencies.json",
+      "rag/index.json"
     ],
     "https://dev.epicgames.com/documentation/fortnite/verse-api/versedotorg/scenegraph": [
       "docs/api/core/basic_interactable_component.md",
@@ -418,17 +658,24 @@
       "docs/api/core/transform_component.md",
       "docs/api/core/uncommon_rarity.md",
       "docs/scenegraph/LIFECYCLE.md",
-      "knowledge/api_catalog.json"
+      "knowledge/api/verification_queue.json",
+      "knowledge/api_catalog.json",
+      "maintenance/source_dependencies.json",
+      "rag/index.json"
     ],
     "https://dev.epicgames.com/documentation/fortnite/verse-api/versedotorg/scenegraph/component/onbeginsimulation": [
       "docs/api/core/component.OnBeginSimulation.md",
       "docs/scenegraph/LIFECYCLE.md",
-      "knowledge/api_catalog.json"
+      "knowledge/api_catalog.json",
+      "maintenance/source_dependencies.json",
+      "rag/index.json"
     ],
     "https://dev.epicgames.com/documentation/fortnite/verse-api/versedotorg/scenegraph/component/onsimulate": [
       "docs/api/core/component.OnSimulate.md",
       "docs/scenegraph/LIFECYCLE.md",
-      "knowledge/api_catalog.json"
+      "knowledge/api_catalog.json",
+      "maintenance/source_dependencies.json",
+      "rag/index.json"
     ],
     "https://dev.epicgames.com/documentation/fortnite/verse-api/versedotorg/scenegraph/keyframedmovement": [
       "docs/api/core/cubic_bezier_easing_function.md",
@@ -444,29 +691,44 @@
       "docs/api/core/loop_keyframed_movement_playback_mode.md",
       "docs/api/core/oneshot_keyframed_movement_playback_mode.md",
       "docs/api/core/pingpong_keyframed_movement_playback_mode.md",
-      "knowledge/api_catalog.json"
+      "knowledge/api/verification_queue.json",
+      "knowledge/api_catalog.json",
+      "maintenance/source_dependencies.json",
+      "rag/index.json"
     ],
     "https://dev.epicgames.com/documentation/fortnite/verse-code-style-guide-in-unreal-editor-for-fortnite": [
       "docs/language/style.md",
       "maintenance/baseline.json",
+      "maintenance/source_dependencies.json",
       "maintenance/sources.json",
-      "manifest.json"
+      "manifest.json",
+      "rag/index.json"
     ],
     "https://dev.epicgames.com/documentation/fortnite/verse-glossary": [
       "docs/language/concurrency.md",
-      "docs/language/failure-and-effects.md"
+      "docs/language/failure-and-effects.md",
+      "maintenance/source_dependencies.json",
+      "rag/index.json"
     ],
     "https://dev.epicgames.com/documentation/fortnite/verse-standup-comedy-club-template-in-unreal-editor-for-fortnite": [
       "docs/api/core/chair_device.md",
-      "knowledge/api_catalog.json"
+      "knowledge/api/verification_queue.json",
+      "knowledge/api_catalog.json",
+      "maintenance/source_dependencies.json",
+      "rag/index.json"
     ],
     "https://dev.epicgames.com/documentation/fortnite/verse-start-02-timer-system-in-fortnite": [
       "docs/api/core/timer_device.md",
-      "knowledge/api_catalog.json"
+      "knowledge/api/verification_queue.json",
+      "knowledge/api_catalog.json",
+      "maintenance/source_dependencies.json",
+      "rag/index.json"
     ],
     "https://dev.epicgames.com/documentation/fortnite/whats-new-in-unreal-editor-for-fortnite": [
       "maintenance/baseline.json",
-      "maintenance/sources.json"
+      "maintenance/source_dependencies.json",
+      "maintenance/sources.json",
+      "rag/index.json"
     ]
   }
 }

@@ -1,0 +1,4987 @@
+{
+  "schema_version": 1,
+  "generated_by": "tools/migrate_api_catalog_v24.py",
+  "api_version": "42.20",
+  "symbol_count": 164,
+  "evidence_node_count": 76,
+  "evidence": {
+    "api-4a8d7a256683ca4b": {
+      "kind": "reviewed-api-evidence",
+      "source_url": "https://dev.epicgames.com/documentation/en-us/fortnite/verse-api/fortnitedotcom/devices/getplayspace",
+      "api_version": "42.20",
+      "review_status": "verified",
+      "reviewed_at": "2026-09-23",
+      "fields_verified": [
+        "signature",
+        "parameters",
+        "return_type",
+        "effects"
+      ]
+    },
+    "api-715bf58ab86ca0e7": {
+      "kind": "reviewed-api-evidence",
+      "source_url": "https://dev.epicgames.com/documentation/en-us/fortnite/verse-api/unrealenginedotcom/temporary/ui/getplayerui",
+      "api_version": "42.20",
+      "review_status": "verified",
+      "reviewed_at": "2026-09-23",
+      "fields_verified": [
+        "signature",
+        "parameters",
+        "return_type",
+        "effects"
+      ]
+    },
+    "api-9a1e3b6792053a11": {
+      "kind": "reviewed-api-evidence",
+      "source_url": "https://dev.epicgames.com/documentation/en-us/fortnite/verse-api/fortnitedotcom/characters/getfortcharacter",
+      "api_version": "42.20",
+      "review_status": "verified",
+      "reviewed_at": "2026-09-23",
+      "fields_verified": [
+        "signature",
+        "parameters",
+        "return_type",
+        "effects"
+      ]
+    },
+    "api-9b28ad234c95d57f": {
+      "kind": "reviewed-api-evidence",
+      "source_url": "https://dev.epicgames.com/documentation/fortnite/verse-api/unrealenginedotcom/temporary/ui/makecanvasslot",
+      "api_version": "42.20",
+      "review_status": "verified",
+      "reviewed_at": "2026-09-23",
+      "fields_verified": [
+        "signature",
+        "parameters",
+        "return_type",
+        "effects"
+      ]
+    },
+    "src-05e1f1a0e5b9c1e7": {
+      "kind": "source",
+      "source_url": "https://dev.epicgames.com/documentation/fortnite/verse-api/versedotorg/scenegraph/component/onbeginsimulation",
+      "source_trust": "signature-verified",
+      "api_version": "42.20"
+    },
+    "src-0e95ca8fb5e27a11": {
+      "kind": "source",
+      "source_url": "https://dev.epicgames.com/documentation/fortnite/verse-api/unrealenginedotcom/temporary/ui/canvas_slot",
+      "source_trust": "api-page-verified",
+      "api_version": "42.20"
+    },
+    "src-107f03e09d5ea6a7": {
+      "kind": "source",
+      "source_url": "https://dev.epicgames.com/documentation/fortnite/verse-api/fortnitedotcom/devices/sentry_device",
+      "source_trust": "api-page-verified",
+      "api_version": "42.20"
+    },
+    "src-140aea02325b1544": {
+      "kind": "source",
+      "source_url": "https://dev.epicgames.com/documentation/fortnite/verse-api/unrealenginedotcom/temporary/ui/material_block",
+      "source_trust": "api-page-verified",
+      "api_version": "42.20"
+    },
+    "src-234cb31af10bafb8": {
+      "kind": "source",
+      "source_url": "https://dev.epicgames.com/documentation/fortnite/verse-api/fortnitedotcom/devices/prop_manipulator_device",
+      "source_trust": "api-page-verified",
+      "api_version": "42.20"
+    },
+    "src-257e35bef907df3d": {
+      "kind": "source",
+      "source_url": "https://dev.epicgames.com/documentation/fortnite/verse-api/unrealenginedotcom/temporary/ui",
+      "source_trust": "official-current",
+      "api_version": "42.20"
+    },
+    "src-291c52266f166333": {
+      "kind": "source",
+      "source_url": "https://dev.epicgames.com/documentation/fortnite/verse-api/fortnitedotcom/devices/vfx_creator_device",
+      "source_trust": "api-page-verified",
+      "api_version": "42.20"
+    },
+    "src-2a0b8e7d2d237194": {
+      "kind": "source",
+      "source_url": "https://dev.epicgames.com/documentation/fortnite/verse-api/fortnitedotcom/devices/mutator_zone_device",
+      "source_trust": "api-page-verified",
+      "api_version": "42.20"
+    },
+    "src-2a4ee15ed4a6c1e1": {
+      "kind": "source",
+      "source_url": "https://dev.epicgames.com/documentation/fortnite/verse-api/fortnitedotcom/devices/creative_object",
+      "source_trust": "api-page-verified",
+      "api_version": "42.20"
+    },
+    "src-2b5444d75f0bdd46": {
+      "kind": "source",
+      "source_url": "https://dev.epicgames.com/documentation/en-us/fortnite/verse-api/fortnitedotcom/devices/getplayspace",
+      "source_trust": "signature-verified",
+      "api_version": "42.20"
+    },
+    "src-370cb7323f84b6bd": {
+      "kind": "source",
+      "source_url": "https://dev.epicgames.com/documentation/fortnite/verse-api/versedotorg/scenegraph/component/onsimulate",
+      "source_trust": "signature-verified",
+      "api_version": "42.20"
+    },
+    "src-41df195b1800706f": {
+      "kind": "source",
+      "source_url": "https://dev.epicgames.com/documentation/fortnite/verse-api/versedotorg/scenegraph/keyframedmovement",
+      "source_trust": "official-current",
+      "api_version": "42.20"
+    },
+    "src-42fe8b15354cfc24": {
+      "kind": "source",
+      "source_url": "https://dev.epicgames.com/documentation/en-us/fortnite/verse-api/fortnitedotcom/characters/getfortcharacter",
+      "source_trust": "signature-verified",
+      "api_version": "42.20"
+    },
+    "src-4455b3671e1e89d5": {
+      "kind": "source",
+      "source_url": "https://dev.epicgames.com/documentation/fortnite/verse-standup-comedy-club-template-in-unreal-editor-for-fortnite",
+      "source_trust": "official-current",
+      "api_version": "42.20"
+    },
+    "src-4639f54ebf7c1dc4": {
+      "kind": "source",
+      "source_url": "https://dev.epicgames.com/documentation/fortnite/verse-api/fortnitedotcom/devices/vfx_spawner_device",
+      "source_trust": "api-page-verified",
+      "api_version": "42.20"
+    },
+    "src-46acaae254c0349e": {
+      "kind": "source",
+      "source_url": "https://dev.epicgames.com/documentation/fortnite/verse-api/unrealenginedotcom/temporary/ui/stack_box_slot",
+      "source_trust": "api-page-verified",
+      "api_version": "42.20"
+    },
+    "src-46cd8434553849b9": {
+      "kind": "source",
+      "source_url": "https://dev.epicgames.com/documentation/fortnite/verse-api/fortnitedotcom/devices/hud_message_device",
+      "source_trust": "official-current",
+      "api_version": "42.20"
+    },
+    "src-4986222e2b683d7d": {
+      "kind": "source",
+      "source_url": "https://dev.epicgames.com/documentation/fortnite/verse-api/fortnitedotcom/playspaces/fort_playspace",
+      "source_trust": "official-current",
+      "api_version": "42.20"
+    },
+    "src-4aef325446496f4c": {
+      "kind": "source",
+      "source_url": "https://dev.epicgames.com/documentation/fortnite/verse-api/fortnitedotcom/devices/trigger_device",
+      "source_trust": "official-current",
+      "api_version": "42.20"
+    },
+    "src-523828f10e23719e": {
+      "kind": "source",
+      "source_url": "https://dev.epicgames.com/documentation/fortnite/verse-api/unrealenginedotcom/temporary/ui/stack_box",
+      "source_trust": "api-page-verified",
+      "api_version": "42.20"
+    },
+    "src-59c4fd9834d9ca20": {
+      "kind": "source",
+      "source_url": "https://dev.epicgames.com/documentation/fortnite/verse-api/unrealenginedotcom/temporary/ui/color_block",
+      "source_trust": "api-page-verified",
+      "api_version": "42.20"
+    },
+    "src-5c03b3f5b07c9b22": {
+      "kind": "source",
+      "source_url": "https://dev.epicgames.com/documentation/fortnite/verse-api/fortnitedotcom/devices/player_spawner_device",
+      "source_trust": "official-current",
+      "api_version": "42.20"
+    },
+    "src-5fd0e7f7fd362d03": {
+      "kind": "source",
+      "source_url": "https://dev.epicgames.com/documentation/fortnite/verse-api/fortnitedotcom/devices/map_controller_device",
+      "source_trust": "api-page-verified",
+      "api_version": "42.20"
+    },
+    "src-612a8b9558ba92fc": {
+      "kind": "source",
+      "source_url": "https://dev.epicgames.com/documentation/fortnite/verse-api/fortnitedotcom/devices/character_device",
+      "source_trust": "api-page-verified",
+      "api_version": "42.20"
+    },
+    "src-62bf7acf8ee44303": {
+      "kind": "source",
+      "source_url": "https://dev.epicgames.com/documentation/fortnite/verse-api/fortnitedotcom/teams/fort_team_collection/getteams",
+      "source_trust": "signature-verified",
+      "api_version": "42.20"
+    },
+    "src-66e711e61389df81": {
+      "kind": "source",
+      "source_url": "https://dev.epicgames.com/documentation/fortnite/verse-api/fortnitedotcom/devices/conditional_button_device",
+      "source_trust": "official-current",
+      "api_version": "42.20"
+    },
+    "src-6825e1fa7ed47b73": {
+      "kind": "source",
+      "source_url": "https://dev.epicgames.com/documentation/fortnite/verse-api/unrealenginedotcom/temporary/ui/makecanvasslot",
+      "source_trust": "signature-verified",
+      "api_version": "42.20"
+    },
+    "src-6a71e5bfcb6de4dd": {
+      "kind": "source",
+      "source_url": "https://dev.epicgames.com/documentation/fortnite/verse-api/unrealenginedotcom/temporary/ui/texture_block",
+      "source_trust": "api-page-verified",
+      "api_version": "42.20"
+    },
+    "src-6e35e3f69ba2fdfc": {
+      "kind": "source",
+      "source_url": "https://dev.epicgames.com/documentation/fortnite/verse-api/fortnitedotcom/teams/fort_team_collection",
+      "source_trust": "api-page-verified",
+      "api_version": "42.20"
+    },
+    "src-6f15b9df6ea10854": {
+      "kind": "source",
+      "source_url": "https://dev.epicgames.com/documentation/fortnite/verse-api/fortnitedotcom/devices/end_game_device",
+      "source_trust": "api-page-verified",
+      "api_version": "42.20"
+    },
+    "src-6f55a8fb4c841a7b": {
+      "kind": "source",
+      "source_url": "https://dev.epicgames.com/documentation/fortnite/verse-api/fortnitedotcom/devices/item_granter_device",
+      "source_trust": "official-current",
+      "api_version": "42.20"
+    },
+    "src-7566db21970ce266": {
+      "kind": "source",
+      "source_url": "https://dev.epicgames.com/documentation/fortnite/verse-api/fortnitedotcom/devices/audio_player_device",
+      "source_trust": "api-page-verified",
+      "api_version": "42.20"
+    },
+    "src-79e5692debecb386": {
+      "kind": "source",
+      "source_url": "https://dev.epicgames.com/documentation/fortnite/verse-api/fortnitedotcom/devices/creative_device",
+      "source_trust": "official-current",
+      "api_version": "42.20"
+    },
+    "src-7aa787c85ba0dc97": {
+      "kind": "source",
+      "source_url": "https://dev.epicgames.com/documentation/fortnite/verse-api/fortnitedotcom/vehicles",
+      "source_trust": "official-current",
+      "api_version": "42.20"
+    },
+    "src-807547d6c467c99c": {
+      "kind": "source",
+      "source_url": "https://dev.epicgames.com/documentation/en-us/fortnite/verse-api/unrealenginedotcom/temporary/ui/getplayerui",
+      "source_trust": "signature-verified",
+      "api_version": "42.20"
+    },
+    "src-820021de65a7c1d2": {
+      "kind": "source",
+      "source_url": "https://dev.epicgames.com/documentation/fortnite/verse-api/fortnitedotcom/vehicles/fort_vehicle/getdrivers",
+      "source_trust": "signature-verified",
+      "api_version": "42.20"
+    },
+    "src-82785b60c51511b0": {
+      "kind": "source",
+      "source_url": "https://dev.epicgames.com/documentation/fortnite/verse-api/fortnitedotcom/devices/volume_device",
+      "source_trust": "api-page-verified",
+      "api_version": "42.20"
+    },
+    "src-8864015183ac1ea7": {
+      "kind": "source",
+      "source_url": "https://dev.epicgames.com/documentation/fortnite/verse-api/fortnitedotcom/devices/button_device",
+      "source_trust": "official-current",
+      "api_version": "42.20"
+    },
+    "src-8881d8184a2c1af1": {
+      "kind": "source",
+      "source_url": "https://dev.epicgames.com/documentation/fortnite/verse-api/fortnitedotcom/ui",
+      "source_trust": "official-current",
+      "api_version": "42.20"
+    },
+    "src-8a29089bdfb48a92": {
+      "kind": "source",
+      "source_url": "https://dev.epicgames.com/documentation/fortnite/verse-api/fortnitedotcom/devices/creative_device_base",
+      "source_trust": "api-page-verified",
+      "api_version": "42.20"
+    },
+    "src-8f8b75a71ac716bc": {
+      "kind": "source",
+      "source_url": "https://dev.epicgames.com/documentation/fortnite/verse-api/unrealenginedotcom/temporary/ui/overlay",
+      "source_trust": "api-page-verified",
+      "api_version": "42.20"
+    },
+    "src-984e3d49d130fa2b": {
+      "kind": "source",
+      "source_url": "https://dev.epicgames.com/documentation/fortnite/verse-api/fortnitedotcom/devices/conversation_device",
+      "source_trust": "api-page-verified",
+      "api_version": "42.20"
+    },
+    "src-98e1b40496f27337": {
+      "kind": "source",
+      "source_url": "https://dev.epicgames.com/documentation/fortnite/verse-api/fortnitedotcom/devices/capture_area_device",
+      "source_trust": "api-page-verified",
+      "api_version": "42.20"
+    },
+    "src-99050cc9fcdae437": {
+      "kind": "source",
+      "source_url": "https://dev.epicgames.com/documentation/fortnite/verse-api/unrealenginedotcom/temporary/ui/widget",
+      "source_trust": "api-page-verified",
+      "api_version": "42.20"
+    },
+    "src-996eb92639c6571e": {
+      "kind": "source",
+      "source_url": "https://dev.epicgames.com/documentation/fortnite/verse-api/unrealenginedotcom/temporary/ui/button",
+      "source_trust": "api-page-verified",
+      "api_version": "42.20"
+    },
+    "src-9a8474b62b67d00c": {
+      "kind": "source",
+      "source_url": "https://dev.epicgames.com/documentation/fortnite/verse-api/unrealenginedotcom/temporary/ui/player_ui",
+      "source_trust": "api-page-verified",
+      "api_version": "42.20"
+    },
+    "src-a1bae96a888d7c00": {
+      "kind": "source",
+      "source_url": "https://dev.epicgames.com/documentation/fortnite/verse-api/fortnitedotcom/devices/input_trigger_device",
+      "source_trust": "api-page-verified",
+      "api_version": "42.20"
+    },
+    "src-aa9ba24be44d59be": {
+      "kind": "source",
+      "source_url": "https://dev.epicgames.com/documentation/fortnite/verse-api/fortnitedotcom/devices/class_and_team_selector_device",
+      "source_trust": "api-page-verified",
+      "api_version": "42.20"
+    },
+    "src-b505e7d50de6c19f": {
+      "kind": "source",
+      "source_url": "https://dev.epicgames.com/documentation/fortnite/verse-api/fortnitedotcom/devices/teleporter_device",
+      "source_trust": "official-current",
+      "api_version": "42.20"
+    },
+    "src-b5aad23cc8884ca4": {
+      "kind": "source",
+      "source_url": "https://dev.epicgames.com/documentation/fortnite/verse-api/versedotorg/scenegraph",
+      "source_trust": "official-current",
+      "api_version": "42.20"
+    },
+    "src-ba0f9f0713d749c2": {
+      "kind": "source",
+      "source_url": "https://dev.epicgames.com/documentation/fortnite/verse-api/unrealenginedotcom/temporary/ui/canvas",
+      "source_trust": "api-page-verified",
+      "api_version": "42.20"
+    },
+    "src-ba212c2dcef62fda": {
+      "kind": "source",
+      "source_url": "https://dev.epicgames.com/documentation/fortnite/verse-api/fortnitedotcom/teams/fort_team_collection/addtoteam",
+      "source_trust": "signature-verified",
+      "api_version": "42.20"
+    },
+    "src-ba4f74799bc7c8e0": {
+      "kind": "source",
+      "source_url": "https://dev.epicgames.com/documentation/fortnite/verse-api/fortnitedotcom/vehicles/fort_vehicle",
+      "source_trust": "api-page-verified",
+      "api_version": "42.20"
+    },
+    "src-bd5266b7ebf097ea": {
+      "kind": "source",
+      "source_url": "https://dev.epicgames.com/documentation/fortnite/change-a-players-point-of-view-with-cameras-in-unreal-editor-for-fortnite",
+      "source_trust": "official-current",
+      "api_version": "42.20"
+    },
+    "src-c0526ba7bd095a06": {
+      "kind": "source",
+      "source_url": "https://dev.epicgames.com/documentation/fortnite/verse-api/fortnitedotcom/devices/item_remover_device",
+      "source_trust": "official-current",
+      "api_version": "42.20"
+    },
+    "src-c1db4974669443af": {
+      "kind": "source",
+      "source_url": "https://dev.epicgames.com/documentation/fortnite/verse-api/fortnitedotcom/devices/score_manager_device",
+      "source_trust": "api-page-verified",
+      "api_version": "42.20"
+    },
+    "src-c5ee1750ed00df95": {
+      "kind": "source",
+      "source_url": "https://dev.epicgames.com/documentation/fortnite/verse-api/fortnitedotcom/devices/popup_dialog_device",
+      "source_trust": "api-page-verified",
+      "api_version": "42.20"
+    },
+    "src-c761145741f68f6e": {
+      "kind": "source",
+      "source_url": "https://dev.epicgames.com/documentation/fortnite/verse-start-02-timer-system-in-fortnite",
+      "source_trust": "official-current",
+      "api_version": "42.20"
+    },
+    "src-c9f667566bcb2359": {
+      "kind": "source",
+      "source_url": "https://dev.epicgames.com/documentation/fortnite/verse-api/fortnitedotcom/teams",
+      "source_trust": "official-current",
+      "api_version": "42.20"
+    },
+    "src-d27272da850eaf97": {
+      "kind": "source",
+      "source_url": "https://dev.epicgames.com/documentation/fortnite/verse-api/fortnitedotcom/devices/team_settings_and_inventory_device",
+      "source_trust": "api-page-verified",
+      "api_version": "42.20"
+    },
+    "src-dd6493310e347628": {
+      "kind": "source",
+      "source_url": "https://dev.epicgames.com/documentation/fortnite/verse-api/fortnitedotcom/devices/tracker_device",
+      "source_trust": "api-page-verified",
+      "api_version": "42.20"
+    },
+    "src-df6815e810db66d4": {
+      "kind": "source",
+      "source_url": "https://dev.epicgames.com/documentation/fortnite/verse-api/fortnitedotcom/teams/fort_team_collection/getteam",
+      "source_trust": "signature-verified",
+      "api_version": "42.20"
+    },
+    "src-e06cf634ec6539ca": {
+      "kind": "source",
+      "source_url": "https://dev.epicgames.com/documentation/fortnite/verse-api/fortnitedotcom/devices/switch_device",
+      "source_trust": "api-page-verified",
+      "api_version": "42.20"
+    },
+    "src-e6faeb72aaee6911": {
+      "kind": "source",
+      "source_url": "https://dev.epicgames.com/documentation/fortnite/verse-api/fortnitedotcom/devices/elimination_manager_device",
+      "source_trust": "api-page-verified",
+      "api_version": "42.20"
+    },
+    "src-eae608efd2e25e56": {
+      "kind": "source",
+      "source_url": "https://dev.epicgames.com/documentation/fortnite/verse-api/fortnitedotcom/devices/trigger_base_device",
+      "source_trust": "api-page-verified",
+      "api_version": "42.20"
+    },
+    "src-ef929d1c3cac7833": {
+      "kind": "source",
+      "source_url": "https://dev.epicgames.com/documentation/fortnite/verse-api/fortnitedotcom/vehicles/getvehicle",
+      "source_trust": "signature-verified",
+      "api_version": "42.20"
+    },
+    "src-f207948c0d6081ec": {
+      "kind": "source",
+      "source_url": "https://dev.epicgames.com/documentation/fortnite/verse-api/fortnitedotcom/devices/barrier_device",
+      "source_trust": "api-page-verified",
+      "api_version": "42.20"
+    },
+    "src-f417ca3892bd4a1a": {
+      "kind": "source",
+      "source_url": "https://dev.epicgames.com/documentation/fortnite/verse-api/fortnitedotcom/devices/player_reference_device",
+      "source_trust": "api-page-verified",
+      "api_version": "42.20"
+    },
+    "src-f51d757da6e8a06d": {
+      "kind": "source",
+      "source_url": "https://dev.epicgames.com/documentation/fortnite/verse-api/fortnitedotcom/characters/fort_character",
+      "source_trust": "official-current",
+      "api_version": "42.20"
+    },
+    "src-f9df20c543641eed": {
+      "kind": "source",
+      "source_url": "https://dev.epicgames.com/documentation/fortnite/verse-api/fortnitedotcom/devices/damage_volume_device",
+      "source_trust": "api-page-verified",
+      "api_version": "42.20"
+    },
+    "src-fbdc6fad5ca31dcb": {
+      "kind": "source",
+      "source_url": "https://dev.epicgames.com/documentation/fortnite/verse-api/fortnitedotcom/devices/item_placer_device",
+      "source_trust": "api-page-verified",
+      "api_version": "42.20"
+    },
+    "src-fbe876c21f624f47": {
+      "kind": "source",
+      "source_url": "https://dev.epicgames.com/documentation/fortnite/verse-api/fortnitedotcom/vehicles/fort_vehicle/getseats",
+      "source_trust": "signature-verified",
+      "api_version": "42.20"
+    }
+  },
+  "symbols": {
+    "anchors": {
+      "claim_state": "presence-only",
+      "revalidation": {
+        "status": "current",
+        "api_version": "42.20",
+        "reason": null
+      },
+      "fields": {
+        "presence": [
+          "src-257e35bef907df3d"
+        ],
+        "module": [
+          "src-257e35bef907df3d"
+        ],
+        "kind": [
+          "src-257e35bef907df3d"
+        ],
+        "signature": [],
+        "parameters": [],
+        "return_type": [],
+        "effects": [],
+        "event_names": [],
+        "event_payloads": [],
+        "member_names": []
+      }
+    },
+    "audio_player_device": {
+      "claim_state": "presence-only",
+      "revalidation": {
+        "status": "current",
+        "api_version": "42.20",
+        "reason": null
+      },
+      "fields": {
+        "presence": [
+          "src-7566db21970ce266"
+        ],
+        "module": [
+          "src-7566db21970ce266"
+        ],
+        "kind": [
+          "src-7566db21970ce266"
+        ],
+        "signature": [],
+        "parameters": [],
+        "return_type": [],
+        "effects": [],
+        "event_names": [],
+        "event_payloads": [],
+        "member_names": [
+          "src-7566db21970ce266"
+        ]
+      }
+    },
+    "barrier_device": {
+      "claim_state": "presence-only",
+      "revalidation": {
+        "status": "current",
+        "api_version": "42.20",
+        "reason": null
+      },
+      "fields": {
+        "presence": [
+          "src-f207948c0d6081ec"
+        ],
+        "module": [
+          "src-f207948c0d6081ec"
+        ],
+        "kind": [
+          "src-f207948c0d6081ec"
+        ],
+        "signature": [],
+        "parameters": [],
+        "return_type": [],
+        "effects": [],
+        "event_names": [],
+        "event_payloads": [],
+        "member_names": [
+          "src-f207948c0d6081ec"
+        ]
+      }
+    },
+    "basic_interactable_component": {
+      "claim_state": "presence-only",
+      "revalidation": {
+        "status": "current",
+        "api_version": "42.20",
+        "reason": null
+      },
+      "fields": {
+        "presence": [
+          "src-b5aad23cc8884ca4"
+        ],
+        "module": [
+          "src-b5aad23cc8884ca4"
+        ],
+        "kind": [
+          "src-b5aad23cc8884ca4"
+        ],
+        "signature": [],
+        "parameters": [],
+        "return_type": [],
+        "effects": [],
+        "event_names": [],
+        "event_payloads": [],
+        "member_names": []
+      }
+    },
+    "basic_stackable_component": {
+      "claim_state": "presence-only",
+      "revalidation": {
+        "status": "current",
+        "api_version": "42.20",
+        "reason": null
+      },
+      "fields": {
+        "presence": [
+          "src-b5aad23cc8884ca4"
+        ],
+        "module": [
+          "src-b5aad23cc8884ca4"
+        ],
+        "kind": [
+          "src-b5aad23cc8884ca4"
+        ],
+        "signature": [],
+        "parameters": [],
+        "return_type": [],
+        "effects": [],
+        "event_names": [],
+        "event_payloads": [],
+        "member_names": []
+      }
+    },
+    "button": {
+      "claim_state": "presence-only",
+      "revalidation": {
+        "status": "current",
+        "api_version": "42.20",
+        "reason": null
+      },
+      "fields": {
+        "presence": [
+          "src-996eb92639c6571e"
+        ],
+        "module": [
+          "src-996eb92639c6571e"
+        ],
+        "kind": [
+          "src-996eb92639c6571e"
+        ],
+        "signature": [],
+        "parameters": [],
+        "return_type": [],
+        "effects": [],
+        "event_names": [],
+        "event_payloads": [],
+        "member_names": [
+          "src-996eb92639c6571e"
+        ]
+      }
+    },
+    "button_device": {
+      "claim_state": "presence-only",
+      "revalidation": {
+        "status": "current",
+        "api_version": "42.20",
+        "reason": null
+      },
+      "fields": {
+        "presence": [
+          "src-8864015183ac1ea7"
+        ],
+        "module": [
+          "src-8864015183ac1ea7"
+        ],
+        "kind": [
+          "src-8864015183ac1ea7"
+        ],
+        "signature": [],
+        "parameters": [],
+        "return_type": [],
+        "effects": [],
+        "event_names": [
+          "src-8864015183ac1ea7"
+        ],
+        "event_payloads": [],
+        "member_names": [
+          "src-8864015183ac1ea7"
+        ]
+      }
+    },
+    "button_loud": {
+      "claim_state": "presence-only",
+      "revalidation": {
+        "status": "current",
+        "api_version": "42.20",
+        "reason": null
+      },
+      "fields": {
+        "presence": [
+          "src-8881d8184a2c1af1"
+        ],
+        "module": [
+          "src-8881d8184a2c1af1"
+        ],
+        "kind": [
+          "src-8881d8184a2c1af1"
+        ],
+        "signature": [],
+        "parameters": [],
+        "return_type": [],
+        "effects": [],
+        "event_names": [],
+        "event_payloads": [],
+        "member_names": []
+      }
+    },
+    "button_quiet": {
+      "claim_state": "presence-only",
+      "revalidation": {
+        "status": "current",
+        "api_version": "42.20",
+        "reason": null
+      },
+      "fields": {
+        "presence": [
+          "src-8881d8184a2c1af1"
+        ],
+        "module": [
+          "src-8881d8184a2c1af1"
+        ],
+        "kind": [
+          "src-8881d8184a2c1af1"
+        ],
+        "signature": [],
+        "parameters": [],
+        "return_type": [],
+        "effects": [],
+        "event_names": [],
+        "event_payloads": [],
+        "member_names": []
+      }
+    },
+    "button_regular": {
+      "claim_state": "presence-only",
+      "revalidation": {
+        "status": "current",
+        "api_version": "42.20",
+        "reason": null
+      },
+      "fields": {
+        "presence": [
+          "src-8881d8184a2c1af1"
+        ],
+        "module": [
+          "src-8881d8184a2c1af1"
+        ],
+        "kind": [
+          "src-8881d8184a2c1af1"
+        ],
+        "signature": [],
+        "parameters": [],
+        "return_type": [],
+        "effects": [],
+        "event_names": [],
+        "event_payloads": [],
+        "member_names": []
+      }
+    },
+    "button_slot": {
+      "claim_state": "presence-only",
+      "revalidation": {
+        "status": "current",
+        "api_version": "42.20",
+        "reason": null
+      },
+      "fields": {
+        "presence": [
+          "src-257e35bef907df3d"
+        ],
+        "module": [
+          "src-257e35bef907df3d"
+        ],
+        "kind": [
+          "src-257e35bef907df3d"
+        ],
+        "signature": [],
+        "parameters": [],
+        "return_type": [],
+        "effects": [],
+        "event_names": [],
+        "event_payloads": [],
+        "member_names": []
+      }
+    },
+    "camera_body": {
+      "claim_state": "presence-only",
+      "revalidation": {
+        "status": "current",
+        "api_version": "42.20",
+        "reason": null
+      },
+      "fields": {
+        "presence": [
+          "src-b5aad23cc8884ca4"
+        ],
+        "module": [
+          "src-b5aad23cc8884ca4"
+        ],
+        "kind": [
+          "src-b5aad23cc8884ca4"
+        ],
+        "signature": [],
+        "parameters": [],
+        "return_type": [],
+        "effects": [],
+        "event_names": [],
+        "event_payloads": [],
+        "member_names": []
+      }
+    },
+    "camera_component": {
+      "claim_state": "presence-only",
+      "revalidation": {
+        "status": "current",
+        "api_version": "42.20",
+        "reason": null
+      },
+      "fields": {
+        "presence": [
+          "src-b5aad23cc8884ca4"
+        ],
+        "module": [
+          "src-b5aad23cc8884ca4"
+        ],
+        "kind": [
+          "src-b5aad23cc8884ca4"
+        ],
+        "signature": [],
+        "parameters": [],
+        "return_type": [],
+        "effects": [],
+        "event_names": [],
+        "event_payloads": [],
+        "member_names": []
+      }
+    },
+    "camera_director_component": {
+      "claim_state": "presence-only",
+      "revalidation": {
+        "status": "current",
+        "api_version": "42.20",
+        "reason": null
+      },
+      "fields": {
+        "presence": [
+          "src-b5aad23cc8884ca4"
+        ],
+        "module": [
+          "src-b5aad23cc8884ca4"
+        ],
+        "kind": [
+          "src-b5aad23cc8884ca4"
+        ],
+        "signature": [],
+        "parameters": [],
+        "return_type": [],
+        "effects": [],
+        "event_names": [],
+        "event_payloads": [],
+        "member_names": []
+      }
+    },
+    "camera_projection_mode": {
+      "claim_state": "presence-only",
+      "revalidation": {
+        "status": "current",
+        "api_version": "42.20",
+        "reason": null
+      },
+      "fields": {
+        "presence": [
+          "src-b5aad23cc8884ca4"
+        ],
+        "module": [
+          "src-b5aad23cc8884ca4"
+        ],
+        "kind": [
+          "src-b5aad23cc8884ca4"
+        ],
+        "signature": [],
+        "parameters": [],
+        "return_type": [],
+        "effects": [],
+        "event_names": [],
+        "event_payloads": [],
+        "member_names": []
+      }
+    },
+    "camera_transition_initial_orientation": {
+      "claim_state": "presence-only",
+      "revalidation": {
+        "status": "current",
+        "api_version": "42.20",
+        "reason": null
+      },
+      "fields": {
+        "presence": [
+          "src-b5aad23cc8884ca4"
+        ],
+        "module": [
+          "src-b5aad23cc8884ca4"
+        ],
+        "kind": [
+          "src-b5aad23cc8884ca4"
+        ],
+        "signature": [],
+        "parameters": [],
+        "return_type": [],
+        "effects": [],
+        "event_names": [],
+        "event_payloads": [],
+        "member_names": []
+      }
+    },
+    "canvas": {
+      "claim_state": "presence-only",
+      "revalidation": {
+        "status": "current",
+        "api_version": "42.20",
+        "reason": null
+      },
+      "fields": {
+        "presence": [
+          "src-ba0f9f0713d749c2"
+        ],
+        "module": [
+          "src-ba0f9f0713d749c2"
+        ],
+        "kind": [
+          "src-ba0f9f0713d749c2"
+        ],
+        "signature": [],
+        "parameters": [],
+        "return_type": [],
+        "effects": [],
+        "event_names": [],
+        "event_payloads": [],
+        "member_names": [
+          "src-ba0f9f0713d749c2"
+        ]
+      }
+    },
+    "canvas_slot": {
+      "claim_state": "presence-only",
+      "revalidation": {
+        "status": "current",
+        "api_version": "42.20",
+        "reason": null
+      },
+      "fields": {
+        "presence": [
+          "src-0e95ca8fb5e27a11"
+        ],
+        "module": [
+          "src-0e95ca8fb5e27a11"
+        ],
+        "kind": [
+          "src-0e95ca8fb5e27a11"
+        ],
+        "signature": [],
+        "parameters": [],
+        "return_type": [],
+        "effects": [],
+        "event_names": [],
+        "event_payloads": [],
+        "member_names": []
+      }
+    },
+    "capture_area_device": {
+      "claim_state": "presence-only",
+      "revalidation": {
+        "status": "current",
+        "api_version": "42.20",
+        "reason": null
+      },
+      "fields": {
+        "presence": [
+          "src-98e1b40496f27337"
+        ],
+        "module": [
+          "src-98e1b40496f27337"
+        ],
+        "kind": [
+          "src-98e1b40496f27337"
+        ],
+        "signature": [],
+        "parameters": [],
+        "return_type": [],
+        "effects": [],
+        "event_names": [
+          "src-98e1b40496f27337"
+        ],
+        "event_payloads": [],
+        "member_names": []
+      }
+    },
+    "chair_device": {
+      "claim_state": "presence-only",
+      "revalidation": {
+        "status": "current",
+        "api_version": "42.20",
+        "reason": null
+      },
+      "fields": {
+        "presence": [
+          "src-4455b3671e1e89d5"
+        ],
+        "module": [
+          "src-4455b3671e1e89d5"
+        ],
+        "kind": [
+          "src-4455b3671e1e89d5"
+        ],
+        "signature": [],
+        "parameters": [],
+        "return_type": [],
+        "effects": [],
+        "event_names": [],
+        "event_payloads": [],
+        "member_names": []
+      }
+    },
+    "change_max_stack_size_result": {
+      "claim_state": "presence-only",
+      "revalidation": {
+        "status": "current",
+        "api_version": "42.20",
+        "reason": null
+      },
+      "fields": {
+        "presence": [
+          "src-b5aad23cc8884ca4"
+        ],
+        "module": [
+          "src-b5aad23cc8884ca4"
+        ],
+        "kind": [
+          "src-b5aad23cc8884ca4"
+        ],
+        "signature": [],
+        "parameters": [],
+        "return_type": [],
+        "effects": [],
+        "event_names": [],
+        "event_payloads": [],
+        "member_names": []
+      }
+    },
+    "change_stack_size_result": {
+      "claim_state": "presence-only",
+      "revalidation": {
+        "status": "current",
+        "api_version": "42.20",
+        "reason": null
+      },
+      "fields": {
+        "presence": [
+          "src-b5aad23cc8884ca4"
+        ],
+        "module": [
+          "src-b5aad23cc8884ca4"
+        ],
+        "kind": [
+          "src-b5aad23cc8884ca4"
+        ],
+        "signature": [],
+        "parameters": [],
+        "return_type": [],
+        "effects": [],
+        "event_names": [],
+        "event_payloads": [],
+        "member_names": []
+      }
+    },
+    "character_device": {
+      "claim_state": "presence-only",
+      "revalidation": {
+        "status": "current",
+        "api_version": "42.20",
+        "reason": null
+      },
+      "fields": {
+        "presence": [
+          "src-612a8b9558ba92fc"
+        ],
+        "module": [
+          "src-612a8b9558ba92fc"
+        ],
+        "kind": [
+          "src-612a8b9558ba92fc"
+        ],
+        "signature": [],
+        "parameters": [],
+        "return_type": [],
+        "effects": [],
+        "event_names": [
+          "src-612a8b9558ba92fc"
+        ],
+        "event_payloads": [],
+        "member_names": [
+          "src-612a8b9558ba92fc"
+        ]
+      }
+    },
+    "children_streaming_policy": {
+      "claim_state": "presence-only",
+      "revalidation": {
+        "status": "current",
+        "api_version": "42.20",
+        "reason": null
+      },
+      "fields": {
+        "presence": [
+          "src-b5aad23cc8884ca4"
+        ],
+        "module": [
+          "src-b5aad23cc8884ca4"
+        ],
+        "kind": [
+          "src-b5aad23cc8884ca4"
+        ],
+        "signature": [],
+        "parameters": [],
+        "return_type": [],
+        "effects": [],
+        "event_names": [],
+        "event_payloads": [],
+        "member_names": []
+      }
+    },
+    "cinematic_sequence_device": {
+      "claim_state": "presence-only",
+      "revalidation": {
+        "status": "current",
+        "api_version": "42.20",
+        "reason": null
+      },
+      "fields": {
+        "presence": [
+          "src-bd5266b7ebf097ea"
+        ],
+        "module": [
+          "src-bd5266b7ebf097ea"
+        ],
+        "kind": [
+          "src-bd5266b7ebf097ea"
+        ],
+        "signature": [],
+        "parameters": [],
+        "return_type": [],
+        "effects": [],
+        "event_names": [],
+        "event_payloads": [],
+        "member_names": []
+      }
+    },
+    "class_and_team_selector_device": {
+      "claim_state": "presence-only",
+      "revalidation": {
+        "status": "current",
+        "api_version": "42.20",
+        "reason": null
+      },
+      "fields": {
+        "presence": [
+          "src-aa9ba24be44d59be"
+        ],
+        "module": [
+          "src-aa9ba24be44d59be"
+        ],
+        "kind": [
+          "src-aa9ba24be44d59be"
+        ],
+        "signature": [],
+        "parameters": [],
+        "return_type": [],
+        "effects": [],
+        "event_names": [
+          "src-aa9ba24be44d59be"
+        ],
+        "event_payloads": [],
+        "member_names": [
+          "src-aa9ba24be44d59be"
+        ]
+      }
+    },
+    "collision_interaction": {
+      "claim_state": "presence-only",
+      "revalidation": {
+        "status": "current",
+        "api_version": "42.20",
+        "reason": null
+      },
+      "fields": {
+        "presence": [
+          "src-b5aad23cc8884ca4"
+        ],
+        "module": [
+          "src-b5aad23cc8884ca4"
+        ],
+        "kind": [
+          "src-b5aad23cc8884ca4"
+        ],
+        "signature": [],
+        "parameters": [],
+        "return_type": [],
+        "effects": [],
+        "event_names": [],
+        "event_payloads": [],
+        "member_names": []
+      }
+    },
+    "color_block": {
+      "claim_state": "presence-only",
+      "revalidation": {
+        "status": "current",
+        "api_version": "42.20",
+        "reason": null
+      },
+      "fields": {
+        "presence": [
+          "src-59c4fd9834d9ca20"
+        ],
+        "module": [
+          "src-59c4fd9834d9ca20"
+        ],
+        "kind": [
+          "src-59c4fd9834d9ca20"
+        ],
+        "signature": [],
+        "parameters": [],
+        "return_type": [],
+        "effects": [],
+        "event_names": [],
+        "event_payloads": [],
+        "member_names": [
+          "src-59c4fd9834d9ca20"
+        ]
+      }
+    },
+    "common_rarity": {
+      "claim_state": "presence-only",
+      "revalidation": {
+        "status": "current",
+        "api_version": "42.20",
+        "reason": null
+      },
+      "fields": {
+        "presence": [
+          "src-b5aad23cc8884ca4"
+        ],
+        "module": [
+          "src-b5aad23cc8884ca4"
+        ],
+        "kind": [
+          "src-b5aad23cc8884ca4"
+        ],
+        "signature": [],
+        "parameters": [],
+        "return_type": [],
+        "effects": [],
+        "event_names": [],
+        "event_payloads": [],
+        "member_names": []
+      }
+    },
+    "component.OnBeginSimulation": {
+      "claim_state": "exact-signature",
+      "revalidation": {
+        "status": "current",
+        "api_version": "42.20",
+        "reason": null
+      },
+      "fields": {
+        "presence": [
+          "src-05e1f1a0e5b9c1e7"
+        ],
+        "module": [
+          "src-05e1f1a0e5b9c1e7"
+        ],
+        "kind": [
+          "src-05e1f1a0e5b9c1e7"
+        ],
+        "signature": [
+          "src-05e1f1a0e5b9c1e7"
+        ],
+        "parameters": [
+          "src-05e1f1a0e5b9c1e7"
+        ],
+        "return_type": [
+          "src-05e1f1a0e5b9c1e7"
+        ],
+        "effects": [
+          "src-05e1f1a0e5b9c1e7"
+        ],
+        "event_names": [],
+        "event_payloads": [],
+        "member_names": []
+      }
+    },
+    "component.OnSimulate": {
+      "claim_state": "exact-signature",
+      "revalidation": {
+        "status": "current",
+        "api_version": "42.20",
+        "reason": null
+      },
+      "fields": {
+        "presence": [
+          "src-370cb7323f84b6bd"
+        ],
+        "module": [
+          "src-370cb7323f84b6bd"
+        ],
+        "kind": [
+          "src-370cb7323f84b6bd"
+        ],
+        "signature": [
+          "src-370cb7323f84b6bd"
+        ],
+        "parameters": [
+          "src-370cb7323f84b6bd"
+        ],
+        "return_type": [
+          "src-370cb7323f84b6bd"
+        ],
+        "effects": [
+          "src-370cb7323f84b6bd"
+        ],
+        "event_names": [],
+        "event_payloads": [],
+        "member_names": []
+      }
+    },
+    "conditional_button_device": {
+      "claim_state": "presence-only",
+      "revalidation": {
+        "status": "current",
+        "api_version": "42.20",
+        "reason": null
+      },
+      "fields": {
+        "presence": [
+          "src-66e711e61389df81"
+        ],
+        "module": [
+          "src-66e711e61389df81"
+        ],
+        "kind": [
+          "src-66e711e61389df81"
+        ],
+        "signature": [],
+        "parameters": [],
+        "return_type": [],
+        "effects": [],
+        "event_names": [
+          "src-66e711e61389df81"
+        ],
+        "event_payloads": [],
+        "member_names": [
+          "src-66e711e61389df81"
+        ]
+      }
+    },
+    "conversation_device": {
+      "claim_state": "presence-only",
+      "revalidation": {
+        "status": "current",
+        "api_version": "42.20",
+        "reason": null
+      },
+      "fields": {
+        "presence": [
+          "src-984e3d49d130fa2b"
+        ],
+        "module": [
+          "src-984e3d49d130fa2b"
+        ],
+        "kind": [
+          "src-984e3d49d130fa2b"
+        ],
+        "signature": [],
+        "parameters": [],
+        "return_type": [],
+        "effects": [],
+        "event_names": [],
+        "event_payloads": [],
+        "member_names": []
+      }
+    },
+    "creative_device": {
+      "claim_state": "presence-only",
+      "revalidation": {
+        "status": "current",
+        "api_version": "42.20",
+        "reason": null
+      },
+      "fields": {
+        "presence": [
+          "src-79e5692debecb386"
+        ],
+        "module": [
+          "src-79e5692debecb386"
+        ],
+        "kind": [
+          "src-79e5692debecb386"
+        ],
+        "signature": [],
+        "parameters": [],
+        "return_type": [],
+        "effects": [],
+        "event_names": [],
+        "event_payloads": [],
+        "member_names": [
+          "src-79e5692debecb386"
+        ]
+      }
+    },
+    "creative_device_base": {
+      "claim_state": "presence-only",
+      "revalidation": {
+        "status": "current",
+        "api_version": "42.20",
+        "reason": null
+      },
+      "fields": {
+        "presence": [
+          "src-8a29089bdfb48a92"
+        ],
+        "module": [
+          "src-8a29089bdfb48a92"
+        ],
+        "kind": [
+          "src-8a29089bdfb48a92"
+        ],
+        "signature": [],
+        "parameters": [],
+        "return_type": [],
+        "effects": [],
+        "event_names": [],
+        "event_payloads": [],
+        "member_names": [
+          "src-8a29089bdfb48a92"
+        ]
+      }
+    },
+    "creative_hud_identifier_all": {
+      "claim_state": "presence-only",
+      "revalidation": {
+        "status": "current",
+        "api_version": "42.20",
+        "reason": null
+      },
+      "fields": {
+        "presence": [
+          "src-8881d8184a2c1af1"
+        ],
+        "module": [
+          "src-8881d8184a2c1af1"
+        ],
+        "kind": [
+          "src-8881d8184a2c1af1"
+        ],
+        "signature": [],
+        "parameters": [],
+        "return_type": [],
+        "effects": [],
+        "event_names": [],
+        "event_payloads": [],
+        "member_names": []
+      }
+    },
+    "creative_hud_identifier_build_menu": {
+      "claim_state": "presence-only",
+      "revalidation": {
+        "status": "current",
+        "api_version": "42.20",
+        "reason": null
+      },
+      "fields": {
+        "presence": [
+          "src-8881d8184a2c1af1"
+        ],
+        "module": [
+          "src-8881d8184a2c1af1"
+        ],
+        "kind": [
+          "src-8881d8184a2c1af1"
+        ],
+        "signature": [],
+        "parameters": [],
+        "return_type": [],
+        "effects": [],
+        "event_names": [],
+        "event_payloads": [],
+        "member_names": []
+      }
+    },
+    "creative_hud_identifier_crafting_resources": {
+      "claim_state": "presence-only",
+      "revalidation": {
+        "status": "current",
+        "api_version": "42.20",
+        "reason": null
+      },
+      "fields": {
+        "presence": [
+          "src-8881d8184a2c1af1"
+        ],
+        "module": [
+          "src-8881d8184a2c1af1"
+        ],
+        "kind": [
+          "src-8881d8184a2c1af1"
+        ],
+        "signature": [],
+        "parameters": [],
+        "return_type": [],
+        "effects": [],
+        "event_names": [],
+        "event_payloads": [],
+        "member_names": []
+      }
+    },
+    "creative_hud_identifier_elimination_counter": {
+      "claim_state": "presence-only",
+      "revalidation": {
+        "status": "current",
+        "api_version": "42.20",
+        "reason": null
+      },
+      "fields": {
+        "presence": [
+          "src-8881d8184a2c1af1"
+        ],
+        "module": [
+          "src-8881d8184a2c1af1"
+        ],
+        "kind": [
+          "src-8881d8184a2c1af1"
+        ],
+        "signature": [],
+        "parameters": [],
+        "return_type": [],
+        "effects": [],
+        "event_names": [],
+        "event_payloads": [],
+        "member_names": []
+      }
+    },
+    "creative_hud_identifier_equipped_item": {
+      "claim_state": "presence-only",
+      "revalidation": {
+        "status": "current",
+        "api_version": "42.20",
+        "reason": null
+      },
+      "fields": {
+        "presence": [
+          "src-8881d8184a2c1af1"
+        ],
+        "module": [
+          "src-8881d8184a2c1af1"
+        ],
+        "kind": [
+          "src-8881d8184a2c1af1"
+        ],
+        "signature": [],
+        "parameters": [],
+        "return_type": [],
+        "effects": [],
+        "event_names": [],
+        "event_payloads": [],
+        "member_names": []
+      }
+    },
+    "creative_hud_identifier_experience_level": {
+      "claim_state": "presence-only",
+      "revalidation": {
+        "status": "current",
+        "api_version": "42.20",
+        "reason": null
+      },
+      "fields": {
+        "presence": [
+          "src-8881d8184a2c1af1"
+        ],
+        "module": [
+          "src-8881d8184a2c1af1"
+        ],
+        "kind": [
+          "src-8881d8184a2c1af1"
+        ],
+        "signature": [],
+        "parameters": [],
+        "return_type": [],
+        "effects": [],
+        "event_names": [],
+        "event_payloads": [],
+        "member_names": []
+      }
+    },
+    "creative_hud_identifier_team_info": {
+      "claim_state": "presence-only",
+      "revalidation": {
+        "status": "current",
+        "api_version": "42.20",
+        "reason": null
+      },
+      "fields": {
+        "presence": [
+          "src-8881d8184a2c1af1"
+        ],
+        "module": [
+          "src-8881d8184a2c1af1"
+        ],
+        "kind": [
+          "src-8881d8184a2c1af1"
+        ],
+        "signature": [],
+        "parameters": [],
+        "return_type": [],
+        "effects": [],
+        "event_names": [],
+        "event_payloads": [],
+        "member_names": []
+      }
+    },
+    "creative_object": {
+      "claim_state": "presence-only",
+      "revalidation": {
+        "status": "current",
+        "api_version": "42.20",
+        "reason": null
+      },
+      "fields": {
+        "presence": [
+          "src-2a4ee15ed4a6c1e1"
+        ],
+        "module": [
+          "src-2a4ee15ed4a6c1e1"
+        ],
+        "kind": [
+          "src-2a4ee15ed4a6c1e1"
+        ],
+        "signature": [],
+        "parameters": [],
+        "return_type": [],
+        "effects": [],
+        "event_names": [],
+        "event_payloads": [],
+        "member_names": [
+          "src-2a4ee15ed4a6c1e1"
+        ]
+      }
+    },
+    "cubic_bezier_easing_function": {
+      "claim_state": "presence-only",
+      "revalidation": {
+        "status": "current",
+        "api_version": "42.20",
+        "reason": null
+      },
+      "fields": {
+        "presence": [
+          "src-41df195b1800706f"
+        ],
+        "module": [
+          "src-41df195b1800706f"
+        ],
+        "kind": [
+          "src-41df195b1800706f"
+        ],
+        "signature": [],
+        "parameters": [],
+        "return_type": [],
+        "effects": [],
+        "event_names": [],
+        "event_payloads": [],
+        "member_names": []
+      }
+    },
+    "damage_volume_device": {
+      "claim_state": "presence-only",
+      "revalidation": {
+        "status": "current",
+        "api_version": "42.20",
+        "reason": null
+      },
+      "fields": {
+        "presence": [
+          "src-f9df20c543641eed"
+        ],
+        "module": [
+          "src-f9df20c543641eed"
+        ],
+        "kind": [
+          "src-f9df20c543641eed"
+        ],
+        "signature": [],
+        "parameters": [],
+        "return_type": [],
+        "effects": [],
+        "event_names": [
+          "src-f9df20c543641eed"
+        ],
+        "event_payloads": [],
+        "member_names": [
+          "src-f9df20c543641eed"
+        ]
+      }
+    },
+    "ease_cubic_bezier_easing_function": {
+      "claim_state": "presence-only",
+      "revalidation": {
+        "status": "current",
+        "api_version": "42.20",
+        "reason": null
+      },
+      "fields": {
+        "presence": [
+          "src-41df195b1800706f"
+        ],
+        "module": [
+          "src-41df195b1800706f"
+        ],
+        "kind": [
+          "src-41df195b1800706f"
+        ],
+        "signature": [],
+        "parameters": [],
+        "return_type": [],
+        "effects": [],
+        "event_names": [],
+        "event_payloads": [],
+        "member_names": []
+      }
+    },
+    "ease_in_cubic_bezier_easing_function": {
+      "claim_state": "presence-only",
+      "revalidation": {
+        "status": "current",
+        "api_version": "42.20",
+        "reason": null
+      },
+      "fields": {
+        "presence": [
+          "src-41df195b1800706f"
+        ],
+        "module": [
+          "src-41df195b1800706f"
+        ],
+        "kind": [
+          "src-41df195b1800706f"
+        ],
+        "signature": [],
+        "parameters": [],
+        "return_type": [],
+        "effects": [],
+        "event_names": [],
+        "event_payloads": [],
+        "member_names": []
+      }
+    },
+    "ease_in_out_cubic_bezier_easing_function": {
+      "claim_state": "presence-only",
+      "revalidation": {
+        "status": "current",
+        "api_version": "42.20",
+        "reason": null
+      },
+      "fields": {
+        "presence": [
+          "src-41df195b1800706f"
+        ],
+        "module": [
+          "src-41df195b1800706f"
+        ],
+        "kind": [
+          "src-41df195b1800706f"
+        ],
+        "signature": [],
+        "parameters": [],
+        "return_type": [],
+        "effects": [],
+        "event_names": [],
+        "event_payloads": [],
+        "member_names": []
+      }
+    },
+    "ease_out_cubic_bezier_easing_function": {
+      "claim_state": "presence-only",
+      "revalidation": {
+        "status": "current",
+        "api_version": "42.20",
+        "reason": null
+      },
+      "fields": {
+        "presence": [
+          "src-41df195b1800706f"
+        ],
+        "module": [
+          "src-41df195b1800706f"
+        ],
+        "kind": [
+          "src-41df195b1800706f"
+        ],
+        "signature": [],
+        "parameters": [],
+        "return_type": [],
+        "effects": [],
+        "event_names": [],
+        "event_payloads": [],
+        "member_names": []
+      }
+    },
+    "easeable": {
+      "claim_state": "presence-only",
+      "revalidation": {
+        "status": "current",
+        "api_version": "42.20",
+        "reason": null
+      },
+      "fields": {
+        "presence": [
+          "src-b5aad23cc8884ca4"
+        ],
+        "module": [
+          "src-b5aad23cc8884ca4"
+        ],
+        "kind": [
+          "src-b5aad23cc8884ca4"
+        ],
+        "signature": [],
+        "parameters": [],
+        "return_type": [],
+        "effects": [],
+        "event_names": [],
+        "event_payloads": [],
+        "member_names": []
+      }
+    },
+    "easing_function": {
+      "claim_state": "presence-only",
+      "revalidation": {
+        "status": "current",
+        "api_version": "42.20",
+        "reason": null
+      },
+      "fields": {
+        "presence": [
+          "src-41df195b1800706f"
+        ],
+        "module": [
+          "src-41df195b1800706f"
+        ],
+        "kind": [
+          "src-41df195b1800706f"
+        ],
+        "signature": [],
+        "parameters": [],
+        "return_type": [],
+        "effects": [],
+        "event_names": [],
+        "event_payloads": [],
+        "member_names": []
+      }
+    },
+    "elimination_manager_device": {
+      "claim_state": "presence-only",
+      "revalidation": {
+        "status": "current",
+        "api_version": "42.20",
+        "reason": null
+      },
+      "fields": {
+        "presence": [
+          "src-e6faeb72aaee6911"
+        ],
+        "module": [
+          "src-e6faeb72aaee6911"
+        ],
+        "kind": [
+          "src-e6faeb72aaee6911"
+        ],
+        "signature": [],
+        "parameters": [],
+        "return_type": [],
+        "effects": [],
+        "event_names": [
+          "src-e6faeb72aaee6911"
+        ],
+        "event_payloads": [],
+        "member_names": [
+          "src-e6faeb72aaee6911"
+        ]
+      }
+    },
+    "end_game_device": {
+      "claim_state": "presence-only",
+      "revalidation": {
+        "status": "current",
+        "api_version": "42.20",
+        "reason": null
+      },
+      "fields": {
+        "presence": [
+          "src-6f15b9df6ea10854"
+        ],
+        "module": [
+          "src-6f15b9df6ea10854"
+        ],
+        "kind": [
+          "src-6f15b9df6ea10854"
+        ],
+        "signature": [],
+        "parameters": [],
+        "return_type": [],
+        "effects": [],
+        "event_names": [],
+        "event_payloads": [],
+        "member_names": [
+          "src-6f15b9df6ea10854"
+        ]
+      }
+    },
+    "entity": {
+      "claim_state": "presence-only",
+      "revalidation": {
+        "status": "current",
+        "api_version": "42.20",
+        "reason": null
+      },
+      "fields": {
+        "presence": [
+          "src-b5aad23cc8884ca4"
+        ],
+        "module": [
+          "src-b5aad23cc8884ca4"
+        ],
+        "kind": [
+          "src-b5aad23cc8884ca4"
+        ],
+        "signature": [],
+        "parameters": [],
+        "return_type": [],
+        "effects": [],
+        "event_names": [],
+        "event_payloads": [],
+        "member_names": []
+      }
+    },
+    "entity_origin": {
+      "claim_state": "presence-only",
+      "revalidation": {
+        "status": "current",
+        "api_version": "42.20",
+        "reason": null
+      },
+      "fields": {
+        "presence": [
+          "src-b5aad23cc8884ca4"
+        ],
+        "module": [
+          "src-b5aad23cc8884ca4"
+        ],
+        "kind": [
+          "src-b5aad23cc8884ca4"
+        ],
+        "signature": [],
+        "parameters": [],
+        "return_type": [],
+        "effects": [],
+        "event_names": [],
+        "event_payloads": [],
+        "member_names": []
+      }
+    },
+    "entity_prefab": {
+      "claim_state": "presence-only",
+      "revalidation": {
+        "status": "current",
+        "api_version": "42.20",
+        "reason": null
+      },
+      "fields": {
+        "presence": [
+          "src-b5aad23cc8884ca4"
+        ],
+        "module": [
+          "src-b5aad23cc8884ca4"
+        ],
+        "kind": [
+          "src-b5aad23cc8884ca4"
+        ],
+        "signature": [],
+        "parameters": [],
+        "return_type": [],
+        "effects": [],
+        "event_names": [],
+        "event_payloads": [],
+        "member_names": []
+      }
+    },
+    "entity_streaming_policy": {
+      "claim_state": "presence-only",
+      "revalidation": {
+        "status": "current",
+        "api_version": "42.20",
+        "reason": null
+      },
+      "fields": {
+        "presence": [
+          "src-b5aad23cc8884ca4"
+        ],
+        "module": [
+          "src-b5aad23cc8884ca4"
+        ],
+        "kind": [
+          "src-b5aad23cc8884ca4"
+        ],
+        "signature": [],
+        "parameters": [],
+        "return_type": [],
+        "effects": [],
+        "event_names": [],
+        "event_payloads": [],
+        "member_names": []
+      }
+    },
+    "epic_rarity": {
+      "claim_state": "presence-only",
+      "revalidation": {
+        "status": "current",
+        "api_version": "42.20",
+        "reason": null
+      },
+      "fields": {
+        "presence": [
+          "src-b5aad23cc8884ca4"
+        ],
+        "module": [
+          "src-b5aad23cc8884ca4"
+        ],
+        "kind": [
+          "src-b5aad23cc8884ca4"
+        ],
+        "signature": [],
+        "parameters": [],
+        "return_type": [],
+        "effects": [],
+        "event_names": [],
+        "event_payloads": [],
+        "member_names": []
+      }
+    },
+    "execution_listenable": {
+      "claim_state": "presence-only",
+      "revalidation": {
+        "status": "current",
+        "api_version": "42.20",
+        "reason": null
+      },
+      "fields": {
+        "presence": [
+          "src-b5aad23cc8884ca4"
+        ],
+        "module": [
+          "src-b5aad23cc8884ca4"
+        ],
+        "kind": [
+          "src-b5aad23cc8884ca4"
+        ],
+        "signature": [],
+        "parameters": [],
+        "return_type": [],
+        "effects": [],
+        "event_names": [],
+        "event_payloads": [],
+        "member_names": []
+      }
+    },
+    "fort_character": {
+      "claim_state": "presence-only",
+      "revalidation": {
+        "status": "current",
+        "api_version": "42.20",
+        "reason": null
+      },
+      "fields": {
+        "presence": [
+          "src-f51d757da6e8a06d"
+        ],
+        "module": [
+          "src-f51d757da6e8a06d"
+        ],
+        "kind": [
+          "src-f51d757da6e8a06d"
+        ],
+        "signature": [],
+        "parameters": [],
+        "return_type": [],
+        "effects": [],
+        "event_names": [],
+        "event_payloads": [],
+        "member_names": [
+          "src-f51d757da6e8a06d"
+        ]
+      }
+    },
+    "fort_hud_controller": {
+      "claim_state": "presence-only",
+      "revalidation": {
+        "status": "current",
+        "api_version": "42.20",
+        "reason": null
+      },
+      "fields": {
+        "presence": [
+          "src-8881d8184a2c1af1"
+        ],
+        "module": [
+          "src-8881d8184a2c1af1"
+        ],
+        "kind": [
+          "src-8881d8184a2c1af1"
+        ],
+        "signature": [],
+        "parameters": [],
+        "return_type": [],
+        "effects": [],
+        "event_names": [],
+        "event_payloads": [],
+        "member_names": []
+      }
+    },
+    "fort_playspace": {
+      "claim_state": "presence-only",
+      "revalidation": {
+        "status": "current",
+        "api_version": "42.20",
+        "reason": null
+      },
+      "fields": {
+        "presence": [
+          "src-4986222e2b683d7d"
+        ],
+        "module": [
+          "src-4986222e2b683d7d"
+        ],
+        "kind": [
+          "src-4986222e2b683d7d"
+        ],
+        "signature": [],
+        "parameters": [],
+        "return_type": [],
+        "effects": [],
+        "event_names": [],
+        "event_payloads": [],
+        "member_names": [
+          "src-4986222e2b683d7d"
+        ]
+      }
+    },
+    "fort_team_collection": {
+      "claim_state": "presence-only",
+      "revalidation": {
+        "status": "current",
+        "api_version": "42.20",
+        "reason": null
+      },
+      "fields": {
+        "presence": [
+          "src-6e35e3f69ba2fdfc"
+        ],
+        "module": [
+          "src-6e35e3f69ba2fdfc"
+        ],
+        "kind": [
+          "src-6e35e3f69ba2fdfc"
+        ],
+        "signature": [],
+        "parameters": [],
+        "return_type": [],
+        "effects": [],
+        "event_names": [],
+        "event_payloads": [],
+        "member_names": [
+          "src-6e35e3f69ba2fdfc"
+        ]
+      }
+    },
+    "fort_team_collection.AddToTeam": {
+      "claim_state": "exact-signature",
+      "revalidation": {
+        "status": "current",
+        "api_version": "42.20",
+        "reason": null
+      },
+      "fields": {
+        "presence": [
+          "src-ba212c2dcef62fda"
+        ],
+        "module": [
+          "src-ba212c2dcef62fda"
+        ],
+        "kind": [
+          "src-ba212c2dcef62fda"
+        ],
+        "signature": [
+          "src-ba212c2dcef62fda"
+        ],
+        "parameters": [
+          "src-ba212c2dcef62fda"
+        ],
+        "return_type": [
+          "src-ba212c2dcef62fda"
+        ],
+        "effects": [
+          "src-ba212c2dcef62fda"
+        ],
+        "event_names": [],
+        "event_payloads": [],
+        "member_names": []
+      }
+    },
+    "fort_team_collection.GetTeam": {
+      "claim_state": "exact-signature",
+      "revalidation": {
+        "status": "current",
+        "api_version": "42.20",
+        "reason": null
+      },
+      "fields": {
+        "presence": [
+          "src-df6815e810db66d4"
+        ],
+        "module": [
+          "src-df6815e810db66d4"
+        ],
+        "kind": [
+          "src-df6815e810db66d4"
+        ],
+        "signature": [
+          "src-df6815e810db66d4"
+        ],
+        "parameters": [
+          "src-df6815e810db66d4"
+        ],
+        "return_type": [
+          "src-df6815e810db66d4"
+        ],
+        "effects": [
+          "src-df6815e810db66d4"
+        ],
+        "event_names": [],
+        "event_payloads": [],
+        "member_names": []
+      }
+    },
+    "fort_team_collection.GetTeams": {
+      "claim_state": "exact-signature",
+      "revalidation": {
+        "status": "current",
+        "api_version": "42.20",
+        "reason": null
+      },
+      "fields": {
+        "presence": [
+          "src-62bf7acf8ee44303"
+        ],
+        "module": [
+          "src-62bf7acf8ee44303"
+        ],
+        "kind": [
+          "src-62bf7acf8ee44303"
+        ],
+        "signature": [
+          "src-62bf7acf8ee44303"
+        ],
+        "parameters": [
+          "src-62bf7acf8ee44303"
+        ],
+        "return_type": [
+          "src-62bf7acf8ee44303"
+        ],
+        "effects": [
+          "src-62bf7acf8ee44303"
+        ],
+        "event_names": [],
+        "event_payloads": [],
+        "member_names": []
+      }
+    },
+    "fort_vehicle": {
+      "claim_state": "presence-only",
+      "revalidation": {
+        "status": "current",
+        "api_version": "42.20",
+        "reason": null
+      },
+      "fields": {
+        "presence": [
+          "src-ba4f74799bc7c8e0"
+        ],
+        "module": [
+          "src-ba4f74799bc7c8e0"
+        ],
+        "kind": [
+          "src-ba4f74799bc7c8e0"
+        ],
+        "signature": [],
+        "parameters": [],
+        "return_type": [],
+        "effects": [],
+        "event_names": [],
+        "event_payloads": [],
+        "member_names": [
+          "src-ba4f74799bc7c8e0"
+        ]
+      }
+    },
+    "fort_vehicle.GetDrivers": {
+      "claim_state": "exact-signature",
+      "revalidation": {
+        "status": "current",
+        "api_version": "42.20",
+        "reason": null
+      },
+      "fields": {
+        "presence": [
+          "src-820021de65a7c1d2"
+        ],
+        "module": [
+          "src-820021de65a7c1d2"
+        ],
+        "kind": [
+          "src-820021de65a7c1d2"
+        ],
+        "signature": [
+          "src-820021de65a7c1d2"
+        ],
+        "parameters": [
+          "src-820021de65a7c1d2"
+        ],
+        "return_type": [
+          "src-820021de65a7c1d2"
+        ],
+        "effects": [
+          "src-820021de65a7c1d2"
+        ],
+        "event_names": [],
+        "event_payloads": [],
+        "member_names": []
+      }
+    },
+    "fort_vehicle.GetSeats": {
+      "claim_state": "exact-signature",
+      "revalidation": {
+        "status": "current",
+        "api_version": "42.20",
+        "reason": null
+      },
+      "fields": {
+        "presence": [
+          "src-fbe876c21f624f47"
+        ],
+        "module": [
+          "src-fbe876c21f624f47"
+        ],
+        "kind": [
+          "src-fbe876c21f624f47"
+        ],
+        "signature": [
+          "src-fbe876c21f624f47"
+        ],
+        "parameters": [
+          "src-fbe876c21f624f47"
+        ],
+        "return_type": [
+          "src-fbe876c21f624f47"
+        ],
+        "effects": [
+          "src-fbe876c21f624f47"
+        ],
+        "event_names": [],
+        "event_payloads": [],
+        "member_names": []
+      }
+    },
+    "fort_vehicle_seat": {
+      "claim_state": "presence-only",
+      "revalidation": {
+        "status": "current",
+        "api_version": "42.20",
+        "reason": null
+      },
+      "fields": {
+        "presence": [
+          "src-7aa787c85ba0dc97"
+        ],
+        "module": [
+          "src-7aa787c85ba0dc97"
+        ],
+        "kind": [
+          "src-7aa787c85ba0dc97"
+        ],
+        "signature": [],
+        "parameters": [],
+        "return_type": [],
+        "effects": [],
+        "event_names": [],
+        "event_payloads": [],
+        "member_names": []
+      }
+    },
+    "GetFortCharacter": {
+      "claim_state": "exact-signature",
+      "revalidation": {
+        "status": "current",
+        "api_version": "42.20",
+        "reason": null
+      },
+      "fields": {
+        "presence": [
+          "src-42fe8b15354cfc24"
+        ],
+        "module": [
+          "src-42fe8b15354cfc24"
+        ],
+        "kind": [
+          "src-42fe8b15354cfc24"
+        ],
+        "signature": [
+          "api-9a1e3b6792053a11"
+        ],
+        "parameters": [
+          "api-9a1e3b6792053a11"
+        ],
+        "return_type": [
+          "api-9a1e3b6792053a11"
+        ],
+        "effects": [
+          "api-9a1e3b6792053a11"
+        ],
+        "event_names": [],
+        "event_payloads": [],
+        "member_names": []
+      }
+    },
+    "GetPlayerUI": {
+      "claim_state": "exact-signature",
+      "revalidation": {
+        "status": "current",
+        "api_version": "42.20",
+        "reason": null
+      },
+      "fields": {
+        "presence": [
+          "src-807547d6c467c99c"
+        ],
+        "module": [
+          "src-807547d6c467c99c"
+        ],
+        "kind": [
+          "src-807547d6c467c99c"
+        ],
+        "signature": [
+          "api-715bf58ab86ca0e7"
+        ],
+        "parameters": [
+          "api-715bf58ab86ca0e7"
+        ],
+        "return_type": [
+          "api-715bf58ab86ca0e7"
+        ],
+        "effects": [
+          "api-715bf58ab86ca0e7"
+        ],
+        "event_names": [],
+        "event_payloads": [],
+        "member_names": []
+      }
+    },
+    "GetPlayspace": {
+      "claim_state": "exact-signature",
+      "revalidation": {
+        "status": "current",
+        "api_version": "42.20",
+        "reason": null
+      },
+      "fields": {
+        "presence": [
+          "src-2b5444d75f0bdd46"
+        ],
+        "module": [
+          "src-2b5444d75f0bdd46"
+        ],
+        "kind": [
+          "src-2b5444d75f0bdd46"
+        ],
+        "signature": [
+          "api-4a8d7a256683ca4b"
+        ],
+        "parameters": [
+          "api-4a8d7a256683ca4b"
+        ],
+        "return_type": [
+          "api-4a8d7a256683ca4b"
+        ],
+        "effects": [
+          "api-4a8d7a256683ca4b"
+        ],
+        "event_names": [],
+        "event_payloads": [],
+        "member_names": []
+      }
+    },
+    "GetVehicle": {
+      "claim_state": "exact-signature",
+      "revalidation": {
+        "status": "current",
+        "api_version": "42.20",
+        "reason": null
+      },
+      "fields": {
+        "presence": [
+          "src-ef929d1c3cac7833"
+        ],
+        "module": [
+          "src-ef929d1c3cac7833"
+        ],
+        "kind": [
+          "src-ef929d1c3cac7833"
+        ],
+        "signature": [
+          "src-ef929d1c3cac7833"
+        ],
+        "parameters": [
+          "src-ef929d1c3cac7833"
+        ],
+        "return_type": [
+          "src-ef929d1c3cac7833"
+        ],
+        "effects": [
+          "src-ef929d1c3cac7833"
+        ],
+        "event_names": [],
+        "event_payloads": [],
+        "member_names": []
+      }
+    },
+    "has_camera_modifier": {
+      "claim_state": "presence-only",
+      "revalidation": {
+        "status": "current",
+        "api_version": "42.20",
+        "reason": null
+      },
+      "fields": {
+        "presence": [
+          "src-b5aad23cc8884ca4"
+        ],
+        "module": [
+          "src-b5aad23cc8884ca4"
+        ],
+        "kind": [
+          "src-b5aad23cc8884ca4"
+        ],
+        "signature": [],
+        "parameters": [],
+        "return_type": [],
+        "effects": [],
+        "event_names": [],
+        "event_payloads": [],
+        "member_names": []
+      }
+    },
+    "has_merge_rules": {
+      "claim_state": "presence-only",
+      "revalidation": {
+        "status": "current",
+        "api_version": "42.20",
+        "reason": null
+      },
+      "fields": {
+        "presence": [
+          "src-b5aad23cc8884ca4"
+        ],
+        "module": [
+          "src-b5aad23cc8884ca4"
+        ],
+        "kind": [
+          "src-b5aad23cc8884ca4"
+        ],
+        "signature": [],
+        "parameters": [],
+        "return_type": [],
+        "effects": [],
+        "event_names": [],
+        "event_payloads": [],
+        "member_names": []
+      }
+    },
+    "horizontal_alignment": {
+      "claim_state": "presence-only",
+      "revalidation": {
+        "status": "current",
+        "api_version": "42.20",
+        "reason": null
+      },
+      "fields": {
+        "presence": [
+          "src-257e35bef907df3d"
+        ],
+        "module": [
+          "src-257e35bef907df3d"
+        ],
+        "kind": [
+          "src-257e35bef907df3d"
+        ],
+        "signature": [],
+        "parameters": [],
+        "return_type": [],
+        "effects": [],
+        "event_names": [],
+        "event_payloads": [],
+        "member_names": []
+      }
+    },
+    "hud_element_identifier": {
+      "claim_state": "presence-only",
+      "revalidation": {
+        "status": "current",
+        "api_version": "42.20",
+        "reason": null
+      },
+      "fields": {
+        "presence": [
+          "src-8881d8184a2c1af1"
+        ],
+        "module": [
+          "src-8881d8184a2c1af1"
+        ],
+        "kind": [
+          "src-8881d8184a2c1af1"
+        ],
+        "signature": [],
+        "parameters": [],
+        "return_type": [],
+        "effects": [],
+        "event_names": [],
+        "event_payloads": [],
+        "member_names": []
+      }
+    },
+    "hud_identifier_visual_sound_effect_all": {
+      "claim_state": "presence-only",
+      "revalidation": {
+        "status": "current",
+        "api_version": "42.20",
+        "reason": null
+      },
+      "fields": {
+        "presence": [
+          "src-8881d8184a2c1af1"
+        ],
+        "module": [
+          "src-8881d8184a2c1af1"
+        ],
+        "kind": [
+          "src-8881d8184a2c1af1"
+        ],
+        "signature": [],
+        "parameters": [],
+        "return_type": [],
+        "effects": [],
+        "event_names": [],
+        "event_payloads": [],
+        "member_names": []
+      }
+    },
+    "hud_identifier_visual_sound_effect_healing": {
+      "claim_state": "presence-only",
+      "revalidation": {
+        "status": "current",
+        "api_version": "42.20",
+        "reason": null
+      },
+      "fields": {
+        "presence": [
+          "src-8881d8184a2c1af1"
+        ],
+        "module": [
+          "src-8881d8184a2c1af1"
+        ],
+        "kind": [
+          "src-8881d8184a2c1af1"
+        ],
+        "signature": [],
+        "parameters": [],
+        "return_type": [],
+        "effects": [],
+        "event_names": [],
+        "event_payloads": [],
+        "member_names": []
+      }
+    },
+    "hud_identifier_visual_sound_effect_loot": {
+      "claim_state": "presence-only",
+      "revalidation": {
+        "status": "current",
+        "api_version": "42.20",
+        "reason": null
+      },
+      "fields": {
+        "presence": [
+          "src-8881d8184a2c1af1"
+        ],
+        "module": [
+          "src-8881d8184a2c1af1"
+        ],
+        "kind": [
+          "src-8881d8184a2c1af1"
+        ],
+        "signature": [],
+        "parameters": [],
+        "return_type": [],
+        "effects": [],
+        "event_names": [],
+        "event_payloads": [],
+        "member_names": []
+      }
+    },
+    "hud_identifier_visual_sound_effect_movement": {
+      "claim_state": "presence-only",
+      "revalidation": {
+        "status": "current",
+        "api_version": "42.20",
+        "reason": null
+      },
+      "fields": {
+        "presence": [
+          "src-8881d8184a2c1af1"
+        ],
+        "module": [
+          "src-8881d8184a2c1af1"
+        ],
+        "kind": [
+          "src-8881d8184a2c1af1"
+        ],
+        "signature": [],
+        "parameters": [],
+        "return_type": [],
+        "effects": [],
+        "event_names": [],
+        "event_payloads": [],
+        "member_names": []
+      }
+    },
+    "hud_identifier_visual_sound_effect_vehicle": {
+      "claim_state": "presence-only",
+      "revalidation": {
+        "status": "current",
+        "api_version": "42.20",
+        "reason": null
+      },
+      "fields": {
+        "presence": [
+          "src-8881d8184a2c1af1"
+        ],
+        "module": [
+          "src-8881d8184a2c1af1"
+        ],
+        "kind": [
+          "src-8881d8184a2c1af1"
+        ],
+        "signature": [],
+        "parameters": [],
+        "return_type": [],
+        "effects": [],
+        "event_names": [],
+        "event_payloads": [],
+        "member_names": []
+      }
+    },
+    "hud_identifier_visual_sound_effect_weapons": {
+      "claim_state": "presence-only",
+      "revalidation": {
+        "status": "current",
+        "api_version": "42.20",
+        "reason": null
+      },
+      "fields": {
+        "presence": [
+          "src-8881d8184a2c1af1"
+        ],
+        "module": [
+          "src-8881d8184a2c1af1"
+        ],
+        "kind": [
+          "src-8881d8184a2c1af1"
+        ],
+        "signature": [],
+        "parameters": [],
+        "return_type": [],
+        "effects": [],
+        "event_names": [],
+        "event_payloads": [],
+        "member_names": []
+      }
+    },
+    "hud_identifier_world_resource_gold_currency": {
+      "claim_state": "presence-only",
+      "revalidation": {
+        "status": "current",
+        "api_version": "42.20",
+        "reason": null
+      },
+      "fields": {
+        "presence": [
+          "src-8881d8184a2c1af1"
+        ],
+        "module": [
+          "src-8881d8184a2c1af1"
+        ],
+        "kind": [
+          "src-8881d8184a2c1af1"
+        ],
+        "signature": [],
+        "parameters": [],
+        "return_type": [],
+        "effects": [],
+        "event_names": [],
+        "event_payloads": [],
+        "member_names": []
+      }
+    },
+    "hud_identifier_world_resource_ingredient": {
+      "claim_state": "presence-only",
+      "revalidation": {
+        "status": "current",
+        "api_version": "42.20",
+        "reason": null
+      },
+      "fields": {
+        "presence": [
+          "src-8881d8184a2c1af1"
+        ],
+        "module": [
+          "src-8881d8184a2c1af1"
+        ],
+        "kind": [
+          "src-8881d8184a2c1af1"
+        ],
+        "signature": [],
+        "parameters": [],
+        "return_type": [],
+        "effects": [],
+        "event_names": [],
+        "event_payloads": [],
+        "member_names": []
+      }
+    },
+    "hud_identifier_world_resource_metal": {
+      "claim_state": "presence-only",
+      "revalidation": {
+        "status": "current",
+        "api_version": "42.20",
+        "reason": null
+      },
+      "fields": {
+        "presence": [
+          "src-8881d8184a2c1af1"
+        ],
+        "module": [
+          "src-8881d8184a2c1af1"
+        ],
+        "kind": [
+          "src-8881d8184a2c1af1"
+        ],
+        "signature": [],
+        "parameters": [],
+        "return_type": [],
+        "effects": [],
+        "event_names": [],
+        "event_payloads": [],
+        "member_names": []
+      }
+    },
+    "hud_identifier_world_resource_permanite": {
+      "claim_state": "presence-only",
+      "revalidation": {
+        "status": "current",
+        "api_version": "42.20",
+        "reason": null
+      },
+      "fields": {
+        "presence": [
+          "src-8881d8184a2c1af1"
+        ],
+        "module": [
+          "src-8881d8184a2c1af1"
+        ],
+        "kind": [
+          "src-8881d8184a2c1af1"
+        ],
+        "signature": [],
+        "parameters": [],
+        "return_type": [],
+        "effects": [],
+        "event_names": [],
+        "event_payloads": [],
+        "member_names": []
+      }
+    },
+    "hud_identifier_world_resource_stone": {
+      "claim_state": "presence-only",
+      "revalidation": {
+        "status": "current",
+        "api_version": "42.20",
+        "reason": null
+      },
+      "fields": {
+        "presence": [
+          "src-8881d8184a2c1af1"
+        ],
+        "module": [
+          "src-8881d8184a2c1af1"
+        ],
+        "kind": [
+          "src-8881d8184a2c1af1"
+        ],
+        "signature": [],
+        "parameters": [],
+        "return_type": [],
+        "effects": [],
+        "event_names": [],
+        "event_payloads": [],
+        "member_names": []
+      }
+    },
+    "hud_identifier_world_resource_wood": {
+      "claim_state": "presence-only",
+      "revalidation": {
+        "status": "current",
+        "api_version": "42.20",
+        "reason": null
+      },
+      "fields": {
+        "presence": [
+          "src-8881d8184a2c1af1"
+        ],
+        "module": [
+          "src-8881d8184a2c1af1"
+        ],
+        "kind": [
+          "src-8881d8184a2c1af1"
+        ],
+        "signature": [],
+        "parameters": [],
+        "return_type": [],
+        "effects": [],
+        "event_names": [],
+        "event_payloads": [],
+        "member_names": []
+      }
+    },
+    "hud_message_device": {
+      "claim_state": "presence-only",
+      "revalidation": {
+        "status": "current",
+        "api_version": "42.20",
+        "reason": null
+      },
+      "fields": {
+        "presence": [
+          "src-46cd8434553849b9"
+        ],
+        "module": [
+          "src-46cd8434553849b9"
+        ],
+        "kind": [
+          "src-46cd8434553849b9"
+        ],
+        "signature": [],
+        "parameters": [],
+        "return_type": [],
+        "effects": [],
+        "event_names": [
+          "src-46cd8434553849b9"
+        ],
+        "event_payloads": [],
+        "member_names": [
+          "src-46cd8434553849b9"
+        ]
+      }
+    },
+    "icon_component": {
+      "claim_state": "presence-only",
+      "revalidation": {
+        "status": "current",
+        "api_version": "42.20",
+        "reason": null
+      },
+      "fields": {
+        "presence": [
+          "src-b5aad23cc8884ca4"
+        ],
+        "module": [
+          "src-b5aad23cc8884ca4"
+        ],
+        "kind": [
+          "src-b5aad23cc8884ca4"
+        ],
+        "signature": [],
+        "parameters": [],
+        "return_type": [],
+        "effects": [],
+        "event_names": [],
+        "event_payloads": [],
+        "member_names": []
+      }
+    },
+    "image_tiling": {
+      "claim_state": "presence-only",
+      "revalidation": {
+        "status": "current",
+        "api_version": "42.20",
+        "reason": null
+      },
+      "fields": {
+        "presence": [
+          "src-257e35bef907df3d"
+        ],
+        "module": [
+          "src-257e35bef907df3d"
+        ],
+        "kind": [
+          "src-257e35bef907df3d"
+        ],
+        "signature": [],
+        "parameters": [],
+        "return_type": [],
+        "effects": [],
+        "event_names": [],
+        "event_payloads": [],
+        "member_names": []
+      }
+    },
+    "input_trigger_device": {
+      "claim_state": "presence-only",
+      "revalidation": {
+        "status": "current",
+        "api_version": "42.20",
+        "reason": null
+      },
+      "fields": {
+        "presence": [
+          "src-a1bae96a888d7c00"
+        ],
+        "module": [
+          "src-a1bae96a888d7c00"
+        ],
+        "kind": [
+          "src-a1bae96a888d7c00"
+        ],
+        "signature": [],
+        "parameters": [],
+        "return_type": [],
+        "effects": [],
+        "event_names": [
+          "src-a1bae96a888d7c00"
+        ],
+        "event_payloads": [],
+        "member_names": []
+      }
+    },
+    "interactable_component": {
+      "claim_state": "presence-only",
+      "revalidation": {
+        "status": "current",
+        "api_version": "42.20",
+        "reason": null
+      },
+      "fields": {
+        "presence": [
+          "src-b5aad23cc8884ca4"
+        ],
+        "module": [
+          "src-b5aad23cc8884ca4"
+        ],
+        "kind": [
+          "src-b5aad23cc8884ca4"
+        ],
+        "signature": [],
+        "parameters": [],
+        "return_type": [],
+        "effects": [],
+        "event_names": [],
+        "event_payloads": [],
+        "member_names": []
+      }
+    },
+    "interactable_cooldown": {
+      "claim_state": "presence-only",
+      "revalidation": {
+        "status": "current",
+        "api_version": "42.20",
+        "reason": null
+      },
+      "fields": {
+        "presence": [
+          "src-b5aad23cc8884ca4"
+        ],
+        "module": [
+          "src-b5aad23cc8884ca4"
+        ],
+        "kind": [
+          "src-b5aad23cc8884ca4"
+        ],
+        "signature": [],
+        "parameters": [],
+        "return_type": [],
+        "effects": [],
+        "event_names": [],
+        "event_payloads": [],
+        "member_names": []
+      }
+    },
+    "interactable_cooldown_per_agent": {
+      "claim_state": "presence-only",
+      "revalidation": {
+        "status": "current",
+        "api_version": "42.20",
+        "reason": null
+      },
+      "fields": {
+        "presence": [
+          "src-b5aad23cc8884ca4"
+        ],
+        "module": [
+          "src-b5aad23cc8884ca4"
+        ],
+        "kind": [
+          "src-b5aad23cc8884ca4"
+        ],
+        "signature": [],
+        "parameters": [],
+        "return_type": [],
+        "effects": [],
+        "event_names": [],
+        "event_payloads": [],
+        "member_names": []
+      }
+    },
+    "interactable_duration": {
+      "claim_state": "presence-only",
+      "revalidation": {
+        "status": "current",
+        "api_version": "42.20",
+        "reason": null
+      },
+      "fields": {
+        "presence": [
+          "src-b5aad23cc8884ca4"
+        ],
+        "module": [
+          "src-b5aad23cc8884ca4"
+        ],
+        "kind": [
+          "src-b5aad23cc8884ca4"
+        ],
+        "signature": [],
+        "parameters": [],
+        "return_type": [],
+        "effects": [],
+        "event_names": [],
+        "event_payloads": [],
+        "member_names": []
+      }
+    },
+    "interactable_success_limit": {
+      "claim_state": "presence-only",
+      "revalidation": {
+        "status": "current",
+        "api_version": "42.20",
+        "reason": null
+      },
+      "fields": {
+        "presence": [
+          "src-b5aad23cc8884ca4"
+        ],
+        "module": [
+          "src-b5aad23cc8884ca4"
+        ],
+        "kind": [
+          "src-b5aad23cc8884ca4"
+        ],
+        "signature": [],
+        "parameters": [],
+        "return_type": [],
+        "effects": [],
+        "event_names": [],
+        "event_payloads": [],
+        "member_names": []
+      }
+    },
+    "item_granter_device": {
+      "claim_state": "presence-only",
+      "revalidation": {
+        "status": "current",
+        "api_version": "42.20",
+        "reason": null
+      },
+      "fields": {
+        "presence": [
+          "src-6f55a8fb4c841a7b"
+        ],
+        "module": [
+          "src-6f55a8fb4c841a7b"
+        ],
+        "kind": [
+          "src-6f55a8fb4c841a7b"
+        ],
+        "signature": [],
+        "parameters": [],
+        "return_type": [],
+        "effects": [],
+        "event_names": [
+          "src-6f55a8fb4c841a7b"
+        ],
+        "event_payloads": [],
+        "member_names": [
+          "src-6f55a8fb4c841a7b"
+        ]
+      }
+    },
+    "item_placer_device": {
+      "claim_state": "presence-only",
+      "revalidation": {
+        "status": "current",
+        "api_version": "42.20",
+        "reason": null
+      },
+      "fields": {
+        "presence": [
+          "src-fbdc6fad5ca31dcb"
+        ],
+        "module": [
+          "src-fbdc6fad5ca31dcb"
+        ],
+        "kind": [
+          "src-fbdc6fad5ca31dcb"
+        ],
+        "signature": [],
+        "parameters": [],
+        "return_type": [],
+        "effects": [],
+        "event_names": [],
+        "event_payloads": [],
+        "member_names": [
+          "src-fbdc6fad5ca31dcb"
+        ]
+      }
+    },
+    "item_remover_device": {
+      "claim_state": "presence-only",
+      "revalidation": {
+        "status": "current",
+        "api_version": "42.20",
+        "reason": null
+      },
+      "fields": {
+        "presence": [
+          "src-c0526ba7bd095a06"
+        ],
+        "module": [
+          "src-c0526ba7bd095a06"
+        ],
+        "kind": [
+          "src-c0526ba7bd095a06"
+        ],
+        "signature": [],
+        "parameters": [],
+        "return_type": [],
+        "effects": [],
+        "event_names": [],
+        "event_payloads": [],
+        "member_names": [
+          "src-c0526ba7bd095a06"
+        ]
+      }
+    },
+    "keyframed_movement_component": {
+      "claim_state": "presence-only",
+      "revalidation": {
+        "status": "current",
+        "api_version": "42.20",
+        "reason": null
+      },
+      "fields": {
+        "presence": [
+          "src-41df195b1800706f"
+        ],
+        "module": [
+          "src-41df195b1800706f"
+        ],
+        "kind": [
+          "src-41df195b1800706f"
+        ],
+        "signature": [],
+        "parameters": [],
+        "return_type": [],
+        "effects": [],
+        "event_names": [],
+        "event_payloads": [],
+        "member_names": []
+      }
+    },
+    "keyframed_movement_delta": {
+      "claim_state": "presence-only",
+      "revalidation": {
+        "status": "current",
+        "api_version": "42.20",
+        "reason": null
+      },
+      "fields": {
+        "presence": [
+          "src-41df195b1800706f"
+        ],
+        "module": [
+          "src-41df195b1800706f"
+        ],
+        "kind": [
+          "src-41df195b1800706f"
+        ],
+        "signature": [],
+        "parameters": [],
+        "return_type": [],
+        "effects": [],
+        "event_names": [],
+        "event_payloads": [],
+        "member_names": []
+      }
+    },
+    "keyframed_movement_playback_mode": {
+      "claim_state": "presence-only",
+      "revalidation": {
+        "status": "current",
+        "api_version": "42.20",
+        "reason": null
+      },
+      "fields": {
+        "presence": [
+          "src-41df195b1800706f"
+        ],
+        "module": [
+          "src-41df195b1800706f"
+        ],
+        "kind": [
+          "src-41df195b1800706f"
+        ],
+        "signature": [],
+        "parameters": [],
+        "return_type": [],
+        "effects": [],
+        "event_names": [],
+        "event_payloads": [],
+        "member_names": []
+      }
+    },
+    "legendary_rarity": {
+      "claim_state": "presence-only",
+      "revalidation": {
+        "status": "current",
+        "api_version": "42.20",
+        "reason": null
+      },
+      "fields": {
+        "presence": [
+          "src-b5aad23cc8884ca4"
+        ],
+        "module": [
+          "src-b5aad23cc8884ca4"
+        ],
+        "kind": [
+          "src-b5aad23cc8884ca4"
+        ],
+        "signature": [],
+        "parameters": [],
+        "return_type": [],
+        "effects": [],
+        "event_names": [],
+        "event_payloads": [],
+        "member_names": []
+      }
+    },
+    "linear_easing_function": {
+      "claim_state": "presence-only",
+      "revalidation": {
+        "status": "current",
+        "api_version": "42.20",
+        "reason": null
+      },
+      "fields": {
+        "presence": [
+          "src-41df195b1800706f"
+        ],
+        "module": [
+          "src-41df195b1800706f"
+        ],
+        "kind": [
+          "src-41df195b1800706f"
+        ],
+        "signature": [],
+        "parameters": [],
+        "return_type": [],
+        "effects": [],
+        "event_names": [],
+        "event_payloads": [],
+        "member_names": []
+      }
+    },
+    "lock_device": {
+      "claim_state": "presence-only",
+      "revalidation": {
+        "status": "current",
+        "api_version": "42.20",
+        "reason": null
+      },
+      "fields": {
+        "presence": [
+          "src-bd5266b7ebf097ea"
+        ],
+        "module": [
+          "src-bd5266b7ebf097ea"
+        ],
+        "kind": [
+          "src-bd5266b7ebf097ea"
+        ],
+        "signature": [],
+        "parameters": [],
+        "return_type": [],
+        "effects": [],
+        "event_names": [],
+        "event_payloads": [],
+        "member_names": []
+      }
+    },
+    "loop_keyframed_movement_playback_mode": {
+      "claim_state": "presence-only",
+      "revalidation": {
+        "status": "current",
+        "api_version": "42.20",
+        "reason": null
+      },
+      "fields": {
+        "presence": [
+          "src-41df195b1800706f"
+        ],
+        "module": [
+          "src-41df195b1800706f"
+        ],
+        "kind": [
+          "src-41df195b1800706f"
+        ],
+        "signature": [],
+        "parameters": [],
+        "return_type": [],
+        "effects": [],
+        "event_names": [],
+        "event_payloads": [],
+        "member_names": []
+      }
+    },
+    "MakeCanvasSlot": {
+      "claim_state": "exact-signature",
+      "revalidation": {
+        "status": "current",
+        "api_version": "42.20",
+        "reason": null
+      },
+      "fields": {
+        "presence": [
+          "src-6825e1fa7ed47b73"
+        ],
+        "module": [
+          "src-6825e1fa7ed47b73"
+        ],
+        "kind": [
+          "src-6825e1fa7ed47b73"
+        ],
+        "signature": [
+          "api-9b28ad234c95d57f"
+        ],
+        "parameters": [
+          "api-9b28ad234c95d57f"
+        ],
+        "return_type": [
+          "api-9b28ad234c95d57f"
+        ],
+        "effects": [
+          "api-9b28ad234c95d57f"
+        ],
+        "event_names": [],
+        "event_payloads": [],
+        "member_names": []
+      }
+    },
+    "map_controller_device": {
+      "claim_state": "presence-only",
+      "revalidation": {
+        "status": "current",
+        "api_version": "42.20",
+        "reason": null
+      },
+      "fields": {
+        "presence": [
+          "src-5fd0e7f7fd362d03"
+        ],
+        "module": [
+          "src-5fd0e7f7fd362d03"
+        ],
+        "kind": [
+          "src-5fd0e7f7fd362d03"
+        ],
+        "signature": [],
+        "parameters": [],
+        "return_type": [],
+        "effects": [],
+        "event_names": [],
+        "event_payloads": [],
+        "member_names": [
+          "src-5fd0e7f7fd362d03"
+        ]
+      }
+    },
+    "map_indicator_device": {
+      "claim_state": "presence-only",
+      "revalidation": {
+        "status": "current",
+        "api_version": "42.20",
+        "reason": null
+      },
+      "fields": {
+        "presence": [
+          "src-bd5266b7ebf097ea"
+        ],
+        "module": [
+          "src-bd5266b7ebf097ea"
+        ],
+        "kind": [
+          "src-bd5266b7ebf097ea"
+        ],
+        "signature": [],
+        "parameters": [],
+        "return_type": [],
+        "effects": [],
+        "event_names": [],
+        "event_payloads": [],
+        "member_names": []
+      }
+    },
+    "margin": {
+      "claim_state": "presence-only",
+      "revalidation": {
+        "status": "current",
+        "api_version": "42.20",
+        "reason": null
+      },
+      "fields": {
+        "presence": [
+          "src-257e35bef907df3d"
+        ],
+        "module": [
+          "src-257e35bef907df3d"
+        ],
+        "kind": [
+          "src-257e35bef907df3d"
+        ],
+        "signature": [],
+        "parameters": [],
+        "return_type": [],
+        "effects": [],
+        "event_names": [],
+        "event_payloads": [],
+        "member_names": []
+      }
+    },
+    "material_block": {
+      "claim_state": "presence-only",
+      "revalidation": {
+        "status": "current",
+        "api_version": "42.20",
+        "reason": null
+      },
+      "fields": {
+        "presence": [
+          "src-140aea02325b1544"
+        ],
+        "module": [
+          "src-140aea02325b1544"
+        ],
+        "kind": [
+          "src-140aea02325b1544"
+        ],
+        "signature": [],
+        "parameters": [],
+        "return_type": [],
+        "effects": [],
+        "event_names": [],
+        "event_payloads": [],
+        "member_names": []
+      }
+    },
+    "mutator_zone_device": {
+      "claim_state": "presence-only",
+      "revalidation": {
+        "status": "current",
+        "api_version": "42.20",
+        "reason": null
+      },
+      "fields": {
+        "presence": [
+          "src-2a0b8e7d2d237194"
+        ],
+        "module": [
+          "src-2a0b8e7d2d237194"
+        ],
+        "kind": [
+          "src-2a0b8e7d2d237194"
+        ],
+        "signature": [],
+        "parameters": [],
+        "return_type": [],
+        "effects": [],
+        "event_names": [
+          "src-2a0b8e7d2d237194"
+        ],
+        "event_payloads": [],
+        "member_names": [
+          "src-2a0b8e7d2d237194"
+        ]
+      }
+    },
+    "oneshot_keyframed_movement_playback_mode": {
+      "claim_state": "presence-only",
+      "revalidation": {
+        "status": "current",
+        "api_version": "42.20",
+        "reason": null
+      },
+      "fields": {
+        "presence": [
+          "src-41df195b1800706f"
+        ],
+        "module": [
+          "src-41df195b1800706f"
+        ],
+        "kind": [
+          "src-41df195b1800706f"
+        ],
+        "signature": [],
+        "parameters": [],
+        "return_type": [],
+        "effects": [],
+        "event_names": [],
+        "event_payloads": [],
+        "member_names": []
+      }
+    },
+    "orientation": {
+      "claim_state": "presence-only",
+      "revalidation": {
+        "status": "current",
+        "api_version": "42.20",
+        "reason": null
+      },
+      "fields": {
+        "presence": [
+          "src-257e35bef907df3d"
+        ],
+        "module": [
+          "src-257e35bef907df3d"
+        ],
+        "kind": [
+          "src-257e35bef907df3d"
+        ],
+        "signature": [],
+        "parameters": [],
+        "return_type": [],
+        "effects": [],
+        "event_names": [],
+        "event_payloads": [],
+        "member_names": []
+      }
+    },
+    "origin": {
+      "claim_state": "presence-only",
+      "revalidation": {
+        "status": "current",
+        "api_version": "42.20",
+        "reason": null
+      },
+      "fields": {
+        "presence": [
+          "src-b5aad23cc8884ca4"
+        ],
+        "module": [
+          "src-b5aad23cc8884ca4"
+        ],
+        "kind": [
+          "src-b5aad23cc8884ca4"
+        ],
+        "signature": [],
+        "parameters": [],
+        "return_type": [],
+        "effects": [],
+        "event_names": [],
+        "event_payloads": [],
+        "member_names": []
+      }
+    },
+    "overlay": {
+      "claim_state": "presence-only",
+      "revalidation": {
+        "status": "current",
+        "api_version": "42.20",
+        "reason": null
+      },
+      "fields": {
+        "presence": [
+          "src-8f8b75a71ac716bc"
+        ],
+        "module": [
+          "src-8f8b75a71ac716bc"
+        ],
+        "kind": [
+          "src-8f8b75a71ac716bc"
+        ],
+        "signature": [],
+        "parameters": [],
+        "return_type": [],
+        "effects": [],
+        "event_names": [],
+        "event_payloads": [],
+        "member_names": [
+          "src-8f8b75a71ac716bc"
+        ]
+      }
+    },
+    "overlay_slot": {
+      "claim_state": "presence-only",
+      "revalidation": {
+        "status": "current",
+        "api_version": "42.20",
+        "reason": null
+      },
+      "fields": {
+        "presence": [
+          "src-257e35bef907df3d"
+        ],
+        "module": [
+          "src-257e35bef907df3d"
+        ],
+        "kind": [
+          "src-257e35bef907df3d"
+        ],
+        "signature": [],
+        "parameters": [],
+        "return_type": [],
+        "effects": [],
+        "event_names": [],
+        "event_payloads": [],
+        "member_names": []
+      }
+    },
+    "pingpong_keyframed_movement_playback_mode": {
+      "claim_state": "presence-only",
+      "revalidation": {
+        "status": "current",
+        "api_version": "42.20",
+        "reason": null
+      },
+      "fields": {
+        "presence": [
+          "src-41df195b1800706f"
+        ],
+        "module": [
+          "src-41df195b1800706f"
+        ],
+        "kind": [
+          "src-41df195b1800706f"
+        ],
+        "signature": [],
+        "parameters": [],
+        "return_type": [],
+        "effects": [],
+        "event_names": [],
+        "event_payloads": [],
+        "member_names": []
+      }
+    },
+    "player_hud_identifier_all": {
+      "claim_state": "presence-only",
+      "revalidation": {
+        "status": "current",
+        "api_version": "42.20",
+        "reason": null
+      },
+      "fields": {
+        "presence": [
+          "src-8881d8184a2c1af1"
+        ],
+        "module": [
+          "src-8881d8184a2c1af1"
+        ],
+        "kind": [
+          "src-8881d8184a2c1af1"
+        ],
+        "signature": [],
+        "parameters": [],
+        "return_type": [],
+        "effects": [],
+        "event_names": [],
+        "event_payloads": [],
+        "member_names": []
+      }
+    },
+    "player_reference_device": {
+      "claim_state": "presence-only",
+      "revalidation": {
+        "status": "current",
+        "api_version": "42.20",
+        "reason": null
+      },
+      "fields": {
+        "presence": [
+          "src-f417ca3892bd4a1a"
+        ],
+        "module": [
+          "src-f417ca3892bd4a1a"
+        ],
+        "kind": [
+          "src-f417ca3892bd4a1a"
+        ],
+        "signature": [],
+        "parameters": [],
+        "return_type": [],
+        "effects": [],
+        "event_names": [
+          "src-f417ca3892bd4a1a"
+        ],
+        "event_payloads": [],
+        "member_names": []
+      }
+    },
+    "player_spawner_device": {
+      "claim_state": "presence-only",
+      "revalidation": {
+        "status": "current",
+        "api_version": "42.20",
+        "reason": null
+      },
+      "fields": {
+        "presence": [
+          "src-5c03b3f5b07c9b22"
+        ],
+        "module": [
+          "src-5c03b3f5b07c9b22"
+        ],
+        "kind": [
+          "src-5c03b3f5b07c9b22"
+        ],
+        "signature": [],
+        "parameters": [],
+        "return_type": [],
+        "effects": [],
+        "event_names": [
+          "src-5c03b3f5b07c9b22"
+        ],
+        "event_payloads": [],
+        "member_names": [
+          "src-5c03b3f5b07c9b22"
+        ]
+      }
+    },
+    "player_ui": {
+      "claim_state": "presence-only",
+      "revalidation": {
+        "status": "current",
+        "api_version": "42.20",
+        "reason": null
+      },
+      "fields": {
+        "presence": [
+          "src-9a8474b62b67d00c"
+        ],
+        "module": [
+          "src-9a8474b62b67d00c"
+        ],
+        "kind": [
+          "src-9a8474b62b67d00c"
+        ],
+        "signature": [],
+        "parameters": [],
+        "return_type": [],
+        "effects": [],
+        "event_names": [],
+        "event_payloads": [],
+        "member_names": [
+          "src-9a8474b62b67d00c"
+        ]
+      }
+    },
+    "player_ui_slot": {
+      "claim_state": "presence-only",
+      "revalidation": {
+        "status": "current",
+        "api_version": "42.20",
+        "reason": null
+      },
+      "fields": {
+        "presence": [
+          "src-257e35bef907df3d"
+        ],
+        "module": [
+          "src-257e35bef907df3d"
+        ],
+        "kind": [
+          "src-257e35bef907df3d"
+        ],
+        "signature": [],
+        "parameters": [],
+        "return_type": [],
+        "effects": [],
+        "event_names": [],
+        "event_payloads": [],
+        "member_names": []
+      }
+    },
+    "popup_dialog_device": {
+      "claim_state": "presence-only",
+      "revalidation": {
+        "status": "current",
+        "api_version": "42.20",
+        "reason": null
+      },
+      "fields": {
+        "presence": [
+          "src-c5ee1750ed00df95"
+        ],
+        "module": [
+          "src-c5ee1750ed00df95"
+        ],
+        "kind": [
+          "src-c5ee1750ed00df95"
+        ],
+        "signature": [],
+        "parameters": [],
+        "return_type": [],
+        "effects": [],
+        "event_names": [
+          "src-c5ee1750ed00df95"
+        ],
+        "event_payloads": [],
+        "member_names": [
+          "src-c5ee1750ed00df95"
+        ]
+      }
+    },
+    "prop_manipulator_device": {
+      "claim_state": "presence-only",
+      "revalidation": {
+        "status": "current",
+        "api_version": "42.20",
+        "reason": null
+      },
+      "fields": {
+        "presence": [
+          "src-234cb31af10bafb8"
+        ],
+        "module": [
+          "src-234cb31af10bafb8"
+        ],
+        "kind": [
+          "src-234cb31af10bafb8"
+        ],
+        "signature": [],
+        "parameters": [],
+        "return_type": [],
+        "effects": [],
+        "event_names": [
+          "src-234cb31af10bafb8"
+        ],
+        "event_payloads": [],
+        "member_names": [
+          "src-234cb31af10bafb8"
+        ]
+      }
+    },
+    "rare_rarity": {
+      "claim_state": "presence-only",
+      "revalidation": {
+        "status": "current",
+        "api_version": "42.20",
+        "reason": null
+      },
+      "fields": {
+        "presence": [
+          "src-b5aad23cc8884ca4"
+        ],
+        "module": [
+          "src-b5aad23cc8884ca4"
+        ],
+        "kind": [
+          "src-b5aad23cc8884ca4"
+        ],
+        "signature": [],
+        "parameters": [],
+        "return_type": [],
+        "effects": [],
+        "event_names": [],
+        "event_payloads": [],
+        "member_names": []
+      }
+    },
+    "rarity": {
+      "claim_state": "presence-only",
+      "revalidation": {
+        "status": "current",
+        "api_version": "42.20",
+        "reason": null
+      },
+      "fields": {
+        "presence": [
+          "src-b5aad23cc8884ca4"
+        ],
+        "module": [
+          "src-b5aad23cc8884ca4"
+        ],
+        "kind": [
+          "src-b5aad23cc8884ca4"
+        ],
+        "signature": [],
+        "parameters": [],
+        "return_type": [],
+        "effects": [],
+        "event_names": [],
+        "event_payloads": [],
+        "member_names": []
+      }
+    },
+    "rarity_component": {
+      "claim_state": "presence-only",
+      "revalidation": {
+        "status": "current",
+        "api_version": "42.20",
+        "reason": null
+      },
+      "fields": {
+        "presence": [
+          "src-b5aad23cc8884ca4"
+        ],
+        "module": [
+          "src-b5aad23cc8884ca4"
+        ],
+        "kind": [
+          "src-b5aad23cc8884ca4"
+        ],
+        "signature": [],
+        "parameters": [],
+        "return_type": [],
+        "effects": [],
+        "event_names": [],
+        "event_payloads": [],
+        "member_names": []
+      }
+    },
+    "scene_event": {
+      "claim_state": "presence-only",
+      "revalidation": {
+        "status": "current",
+        "api_version": "42.20",
+        "reason": null
+      },
+      "fields": {
+        "presence": [
+          "src-b5aad23cc8884ca4"
+        ],
+        "module": [
+          "src-b5aad23cc8884ca4"
+        ],
+        "kind": [
+          "src-b5aad23cc8884ca4"
+        ],
+        "signature": [],
+        "parameters": [],
+        "return_type": [],
+        "effects": [],
+        "event_names": [],
+        "event_payloads": [],
+        "member_names": []
+      }
+    },
+    "score_manager_device": {
+      "claim_state": "presence-only",
+      "revalidation": {
+        "status": "current",
+        "api_version": "42.20",
+        "reason": null
+      },
+      "fields": {
+        "presence": [
+          "src-c1db4974669443af"
+        ],
+        "module": [
+          "src-c1db4974669443af"
+        ],
+        "kind": [
+          "src-c1db4974669443af"
+        ],
+        "signature": [],
+        "parameters": [],
+        "return_type": [],
+        "effects": [],
+        "event_names": [
+          "src-c1db4974669443af"
+        ],
+        "event_payloads": [],
+        "member_names": [
+          "src-c1db4974669443af"
+        ]
+      }
+    },
+    "sentry_device": {
+      "claim_state": "presence-only",
+      "revalidation": {
+        "status": "current",
+        "api_version": "42.20",
+        "reason": null
+      },
+      "fields": {
+        "presence": [
+          "src-107f03e09d5ea6a7"
+        ],
+        "module": [
+          "src-107f03e09d5ea6a7"
+        ],
+        "kind": [
+          "src-107f03e09d5ea6a7"
+        ],
+        "signature": [],
+        "parameters": [],
+        "return_type": [],
+        "effects": [],
+        "event_names": [
+          "src-107f03e09d5ea6a7"
+        ],
+        "event_payloads": [],
+        "member_names": [
+          "src-107f03e09d5ea6a7"
+        ]
+      }
+    },
+    "slider_regular": {
+      "claim_state": "presence-only",
+      "revalidation": {
+        "status": "current",
+        "api_version": "42.20",
+        "reason": null
+      },
+      "fields": {
+        "presence": [
+          "src-8881d8184a2c1af1"
+        ],
+        "module": [
+          "src-8881d8184a2c1af1"
+        ],
+        "kind": [
+          "src-8881d8184a2c1af1"
+        ],
+        "signature": [],
+        "parameters": [],
+        "return_type": [],
+        "effects": [],
+        "event_names": [],
+        "event_payloads": [],
+        "member_names": []
+      }
+    },
+    "stack_box": {
+      "claim_state": "presence-only",
+      "revalidation": {
+        "status": "current",
+        "api_version": "42.20",
+        "reason": null
+      },
+      "fields": {
+        "presence": [
+          "src-523828f10e23719e"
+        ],
+        "module": [
+          "src-523828f10e23719e"
+        ],
+        "kind": [
+          "src-523828f10e23719e"
+        ],
+        "signature": [],
+        "parameters": [],
+        "return_type": [],
+        "effects": [],
+        "event_names": [],
+        "event_payloads": [],
+        "member_names": [
+          "src-523828f10e23719e"
+        ]
+      }
+    },
+    "stack_box_slot": {
+      "claim_state": "presence-only",
+      "revalidation": {
+        "status": "current",
+        "api_version": "42.20",
+        "reason": null
+      },
+      "fields": {
+        "presence": [
+          "src-46acaae254c0349e"
+        ],
+        "module": [
+          "src-46acaae254c0349e"
+        ],
+        "kind": [
+          "src-46acaae254c0349e"
+        ],
+        "signature": [],
+        "parameters": [],
+        "return_type": [],
+        "effects": [],
+        "event_names": [],
+        "event_payloads": [],
+        "member_names": []
+      }
+    },
+    "stackable_component": {
+      "claim_state": "presence-only",
+      "revalidation": {
+        "status": "current",
+        "api_version": "42.20",
+        "reason": null
+      },
+      "fields": {
+        "presence": [
+          "src-b5aad23cc8884ca4"
+        ],
+        "module": [
+          "src-b5aad23cc8884ca4"
+        ],
+        "kind": [
+          "src-b5aad23cc8884ca4"
+        ],
+        "signature": [],
+        "parameters": [],
+        "return_type": [],
+        "effects": [],
+        "event_names": [],
+        "event_payloads": [],
+        "member_names": []
+      }
+    },
+    "switch_device": {
+      "claim_state": "presence-only",
+      "revalidation": {
+        "status": "current",
+        "api_version": "42.20",
+        "reason": null
+      },
+      "fields": {
+        "presence": [
+          "src-e06cf634ec6539ca"
+        ],
+        "module": [
+          "src-e06cf634ec6539ca"
+        ],
+        "kind": [
+          "src-e06cf634ec6539ca"
+        ],
+        "signature": [],
+        "parameters": [],
+        "return_type": [],
+        "effects": [],
+        "event_names": [
+          "src-e06cf634ec6539ca"
+        ],
+        "event_payloads": [],
+        "member_names": [
+          "src-e06cf634ec6539ca"
+        ]
+      }
+    },
+    "team_attitude": {
+      "claim_state": "presence-only",
+      "revalidation": {
+        "status": "current",
+        "api_version": "42.20",
+        "reason": null
+      },
+      "fields": {
+        "presence": [
+          "src-c9f667566bcb2359"
+        ],
+        "module": [
+          "src-c9f667566bcb2359"
+        ],
+        "kind": [
+          "src-c9f667566bcb2359"
+        ],
+        "signature": [],
+        "parameters": [],
+        "return_type": [],
+        "effects": [],
+        "event_names": [],
+        "event_payloads": [],
+        "member_names": []
+      }
+    },
+    "team_settings_and_inventory_device": {
+      "claim_state": "presence-only",
+      "revalidation": {
+        "status": "current",
+        "api_version": "42.20",
+        "reason": null
+      },
+      "fields": {
+        "presence": [
+          "src-d27272da850eaf97"
+        ],
+        "module": [
+          "src-d27272da850eaf97"
+        ],
+        "kind": [
+          "src-d27272da850eaf97"
+        ],
+        "signature": [],
+        "parameters": [],
+        "return_type": [],
+        "effects": [],
+        "event_names": [
+          "src-d27272da850eaf97"
+        ],
+        "event_payloads": [],
+        "member_names": [
+          "src-d27272da850eaf97"
+        ]
+      }
+    },
+    "teleporter_device": {
+      "claim_state": "presence-only",
+      "revalidation": {
+        "status": "current",
+        "api_version": "42.20",
+        "reason": null
+      },
+      "fields": {
+        "presence": [
+          "src-b505e7d50de6c19f"
+        ],
+        "module": [
+          "src-b505e7d50de6c19f"
+        ],
+        "kind": [
+          "src-b505e7d50de6c19f"
+        ],
+        "signature": [],
+        "parameters": [],
+        "return_type": [],
+        "effects": [],
+        "event_names": [
+          "src-b505e7d50de6c19f"
+        ],
+        "event_payloads": [],
+        "member_names": [
+          "src-b505e7d50de6c19f"
+        ]
+      }
+    },
+    "text_base": {
+      "claim_state": "presence-only",
+      "revalidation": {
+        "status": "current",
+        "api_version": "42.20",
+        "reason": null
+      },
+      "fields": {
+        "presence": [
+          "src-257e35bef907df3d"
+        ],
+        "module": [
+          "src-257e35bef907df3d"
+        ],
+        "kind": [
+          "src-257e35bef907df3d"
+        ],
+        "signature": [],
+        "parameters": [],
+        "return_type": [],
+        "effects": [],
+        "event_names": [],
+        "event_payloads": [],
+        "member_names": []
+      }
+    },
+    "text_block": {
+      "claim_state": "presence-only",
+      "revalidation": {
+        "status": "current",
+        "api_version": "42.20",
+        "reason": null
+      },
+      "fields": {
+        "presence": [
+          "src-8881d8184a2c1af1"
+        ],
+        "module": [
+          "src-8881d8184a2c1af1"
+        ],
+        "kind": [
+          "src-8881d8184a2c1af1"
+        ],
+        "signature": [],
+        "parameters": [],
+        "return_type": [],
+        "effects": [],
+        "event_names": [],
+        "event_payloads": [],
+        "member_names": []
+      }
+    },
+    "text_button_base": {
+      "claim_state": "presence-only",
+      "revalidation": {
+        "status": "current",
+        "api_version": "42.20",
+        "reason": null
+      },
+      "fields": {
+        "presence": [
+          "src-8881d8184a2c1af1"
+        ],
+        "module": [
+          "src-8881d8184a2c1af1"
+        ],
+        "kind": [
+          "src-8881d8184a2c1af1"
+        ],
+        "signature": [],
+        "parameters": [],
+        "return_type": [],
+        "effects": [],
+        "event_names": [],
+        "event_payloads": [],
+        "member_names": []
+      }
+    },
+    "text_justification": {
+      "claim_state": "presence-only",
+      "revalidation": {
+        "status": "current",
+        "api_version": "42.20",
+        "reason": null
+      },
+      "fields": {
+        "presence": [
+          "src-257e35bef907df3d"
+        ],
+        "module": [
+          "src-257e35bef907df3d"
+        ],
+        "kind": [
+          "src-257e35bef907df3d"
+        ],
+        "signature": [],
+        "parameters": [],
+        "return_type": [],
+        "effects": [],
+        "event_names": [],
+        "event_payloads": [],
+        "member_names": []
+      }
+    },
+    "text_overflow_policy": {
+      "claim_state": "presence-only",
+      "revalidation": {
+        "status": "current",
+        "api_version": "42.20",
+        "reason": null
+      },
+      "fields": {
+        "presence": [
+          "src-257e35bef907df3d"
+        ],
+        "module": [
+          "src-257e35bef907df3d"
+        ],
+        "kind": [
+          "src-257e35bef907df3d"
+        ],
+        "signature": [],
+        "parameters": [],
+        "return_type": [],
+        "effects": [],
+        "event_names": [],
+        "event_payloads": [],
+        "member_names": []
+      }
+    },
+    "text_wrapping_policy": {
+      "claim_state": "presence-only",
+      "revalidation": {
+        "status": "current",
+        "api_version": "42.20",
+        "reason": null
+      },
+      "fields": {
+        "presence": [
+          "src-257e35bef907df3d"
+        ],
+        "module": [
+          "src-257e35bef907df3d"
+        ],
+        "kind": [
+          "src-257e35bef907df3d"
+        ],
+        "signature": [],
+        "parameters": [],
+        "return_type": [],
+        "effects": [],
+        "event_names": [],
+        "event_payloads": [],
+        "member_names": []
+      }
+    },
+    "texture_block": {
+      "claim_state": "presence-only",
+      "revalidation": {
+        "status": "current",
+        "api_version": "42.20",
+        "reason": null
+      },
+      "fields": {
+        "presence": [
+          "src-6a71e5bfcb6de4dd"
+        ],
+        "module": [
+          "src-6a71e5bfcb6de4dd"
+        ],
+        "kind": [
+          "src-6a71e5bfcb6de4dd"
+        ],
+        "signature": [],
+        "parameters": [],
+        "return_type": [],
+        "effects": [],
+        "event_names": [],
+        "event_payloads": [],
+        "member_names": []
+      }
+    },
+    "tick_events": {
+      "claim_state": "presence-only",
+      "revalidation": {
+        "status": "current",
+        "api_version": "42.20",
+        "reason": null
+      },
+      "fields": {
+        "presence": [
+          "src-b5aad23cc8884ca4"
+        ],
+        "module": [
+          "src-b5aad23cc8884ca4"
+        ],
+        "kind": [
+          "src-b5aad23cc8884ca4"
+        ],
+        "signature": [],
+        "parameters": [],
+        "return_type": [],
+        "effects": [],
+        "event_names": [],
+        "event_payloads": [],
+        "member_names": []
+      }
+    },
+    "timer_device": {
+      "claim_state": "presence-only",
+      "revalidation": {
+        "status": "current",
+        "api_version": "42.20",
+        "reason": null
+      },
+      "fields": {
+        "presence": [
+          "src-c761145741f68f6e"
+        ],
+        "module": [
+          "src-c761145741f68f6e"
+        ],
+        "kind": [
+          "src-c761145741f68f6e"
+        ],
+        "signature": [],
+        "parameters": [],
+        "return_type": [],
+        "effects": [],
+        "event_names": [],
+        "event_payloads": [],
+        "member_names": []
+      }
+    },
+    "tracker_device": {
+      "claim_state": "presence-only",
+      "revalidation": {
+        "status": "current",
+        "api_version": "42.20",
+        "reason": null
+      },
+      "fields": {
+        "presence": [
+          "src-dd6493310e347628"
+        ],
+        "module": [
+          "src-dd6493310e347628"
+        ],
+        "kind": [
+          "src-dd6493310e347628"
+        ],
+        "signature": [],
+        "parameters": [],
+        "return_type": [],
+        "effects": [],
+        "event_names": [
+          "src-dd6493310e347628"
+        ],
+        "event_payloads": [],
+        "member_names": [
+          "src-dd6493310e347628"
+        ]
+      }
+    },
+    "transform_component": {
+      "claim_state": "presence-only",
+      "revalidation": {
+        "status": "current",
+        "api_version": "42.20",
+        "reason": null
+      },
+      "fields": {
+        "presence": [
+          "src-b5aad23cc8884ca4"
+        ],
+        "module": [
+          "src-b5aad23cc8884ca4"
+        ],
+        "kind": [
+          "src-b5aad23cc8884ca4"
+        ],
+        "signature": [],
+        "parameters": [],
+        "return_type": [],
+        "effects": [],
+        "event_names": [],
+        "event_payloads": [],
+        "member_names": []
+      }
+    },
+    "trigger_base_device": {
+      "claim_state": "presence-only",
+      "revalidation": {
+        "status": "current",
+        "api_version": "42.20",
+        "reason": null
+      },
+      "fields": {
+        "presence": [
+          "src-eae608efd2e25e56"
+        ],
+        "module": [
+          "src-eae608efd2e25e56"
+        ],
+        "kind": [
+          "src-eae608efd2e25e56"
+        ],
+        "signature": [],
+        "parameters": [],
+        "return_type": [],
+        "effects": [],
+        "event_names": [],
+        "event_payloads": [],
+        "member_names": [
+          "src-eae608efd2e25e56"
+        ]
+      }
+    },
+    "trigger_device": {
+      "claim_state": "presence-only",
+      "revalidation": {
+        "status": "current",
+        "api_version": "42.20",
+        "reason": null
+      },
+      "fields": {
+        "presence": [
+          "src-4aef325446496f4c"
+        ],
+        "module": [
+          "src-4aef325446496f4c"
+        ],
+        "kind": [
+          "src-4aef325446496f4c"
+        ],
+        "signature": [],
+        "parameters": [],
+        "return_type": [],
+        "effects": [],
+        "event_names": [
+          "src-4aef325446496f4c"
+        ],
+        "event_payloads": [],
+        "member_names": [
+          "src-4aef325446496f4c"
+        ]
+      }
+    },
+    "ui_input_mode": {
+      "claim_state": "presence-only",
+      "revalidation": {
+        "status": "current",
+        "api_version": "42.20",
+        "reason": null
+      },
+      "fields": {
+        "presence": [
+          "src-257e35bef907df3d"
+        ],
+        "module": [
+          "src-257e35bef907df3d"
+        ],
+        "kind": [
+          "src-257e35bef907df3d"
+        ],
+        "signature": [],
+        "parameters": [],
+        "return_type": [],
+        "effects": [],
+        "event_names": [],
+        "event_payloads": [],
+        "member_names": []
+      }
+    },
+    "uncommon_rarity": {
+      "claim_state": "presence-only",
+      "revalidation": {
+        "status": "current",
+        "api_version": "42.20",
+        "reason": null
+      },
+      "fields": {
+        "presence": [
+          "src-b5aad23cc8884ca4"
+        ],
+        "module": [
+          "src-b5aad23cc8884ca4"
+        ],
+        "kind": [
+          "src-b5aad23cc8884ca4"
+        ],
+        "signature": [],
+        "parameters": [],
+        "return_type": [],
+        "effects": [],
+        "event_names": [],
+        "event_payloads": [],
+        "member_names": []
+      }
+    },
+    "vertical_alignment": {
+      "claim_state": "presence-only",
+      "revalidation": {
+        "status": "current",
+        "api_version": "42.20",
+        "reason": null
+      },
+      "fields": {
+        "presence": [
+          "src-257e35bef907df3d"
+        ],
+        "module": [
+          "src-257e35bef907df3d"
+        ],
+        "kind": [
+          "src-257e35bef907df3d"
+        ],
+        "signature": [],
+        "parameters": [],
+        "return_type": [],
+        "effects": [],
+        "event_names": [],
+        "event_payloads": [],
+        "member_names": []
+      }
+    },
+    "vfx_creator_device": {
+      "claim_state": "presence-only",
+      "revalidation": {
+        "status": "current",
+        "api_version": "42.20",
+        "reason": null
+      },
+      "fields": {
+        "presence": [
+          "src-291c52266f166333"
+        ],
+        "module": [
+          "src-291c52266f166333"
+        ],
+        "kind": [
+          "src-291c52266f166333"
+        ],
+        "signature": [],
+        "parameters": [],
+        "return_type": [],
+        "effects": [],
+        "event_names": [],
+        "event_payloads": [],
+        "member_names": [
+          "src-291c52266f166333"
+        ]
+      }
+    },
+    "vfx_spawner_device": {
+      "claim_state": "presence-only",
+      "revalidation": {
+        "status": "current",
+        "api_version": "42.20",
+        "reason": null
+      },
+      "fields": {
+        "presence": [
+          "src-4639f54ebf7c1dc4"
+        ],
+        "module": [
+          "src-4639f54ebf7c1dc4"
+        ],
+        "kind": [
+          "src-4639f54ebf7c1dc4"
+        ],
+        "signature": [],
+        "parameters": [],
+        "return_type": [],
+        "effects": [],
+        "event_names": [
+          "src-4639f54ebf7c1dc4"
+        ],
+        "event_payloads": [],
+        "member_names": [
+          "src-4639f54ebf7c1dc4"
+        ]
+      }
+    },
+    "volume_device": {
+      "claim_state": "presence-only",
+      "revalidation": {
+        "status": "current",
+        "api_version": "42.20",
+        "reason": null
+      },
+      "fields": {
+        "presence": [
+          "src-82785b60c51511b0"
+        ],
+        "module": [
+          "src-82785b60c51511b0"
+        ],
+        "kind": [
+          "src-82785b60c51511b0"
+        ],
+        "signature": [],
+        "parameters": [],
+        "return_type": [],
+        "effects": [],
+        "event_names": [
+          "src-82785b60c51511b0"
+        ],
+        "event_payloads": [],
+        "member_names": []
+      }
+    },
+    "widget": {
+      "claim_state": "presence-only",
+      "revalidation": {
+        "status": "current",
+        "api_version": "42.20",
+        "reason": null
+      },
+      "fields": {
+        "presence": [
+          "src-99050cc9fcdae437"
+        ],
+        "module": [
+          "src-99050cc9fcdae437"
+        ],
+        "kind": [
+          "src-99050cc9fcdae437"
+        ],
+        "signature": [],
+        "parameters": [],
+        "return_type": [],
+        "effects": [],
+        "event_names": [],
+        "event_payloads": [],
+        "member_names": [
+          "src-99050cc9fcdae437"
+        ]
+      }
+    },
+    "widget_message": {
+      "claim_state": "presence-only",
+      "revalidation": {
+        "status": "current",
+        "api_version": "42.20",
+        "reason": null
+      },
+      "fields": {
+        "presence": [
+          "src-257e35bef907df3d"
+        ],
+        "module": [
+          "src-257e35bef907df3d"
+        ],
+        "kind": [
+          "src-257e35bef907df3d"
+        ],
+        "signature": [],
+        "parameters": [],
+        "return_type": [],
+        "effects": [],
+        "event_names": [],
+        "event_payloads": [],
+        "member_names": []
+      }
+    },
+    "widget_visibility": {
+      "claim_state": "presence-only",
+      "revalidation": {
+        "status": "current",
+        "api_version": "42.20",
+        "reason": null
+      },
+      "fields": {
+        "presence": [
+          "src-257e35bef907df3d"
+        ],
+        "module": [
+          "src-257e35bef907df3d"
+        ],
+        "kind": [
+          "src-257e35bef907df3d"
+        ],
+        "signature": [],
+        "parameters": [],
+        "return_type": [],
+        "effects": [],
+        "event_names": [],
+        "event_payloads": [],
+        "member_names": []
+      }
+    }
+  }
+}

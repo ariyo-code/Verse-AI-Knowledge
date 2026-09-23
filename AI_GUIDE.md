@@ -1,48 +1,56 @@
-# AI Guide — V22
+# AI Guide — V24
 
-This repository is a retrieval and evidence system. It does not replace the Verse compiler or UEFN runtime.
+Verse AI Knowledge is a retrieval, evidence, claim-resolution and evaluation system.
 
-Start with `AI_BOOTSTRAP.md`.
+UEFN remains the authority for compilation and runtime behavior.
 
-## Core workflow
+## Workflow
 
 ```text
 request
-  → routing
-  → targeted retrieval
-  → Evidence Pack
-  → Claim Ledger
-  → implementation
-  → static checks
-  → UEFN compile/runtime/multiplayer evidence when available
+→ routing
+→ targeted retrieval
+→ field-level API claim resolution
+→ Evidence Pack
+→ Claim Ledger
+→ implementation
+→ generated-code provenance
+→ static claim lint
+→ UEFN validation when available
 ```
 
-## Confidence model
+## API exactness
 
-Never mix source authority with local validation.
+Use `field_evidence` and the claim resolver before asserting exact API details.
 
-`source_trust` answers **why the source is credible/current**. `validation` answers **what was actually tested locally**.
-
-Canonical vocabularies live in `manifest.json`, `schemas/trust.schema.json`, and `schemas/validation_status.schema.json`.
-
-## Exact API claims
-
-Presence evidence does not automatically prove an exact signature. If a signature, effect, module, event, property, or other exact API detail is not supported at the required evidence level, use:
-
-```text
-TODO(API VERIFY)
+```bash
+verse-ai claim GetFortCharacter --field signature
 ```
 
-## Source priority
+Presence-only evidence never justifies guessing a signature.
 
-Prefer, in context:
+## Evidence graph
 
-1. actual UEFN compiler/runtime evidence for local behavior;
-2. actual project source for project state;
-3. exact current official API evidence;
-4. verified repository knowledge;
-5. external examples according to provenance;
-6. planned architecture;
-7. model memory only as non-authoritative fallback.
+`knowledge/api/evidence_graph.json` records which evidence supports which fields.
 
-A remote Epic documentation change triggers revalidation; it does not automatically rewrite verified truth.
+A version mismatch triggers revalidation.
+
+## Generation quality
+
+Deterministic policy evals validate repository guardrails only.
+
+The optional `evals/llm/` harness is for end-to-end model outputs. Without configured saved responses/provider integration it reports `SKIPPED`.
+
+No static evaluator may invent UEFN compile success.
+
+## Coverage loop
+
+```bash
+verse-ai coverage
+verse-ai api-queue
+python tools/harvest_epic_api.py --symbol SYMBOL
+# review official evidence
+python tools/review_api_candidate.py SYMBOL --signature "..." --source-url "https://dev.epicgames.com/documentation/..."
+python tools/migrate_api_catalog_v24.py
+verse-ai validate
+```

@@ -4,12 +4,12 @@
     {
       "name": "schema",
       "passed": true,
-      "detail": "schema=22"
+      "detail": "schema=24"
     },
     {
       "name": "release",
       "passed": true,
-      "detail": "release=22.0.0"
+      "detail": "release=24.0.0"
     },
     {
       "name": "AI bootstrap",
@@ -32,19 +32,54 @@
       "detail": "knowledge/api/symbols.jsonl"
     },
     {
+      "name": "API coverage",
+      "passed": true,
+      "detail": "knowledge/api/coverage.json"
+    },
+    {
+      "name": "API queue",
+      "passed": true,
+      "detail": "knowledge/api/verification_queue.json"
+    },
+    {
+      "name": "API evidence graph",
+      "passed": true,
+      "detail": "knowledge/api/evidence_graph.json"
+    },
+    {
+      "name": "API revalidation",
+      "passed": true,
+      "detail": "knowledge/api/revalidation_state.json"
+    },
+    {
+      "name": "generated provenance",
+      "passed": true,
+      "detail": "portable/generated_code_marker.json"
+    },
+    {
+      "name": "claim resolver",
+      "passed": true,
+      "detail": "tools/resolve_api_claim.py"
+    },
+    {
+      "name": "LLM eval harness",
+      "passed": true,
+      "detail": "evals/llm/runner.py"
+    },
+    {
       "name": "evidence compiler",
       "passed": true,
-      "detail": "context compiler present"
+      "detail": "tools/rag_context_compiler.py"
     },
     {
       "name": "claim ledger",
       "passed": true,
-      "detail": "claim ledger present"
+      "detail": "tools/build_claim_ledger.py"
     },
     {
-      "name": "evals",
+      "name": "policy evals",
       "passed": true,
-      "detail": "anti-hallucination cases present"
+      "detail": "evals/hallucination/cases.json"
     },
     {
       "name": "unified CI",
@@ -52,5 +87,6 @@
       "detail": ".github/workflows/ci.yml"
     }
   ],
-  "uefn_compile_status": "NOT TESTED"
+  "uefn_compile_status": "NOT TESTED",
+  "llm_end_to_end_status": "SKIPPED unless configured"
 }

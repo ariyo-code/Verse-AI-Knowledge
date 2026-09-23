@@ -1,70 +1,115 @@
-# AI Bootstrap — Verse AI Knowledge V22
+# AI Bootstrap — Verse AI Knowledge V24
 
-This is the primary entry point for an AI working with this repository. It does **not** replace `AGENTS.md`.
+This is the authoritative entry point for repository-aware AI agents.
+
+Read `AGENTS.md` before substantial implementation.
 
 ## Absolute rule
 
-**Never invent a Verse / UEFN API.** Never fabricate a class, function, event, module, property, effect, signature, import, or UEFN feature.
+**Never invent a Verse / UEFN API.**
 
-If an exact API claim cannot be supported by the repository's evidence model, use:
+If an exact API claim cannot be supported:
 
 ```text
 TODO(API VERIFY)
 ```
 
-A static check is not a UEFN compile. `compiled`, `verified`, and `multiplayer-verified` require real corresponding evidence.
+## V24 field-level API rule
+
+A symbol being known does not prove every field.
+
+Before emitting an exact:
+
+- signature;
+- parameter list;
+- return type;
+- effect;
+- event payload;
+- member name;
+
+resolve the corresponding field against stored evidence.
+
+Use:
+
+```bash
+verse-ai claim SYMBOL --field signature
+verse-ai claim SYMBOL --field effects
+```
+
+A result of:
+
+```text
+TODO(API VERIFY)
+```
+
+must not be rewritten from memory.
 
 ## Required workflow
 
 ```text
 Task
-  ↓
-AI_BOOTSTRAP
-  ↓
+↓
 knowledge/ROUTING.md
-  ↓
-Targeted retrieval
-  ↓
+↓
+targeted retrieval
+↓
+API claim resolution
+↓
 Evidence Pack
-  ↓
-Claim validation
-  ↓
-Implementation
-  ↓
-UEFN validation when available
+↓
+Claim Ledger
+↓
+implementation
+↓
+V24 generated-code provenance
+↓
+static/API-claim validation
+↓
+UEFN compile/runtime/multiplayer validation when available
+↓
+promotion with evidence
 ```
 
-For non-trivial work:
+## Generated Verse
 
-1. Identify the domain and relevant project context.
-2. Read `knowledge/ROUTING.md`.
-3. Retrieve only the smallest useful set of sources.
-4. Prefer exact, current, higher-trust evidence over similarity or model memory.
-5. Build an Evidence Pack when the tooling is available.
-6. Verify exact API signatures before emitting them as facts.
-7. Use `TODO(API VERIFY)` for unsupported exact API claims.
-8. Never claim a UEFN compile or runtime result that did not actually happen.
-9. Consider lifecycle, multiplayer, cleanup, concurrency, failure contexts, and persistence when relevant.
-10. Read `AGENTS.md` before substantial implementation.
+Generated Verse in Markdown must use:
 
-## Two-axis confidence model
+1. the visible V24 provenance block before the code;
+2. the hidden HTML V24 marker after the code.
 
-Every important technical claim should distinguish:
+Never use invisible Unicode.
 
-- `source_trust`: how authoritative/current the source is;
-- `validation`: what has actually been validated locally.
+See `docs/GENERATED_CODE_MARKER.md`.
 
-These axes are independent. See `schemas/trust.schema.json`, `schemas/validation_status.schema.json`, and `docs/architecture/V22_KNOWLEDGE_INTEGRITY.md`.
+## Validation
 
-## Fast commands
+Generated code defaults to:
 
-After installing the local CLI (`python -m pip install -e .`):
+```text
+draft
+```
+
+Only real evidence can justify:
+
+```text
+compiled
+verified
+multiplayer-verified
+```
+
+## Useful commands
 
 ```bash
 verse-ai search "vehicle ownership"
 verse-ai context "create RP phone"
 verse-ai api GetFortCharacter
-verse-ai errors "compiler error text"
+verse-ai claim GetFortCharacter --field signature
+verse-ai lint path/to/code.verse
+verse-ai coverage
+verse-ai api-queue
+verse-ai errors "compiler error"
 verse-ai doctor
 verse-ai validate
 ```
+
+Read `docs/architecture/V24_CLAIM_RESOLUTION.md` for the V24 evidence model.

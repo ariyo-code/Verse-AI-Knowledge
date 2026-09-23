@@ -9,10 +9,11 @@
   ],
   "missing_required_roles": [],
   "exact_api_matches": [],
+  "exact_api_claims": {},
   "sources": [
     {
       "role": "api_evidence",
-      "score": 16.339,
+      "score": 16.722,
       "source_trust": "api-page-verified",
       "validation": "draft",
       "path": "docs/api/core/player_ui.md",
@@ -20,7 +21,7 @@
     },
     {
       "role": "lifecycle",
-      "score": 19.483,
+      "score": 20.735,
       "source_trust": "unknown",
       "validation": "draft",
       "path": "docs/patterns/ui-lifecycle.md",
@@ -28,7 +29,7 @@
     },
     {
       "role": "project_context",
-      "score": 24.678,
+      "score": 25.841,
       "source_trust": "unknown",
       "validation": "draft",
       "path": "projects/rp-framework/systems/hud-system/system.json",
@@ -36,7 +37,7 @@
     },
     {
       "role": "verification",
-      "score": 9.254,
+      "score": 9.931,
       "source_trust": "unknown",
       "validation": "draft",
       "path": "mcp/QUALITY_GATE.md",
@@ -44,7 +45,7 @@
     },
     {
       "role": "project_context",
-      "score": 23.678,
+      "score": 24.366,
       "source_trust": "unknown",
       "validation": "draft",
       "path": "projects/rp-framework/decisions/ADR-0003-player-lifecycle.md",
@@ -60,7 +61,7 @@
     },
     {
       "role": "lifecycle",
-      "score": 14.052,
+      "score": 14.7,
       "source_trust": "unknown",
       "validation": "draft",
       "path": "benchmark/tasks/B003-player-lifecycle.md",
@@ -76,15 +77,15 @@
     },
     {
       "role": "verification",
-      "score": 7.22,
+      "score": 7.825,
       "source_trust": "unknown",
       "validation": "draft",
-      "path": "mcp/PROJECT_SYNC.md",
-      "title": "Sync Project Memory with UEFN"
+      "path": "tools/build_api_verification_queue.py",
+      "title": "build_api_verification_queue"
     },
     {
       "role": "external_examples",
-      "score": 20.676,
+      "score": 21.912,
       "source_trust": "unknown",
       "validation": "draft",
       "path": "external/corpus/uefncentral-examples/c5fed52f687964fa83035f52423763553b129391/examples/player-systems/ui3-device.verse",
@@ -92,19 +93,19 @@
     },
     {
       "role": "project_context",
-      "score": 23.022,
+      "score": 23.728,
       "source_trust": "unknown",
       "validation": "draft",
       "path": "projects/rp-framework/systems/hud-system/README.md",
       "title": "HUD / UI System"
     },
     {
-      "role": "project_context",
-      "score": 21.74,
+      "role": "supporting",
+      "score": 23.083,
       "source_trust": "unknown",
       "validation": "draft",
-      "path": "projects/rp-framework/systems/phone-system/system.json",
-      "title": "system"
+      "path": "evals/retrieval/evidence_composition.json",
+      "title": "evidence_composition"
     }
   ]
 }

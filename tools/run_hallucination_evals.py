@@ -9,6 +9,7 @@ ROOT=Path(__file__).resolve().parents[1]
 sys.path.insert(0,str(ROOT/'src'))
 from verse_ai_knowledge.api_index import load_symbols  # noqa: E402
 from verse_ai_knowledge.policy import exact_signature_allowed  # noqa: E402
+from verse_ai_knowledge.claims import resolve_claim  # noqa: E402
 
 cases=json.loads((ROOT/'evals/hallucination/cases.json').read_text(encoding='utf-8'))['cases']
 symbols=load_symbols(ROOT); by_id={x.get('symbol_id'):x for x in symbols}; by_name={x.get('name'):x for x in symbols}
@@ -33,7 +34,16 @@ for case in cases:
     elif kind=='compile_claim':
         action='reject' if not case.get('compiled_evidence') and case.get('validation') in {'draft','static-checked'} else 'allow'; passed=action==case['expected']; false_compile+=not passed
     elif kind=='exact_signature_guard':
-        api_cases+=1; row=by_id.get(case['symbol']) or by_name.get(case['symbol']); allowed=bool(row and exact_signature_allowed(row)); action='allow_exact_signature' if allowed else 'todo_api_verify'; passed=(action=='todo_api_verify'); unsupported_sig+=not passed; todo_expected+=1; todo_predicted+=action=='todo_api_verify'; todo_true+=passed and action=='todo_api_verify'; verified_source_hits+=bool(row and row.get('source_trust') in {'signature-verified','api-page-verified','official-current'})
+        api_cases+=1; row=by_id.get(case['symbol']) or by_name.get(case['symbol']); allowed=bool(row and exact_signature_allowed(row)); action='allow_exact_signature' if allowed else 'todo_api_verify'; expected=case.get('expected','todo_api_verify'); passed=(action==expected); unsupported_sig+=bool(expected=='todo_api_verify' and action!='todo_api_verify'); todo_expected+=int(expected=='todo_api_verify'); todo_predicted+=action=='todo_api_verify'; todo_true+=passed and action=='todo_api_verify'; verified_source_hits+=bool(row and row.get('source_trust') in {'signature-verified','api-page-verified','official-current'})
+    elif kind=='field_claim_guard':
+        api_cases+=1
+        result=resolve_claim(case['symbol'],case.get('field','presence'),root=ROOT)
+        action='allow_exact_claim' if result.get('supported') else 'todo_api_verify'
+        expected=case.get('expected','todo_api_verify')
+        passed=(action==expected)
+        todo_expected+=int(expected=='todo_api_verify')
+        todo_predicted+=action=='todo_api_verify'
+        todo_true+=passed and action=='todo_api_verify'
     rows.append({'id':case['id'],'passed':bool(passed),'action':action})
 passed_count=sum(x['passed'] for x in rows)
 metrics={
@@ -44,7 +54,7 @@ metrics={
  'verified_source_usage': verified_source_hits/max(api_cases,1),
  'TODO_API_VERIFY_precision': todo_true/max(todo_predicted,1),
 }
-out={'suite':'v22-policy-guards','note':'Deterministic repository policy eval; no LLM and no UEFN compile were invoked.','passed':passed_count,'total':len(rows),'metrics':metrics,'cases':rows,'uefn_compile_status':'NOT TESTED'}
+out={'suite':'v24-policy-guards','note':'Deterministic repository policy eval; no LLM and no UEFN compile were invoked.','passed':passed_count,'total':len(rows),'metrics':metrics,'cases':rows,'uefn_compile_status':'NOT TESTED'}
 res=ROOT/'evals/results/hallucination_policy.json'; res.parent.mkdir(parents=True,exist_ok=True); res.write_text(json.dumps(out,indent=2,ensure_ascii=False)+'\n',encoding='utf-8')
 print(f'Anti-hallucination policy eval: {passed_count}/{len(rows)}')
 for row in rows: print(row['id'],'PASS' if row['passed'] else 'FAIL',row['action'])

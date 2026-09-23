@@ -1,0 +1,2743 @@
+{
+  "schema_version": 2,
+  "generated_by": "tools/migrate_api_catalog_v24.py",
+  "pending_count": 152,
+  "items": [
+    {
+      "symbol_id": "character_device",
+      "kind": "class",
+      "module": "/Fortnite.com/Devices",
+      "source_url": "https://dev.epicgames.com/documentation/fortnite/verse-api/fortnitedotcom/devices/character_device",
+      "signature_state": "missing",
+      "priority_score": 134,
+      "needs": [
+        "declaration",
+        "members",
+        "events"
+      ],
+      "reason": "Exact signature evidence is not yet verified.",
+      "missing_field_evidence": [
+        "declaration_or_signature"
+      ],
+      "revalidation_status": "current"
+    },
+    {
+      "symbol_id": "class_and_team_selector_device",
+      "kind": "class",
+      "module": "/Fortnite.com/Devices",
+      "source_url": "https://dev.epicgames.com/documentation/fortnite/verse-api/fortnitedotcom/devices/class_and_team_selector_device",
+      "signature_state": "missing",
+      "priority_score": 134,
+      "needs": [
+        "declaration",
+        "members",
+        "events"
+      ],
+      "reason": "Exact signature evidence is not yet verified.",
+      "missing_field_evidence": [
+        "declaration_or_signature"
+      ],
+      "revalidation_status": "current"
+    },
+    {
+      "symbol_id": "damage_volume_device",
+      "kind": "class",
+      "module": "/Fortnite.com/Devices",
+      "source_url": "https://dev.epicgames.com/documentation/fortnite/verse-api/fortnitedotcom/devices/damage_volume_device",
+      "signature_state": "missing",
+      "priority_score": 134,
+      "needs": [
+        "declaration",
+        "members",
+        "events"
+      ],
+      "reason": "Exact signature evidence is not yet verified.",
+      "missing_field_evidence": [
+        "declaration_or_signature"
+      ],
+      "revalidation_status": "current"
+    },
+    {
+      "symbol_id": "elimination_manager_device",
+      "kind": "class",
+      "module": "/Fortnite.com/Devices",
+      "source_url": "https://dev.epicgames.com/documentation/fortnite/verse-api/fortnitedotcom/devices/elimination_manager_device",
+      "signature_state": "missing",
+      "priority_score": 134,
+      "needs": [
+        "declaration",
+        "members",
+        "events"
+      ],
+      "reason": "Exact signature evidence is not yet verified.",
+      "missing_field_evidence": [
+        "declaration_or_signature"
+      ],
+      "revalidation_status": "current"
+    },
+    {
+      "symbol_id": "mutator_zone_device",
+      "kind": "class",
+      "module": "/Fortnite.com/Devices",
+      "source_url": "https://dev.epicgames.com/documentation/fortnite/verse-api/fortnitedotcom/devices/mutator_zone_device",
+      "signature_state": "missing",
+      "priority_score": 134,
+      "needs": [
+        "declaration",
+        "members",
+        "events"
+      ],
+      "reason": "Exact signature evidence is not yet verified.",
+      "missing_field_evidence": [
+        "declaration_or_signature"
+      ],
+      "revalidation_status": "current"
+    },
+    {
+      "symbol_id": "popup_dialog_device",
+      "kind": "class",
+      "module": "/Fortnite.com/Devices",
+      "source_url": "https://dev.epicgames.com/documentation/fortnite/verse-api/fortnitedotcom/devices/popup_dialog_device",
+      "signature_state": "missing",
+      "priority_score": 134,
+      "needs": [
+        "declaration",
+        "members",
+        "events"
+      ],
+      "reason": "Exact signature evidence is not yet verified.",
+      "missing_field_evidence": [
+        "declaration_or_signature"
+      ],
+      "revalidation_status": "current"
+    },
+    {
+      "symbol_id": "prop_manipulator_device",
+      "kind": "class",
+      "module": "/Fortnite.com/Devices",
+      "source_url": "https://dev.epicgames.com/documentation/fortnite/verse-api/fortnitedotcom/devices/prop_manipulator_device",
+      "signature_state": "missing",
+      "priority_score": 134,
+      "needs": [
+        "declaration",
+        "members",
+        "events"
+      ],
+      "reason": "Exact signature evidence is not yet verified.",
+      "missing_field_evidence": [
+        "declaration_or_signature"
+      ],
+      "revalidation_status": "current"
+    },
+    {
+      "symbol_id": "score_manager_device",
+      "kind": "class",
+      "module": "/Fortnite.com/Devices",
+      "source_url": "https://dev.epicgames.com/documentation/fortnite/verse-api/fortnitedotcom/devices/score_manager_device",
+      "signature_state": "missing",
+      "priority_score": 134,
+      "needs": [
+        "declaration",
+        "members",
+        "events"
+      ],
+      "reason": "Exact signature evidence is not yet verified.",
+      "missing_field_evidence": [
+        "declaration_or_signature"
+      ],
+      "revalidation_status": "current"
+    },
+    {
+      "symbol_id": "sentry_device",
+      "kind": "class",
+      "module": "/Fortnite.com/Devices",
+      "source_url": "https://dev.epicgames.com/documentation/fortnite/verse-api/fortnitedotcom/devices/sentry_device",
+      "signature_state": "missing",
+      "priority_score": 134,
+      "needs": [
+        "declaration",
+        "members",
+        "events"
+      ],
+      "reason": "Exact signature evidence is not yet verified.",
+      "missing_field_evidence": [
+        "declaration_or_signature"
+      ],
+      "revalidation_status": "current"
+    },
+    {
+      "symbol_id": "switch_device",
+      "kind": "class",
+      "module": "/Fortnite.com/Devices",
+      "source_url": "https://dev.epicgames.com/documentation/fortnite/verse-api/fortnitedotcom/devices/switch_device",
+      "signature_state": "missing",
+      "priority_score": 134,
+      "needs": [
+        "declaration",
+        "members",
+        "events"
+      ],
+      "reason": "Exact signature evidence is not yet verified.",
+      "missing_field_evidence": [
+        "declaration_or_signature"
+      ],
+      "revalidation_status": "current"
+    },
+    {
+      "symbol_id": "team_settings_and_inventory_device",
+      "kind": "class",
+      "module": "/Fortnite.com/Devices",
+      "source_url": "https://dev.epicgames.com/documentation/fortnite/verse-api/fortnitedotcom/devices/team_settings_and_inventory_device",
+      "signature_state": "missing",
+      "priority_score": 134,
+      "needs": [
+        "declaration",
+        "members",
+        "events"
+      ],
+      "reason": "Exact signature evidence is not yet verified.",
+      "missing_field_evidence": [
+        "declaration_or_signature"
+      ],
+      "revalidation_status": "current"
+    },
+    {
+      "symbol_id": "tracker_device",
+      "kind": "class",
+      "module": "/Fortnite.com/Devices",
+      "source_url": "https://dev.epicgames.com/documentation/fortnite/verse-api/fortnitedotcom/devices/tracker_device",
+      "signature_state": "missing",
+      "priority_score": 134,
+      "needs": [
+        "declaration",
+        "members",
+        "events"
+      ],
+      "reason": "Exact signature evidence is not yet verified.",
+      "missing_field_evidence": [
+        "declaration_or_signature"
+      ],
+      "revalidation_status": "current"
+    },
+    {
+      "symbol_id": "vfx_spawner_device",
+      "kind": "class",
+      "module": "/Fortnite.com/Devices",
+      "source_url": "https://dev.epicgames.com/documentation/fortnite/verse-api/fortnitedotcom/devices/vfx_spawner_device",
+      "signature_state": "missing",
+      "priority_score": 134,
+      "needs": [
+        "declaration",
+        "members",
+        "events"
+      ],
+      "reason": "Exact signature evidence is not yet verified.",
+      "missing_field_evidence": [
+        "declaration_or_signature"
+      ],
+      "revalidation_status": "current"
+    },
+    {
+      "symbol_id": "audio_player_device",
+      "kind": "class",
+      "module": "/Fortnite.com/Devices",
+      "source_url": "https://dev.epicgames.com/documentation/fortnite/verse-api/fortnitedotcom/devices/audio_player_device",
+      "signature_state": "missing",
+      "priority_score": 131,
+      "needs": [
+        "declaration",
+        "members",
+        "events"
+      ],
+      "reason": "Exact signature evidence is not yet verified.",
+      "missing_field_evidence": [
+        "declaration_or_signature"
+      ],
+      "revalidation_status": "current"
+    },
+    {
+      "symbol_id": "barrier_device",
+      "kind": "class",
+      "module": "/Fortnite.com/Devices",
+      "source_url": "https://dev.epicgames.com/documentation/fortnite/verse-api/fortnitedotcom/devices/barrier_device",
+      "signature_state": "missing",
+      "priority_score": 131,
+      "needs": [
+        "declaration",
+        "members",
+        "events"
+      ],
+      "reason": "Exact signature evidence is not yet verified.",
+      "missing_field_evidence": [
+        "declaration_or_signature"
+      ],
+      "revalidation_status": "current"
+    },
+    {
+      "symbol_id": "button",
+      "kind": "class",
+      "module": "/UnrealEngine.com/Temporary/UI",
+      "source_url": "https://dev.epicgames.com/documentation/fortnite/verse-api/unrealenginedotcom/temporary/ui/button",
+      "signature_state": "missing",
+      "priority_score": 131,
+      "needs": [
+        "declaration",
+        "members",
+        "events"
+      ],
+      "reason": "Exact signature evidence is not yet verified.",
+      "missing_field_evidence": [
+        "declaration_or_signature"
+      ],
+      "revalidation_status": "current"
+    },
+    {
+      "symbol_id": "canvas",
+      "kind": "class",
+      "module": "/UnrealEngine.com/Temporary/UI",
+      "source_url": "https://dev.epicgames.com/documentation/fortnite/verse-api/unrealenginedotcom/temporary/ui/canvas",
+      "signature_state": "missing",
+      "priority_score": 131,
+      "needs": [
+        "declaration",
+        "members",
+        "events"
+      ],
+      "reason": "Exact signature evidence is not yet verified.",
+      "missing_field_evidence": [
+        "declaration_or_signature"
+      ],
+      "revalidation_status": "current"
+    },
+    {
+      "symbol_id": "capture_area_device",
+      "kind": "class",
+      "module": "/Fortnite.com/Devices",
+      "source_url": "https://dev.epicgames.com/documentation/fortnite/verse-api/fortnitedotcom/devices/capture_area_device",
+      "signature_state": "missing",
+      "priority_score": 131,
+      "needs": [
+        "declaration",
+        "members",
+        "events"
+      ],
+      "reason": "Exact signature evidence is not yet verified.",
+      "missing_field_evidence": [
+        "declaration_or_signature"
+      ],
+      "revalidation_status": "current"
+    },
+    {
+      "symbol_id": "color_block",
+      "kind": "class",
+      "module": "/UnrealEngine.com/Temporary/UI",
+      "source_url": "https://dev.epicgames.com/documentation/fortnite/verse-api/unrealenginedotcom/temporary/ui/color_block",
+      "signature_state": "missing",
+      "priority_score": 131,
+      "needs": [
+        "declaration",
+        "members",
+        "events"
+      ],
+      "reason": "Exact signature evidence is not yet verified.",
+      "missing_field_evidence": [
+        "declaration_or_signature"
+      ],
+      "revalidation_status": "current"
+    },
+    {
+      "symbol_id": "creative_device_base",
+      "kind": "class",
+      "module": "/Fortnite.com/Devices",
+      "source_url": "https://dev.epicgames.com/documentation/fortnite/verse-api/fortnitedotcom/devices/creative_device_base",
+      "signature_state": "missing",
+      "priority_score": 131,
+      "needs": [
+        "declaration",
+        "members",
+        "events"
+      ],
+      "reason": "Exact signature evidence is not yet verified.",
+      "missing_field_evidence": [
+        "declaration_or_signature"
+      ],
+      "revalidation_status": "current"
+    },
+    {
+      "symbol_id": "creative_object",
+      "kind": "class",
+      "module": "/Fortnite.com/Devices",
+      "source_url": "https://dev.epicgames.com/documentation/fortnite/verse-api/fortnitedotcom/devices/creative_object",
+      "signature_state": "missing",
+      "priority_score": 131,
+      "needs": [
+        "declaration",
+        "members",
+        "events"
+      ],
+      "reason": "Exact signature evidence is not yet verified.",
+      "missing_field_evidence": [
+        "declaration_or_signature"
+      ],
+      "revalidation_status": "current"
+    },
+    {
+      "symbol_id": "end_game_device",
+      "kind": "class",
+      "module": "/Fortnite.com/Devices",
+      "source_url": "https://dev.epicgames.com/documentation/fortnite/verse-api/fortnitedotcom/devices/end_game_device",
+      "signature_state": "missing",
+      "priority_score": 131,
+      "needs": [
+        "declaration",
+        "members",
+        "events"
+      ],
+      "reason": "Exact signature evidence is not yet verified.",
+      "missing_field_evidence": [
+        "declaration_or_signature"
+      ],
+      "revalidation_status": "current"
+    },
+    {
+      "symbol_id": "input_trigger_device",
+      "kind": "class",
+      "module": "/Fortnite.com/Devices",
+      "source_url": "https://dev.epicgames.com/documentation/fortnite/verse-api/fortnitedotcom/devices/input_trigger_device",
+      "signature_state": "missing",
+      "priority_score": 131,
+      "needs": [
+        "declaration",
+        "members",
+        "events"
+      ],
+      "reason": "Exact signature evidence is not yet verified.",
+      "missing_field_evidence": [
+        "declaration_or_signature"
+      ],
+      "revalidation_status": "current"
+    },
+    {
+      "symbol_id": "item_placer_device",
+      "kind": "class",
+      "module": "/Fortnite.com/Devices",
+      "source_url": "https://dev.epicgames.com/documentation/fortnite/verse-api/fortnitedotcom/devices/item_placer_device",
+      "signature_state": "missing",
+      "priority_score": 131,
+      "needs": [
+        "declaration",
+        "members",
+        "events"
+      ],
+      "reason": "Exact signature evidence is not yet verified.",
+      "missing_field_evidence": [
+        "declaration_or_signature"
+      ],
+      "revalidation_status": "current"
+    },
+    {
+      "symbol_id": "map_controller_device",
+      "kind": "class",
+      "module": "/Fortnite.com/Devices",
+      "source_url": "https://dev.epicgames.com/documentation/fortnite/verse-api/fortnitedotcom/devices/map_controller_device",
+      "signature_state": "missing",
+      "priority_score": 131,
+      "needs": [
+        "declaration",
+        "members",
+        "events"
+      ],
+      "reason": "Exact signature evidence is not yet verified.",
+      "missing_field_evidence": [
+        "declaration_or_signature"
+      ],
+      "revalidation_status": "current"
+    },
+    {
+      "symbol_id": "overlay",
+      "kind": "class",
+      "module": "/UnrealEngine.com/Temporary/UI",
+      "source_url": "https://dev.epicgames.com/documentation/fortnite/verse-api/unrealenginedotcom/temporary/ui/overlay",
+      "signature_state": "missing",
+      "priority_score": 131,
+      "needs": [
+        "declaration",
+        "members",
+        "events"
+      ],
+      "reason": "Exact signature evidence is not yet verified.",
+      "missing_field_evidence": [
+        "declaration_or_signature"
+      ],
+      "revalidation_status": "current"
+    },
+    {
+      "symbol_id": "player_reference_device",
+      "kind": "class",
+      "module": "/Fortnite.com/Devices",
+      "source_url": "https://dev.epicgames.com/documentation/fortnite/verse-api/fortnitedotcom/devices/player_reference_device",
+      "signature_state": "missing",
+      "priority_score": 131,
+      "needs": [
+        "declaration",
+        "members",
+        "events"
+      ],
+      "reason": "Exact signature evidence is not yet verified.",
+      "missing_field_evidence": [
+        "declaration_or_signature"
+      ],
+      "revalidation_status": "current"
+    },
+    {
+      "symbol_id": "player_ui",
+      "kind": "class",
+      "module": "/UnrealEngine.com/Temporary/UI",
+      "source_url": "https://dev.epicgames.com/documentation/fortnite/verse-api/unrealenginedotcom/temporary/ui/player_ui",
+      "signature_state": "missing",
+      "priority_score": 131,
+      "needs": [
+        "declaration",
+        "members",
+        "events"
+      ],
+      "reason": "Exact signature evidence is not yet verified.",
+      "missing_field_evidence": [
+        "declaration_or_signature"
+      ],
+      "revalidation_status": "current"
+    },
+    {
+      "symbol_id": "stack_box",
+      "kind": "class",
+      "module": "/UnrealEngine.com/Temporary/UI",
+      "source_url": "https://dev.epicgames.com/documentation/fortnite/verse-api/unrealenginedotcom/temporary/ui/stack_box",
+      "signature_state": "missing",
+      "priority_score": 131,
+      "needs": [
+        "declaration",
+        "members",
+        "events"
+      ],
+      "reason": "Exact signature evidence is not yet verified.",
+      "missing_field_evidence": [
+        "declaration_or_signature"
+      ],
+      "revalidation_status": "current"
+    },
+    {
+      "symbol_id": "trigger_base_device",
+      "kind": "class",
+      "module": "/Fortnite.com/Devices",
+      "source_url": "https://dev.epicgames.com/documentation/fortnite/verse-api/fortnitedotcom/devices/trigger_base_device",
+      "signature_state": "missing",
+      "priority_score": 131,
+      "needs": [
+        "declaration",
+        "members",
+        "events"
+      ],
+      "reason": "Exact signature evidence is not yet verified.",
+      "missing_field_evidence": [
+        "declaration_or_signature"
+      ],
+      "revalidation_status": "current"
+    },
+    {
+      "symbol_id": "vfx_creator_device",
+      "kind": "class",
+      "module": "/Fortnite.com/Devices",
+      "source_url": "https://dev.epicgames.com/documentation/fortnite/verse-api/fortnitedotcom/devices/vfx_creator_device",
+      "signature_state": "missing",
+      "priority_score": 131,
+      "needs": [
+        "declaration",
+        "members",
+        "events"
+      ],
+      "reason": "Exact signature evidence is not yet verified.",
+      "missing_field_evidence": [
+        "declaration_or_signature"
+      ],
+      "revalidation_status": "current"
+    },
+    {
+      "symbol_id": "volume_device",
+      "kind": "class",
+      "module": "/Fortnite.com/Devices",
+      "source_url": "https://dev.epicgames.com/documentation/fortnite/verse-api/fortnitedotcom/devices/volume_device",
+      "signature_state": "missing",
+      "priority_score": 131,
+      "needs": [
+        "declaration",
+        "members",
+        "events"
+      ],
+      "reason": "Exact signature evidence is not yet verified.",
+      "missing_field_evidence": [
+        "declaration_or_signature"
+      ],
+      "revalidation_status": "current"
+    },
+    {
+      "symbol_id": "widget",
+      "kind": "class",
+      "module": "/UnrealEngine.com/Temporary/UI",
+      "source_url": "https://dev.epicgames.com/documentation/fortnite/verse-api/unrealenginedotcom/temporary/ui/widget",
+      "signature_state": "missing",
+      "priority_score": 131,
+      "needs": [
+        "declaration",
+        "members",
+        "events"
+      ],
+      "reason": "Exact signature evidence is not yet verified.",
+      "missing_field_evidence": [
+        "declaration_or_signature"
+      ],
+      "revalidation_status": "current"
+    },
+    {
+      "symbol_id": "conversation_device",
+      "kind": "class",
+      "module": "/Fortnite.com/Devices",
+      "source_url": "https://dev.epicgames.com/documentation/fortnite/verse-api/fortnitedotcom/devices/conversation_device",
+      "signature_state": "missing",
+      "priority_score": 128,
+      "needs": [
+        "declaration",
+        "members",
+        "events"
+      ],
+      "reason": "Exact signature evidence is not yet verified.",
+      "missing_field_evidence": [
+        "declaration_or_signature"
+      ],
+      "revalidation_status": "current"
+    },
+    {
+      "symbol_id": "material_block",
+      "kind": "class",
+      "module": "/UnrealEngine.com/Temporary/UI",
+      "source_url": "https://dev.epicgames.com/documentation/fortnite/verse-api/unrealenginedotcom/temporary/ui/material_block",
+      "signature_state": "missing",
+      "priority_score": 128,
+      "needs": [
+        "declaration",
+        "members",
+        "events"
+      ],
+      "reason": "Exact signature evidence is not yet verified.",
+      "missing_field_evidence": [
+        "declaration_or_signature"
+      ],
+      "revalidation_status": "current"
+    },
+    {
+      "symbol_id": "texture_block",
+      "kind": "class",
+      "module": "/UnrealEngine.com/Temporary/UI",
+      "source_url": "https://dev.epicgames.com/documentation/fortnite/verse-api/unrealenginedotcom/temporary/ui/texture_block",
+      "signature_state": "missing",
+      "priority_score": 128,
+      "needs": [
+        "declaration",
+        "members",
+        "events"
+      ],
+      "reason": "Exact signature evidence is not yet verified.",
+      "missing_field_evidence": [
+        "declaration_or_signature"
+      ],
+      "revalidation_status": "current"
+    },
+    {
+      "symbol_id": "button_device",
+      "kind": "class",
+      "module": "/Fortnite.com/Devices",
+      "source_url": "https://dev.epicgames.com/documentation/fortnite/verse-api/fortnitedotcom/devices/button_device",
+      "signature_state": "missing",
+      "priority_score": 126,
+      "needs": [
+        "declaration",
+        "members",
+        "events"
+      ],
+      "reason": "Exact signature evidence is not yet verified.",
+      "missing_field_evidence": [
+        "declaration_or_signature"
+      ],
+      "revalidation_status": "current"
+    },
+    {
+      "symbol_id": "conditional_button_device",
+      "kind": "class",
+      "module": "/Fortnite.com/Devices",
+      "source_url": "https://dev.epicgames.com/documentation/fortnite/verse-api/fortnitedotcom/devices/conditional_button_device",
+      "signature_state": "missing",
+      "priority_score": 126,
+      "needs": [
+        "declaration",
+        "members",
+        "events"
+      ],
+      "reason": "Exact signature evidence is not yet verified.",
+      "missing_field_evidence": [
+        "declaration_or_signature"
+      ],
+      "revalidation_status": "current"
+    },
+    {
+      "symbol_id": "fort_team_collection",
+      "kind": "interface",
+      "module": "/Fortnite.com/Teams",
+      "source_url": "https://dev.epicgames.com/documentation/fortnite/verse-api/fortnitedotcom/teams/fort_team_collection",
+      "signature_state": "missing",
+      "priority_score": 126,
+      "needs": [
+        "declaration",
+        "members",
+        "events"
+      ],
+      "reason": "Exact signature evidence is not yet verified.",
+      "missing_field_evidence": [
+        "declaration_or_signature"
+      ],
+      "revalidation_status": "current"
+    },
+    {
+      "symbol_id": "fort_vehicle",
+      "kind": "interface",
+      "module": "/Fortnite.com/Vehicles",
+      "source_url": "https://dev.epicgames.com/documentation/fortnite/verse-api/fortnitedotcom/vehicles/fort_vehicle",
+      "signature_state": "missing",
+      "priority_score": 126,
+      "needs": [
+        "declaration",
+        "members",
+        "events"
+      ],
+      "reason": "Exact signature evidence is not yet verified.",
+      "missing_field_evidence": [
+        "declaration_or_signature"
+      ],
+      "revalidation_status": "current"
+    },
+    {
+      "symbol_id": "hud_message_device",
+      "kind": "class",
+      "module": "/Fortnite.com/Devices",
+      "source_url": "https://dev.epicgames.com/documentation/fortnite/verse-api/fortnitedotcom/devices/hud_message_device",
+      "signature_state": "missing",
+      "priority_score": 126,
+      "needs": [
+        "declaration",
+        "members",
+        "events"
+      ],
+      "reason": "Exact signature evidence is not yet verified.",
+      "missing_field_evidence": [
+        "declaration_or_signature"
+      ],
+      "revalidation_status": "current"
+    },
+    {
+      "symbol_id": "item_granter_device",
+      "kind": "class",
+      "module": "/Fortnite.com/Devices",
+      "source_url": "https://dev.epicgames.com/documentation/fortnite/verse-api/fortnitedotcom/devices/item_granter_device",
+      "signature_state": "missing",
+      "priority_score": 126,
+      "needs": [
+        "declaration",
+        "members",
+        "events"
+      ],
+      "reason": "Exact signature evidence is not yet verified.",
+      "missing_field_evidence": [
+        "declaration_or_signature"
+      ],
+      "revalidation_status": "current"
+    },
+    {
+      "symbol_id": "player_spawner_device",
+      "kind": "class",
+      "module": "/Fortnite.com/Devices",
+      "source_url": "https://dev.epicgames.com/documentation/fortnite/verse-api/fortnitedotcom/devices/player_spawner_device",
+      "signature_state": "missing",
+      "priority_score": 126,
+      "needs": [
+        "declaration",
+        "members",
+        "events"
+      ],
+      "reason": "Exact signature evidence is not yet verified.",
+      "missing_field_evidence": [
+        "declaration_or_signature"
+      ],
+      "revalidation_status": "current"
+    },
+    {
+      "symbol_id": "teleporter_device",
+      "kind": "class",
+      "module": "/Fortnite.com/Devices",
+      "source_url": "https://dev.epicgames.com/documentation/fortnite/verse-api/fortnitedotcom/devices/teleporter_device",
+      "signature_state": "missing",
+      "priority_score": 126,
+      "needs": [
+        "declaration",
+        "members",
+        "events"
+      ],
+      "reason": "Exact signature evidence is not yet verified.",
+      "missing_field_evidence": [
+        "declaration_or_signature"
+      ],
+      "revalidation_status": "current"
+    },
+    {
+      "symbol_id": "trigger_device",
+      "kind": "class",
+      "module": "/Fortnite.com/Devices",
+      "source_url": "https://dev.epicgames.com/documentation/fortnite/verse-api/fortnitedotcom/devices/trigger_device",
+      "signature_state": "missing",
+      "priority_score": 126,
+      "needs": [
+        "declaration",
+        "members",
+        "events"
+      ],
+      "reason": "Exact signature evidence is not yet verified.",
+      "missing_field_evidence": [
+        "declaration_or_signature"
+      ],
+      "revalidation_status": "current"
+    },
+    {
+      "symbol_id": "creative_device",
+      "kind": "class",
+      "module": "/Fortnite.com/Devices",
+      "source_url": "https://dev.epicgames.com/documentation/fortnite/verse-api/fortnitedotcom/devices/creative_device",
+      "signature_state": "missing",
+      "priority_score": 123,
+      "needs": [
+        "declaration",
+        "members",
+        "events"
+      ],
+      "reason": "Exact signature evidence is not yet verified.",
+      "missing_field_evidence": [
+        "declaration_or_signature"
+      ],
+      "revalidation_status": "current"
+    },
+    {
+      "symbol_id": "item_remover_device",
+      "kind": "class",
+      "module": "/Fortnite.com/Devices",
+      "source_url": "https://dev.epicgames.com/documentation/fortnite/verse-api/fortnitedotcom/devices/item_remover_device",
+      "signature_state": "missing",
+      "priority_score": 123,
+      "needs": [
+        "declaration",
+        "members",
+        "events"
+      ],
+      "reason": "Exact signature evidence is not yet verified.",
+      "missing_field_evidence": [
+        "declaration_or_signature"
+      ],
+      "revalidation_status": "current"
+    },
+    {
+      "symbol_id": "basic_interactable_component",
+      "kind": "class",
+      "module": "/Verse.org/SceneGraph",
+      "source_url": "https://dev.epicgames.com/documentation/fortnite/verse-api/versedotorg/scenegraph",
+      "signature_state": "missing",
+      "priority_score": 120,
+      "needs": [
+        "declaration",
+        "members",
+        "events"
+      ],
+      "reason": "Exact signature evidence is not yet verified.",
+      "missing_field_evidence": [
+        "declaration_or_signature"
+      ],
+      "revalidation_status": "current"
+    },
+    {
+      "symbol_id": "basic_stackable_component",
+      "kind": "class",
+      "module": "/Verse.org/SceneGraph",
+      "source_url": "https://dev.epicgames.com/documentation/fortnite/verse-api/versedotorg/scenegraph",
+      "signature_state": "missing",
+      "priority_score": 120,
+      "needs": [
+        "declaration",
+        "members",
+        "events"
+      ],
+      "reason": "Exact signature evidence is not yet verified.",
+      "missing_field_evidence": [
+        "declaration_or_signature"
+      ],
+      "revalidation_status": "current"
+    },
+    {
+      "symbol_id": "button_loud",
+      "kind": "class",
+      "module": "/Fortnite.com/UI",
+      "source_url": "https://dev.epicgames.com/documentation/fortnite/verse-api/fortnitedotcom/ui",
+      "signature_state": "missing",
+      "priority_score": 120,
+      "needs": [
+        "declaration",
+        "members",
+        "events"
+      ],
+      "reason": "Exact signature evidence is not yet verified.",
+      "missing_field_evidence": [
+        "declaration_or_signature"
+      ],
+      "revalidation_status": "current"
+    },
+    {
+      "symbol_id": "button_quiet",
+      "kind": "class",
+      "module": "/Fortnite.com/UI",
+      "source_url": "https://dev.epicgames.com/documentation/fortnite/verse-api/fortnitedotcom/ui",
+      "signature_state": "missing",
+      "priority_score": 120,
+      "needs": [
+        "declaration",
+        "members",
+        "events"
+      ],
+      "reason": "Exact signature evidence is not yet verified.",
+      "missing_field_evidence": [
+        "declaration_or_signature"
+      ],
+      "revalidation_status": "current"
+    },
+    {
+      "symbol_id": "button_regular",
+      "kind": "class",
+      "module": "/Fortnite.com/UI",
+      "source_url": "https://dev.epicgames.com/documentation/fortnite/verse-api/fortnitedotcom/ui",
+      "signature_state": "missing",
+      "priority_score": 120,
+      "needs": [
+        "declaration",
+        "members",
+        "events"
+      ],
+      "reason": "Exact signature evidence is not yet verified.",
+      "missing_field_evidence": [
+        "declaration_or_signature"
+      ],
+      "revalidation_status": "current"
+    },
+    {
+      "symbol_id": "camera_body",
+      "kind": "class",
+      "module": "/Verse.org/SceneGraph",
+      "source_url": "https://dev.epicgames.com/documentation/fortnite/verse-api/versedotorg/scenegraph",
+      "signature_state": "missing",
+      "priority_score": 120,
+      "needs": [
+        "declaration",
+        "members",
+        "events"
+      ],
+      "reason": "Exact signature evidence is not yet verified.",
+      "missing_field_evidence": [
+        "declaration_or_signature"
+      ],
+      "revalidation_status": "current"
+    },
+    {
+      "symbol_id": "camera_component",
+      "kind": "class",
+      "module": "/Verse.org/SceneGraph",
+      "source_url": "https://dev.epicgames.com/documentation/fortnite/verse-api/versedotorg/scenegraph",
+      "signature_state": "missing",
+      "priority_score": 120,
+      "needs": [
+        "declaration",
+        "members",
+        "events"
+      ],
+      "reason": "Exact signature evidence is not yet verified.",
+      "missing_field_evidence": [
+        "declaration_or_signature"
+      ],
+      "revalidation_status": "current"
+    },
+    {
+      "symbol_id": "camera_director_component",
+      "kind": "class",
+      "module": "/Verse.org/SceneGraph",
+      "source_url": "https://dev.epicgames.com/documentation/fortnite/verse-api/versedotorg/scenegraph",
+      "signature_state": "missing",
+      "priority_score": 120,
+      "needs": [
+        "declaration",
+        "members",
+        "events"
+      ],
+      "reason": "Exact signature evidence is not yet verified.",
+      "missing_field_evidence": [
+        "declaration_or_signature"
+      ],
+      "revalidation_status": "current"
+    },
+    {
+      "symbol_id": "chair_device",
+      "kind": "class",
+      "module": "/Fortnite.com/Devices",
+      "source_url": "https://dev.epicgames.com/documentation/fortnite/verse-standup-comedy-club-template-in-unreal-editor-for-fortnite",
+      "signature_state": "missing",
+      "priority_score": 120,
+      "needs": [
+        "declaration",
+        "members",
+        "events"
+      ],
+      "reason": "Exact signature evidence is not yet verified.",
+      "missing_field_evidence": [
+        "declaration_or_signature"
+      ],
+      "revalidation_status": "current"
+    },
+    {
+      "symbol_id": "change_max_stack_size_result",
+      "kind": "class",
+      "module": "/Verse.org/SceneGraph",
+      "source_url": "https://dev.epicgames.com/documentation/fortnite/verse-api/versedotorg/scenegraph",
+      "signature_state": "missing",
+      "priority_score": 120,
+      "needs": [
+        "declaration",
+        "members",
+        "events"
+      ],
+      "reason": "Exact signature evidence is not yet verified.",
+      "missing_field_evidence": [
+        "declaration_or_signature"
+      ],
+      "revalidation_status": "current"
+    },
+    {
+      "symbol_id": "change_stack_size_result",
+      "kind": "class",
+      "module": "/Verse.org/SceneGraph",
+      "source_url": "https://dev.epicgames.com/documentation/fortnite/verse-api/versedotorg/scenegraph",
+      "signature_state": "missing",
+      "priority_score": 120,
+      "needs": [
+        "declaration",
+        "members",
+        "events"
+      ],
+      "reason": "Exact signature evidence is not yet verified.",
+      "missing_field_evidence": [
+        "declaration_or_signature"
+      ],
+      "revalidation_status": "current"
+    },
+    {
+      "symbol_id": "cinematic_sequence_device",
+      "kind": "class",
+      "module": "/Fortnite.com/Devices",
+      "source_url": "https://dev.epicgames.com/documentation/fortnite/change-a-players-point-of-view-with-cameras-in-unreal-editor-for-fortnite",
+      "signature_state": "missing",
+      "priority_score": 120,
+      "needs": [
+        "declaration",
+        "members",
+        "events"
+      ],
+      "reason": "Exact signature evidence is not yet verified.",
+      "missing_field_evidence": [
+        "declaration_or_signature"
+      ],
+      "revalidation_status": "current"
+    },
+    {
+      "symbol_id": "common_rarity",
+      "kind": "class",
+      "module": "/Verse.org/SceneGraph",
+      "source_url": "https://dev.epicgames.com/documentation/fortnite/verse-api/versedotorg/scenegraph",
+      "signature_state": "missing",
+      "priority_score": 120,
+      "needs": [
+        "declaration",
+        "members",
+        "events"
+      ],
+      "reason": "Exact signature evidence is not yet verified.",
+      "missing_field_evidence": [
+        "declaration_or_signature"
+      ],
+      "revalidation_status": "current"
+    },
+    {
+      "symbol_id": "creative_hud_identifier_all",
+      "kind": "class",
+      "module": "/Fortnite.com/UI",
+      "source_url": "https://dev.epicgames.com/documentation/fortnite/verse-api/fortnitedotcom/ui",
+      "signature_state": "missing",
+      "priority_score": 120,
+      "needs": [
+        "declaration",
+        "members",
+        "events"
+      ],
+      "reason": "Exact signature evidence is not yet verified.",
+      "missing_field_evidence": [
+        "declaration_or_signature"
+      ],
+      "revalidation_status": "current"
+    },
+    {
+      "symbol_id": "creative_hud_identifier_build_menu",
+      "kind": "class",
+      "module": "/Fortnite.com/UI",
+      "source_url": "https://dev.epicgames.com/documentation/fortnite/verse-api/fortnitedotcom/ui",
+      "signature_state": "missing",
+      "priority_score": 120,
+      "needs": [
+        "declaration",
+        "members",
+        "events"
+      ],
+      "reason": "Exact signature evidence is not yet verified.",
+      "missing_field_evidence": [
+        "declaration_or_signature"
+      ],
+      "revalidation_status": "current"
+    },
+    {
+      "symbol_id": "creative_hud_identifier_crafting_resources",
+      "kind": "class",
+      "module": "/Fortnite.com/UI",
+      "source_url": "https://dev.epicgames.com/documentation/fortnite/verse-api/fortnitedotcom/ui",
+      "signature_state": "missing",
+      "priority_score": 120,
+      "needs": [
+        "declaration",
+        "members",
+        "events"
+      ],
+      "reason": "Exact signature evidence is not yet verified.",
+      "missing_field_evidence": [
+        "declaration_or_signature"
+      ],
+      "revalidation_status": "current"
+    },
+    {
+      "symbol_id": "creative_hud_identifier_elimination_counter",
+      "kind": "class",
+      "module": "/Fortnite.com/UI",
+      "source_url": "https://dev.epicgames.com/documentation/fortnite/verse-api/fortnitedotcom/ui",
+      "signature_state": "missing",
+      "priority_score": 120,
+      "needs": [
+        "declaration",
+        "members",
+        "events"
+      ],
+      "reason": "Exact signature evidence is not yet verified.",
+      "missing_field_evidence": [
+        "declaration_or_signature"
+      ],
+      "revalidation_status": "current"
+    },
+    {
+      "symbol_id": "creative_hud_identifier_equipped_item",
+      "kind": "class",
+      "module": "/Fortnite.com/UI",
+      "source_url": "https://dev.epicgames.com/documentation/fortnite/verse-api/fortnitedotcom/ui",
+      "signature_state": "missing",
+      "priority_score": 120,
+      "needs": [
+        "declaration",
+        "members",
+        "events"
+      ],
+      "reason": "Exact signature evidence is not yet verified.",
+      "missing_field_evidence": [
+        "declaration_or_signature"
+      ],
+      "revalidation_status": "current"
+    },
+    {
+      "symbol_id": "creative_hud_identifier_experience_level",
+      "kind": "class",
+      "module": "/Fortnite.com/UI",
+      "source_url": "https://dev.epicgames.com/documentation/fortnite/verse-api/fortnitedotcom/ui",
+      "signature_state": "missing",
+      "priority_score": 120,
+      "needs": [
+        "declaration",
+        "members",
+        "events"
+      ],
+      "reason": "Exact signature evidence is not yet verified.",
+      "missing_field_evidence": [
+        "declaration_or_signature"
+      ],
+      "revalidation_status": "current"
+    },
+    {
+      "symbol_id": "creative_hud_identifier_team_info",
+      "kind": "class",
+      "module": "/Fortnite.com/UI",
+      "source_url": "https://dev.epicgames.com/documentation/fortnite/verse-api/fortnitedotcom/ui",
+      "signature_state": "missing",
+      "priority_score": 120,
+      "needs": [
+        "declaration",
+        "members",
+        "events"
+      ],
+      "reason": "Exact signature evidence is not yet verified.",
+      "missing_field_evidence": [
+        "declaration_or_signature"
+      ],
+      "revalidation_status": "current"
+    },
+    {
+      "symbol_id": "cubic_bezier_easing_function",
+      "kind": "class",
+      "module": "/Verse.org/SceneGraph/KeyframedMovement",
+      "source_url": "https://dev.epicgames.com/documentation/fortnite/verse-api/versedotorg/scenegraph/keyframedmovement",
+      "signature_state": "missing",
+      "priority_score": 120,
+      "needs": [
+        "declaration",
+        "members",
+        "events"
+      ],
+      "reason": "Exact signature evidence is not yet verified.",
+      "missing_field_evidence": [
+        "declaration_or_signature"
+      ],
+      "revalidation_status": "current"
+    },
+    {
+      "symbol_id": "ease_cubic_bezier_easing_function",
+      "kind": "class",
+      "module": "/Verse.org/SceneGraph/KeyframedMovement",
+      "source_url": "https://dev.epicgames.com/documentation/fortnite/verse-api/versedotorg/scenegraph/keyframedmovement",
+      "signature_state": "missing",
+      "priority_score": 120,
+      "needs": [
+        "declaration",
+        "members",
+        "events"
+      ],
+      "reason": "Exact signature evidence is not yet verified.",
+      "missing_field_evidence": [
+        "declaration_or_signature"
+      ],
+      "revalidation_status": "current"
+    },
+    {
+      "symbol_id": "ease_in_cubic_bezier_easing_function",
+      "kind": "class",
+      "module": "/Verse.org/SceneGraph/KeyframedMovement",
+      "source_url": "https://dev.epicgames.com/documentation/fortnite/verse-api/versedotorg/scenegraph/keyframedmovement",
+      "signature_state": "missing",
+      "priority_score": 120,
+      "needs": [
+        "declaration",
+        "members",
+        "events"
+      ],
+      "reason": "Exact signature evidence is not yet verified.",
+      "missing_field_evidence": [
+        "declaration_or_signature"
+      ],
+      "revalidation_status": "current"
+    },
+    {
+      "symbol_id": "ease_in_out_cubic_bezier_easing_function",
+      "kind": "class",
+      "module": "/Verse.org/SceneGraph/KeyframedMovement",
+      "source_url": "https://dev.epicgames.com/documentation/fortnite/verse-api/versedotorg/scenegraph/keyframedmovement",
+      "signature_state": "missing",
+      "priority_score": 120,
+      "needs": [
+        "declaration",
+        "members",
+        "events"
+      ],
+      "reason": "Exact signature evidence is not yet verified.",
+      "missing_field_evidence": [
+        "declaration_or_signature"
+      ],
+      "revalidation_status": "current"
+    },
+    {
+      "symbol_id": "ease_out_cubic_bezier_easing_function",
+      "kind": "class",
+      "module": "/Verse.org/SceneGraph/KeyframedMovement",
+      "source_url": "https://dev.epicgames.com/documentation/fortnite/verse-api/versedotorg/scenegraph/keyframedmovement",
+      "signature_state": "missing",
+      "priority_score": 120,
+      "needs": [
+        "declaration",
+        "members",
+        "events"
+      ],
+      "reason": "Exact signature evidence is not yet verified.",
+      "missing_field_evidence": [
+        "declaration_or_signature"
+      ],
+      "revalidation_status": "current"
+    },
+    {
+      "symbol_id": "easing_function",
+      "kind": "class",
+      "module": "/Verse.org/SceneGraph/KeyframedMovement",
+      "source_url": "https://dev.epicgames.com/documentation/fortnite/verse-api/versedotorg/scenegraph/keyframedmovement",
+      "signature_state": "missing",
+      "priority_score": 120,
+      "needs": [
+        "declaration",
+        "members",
+        "events"
+      ],
+      "reason": "Exact signature evidence is not yet verified.",
+      "missing_field_evidence": [
+        "declaration_or_signature"
+      ],
+      "revalidation_status": "current"
+    },
+    {
+      "symbol_id": "entity",
+      "kind": "class",
+      "module": "/Verse.org/SceneGraph",
+      "source_url": "https://dev.epicgames.com/documentation/fortnite/verse-api/versedotorg/scenegraph",
+      "signature_state": "missing",
+      "priority_score": 120,
+      "needs": [
+        "declaration",
+        "members",
+        "events"
+      ],
+      "reason": "Exact signature evidence is not yet verified.",
+      "missing_field_evidence": [
+        "declaration_or_signature"
+      ],
+      "revalidation_status": "current"
+    },
+    {
+      "symbol_id": "entity_origin",
+      "kind": "class",
+      "module": "/Verse.org/SceneGraph",
+      "source_url": "https://dev.epicgames.com/documentation/fortnite/verse-api/versedotorg/scenegraph",
+      "signature_state": "missing",
+      "priority_score": 120,
+      "needs": [
+        "declaration",
+        "members",
+        "events"
+      ],
+      "reason": "Exact signature evidence is not yet verified.",
+      "missing_field_evidence": [
+        "declaration_or_signature"
+      ],
+      "revalidation_status": "current"
+    },
+    {
+      "symbol_id": "entity_prefab",
+      "kind": "class",
+      "module": "/Verse.org/SceneGraph",
+      "source_url": "https://dev.epicgames.com/documentation/fortnite/verse-api/versedotorg/scenegraph",
+      "signature_state": "missing",
+      "priority_score": 120,
+      "needs": [
+        "declaration",
+        "members",
+        "events"
+      ],
+      "reason": "Exact signature evidence is not yet verified.",
+      "missing_field_evidence": [
+        "declaration_or_signature"
+      ],
+      "revalidation_status": "current"
+    },
+    {
+      "symbol_id": "epic_rarity",
+      "kind": "class",
+      "module": "/Verse.org/SceneGraph",
+      "source_url": "https://dev.epicgames.com/documentation/fortnite/verse-api/versedotorg/scenegraph",
+      "signature_state": "missing",
+      "priority_score": 120,
+      "needs": [
+        "declaration",
+        "members",
+        "events"
+      ],
+      "reason": "Exact signature evidence is not yet verified.",
+      "missing_field_evidence": [
+        "declaration_or_signature"
+      ],
+      "revalidation_status": "current"
+    },
+    {
+      "symbol_id": "execution_listenable",
+      "kind": "class",
+      "module": "/Verse.org/SceneGraph",
+      "source_url": "https://dev.epicgames.com/documentation/fortnite/verse-api/versedotorg/scenegraph",
+      "signature_state": "missing",
+      "priority_score": 120,
+      "needs": [
+        "declaration",
+        "members",
+        "events"
+      ],
+      "reason": "Exact signature evidence is not yet verified.",
+      "missing_field_evidence": [
+        "declaration_or_signature"
+      ],
+      "revalidation_status": "current"
+    },
+    {
+      "symbol_id": "fort_vehicle_seat",
+      "kind": "class",
+      "module": "/Fortnite.com/Vehicles",
+      "source_url": "https://dev.epicgames.com/documentation/fortnite/verse-api/fortnitedotcom/vehicles",
+      "signature_state": "missing",
+      "priority_score": 120,
+      "needs": [
+        "declaration",
+        "members",
+        "events"
+      ],
+      "reason": "Exact signature evidence is not yet verified.",
+      "missing_field_evidence": [
+        "declaration_or_signature"
+      ],
+      "revalidation_status": "current"
+    },
+    {
+      "symbol_id": "hud_element_identifier",
+      "kind": "class",
+      "module": "/Fortnite.com/UI",
+      "source_url": "https://dev.epicgames.com/documentation/fortnite/verse-api/fortnitedotcom/ui",
+      "signature_state": "missing",
+      "priority_score": 120,
+      "needs": [
+        "declaration",
+        "members",
+        "events"
+      ],
+      "reason": "Exact signature evidence is not yet verified.",
+      "missing_field_evidence": [
+        "declaration_or_signature"
+      ],
+      "revalidation_status": "current"
+    },
+    {
+      "symbol_id": "hud_identifier_visual_sound_effect_all",
+      "kind": "class",
+      "module": "/Fortnite.com/UI",
+      "source_url": "https://dev.epicgames.com/documentation/fortnite/verse-api/fortnitedotcom/ui",
+      "signature_state": "missing",
+      "priority_score": 120,
+      "needs": [
+        "declaration",
+        "members",
+        "events"
+      ],
+      "reason": "Exact signature evidence is not yet verified.",
+      "missing_field_evidence": [
+        "declaration_or_signature"
+      ],
+      "revalidation_status": "current"
+    },
+    {
+      "symbol_id": "hud_identifier_visual_sound_effect_healing",
+      "kind": "class",
+      "module": "/Fortnite.com/UI",
+      "source_url": "https://dev.epicgames.com/documentation/fortnite/verse-api/fortnitedotcom/ui",
+      "signature_state": "missing",
+      "priority_score": 120,
+      "needs": [
+        "declaration",
+        "members",
+        "events"
+      ],
+      "reason": "Exact signature evidence is not yet verified.",
+      "missing_field_evidence": [
+        "declaration_or_signature"
+      ],
+      "revalidation_status": "current"
+    },
+    {
+      "symbol_id": "hud_identifier_visual_sound_effect_loot",
+      "kind": "class",
+      "module": "/Fortnite.com/UI",
+      "source_url": "https://dev.epicgames.com/documentation/fortnite/verse-api/fortnitedotcom/ui",
+      "signature_state": "missing",
+      "priority_score": 120,
+      "needs": [
+        "declaration",
+        "members",
+        "events"
+      ],
+      "reason": "Exact signature evidence is not yet verified.",
+      "missing_field_evidence": [
+        "declaration_or_signature"
+      ],
+      "revalidation_status": "current"
+    },
+    {
+      "symbol_id": "hud_identifier_visual_sound_effect_movement",
+      "kind": "class",
+      "module": "/Fortnite.com/UI",
+      "source_url": "https://dev.epicgames.com/documentation/fortnite/verse-api/fortnitedotcom/ui",
+      "signature_state": "missing",
+      "priority_score": 120,
+      "needs": [
+        "declaration",
+        "members",
+        "events"
+      ],
+      "reason": "Exact signature evidence is not yet verified.",
+      "missing_field_evidence": [
+        "declaration_or_signature"
+      ],
+      "revalidation_status": "current"
+    },
+    {
+      "symbol_id": "hud_identifier_visual_sound_effect_vehicle",
+      "kind": "class",
+      "module": "/Fortnite.com/UI",
+      "source_url": "https://dev.epicgames.com/documentation/fortnite/verse-api/fortnitedotcom/ui",
+      "signature_state": "missing",
+      "priority_score": 120,
+      "needs": [
+        "declaration",
+        "members",
+        "events"
+      ],
+      "reason": "Exact signature evidence is not yet verified.",
+      "missing_field_evidence": [
+        "declaration_or_signature"
+      ],
+      "revalidation_status": "current"
+    },
+    {
+      "symbol_id": "hud_identifier_visual_sound_effect_weapons",
+      "kind": "class",
+      "module": "/Fortnite.com/UI",
+      "source_url": "https://dev.epicgames.com/documentation/fortnite/verse-api/fortnitedotcom/ui",
+      "signature_state": "missing",
+      "priority_score": 120,
+      "needs": [
+        "declaration",
+        "members",
+        "events"
+      ],
+      "reason": "Exact signature evidence is not yet verified.",
+      "missing_field_evidence": [
+        "declaration_or_signature"
+      ],
+      "revalidation_status": "current"
+    },
+    {
+      "symbol_id": "hud_identifier_world_resource_gold_currency",
+      "kind": "class",
+      "module": "/Fortnite.com/UI",
+      "source_url": "https://dev.epicgames.com/documentation/fortnite/verse-api/fortnitedotcom/ui",
+      "signature_state": "missing",
+      "priority_score": 120,
+      "needs": [
+        "declaration",
+        "members",
+        "events"
+      ],
+      "reason": "Exact signature evidence is not yet verified.",
+      "missing_field_evidence": [
+        "declaration_or_signature"
+      ],
+      "revalidation_status": "current"
+    },
+    {
+      "symbol_id": "hud_identifier_world_resource_ingredient",
+      "kind": "class",
+      "module": "/Fortnite.com/UI",
+      "source_url": "https://dev.epicgames.com/documentation/fortnite/verse-api/fortnitedotcom/ui",
+      "signature_state": "missing",
+      "priority_score": 120,
+      "needs": [
+        "declaration",
+        "members",
+        "events"
+      ],
+      "reason": "Exact signature evidence is not yet verified.",
+      "missing_field_evidence": [
+        "declaration_or_signature"
+      ],
+      "revalidation_status": "current"
+    },
+    {
+      "symbol_id": "hud_identifier_world_resource_metal",
+      "kind": "class",
+      "module": "/Fortnite.com/UI",
+      "source_url": "https://dev.epicgames.com/documentation/fortnite/verse-api/fortnitedotcom/ui",
+      "signature_state": "missing",
+      "priority_score": 120,
+      "needs": [
+        "declaration",
+        "members",
+        "events"
+      ],
+      "reason": "Exact signature evidence is not yet verified.",
+      "missing_field_evidence": [
+        "declaration_or_signature"
+      ],
+      "revalidation_status": "current"
+    },
+    {
+      "symbol_id": "hud_identifier_world_resource_permanite",
+      "kind": "class",
+      "module": "/Fortnite.com/UI",
+      "source_url": "https://dev.epicgames.com/documentation/fortnite/verse-api/fortnitedotcom/ui",
+      "signature_state": "missing",
+      "priority_score": 120,
+      "needs": [
+        "declaration",
+        "members",
+        "events"
+      ],
+      "reason": "Exact signature evidence is not yet verified.",
+      "missing_field_evidence": [
+        "declaration_or_signature"
+      ],
+      "revalidation_status": "current"
+    },
+    {
+      "symbol_id": "hud_identifier_world_resource_stone",
+      "kind": "class",
+      "module": "/Fortnite.com/UI",
+      "source_url": "https://dev.epicgames.com/documentation/fortnite/verse-api/fortnitedotcom/ui",
+      "signature_state": "missing",
+      "priority_score": 120,
+      "needs": [
+        "declaration",
+        "members",
+        "events"
+      ],
+      "reason": "Exact signature evidence is not yet verified.",
+      "missing_field_evidence": [
+        "declaration_or_signature"
+      ],
+      "revalidation_status": "current"
+    },
+    {
+      "symbol_id": "hud_identifier_world_resource_wood",
+      "kind": "class",
+      "module": "/Fortnite.com/UI",
+      "source_url": "https://dev.epicgames.com/documentation/fortnite/verse-api/fortnitedotcom/ui",
+      "signature_state": "missing",
+      "priority_score": 120,
+      "needs": [
+        "declaration",
+        "members",
+        "events"
+      ],
+      "reason": "Exact signature evidence is not yet verified.",
+      "missing_field_evidence": [
+        "declaration_or_signature"
+      ],
+      "revalidation_status": "current"
+    },
+    {
+      "symbol_id": "icon_component",
+      "kind": "class",
+      "module": "/Verse.org/SceneGraph",
+      "source_url": "https://dev.epicgames.com/documentation/fortnite/verse-api/versedotorg/scenegraph",
+      "signature_state": "missing",
+      "priority_score": 120,
+      "needs": [
+        "declaration",
+        "members",
+        "events"
+      ],
+      "reason": "Exact signature evidence is not yet verified.",
+      "missing_field_evidence": [
+        "declaration_or_signature"
+      ],
+      "revalidation_status": "current"
+    },
+    {
+      "symbol_id": "interactable_component",
+      "kind": "class",
+      "module": "/Verse.org/SceneGraph",
+      "source_url": "https://dev.epicgames.com/documentation/fortnite/verse-api/versedotorg/scenegraph",
+      "signature_state": "missing",
+      "priority_score": 120,
+      "needs": [
+        "declaration",
+        "members",
+        "events"
+      ],
+      "reason": "Exact signature evidence is not yet verified.",
+      "missing_field_evidence": [
+        "declaration_or_signature"
+      ],
+      "revalidation_status": "current"
+    },
+    {
+      "symbol_id": "interactable_cooldown",
+      "kind": "class",
+      "module": "/Verse.org/SceneGraph",
+      "source_url": "https://dev.epicgames.com/documentation/fortnite/verse-api/versedotorg/scenegraph",
+      "signature_state": "missing",
+      "priority_score": 120,
+      "needs": [
+        "declaration",
+        "members",
+        "events"
+      ],
+      "reason": "Exact signature evidence is not yet verified.",
+      "missing_field_evidence": [
+        "declaration_or_signature"
+      ],
+      "revalidation_status": "current"
+    },
+    {
+      "symbol_id": "interactable_cooldown_per_agent",
+      "kind": "class",
+      "module": "/Verse.org/SceneGraph",
+      "source_url": "https://dev.epicgames.com/documentation/fortnite/verse-api/versedotorg/scenegraph",
+      "signature_state": "missing",
+      "priority_score": 120,
+      "needs": [
+        "declaration",
+        "members",
+        "events"
+      ],
+      "reason": "Exact signature evidence is not yet verified.",
+      "missing_field_evidence": [
+        "declaration_or_signature"
+      ],
+      "revalidation_status": "current"
+    },
+    {
+      "symbol_id": "interactable_duration",
+      "kind": "class",
+      "module": "/Verse.org/SceneGraph",
+      "source_url": "https://dev.epicgames.com/documentation/fortnite/verse-api/versedotorg/scenegraph",
+      "signature_state": "missing",
+      "priority_score": 120,
+      "needs": [
+        "declaration",
+        "members",
+        "events"
+      ],
+      "reason": "Exact signature evidence is not yet verified.",
+      "missing_field_evidence": [
+        "declaration_or_signature"
+      ],
+      "revalidation_status": "current"
+    },
+    {
+      "symbol_id": "interactable_success_limit",
+      "kind": "class",
+      "module": "/Verse.org/SceneGraph",
+      "source_url": "https://dev.epicgames.com/documentation/fortnite/verse-api/versedotorg/scenegraph",
+      "signature_state": "missing",
+      "priority_score": 120,
+      "needs": [
+        "declaration",
+        "members",
+        "events"
+      ],
+      "reason": "Exact signature evidence is not yet verified.",
+      "missing_field_evidence": [
+        "declaration_or_signature"
+      ],
+      "revalidation_status": "current"
+    },
+    {
+      "symbol_id": "keyframed_movement_component",
+      "kind": "class",
+      "module": "/Verse.org/SceneGraph/KeyframedMovement",
+      "source_url": "https://dev.epicgames.com/documentation/fortnite/verse-api/versedotorg/scenegraph/keyframedmovement",
+      "signature_state": "missing",
+      "priority_score": 120,
+      "needs": [
+        "declaration",
+        "members",
+        "events"
+      ],
+      "reason": "Exact signature evidence is not yet verified.",
+      "missing_field_evidence": [
+        "declaration_or_signature"
+      ],
+      "revalidation_status": "current"
+    },
+    {
+      "symbol_id": "keyframed_movement_delta",
+      "kind": "class",
+      "module": "/Verse.org/SceneGraph/KeyframedMovement",
+      "source_url": "https://dev.epicgames.com/documentation/fortnite/verse-api/versedotorg/scenegraph/keyframedmovement",
+      "signature_state": "missing",
+      "priority_score": 120,
+      "needs": [
+        "declaration",
+        "members",
+        "events"
+      ],
+      "reason": "Exact signature evidence is not yet verified.",
+      "missing_field_evidence": [
+        "declaration_or_signature"
+      ],
+      "revalidation_status": "current"
+    },
+    {
+      "symbol_id": "keyframed_movement_playback_mode",
+      "kind": "class",
+      "module": "/Verse.org/SceneGraph/KeyframedMovement",
+      "source_url": "https://dev.epicgames.com/documentation/fortnite/verse-api/versedotorg/scenegraph/keyframedmovement",
+      "signature_state": "missing",
+      "priority_score": 120,
+      "needs": [
+        "declaration",
+        "members",
+        "events"
+      ],
+      "reason": "Exact signature evidence is not yet verified.",
+      "missing_field_evidence": [
+        "declaration_or_signature"
+      ],
+      "revalidation_status": "current"
+    },
+    {
+      "symbol_id": "legendary_rarity",
+      "kind": "class",
+      "module": "/Verse.org/SceneGraph",
+      "source_url": "https://dev.epicgames.com/documentation/fortnite/verse-api/versedotorg/scenegraph",
+      "signature_state": "missing",
+      "priority_score": 120,
+      "needs": [
+        "declaration",
+        "members",
+        "events"
+      ],
+      "reason": "Exact signature evidence is not yet verified.",
+      "missing_field_evidence": [
+        "declaration_or_signature"
+      ],
+      "revalidation_status": "current"
+    },
+    {
+      "symbol_id": "linear_easing_function",
+      "kind": "class",
+      "module": "/Verse.org/SceneGraph/KeyframedMovement",
+      "source_url": "https://dev.epicgames.com/documentation/fortnite/verse-api/versedotorg/scenegraph/keyframedmovement",
+      "signature_state": "missing",
+      "priority_score": 120,
+      "needs": [
+        "declaration",
+        "members",
+        "events"
+      ],
+      "reason": "Exact signature evidence is not yet verified.",
+      "missing_field_evidence": [
+        "declaration_or_signature"
+      ],
+      "revalidation_status": "current"
+    },
+    {
+      "symbol_id": "lock_device",
+      "kind": "class",
+      "module": "/Fortnite.com/Devices",
+      "source_url": "https://dev.epicgames.com/documentation/fortnite/change-a-players-point-of-view-with-cameras-in-unreal-editor-for-fortnite",
+      "signature_state": "missing",
+      "priority_score": 120,
+      "needs": [
+        "declaration",
+        "members",
+        "events"
+      ],
+      "reason": "Exact signature evidence is not yet verified.",
+      "missing_field_evidence": [
+        "declaration_or_signature"
+      ],
+      "revalidation_status": "current"
+    },
+    {
+      "symbol_id": "loop_keyframed_movement_playback_mode",
+      "kind": "class",
+      "module": "/Verse.org/SceneGraph/KeyframedMovement",
+      "source_url": "https://dev.epicgames.com/documentation/fortnite/verse-api/versedotorg/scenegraph/keyframedmovement",
+      "signature_state": "missing",
+      "priority_score": 120,
+      "needs": [
+        "declaration",
+        "members",
+        "events"
+      ],
+      "reason": "Exact signature evidence is not yet verified.",
+      "missing_field_evidence": [
+        "declaration_or_signature"
+      ],
+      "revalidation_status": "current"
+    },
+    {
+      "symbol_id": "map_indicator_device",
+      "kind": "class",
+      "module": "/Fortnite.com/Devices",
+      "source_url": "https://dev.epicgames.com/documentation/fortnite/change-a-players-point-of-view-with-cameras-in-unreal-editor-for-fortnite",
+      "signature_state": "missing",
+      "priority_score": 120,
+      "needs": [
+        "declaration",
+        "members",
+        "events"
+      ],
+      "reason": "Exact signature evidence is not yet verified.",
+      "missing_field_evidence": [
+        "declaration_or_signature"
+      ],
+      "revalidation_status": "current"
+    },
+    {
+      "symbol_id": "oneshot_keyframed_movement_playback_mode",
+      "kind": "class",
+      "module": "/Verse.org/SceneGraph/KeyframedMovement",
+      "source_url": "https://dev.epicgames.com/documentation/fortnite/verse-api/versedotorg/scenegraph/keyframedmovement",
+      "signature_state": "missing",
+      "priority_score": 120,
+      "needs": [
+        "declaration",
+        "members",
+        "events"
+      ],
+      "reason": "Exact signature evidence is not yet verified.",
+      "missing_field_evidence": [
+        "declaration_or_signature"
+      ],
+      "revalidation_status": "current"
+    },
+    {
+      "symbol_id": "pingpong_keyframed_movement_playback_mode",
+      "kind": "class",
+      "module": "/Verse.org/SceneGraph/KeyframedMovement",
+      "source_url": "https://dev.epicgames.com/documentation/fortnite/verse-api/versedotorg/scenegraph/keyframedmovement",
+      "signature_state": "missing",
+      "priority_score": 120,
+      "needs": [
+        "declaration",
+        "members",
+        "events"
+      ],
+      "reason": "Exact signature evidence is not yet verified.",
+      "missing_field_evidence": [
+        "declaration_or_signature"
+      ],
+      "revalidation_status": "current"
+    },
+    {
+      "symbol_id": "player_hud_identifier_all",
+      "kind": "class",
+      "module": "/Fortnite.com/UI",
+      "source_url": "https://dev.epicgames.com/documentation/fortnite/verse-api/fortnitedotcom/ui",
+      "signature_state": "missing",
+      "priority_score": 120,
+      "needs": [
+        "declaration",
+        "members",
+        "events"
+      ],
+      "reason": "Exact signature evidence is not yet verified.",
+      "missing_field_evidence": [
+        "declaration_or_signature"
+      ],
+      "revalidation_status": "current"
+    },
+    {
+      "symbol_id": "rare_rarity",
+      "kind": "class",
+      "module": "/Verse.org/SceneGraph",
+      "source_url": "https://dev.epicgames.com/documentation/fortnite/verse-api/versedotorg/scenegraph",
+      "signature_state": "missing",
+      "priority_score": 120,
+      "needs": [
+        "declaration",
+        "members",
+        "events"
+      ],
+      "reason": "Exact signature evidence is not yet verified.",
+      "missing_field_evidence": [
+        "declaration_or_signature"
+      ],
+      "revalidation_status": "current"
+    },
+    {
+      "symbol_id": "rarity",
+      "kind": "class",
+      "module": "/Verse.org/SceneGraph",
+      "source_url": "https://dev.epicgames.com/documentation/fortnite/verse-api/versedotorg/scenegraph",
+      "signature_state": "missing",
+      "priority_score": 120,
+      "needs": [
+        "declaration",
+        "members",
+        "events"
+      ],
+      "reason": "Exact signature evidence is not yet verified.",
+      "missing_field_evidence": [
+        "declaration_or_signature"
+      ],
+      "revalidation_status": "current"
+    },
+    {
+      "symbol_id": "rarity_component",
+      "kind": "class",
+      "module": "/Verse.org/SceneGraph",
+      "source_url": "https://dev.epicgames.com/documentation/fortnite/verse-api/versedotorg/scenegraph",
+      "signature_state": "missing",
+      "priority_score": 120,
+      "needs": [
+        "declaration",
+        "members",
+        "events"
+      ],
+      "reason": "Exact signature evidence is not yet verified.",
+      "missing_field_evidence": [
+        "declaration_or_signature"
+      ],
+      "revalidation_status": "current"
+    },
+    {
+      "symbol_id": "slider_regular",
+      "kind": "class",
+      "module": "/Fortnite.com/UI",
+      "source_url": "https://dev.epicgames.com/documentation/fortnite/verse-api/fortnitedotcom/ui",
+      "signature_state": "missing",
+      "priority_score": 120,
+      "needs": [
+        "declaration",
+        "members",
+        "events"
+      ],
+      "reason": "Exact signature evidence is not yet verified.",
+      "missing_field_evidence": [
+        "declaration_or_signature"
+      ],
+      "revalidation_status": "current"
+    },
+    {
+      "symbol_id": "stackable_component",
+      "kind": "class",
+      "module": "/Verse.org/SceneGraph",
+      "source_url": "https://dev.epicgames.com/documentation/fortnite/verse-api/versedotorg/scenegraph",
+      "signature_state": "missing",
+      "priority_score": 120,
+      "needs": [
+        "declaration",
+        "members",
+        "events"
+      ],
+      "reason": "Exact signature evidence is not yet verified.",
+      "missing_field_evidence": [
+        "declaration_or_signature"
+      ],
+      "revalidation_status": "current"
+    },
+    {
+      "symbol_id": "text_base",
+      "kind": "class",
+      "module": "/UnrealEngine.com/Temporary/UI",
+      "source_url": "https://dev.epicgames.com/documentation/fortnite/verse-api/unrealenginedotcom/temporary/ui",
+      "signature_state": "missing",
+      "priority_score": 120,
+      "needs": [
+        "declaration",
+        "members",
+        "events"
+      ],
+      "reason": "Exact signature evidence is not yet verified.",
+      "missing_field_evidence": [
+        "declaration_or_signature"
+      ],
+      "revalidation_status": "current"
+    },
+    {
+      "symbol_id": "text_block",
+      "kind": "class",
+      "module": "/Fortnite.com/UI",
+      "source_url": "https://dev.epicgames.com/documentation/fortnite/verse-api/fortnitedotcom/ui",
+      "signature_state": "missing",
+      "priority_score": 120,
+      "needs": [
+        "declaration",
+        "members",
+        "events"
+      ],
+      "reason": "Exact signature evidence is not yet verified.",
+      "missing_field_evidence": [
+        "declaration_or_signature"
+      ],
+      "revalidation_status": "current"
+    },
+    {
+      "symbol_id": "text_button_base",
+      "kind": "class",
+      "module": "/Fortnite.com/UI",
+      "source_url": "https://dev.epicgames.com/documentation/fortnite/verse-api/fortnitedotcom/ui",
+      "signature_state": "missing",
+      "priority_score": 120,
+      "needs": [
+        "declaration",
+        "members",
+        "events"
+      ],
+      "reason": "Exact signature evidence is not yet verified.",
+      "missing_field_evidence": [
+        "declaration_or_signature"
+      ],
+      "revalidation_status": "current"
+    },
+    {
+      "symbol_id": "tick_events",
+      "kind": "class",
+      "module": "/Verse.org/SceneGraph",
+      "source_url": "https://dev.epicgames.com/documentation/fortnite/verse-api/versedotorg/scenegraph",
+      "signature_state": "missing",
+      "priority_score": 120,
+      "needs": [
+        "declaration",
+        "members",
+        "events"
+      ],
+      "reason": "Exact signature evidence is not yet verified.",
+      "missing_field_evidence": [
+        "declaration_or_signature"
+      ],
+      "revalidation_status": "current"
+    },
+    {
+      "symbol_id": "timer_device",
+      "kind": "class",
+      "module": "/Fortnite.com/Devices",
+      "source_url": "https://dev.epicgames.com/documentation/fortnite/verse-start-02-timer-system-in-fortnite",
+      "signature_state": "missing",
+      "priority_score": 120,
+      "needs": [
+        "declaration",
+        "members",
+        "events"
+      ],
+      "reason": "Exact signature evidence is not yet verified.",
+      "missing_field_evidence": [
+        "declaration_or_signature"
+      ],
+      "revalidation_status": "current"
+    },
+    {
+      "symbol_id": "transform_component",
+      "kind": "class",
+      "module": "/Verse.org/SceneGraph",
+      "source_url": "https://dev.epicgames.com/documentation/fortnite/verse-api/versedotorg/scenegraph",
+      "signature_state": "missing",
+      "priority_score": 120,
+      "needs": [
+        "declaration",
+        "members",
+        "events"
+      ],
+      "reason": "Exact signature evidence is not yet verified.",
+      "missing_field_evidence": [
+        "declaration_or_signature"
+      ],
+      "revalidation_status": "current"
+    },
+    {
+      "symbol_id": "uncommon_rarity",
+      "kind": "class",
+      "module": "/Verse.org/SceneGraph",
+      "source_url": "https://dev.epicgames.com/documentation/fortnite/verse-api/versedotorg/scenegraph",
+      "signature_state": "missing",
+      "priority_score": 120,
+      "needs": [
+        "declaration",
+        "members",
+        "events"
+      ],
+      "reason": "Exact signature evidence is not yet verified.",
+      "missing_field_evidence": [
+        "declaration_or_signature"
+      ],
+      "revalidation_status": "current"
+    },
+    {
+      "symbol_id": "fort_character",
+      "kind": "interface",
+      "module": "/Fortnite.com/Characters",
+      "source_url": "https://dev.epicgames.com/documentation/fortnite/verse-api/fortnitedotcom/characters/fort_character",
+      "signature_state": "missing",
+      "priority_score": 118,
+      "needs": [
+        "declaration",
+        "members",
+        "events"
+      ],
+      "reason": "Exact signature evidence is not yet verified.",
+      "missing_field_evidence": [
+        "declaration_or_signature"
+      ],
+      "revalidation_status": "current"
+    },
+    {
+      "symbol_id": "fort_playspace",
+      "kind": "interface",
+      "module": "/Fortnite.com/Playspaces",
+      "source_url": "https://dev.epicgames.com/documentation/fortnite/verse-api/fortnitedotcom/playspaces/fort_playspace",
+      "signature_state": "missing",
+      "priority_score": 118,
+      "needs": [
+        "declaration",
+        "members",
+        "events"
+      ],
+      "reason": "Exact signature evidence is not yet verified.",
+      "missing_field_evidence": [
+        "declaration_or_signature"
+      ],
+      "revalidation_status": "current"
+    },
+    {
+      "symbol_id": "easeable",
+      "kind": "interface",
+      "module": "/Verse.org/SceneGraph",
+      "source_url": "https://dev.epicgames.com/documentation/fortnite/verse-api/versedotorg/scenegraph",
+      "signature_state": "missing",
+      "priority_score": 115,
+      "needs": [
+        "declaration",
+        "members",
+        "events"
+      ],
+      "reason": "Exact signature evidence is not yet verified.",
+      "missing_field_evidence": [
+        "declaration_or_signature"
+      ],
+      "revalidation_status": "current"
+    },
+    {
+      "symbol_id": "fort_hud_controller",
+      "kind": "interface",
+      "module": "/Fortnite.com/UI",
+      "source_url": "https://dev.epicgames.com/documentation/fortnite/verse-api/fortnitedotcom/ui",
+      "signature_state": "missing",
+      "priority_score": 115,
+      "needs": [
+        "declaration",
+        "members",
+        "events"
+      ],
+      "reason": "Exact signature evidence is not yet verified.",
+      "missing_field_evidence": [
+        "declaration_or_signature"
+      ],
+      "revalidation_status": "current"
+    },
+    {
+      "symbol_id": "has_camera_modifier",
+      "kind": "interface",
+      "module": "/Verse.org/SceneGraph",
+      "source_url": "https://dev.epicgames.com/documentation/fortnite/verse-api/versedotorg/scenegraph",
+      "signature_state": "missing",
+      "priority_score": 115,
+      "needs": [
+        "declaration",
+        "members",
+        "events"
+      ],
+      "reason": "Exact signature evidence is not yet verified.",
+      "missing_field_evidence": [
+        "declaration_or_signature"
+      ],
+      "revalidation_status": "current"
+    },
+    {
+      "symbol_id": "has_merge_rules",
+      "kind": "interface",
+      "module": "/Verse.org/SceneGraph",
+      "source_url": "https://dev.epicgames.com/documentation/fortnite/verse-api/versedotorg/scenegraph",
+      "signature_state": "missing",
+      "priority_score": 115,
+      "needs": [
+        "declaration",
+        "members",
+        "events"
+      ],
+      "reason": "Exact signature evidence is not yet verified.",
+      "missing_field_evidence": [
+        "declaration_or_signature"
+      ],
+      "revalidation_status": "current"
+    },
+    {
+      "symbol_id": "origin",
+      "kind": "interface",
+      "module": "/Verse.org/SceneGraph",
+      "source_url": "https://dev.epicgames.com/documentation/fortnite/verse-api/versedotorg/scenegraph",
+      "signature_state": "missing",
+      "priority_score": 115,
+      "needs": [
+        "declaration",
+        "members",
+        "events"
+      ],
+      "reason": "Exact signature evidence is not yet verified.",
+      "missing_field_evidence": [
+        "declaration_or_signature"
+      ],
+      "revalidation_status": "current"
+    },
+    {
+      "symbol_id": "scene_event",
+      "kind": "interface",
+      "module": "/Verse.org/SceneGraph",
+      "source_url": "https://dev.epicgames.com/documentation/fortnite/verse-api/versedotorg/scenegraph",
+      "signature_state": "missing",
+      "priority_score": 115,
+      "needs": [
+        "declaration",
+        "members",
+        "events"
+      ],
+      "reason": "Exact signature evidence is not yet verified.",
+      "missing_field_evidence": [
+        "declaration_or_signature"
+      ],
+      "revalidation_status": "current"
+    },
+    {
+      "symbol_id": "canvas_slot",
+      "kind": "struct",
+      "module": "/UnrealEngine.com/Temporary/UI",
+      "source_url": "https://dev.epicgames.com/documentation/fortnite/verse-api/unrealenginedotcom/temporary/ui/canvas_slot",
+      "signature_state": "missing",
+      "priority_score": 108,
+      "needs": [
+        "declaration",
+        "members",
+        "events"
+      ],
+      "reason": "Exact signature evidence is not yet verified.",
+      "missing_field_evidence": [
+        "declaration_or_signature"
+      ],
+      "revalidation_status": "current"
+    },
+    {
+      "symbol_id": "stack_box_slot",
+      "kind": "struct",
+      "module": "/UnrealEngine.com/Temporary/UI",
+      "source_url": "https://dev.epicgames.com/documentation/fortnite/verse-api/unrealenginedotcom/temporary/ui/stack_box_slot",
+      "signature_state": "missing",
+      "priority_score": 108,
+      "needs": [
+        "declaration",
+        "members",
+        "events"
+      ],
+      "reason": "Exact signature evidence is not yet verified.",
+      "missing_field_evidence": [
+        "declaration_or_signature"
+      ],
+      "revalidation_status": "current"
+    },
+    {
+      "symbol_id": "anchors",
+      "kind": "struct",
+      "module": "/UnrealEngine.com/Temporary/UI",
+      "source_url": "https://dev.epicgames.com/documentation/fortnite/verse-api/unrealenginedotcom/temporary/ui",
+      "signature_state": "missing",
+      "priority_score": 100,
+      "needs": [
+        "declaration",
+        "members",
+        "events"
+      ],
+      "reason": "Exact signature evidence is not yet verified.",
+      "missing_field_evidence": [
+        "declaration_or_signature"
+      ],
+      "revalidation_status": "current"
+    },
+    {
+      "symbol_id": "button_slot",
+      "kind": "struct",
+      "module": "/UnrealEngine.com/Temporary/UI",
+      "source_url": "https://dev.epicgames.com/documentation/fortnite/verse-api/unrealenginedotcom/temporary/ui",
+      "signature_state": "missing",
+      "priority_score": 100,
+      "needs": [
+        "declaration",
+        "members",
+        "events"
+      ],
+      "reason": "Exact signature evidence is not yet verified.",
+      "missing_field_evidence": [
+        "declaration_or_signature"
+      ],
+      "revalidation_status": "current"
+    },
+    {
+      "symbol_id": "margin",
+      "kind": "struct",
+      "module": "/UnrealEngine.com/Temporary/UI",
+      "source_url": "https://dev.epicgames.com/documentation/fortnite/verse-api/unrealenginedotcom/temporary/ui",
+      "signature_state": "missing",
+      "priority_score": 100,
+      "needs": [
+        "declaration",
+        "members",
+        "events"
+      ],
+      "reason": "Exact signature evidence is not yet verified.",
+      "missing_field_evidence": [
+        "declaration_or_signature"
+      ],
+      "revalidation_status": "current"
+    },
+    {
+      "symbol_id": "overlay_slot",
+      "kind": "struct",
+      "module": "/UnrealEngine.com/Temporary/UI",
+      "source_url": "https://dev.epicgames.com/documentation/fortnite/verse-api/unrealenginedotcom/temporary/ui",
+      "signature_state": "missing",
+      "priority_score": 100,
+      "needs": [
+        "declaration",
+        "members",
+        "events"
+      ],
+      "reason": "Exact signature evidence is not yet verified.",
+      "missing_field_evidence": [
+        "declaration_or_signature"
+      ],
+      "revalidation_status": "current"
+    },
+    {
+      "symbol_id": "player_ui_slot",
+      "kind": "struct",
+      "module": "/UnrealEngine.com/Temporary/UI",
+      "source_url": "https://dev.epicgames.com/documentation/fortnite/verse-api/unrealenginedotcom/temporary/ui",
+      "signature_state": "missing",
+      "priority_score": 100,
+      "needs": [
+        "declaration",
+        "members",
+        "events"
+      ],
+      "reason": "Exact signature evidence is not yet verified.",
+      "missing_field_evidence": [
+        "declaration_or_signature"
+      ],
+      "revalidation_status": "current"
+    },
+    {
+      "symbol_id": "widget_message",
+      "kind": "struct",
+      "module": "/UnrealEngine.com/Temporary/UI",
+      "source_url": "https://dev.epicgames.com/documentation/fortnite/verse-api/unrealenginedotcom/temporary/ui",
+      "signature_state": "missing",
+      "priority_score": 100,
+      "needs": [
+        "declaration",
+        "members",
+        "events"
+      ],
+      "reason": "Exact signature evidence is not yet verified.",
+      "missing_field_evidence": [
+        "declaration_or_signature"
+      ],
+      "revalidation_status": "current"
+    },
+    {
+      "symbol_id": "camera_projection_mode",
+      "kind": "enum",
+      "module": "/Verse.org/SceneGraph",
+      "source_url": "https://dev.epicgames.com/documentation/fortnite/verse-api/versedotorg/scenegraph",
+      "signature_state": "missing",
+      "priority_score": 90,
+      "needs": [
+        "declaration",
+        "members",
+        "events"
+      ],
+      "reason": "Exact signature evidence is not yet verified.",
+      "missing_field_evidence": [
+        "declaration_or_signature"
+      ],
+      "revalidation_status": "current"
+    },
+    {
+      "symbol_id": "camera_transition_initial_orientation",
+      "kind": "enum",
+      "module": "/Verse.org/SceneGraph",
+      "source_url": "https://dev.epicgames.com/documentation/fortnite/verse-api/versedotorg/scenegraph",
+      "signature_state": "missing",
+      "priority_score": 90,
+      "needs": [
+        "declaration",
+        "members",
+        "events"
+      ],
+      "reason": "Exact signature evidence is not yet verified.",
+      "missing_field_evidence": [
+        "declaration_or_signature"
+      ],
+      "revalidation_status": "current"
+    },
+    {
+      "symbol_id": "children_streaming_policy",
+      "kind": "enum",
+      "module": "/Verse.org/SceneGraph",
+      "source_url": "https://dev.epicgames.com/documentation/fortnite/verse-api/versedotorg/scenegraph",
+      "signature_state": "missing",
+      "priority_score": 90,
+      "needs": [
+        "declaration",
+        "members",
+        "events"
+      ],
+      "reason": "Exact signature evidence is not yet verified.",
+      "missing_field_evidence": [
+        "declaration_or_signature"
+      ],
+      "revalidation_status": "current"
+    },
+    {
+      "symbol_id": "collision_interaction",
+      "kind": "enum",
+      "module": "/Verse.org/SceneGraph",
+      "source_url": "https://dev.epicgames.com/documentation/fortnite/verse-api/versedotorg/scenegraph",
+      "signature_state": "missing",
+      "priority_score": 90,
+      "needs": [
+        "declaration",
+        "members",
+        "events"
+      ],
+      "reason": "Exact signature evidence is not yet verified.",
+      "missing_field_evidence": [
+        "declaration_or_signature"
+      ],
+      "revalidation_status": "current"
+    },
+    {
+      "symbol_id": "entity_streaming_policy",
+      "kind": "enum",
+      "module": "/Verse.org/SceneGraph",
+      "source_url": "https://dev.epicgames.com/documentation/fortnite/verse-api/versedotorg/scenegraph",
+      "signature_state": "missing",
+      "priority_score": 90,
+      "needs": [
+        "declaration",
+        "members",
+        "events"
+      ],
+      "reason": "Exact signature evidence is not yet verified.",
+      "missing_field_evidence": [
+        "declaration_or_signature"
+      ],
+      "revalidation_status": "current"
+    },
+    {
+      "symbol_id": "horizontal_alignment",
+      "kind": "enum",
+      "module": "/UnrealEngine.com/Temporary/UI",
+      "source_url": "https://dev.epicgames.com/documentation/fortnite/verse-api/unrealenginedotcom/temporary/ui",
+      "signature_state": "missing",
+      "priority_score": 90,
+      "needs": [
+        "declaration",
+        "members",
+        "events"
+      ],
+      "reason": "Exact signature evidence is not yet verified.",
+      "missing_field_evidence": [
+        "declaration_or_signature"
+      ],
+      "revalidation_status": "current"
+    },
+    {
+      "symbol_id": "image_tiling",
+      "kind": "enum",
+      "module": "/UnrealEngine.com/Temporary/UI",
+      "source_url": "https://dev.epicgames.com/documentation/fortnite/verse-api/unrealenginedotcom/temporary/ui",
+      "signature_state": "missing",
+      "priority_score": 90,
+      "needs": [
+        "declaration",
+        "members",
+        "events"
+      ],
+      "reason": "Exact signature evidence is not yet verified.",
+      "missing_field_evidence": [
+        "declaration_or_signature"
+      ],
+      "revalidation_status": "current"
+    },
+    {
+      "symbol_id": "orientation",
+      "kind": "enum",
+      "module": "/UnrealEngine.com/Temporary/UI",
+      "source_url": "https://dev.epicgames.com/documentation/fortnite/verse-api/unrealenginedotcom/temporary/ui",
+      "signature_state": "missing",
+      "priority_score": 90,
+      "needs": [
+        "declaration",
+        "members",
+        "events"
+      ],
+      "reason": "Exact signature evidence is not yet verified.",
+      "missing_field_evidence": [
+        "declaration_or_signature"
+      ],
+      "revalidation_status": "current"
+    },
+    {
+      "symbol_id": "team_attitude",
+      "kind": "enum",
+      "module": "/Fortnite.com/Teams",
+      "source_url": "https://dev.epicgames.com/documentation/fortnite/verse-api/fortnitedotcom/teams",
+      "signature_state": "missing",
+      "priority_score": 90,
+      "needs": [
+        "declaration",
+        "members",
+        "events"
+      ],
+      "reason": "Exact signature evidence is not yet verified.",
+      "missing_field_evidence": [
+        "declaration_or_signature"
+      ],
+      "revalidation_status": "current"
+    },
+    {
+      "symbol_id": "text_justification",
+      "kind": "enum",
+      "module": "/UnrealEngine.com/Temporary/UI",
+      "source_url": "https://dev.epicgames.com/documentation/fortnite/verse-api/unrealenginedotcom/temporary/ui",
+      "signature_state": "missing",
+      "priority_score": 90,
+      "needs": [
+        "declaration",
+        "members",
+        "events"
+      ],
+      "reason": "Exact signature evidence is not yet verified.",
+      "missing_field_evidence": [
+        "declaration_or_signature"
+      ],
+      "revalidation_status": "current"
+    },
+    {
+      "symbol_id": "text_overflow_policy",
+      "kind": "enum",
+      "module": "/UnrealEngine.com/Temporary/UI",
+      "source_url": "https://dev.epicgames.com/documentation/fortnite/verse-api/unrealenginedotcom/temporary/ui",
+      "signature_state": "missing",
+      "priority_score": 90,
+      "needs": [
+        "declaration",
+        "members",
+        "events"
+      ],
+      "reason": "Exact signature evidence is not yet verified.",
+      "missing_field_evidence": [
+        "declaration_or_signature"
+      ],
+      "revalidation_status": "current"
+    },
+    {
+      "symbol_id": "text_wrapping_policy",
+      "kind": "enum",
+      "module": "/UnrealEngine.com/Temporary/UI",
+      "source_url": "https://dev.epicgames.com/documentation/fortnite/verse-api/unrealenginedotcom/temporary/ui",
+      "signature_state": "missing",
+      "priority_score": 90,
+      "needs": [
+        "declaration",
+        "members",
+        "events"
+      ],
+      "reason": "Exact signature evidence is not yet verified.",
+      "missing_field_evidence": [
+        "declaration_or_signature"
+      ],
+      "revalidation_status": "current"
+    },
+    {
+      "symbol_id": "ui_input_mode",
+      "kind": "enum",
+      "module": "/UnrealEngine.com/Temporary/UI",
+      "source_url": "https://dev.epicgames.com/documentation/fortnite/verse-api/unrealenginedotcom/temporary/ui",
+      "signature_state": "missing",
+      "priority_score": 90,
+      "needs": [
+        "declaration",
+        "members",
+        "events"
+      ],
+      "reason": "Exact signature evidence is not yet verified.",
+      "missing_field_evidence": [
+        "declaration_or_signature"
+      ],
+      "revalidation_status": "current"
+    },
+    {
+      "symbol_id": "vertical_alignment",
+      "kind": "enum",
+      "module": "/UnrealEngine.com/Temporary/UI",
+      "source_url": "https://dev.epicgames.com/documentation/fortnite/verse-api/unrealenginedotcom/temporary/ui",
+      "signature_state": "missing",
+      "priority_score": 90,
+      "needs": [
+        "declaration",
+        "members",
+        "events"
+      ],
+      "reason": "Exact signature evidence is not yet verified.",
+      "missing_field_evidence": [
+        "declaration_or_signature"
+      ],
+      "revalidation_status": "current"
+    },
+    {
+      "symbol_id": "widget_visibility",
+      "kind": "enum",
+      "module": "/UnrealEngine.com/Temporary/UI",
+      "source_url": "https://dev.epicgames.com/documentation/fortnite/verse-api/unrealenginedotcom/temporary/ui",
+      "signature_state": "missing",
+      "priority_score": 90,
+      "needs": [
+        "declaration",
+        "members",
+        "events"
+      ],
+      "reason": "Exact signature evidence is not yet verified.",
+      "missing_field_evidence": [
+        "declaration_or_signature"
+      ],
+      "revalidation_status": "current"
+    }
+  ]
+}

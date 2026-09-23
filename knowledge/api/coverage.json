@@ -1,0 +1,73 @@
+{
+  "schema_version": 2,
+  "generated_by": "tools/migrate_api_catalog_v24.py",
+  "api_version": "42.20",
+  "symbol_count": 164,
+  "module_count": 9,
+  "modules": [
+    "/Fortnite.com/Characters",
+    "/Fortnite.com/Devices",
+    "/Fortnite.com/Playspaces",
+    "/Fortnite.com/Teams",
+    "/Fortnite.com/UI",
+    "/Fortnite.com/Vehicles",
+    "/UnrealEngine.com/Temporary/UI",
+    "/Verse.org/SceneGraph",
+    "/Verse.org/SceneGraph/KeyframedMovement"
+  ],
+  "coverage": {
+    "presence": {
+      "count": 164,
+      "percent": 100.0
+    },
+    "signature_verified": {
+      "count": 12,
+      "percent": 7.32
+    },
+    "parameters_structured": {
+      "count": 12,
+      "percent": 7.32
+    },
+    "return_type_structured": {
+      "count": 12,
+      "percent": 7.32
+    },
+    "effects_structured": {
+      "count": 12,
+      "percent": 7.32
+    },
+    "event_names_known": {
+      "count": 24,
+      "percent": 14.63
+    },
+    "event_payloads_verified": {
+      "count": 0,
+      "percent": 0.0
+    },
+    "exact_signature_claim_allowed": {
+      "count": 12,
+      "percent": 7.32
+    },
+    "field_evidence_present": {
+      "count": 164,
+      "percent": 100.0
+    }
+  },
+  "source_trust_breakdown": {
+    "api-page-verified": 40,
+    "official-current": 112,
+    "signature-verified": 12
+  },
+  "validation_breakdown": {
+    "static-checked": 164
+  },
+  "claim_state_breakdown": {
+    "exact-signature": 12,
+    "presence-only": 152
+  },
+  "revalidation": {
+    "current": 164,
+    "needs_attention": 0
+  },
+  "note": "Coverage describes symbols currently known to this repository. It is not a claim about the total number of APIs published by Epic."
+}

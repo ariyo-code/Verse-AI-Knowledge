@@ -7,6 +7,8 @@ import sys
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT / "tools"))
 from rag_query import score_doc, excerpt, exact_api_matches  # noqa: E402
+sys.path.insert(0, str(ROOT / "src"))
+from verse_ai_knowledge.claims import resolve_claim  # noqa: E402
 
 INDEX = json.loads((ROOT / "rag/index.json").read_text(encoding="utf-8"))
 
@@ -90,9 +92,18 @@ def main() -> None:
     present = {x["role"] for x in packed}
     missing = [x for x in req if x not in present]
     exact = exact_api_matches(args.query)
+    exact_claims = {
+        name: {
+            "signature": resolve_claim(name, "signature", root=ROOT),
+            "parameters": resolve_claim(name, "parameters", root=ROOT),
+            "return_type": resolve_claim(name, "return_type", root=ROOT),
+            "effects": resolve_claim(name, "effects", root=ROOT),
+        }
+        for name in exact
+    }
 
     lines = [
-        "# Evidence Pack — V22",
+        "# Evidence Pack — V24",
         "",
         f"Query: `{args.query}`",
         f"Required: {', '.join(req)}",
@@ -102,7 +113,8 @@ def main() -> None:
         "## Claim guard",
         "",
         "- Source trust and local validation are independent.",
-        "- Presence evidence does not prove an exact signature.",
+        "- Presence evidence does not prove an exact signature or any other exact field.",
+        "- Resolve signatures, parameters, return types, effects and event payloads independently.",
         "- External compile claims are not local compile proof.",
         "- Static checks do not prove UEFN compilation.",
         "- Unsupported exact API claims must use `TODO(API VERIFY)`.",
@@ -132,6 +144,7 @@ def main() -> None:
                 "required_roles": req,
                 "missing_required_roles": missing,
                 "exact_api_matches": exact,
+                "exact_api_claims": exact_claims,
                 "sources": [{k: v for k, v in x.items() if k != "excerpt"} for x in packed],
             },
             indent=2,

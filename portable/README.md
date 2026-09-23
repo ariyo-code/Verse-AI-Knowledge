@@ -1,9 +1,41 @@
-# Verse AI Portable
+# Verse AI Portable — V24
 
-The repository release is **V22**, while the existing all-in-one portable Verse + UI prompt remains named `VERSE_AI_MASTER_PROMPT_v21_WITH_UI.txt` for backward compatibility.
+Recommended current portable prompt:
 
-For repository-aware agents, use `../AI_BOOTSTRAP.md` instead of treating the portable prompt as the source of truth.
+```text
+VERSE_AI_MASTER_PROMPT_v24_WITH_UI.txt
+```
 
-For standalone use, copy the portable prompt into the target LLM and append your task after `=== USER TASK ===`.
+It combines the established Verse/UI prompt with V24 field-level API claim rules and generated-code provenance.
 
-The portable prompt cannot prove compilation. Exact uncertain APIs must remain explicit (`TODO(API VERIFY)`), and UEFN is required for real compile/runtime evidence.
+## Repository-aware agents
+
+If the agent can read the repository, prefer:
+
+```text
+AI_BOOTSTRAP.md
+```
+
+The portable prompt is mainly for assistants that cannot directly retrieve repository files.
+
+## Compatibility
+
+Historical prompts remain available:
+
+```text
+VERSE_AI_MASTER_PROMPT_v23_WITH_UI.txt
+VERSE_AI_MASTER_PROMPT_v21_WITH_UI.txt
+VERSE_AI_MASTER_PROMPT.txt
+```
+
+They are compatibility artifacts, not the current repository authority.
+
+## V24 output provenance
+
+Generated Verse in Markdown uses:
+
+- a visible V24 status block before code;
+- a V24 HTML comment after code;
+- no invisible Unicode watermark.
+
+See `../docs/GENERATED_CODE_MARKER.md`.

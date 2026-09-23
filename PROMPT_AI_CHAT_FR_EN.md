@@ -1,3 +1,7 @@
+# Verse AI Knowledge V24 — Chat Prompt
+
+For repository-aware use, `AI_BOOTSTRAP.md` is authoritative. This chat prompt is a portable helper.
+
 # Prompt IA — Verse AI Knowledge v21
 
 Ce fichier contient le prompt à donner à une IA comme **ChatGPT, Gemini, Claude, Codex** ou autre assistant capable de lire un dépôt GitHub.
@@ -88,7 +92,7 @@ draft
 
 Après chaque fichier Verse généré dans une réponse Markdown, ajoute :
 
-<!-- verse-ai-generated:v21;lang=verse;status=draft -->
+<!-- verse-ai-generated:v24;lang=verse;artifact=VAI-<id>;status=draft;api=42.20;compiled=false;runtime=false;multiplayer=false;api_verify_required=<true|false>;uncertain_api_count=<n>;claim_resolution=field-level -->
 
 Ne mets jamais de caractères Unicode invisibles dans le code.
 
@@ -194,7 +198,7 @@ draft
 
 After every generated Verse file in Markdown, add:
 
-<!-- verse-ai-generated:v21;lang=verse;status=draft -->
+<!-- verse-ai-generated:v24;lang=verse;artifact=VAI-<id>;status=draft;api=42.20;compiled=false;runtime=false;multiplayer=false;api_verify_required=<true|false>;uncertain_api_count=<n>;claim_resolution=field-level -->
 
 Never use invisible Unicode characters inside generated source code.
 

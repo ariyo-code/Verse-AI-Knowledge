@@ -6,7 +6,7 @@ from rag_query import retrieve, excerpt, route, exact_api_matches, ROOT, CONFIG
 
 
 def main() -> None:
-    p = argparse.ArgumentParser(description="Build a compact V22 context pack.")
+    p = argparse.ArgumentParser(description="Build a compact V24 context pack.")
     p.add_argument("query")
     p.add_argument("--budget", type=int, default=None)
     p.add_argument("--limit", type=int, default=None)
@@ -44,7 +44,7 @@ def main() -> None:
             break
 
     lines = [
-        "# Verse AI Context Pack — V22",
+        "# Verse AI Context Pack — V24",
         "",
         f"Query: {args.query}",
         f"Routes: {', '.join(route(args.query)) or 'generic'}",

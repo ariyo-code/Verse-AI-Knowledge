@@ -1,5 +1,63 @@
 # Changelog
 
+## 24.0.0 — Claim Resolution, Evidence Graph & Continuous Verification
+
+### Added
+
+- field-level API claim resolution with `ALLOW` / `TODO(API VERIFY)`;
+- generated API evidence graph linking symbol fields to supporting evidence;
+- API-version revalidation state and strict stale-evidence gate;
+- conservative Verse API-claim linting;
+- coverage snapshots and deterministic release-to-release diffs;
+- redirect-safe, hostname-strict Epic documentation fetching;
+- provider-optional end-to-end LLM evaluation harness under `evals/llm/`;
+- public-release checks for internal paths and likely secrets;
+- V24 visible + hidden generated-code provenance;
+- V24 integrity, claim-resolution, provenance, URL-security and LLM-runner tests.
+
+### Changed
+
+- exact claims are resolved per field instead of from symbol-level confidence alone;
+- generated API data now carries `field_evidence`, `claim_state`, and `revalidation`;
+- `verse-ai` exposes claim, lint, coverage-snapshot/diff and LLM-eval workflows;
+- CI is upgraded to V24 and keeps UEFN truth boundaries explicit.
+
+### Safety
+
+- no missing API field is inferred;
+- remote Epic redirects are revalidated before following;
+- policy evals are not described as end-to-end LLM quality;
+- LLM evals report `SKIPPED` when no responses/provider are configured;
+- no invisible Unicode provenance mechanism is used;
+- compile/runtime/multiplayer claims still require real evidence.
+
+### Compatibility
+
+V21/V22/V23 historical prompts and migration documents remain available where useful. `AI_BOOTSTRAP.md` is authoritative for repository-aware agents.
+
+### Validation boundary
+
+Static repository checks do not constitute a UEFN compile or runtime test.
+
+## 23.0.0 — API Coverage, Generation Reliability & Provenance
+
+### Added
+
+- V23 structured API coverage fields for signature, parameters, return type, effects and events.
+- deterministic `knowledge/api/coverage.json` and `verification_queue.json`.
+- reviewed official evidence overlay in `verification_records.jsonl`.
+- conservative Epic-page harvester that only creates unverified candidates.
+- generation reliability task set and V22/V23 comparison tooling.
+- visible generated-code status block plus hidden HTML provenance marker.
+- V23 integrity, provenance and CLI tests.
+
+### Safety
+
+- harvested candidates never auto-promote to verified API knowledge;
+- no invisible Unicode markers;
+- compile/runtime claims still require real UEFN evidence.
+
+
 ## 22.0.0 — Knowledge Integrity & Agent Reliability
 
 ### Added

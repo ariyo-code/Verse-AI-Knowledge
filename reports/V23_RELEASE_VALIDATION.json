@@ -1,0 +1,36 @@
+{
+  "release": "23.0.0",
+  "date": "2026-09-23",
+  "verse_api_snapshot": "42.20",
+  "static_validation": {
+    "v23_integrity": true,
+    "integrity_guard": true,
+    "verification_evidence": true,
+    "generated_drift": true,
+    "cli_contracts": true,
+    "verselab_state": true,
+    "v23_integrity_tests": true,
+    "provenance_tests": true,
+    "v23_cli_tests": true,
+    "repository_validation": true,
+    "rag_benchmark": "8/8",
+    "evidence_benchmark": "3/3",
+    "anti_hallucination": "11/11",
+    "self_test": true,
+    "preflight": true,
+    "validation_suite": true
+  },
+  "api_coverage": {
+    "symbols": 164,
+    "presence": 164,
+    "exact_signatures_verified": 11,
+    "parameters_structured": 11,
+    "return_types_structured": 11,
+    "effects_structured": 11,
+    "event_names_known": 24,
+    "event_payloads_verified": 0,
+    "verification_queue_remaining": 153
+  },
+  "uefn_compile_status": "NOT TESTED",
+  "generation_benchmark_status": "NOT RUN"
+}

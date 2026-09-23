@@ -1,0 +1,78 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Verse Generation Reliability Run — V23",
+  "type": "object",
+  "required": [
+    "run_id",
+    "knowledge_version",
+    "tasks"
+  ],
+  "properties": {
+    "run_id": {
+      "type": "string"
+    },
+    "knowledge_version": {
+      "type": "string"
+    },
+    "model_or_agent": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "api_snapshot": {
+      "type": "string"
+    },
+    "created_at": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "tasks": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "task_id",
+          "output"
+        ],
+        "properties": {
+          "task_id": {
+            "type": "string"
+          },
+          "output": {
+            "type": "string"
+          },
+          "compile_passed": {
+            "type": [
+              "boolean",
+              "null"
+            ]
+          },
+          "compile_corrections": {
+            "type": [
+              "integer",
+              "null"
+            ],
+            "minimum": 0
+          },
+          "runtime_passed": {
+            "type": [
+              "boolean",
+              "null"
+            ]
+          },
+          "notes": {
+            "type": [
+              "string",
+              "null"
+            ]
+          }
+        },
+        "additionalProperties": true
+      }
+    }
+  },
+  "additionalProperties": true
+}

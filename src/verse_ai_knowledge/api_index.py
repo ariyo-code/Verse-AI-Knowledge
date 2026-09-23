@@ -15,7 +15,7 @@ def symbols_path(root: Path | None = None) -> Path:
 def load_symbols(root: Path | None = None) -> list[dict[str, Any]]:
     path = symbols_path(root)
     if not path.exists():
-        raise FileNotFoundError(f"Missing generated API symbol index: {path}. Run tools/migrate_api_catalog_v22.py")
+        raise FileNotFoundError(f"Missing generated API symbol index: {path}. Run tools/migrate_api_catalog_v24.py")
     rows: list[dict[str, Any]] = []
     for n, line in enumerate(path.read_text(encoding="utf-8").splitlines(), 1):
         if not line.strip():

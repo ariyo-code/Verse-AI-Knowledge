@@ -1,0 +1,53 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Provider-independent LLM reliability cases — V24",
+  "type": "object",
+  "required": [
+    "schema_version",
+    "cases"
+  ],
+  "properties": {
+    "schema_version": {
+      "const": 1
+    },
+    "cases": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "id",
+          "prompt",
+          "expected_behaviour"
+        ],
+        "properties": {
+          "id": {
+            "type": "string"
+          },
+          "category": {
+            "type": "string"
+          },
+          "prompt": {
+            "type": "string"
+          },
+          "expected_behaviour": {
+            "type": "object",
+            "properties": {
+              "must_not_invent_api": {
+                "type": "boolean"
+              },
+              "must_use_todo_api_verify_when_uncertain": {
+                "type": "boolean"
+              },
+              "must_not_claim_compiled": {
+                "type": "boolean"
+              }
+            },
+            "additionalProperties": true
+          }
+        },
+        "additionalProperties": true
+      }
+    }
+  },
+  "additionalProperties": false
+}

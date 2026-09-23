@@ -1,0 +1,132 @@
+{
+  "schema_version": 1,
+  "created_at": "2026-09-23",
+  "purpose": "Measure Verse generation reliability before/after API coverage improvements.",
+  "tasks": [
+    {
+      "id": "G001",
+      "category": "button-event",
+      "prompt": "Create a creative device that subscribes to a button interaction and handles the agent safely."
+    },
+    {
+      "id": "G002",
+      "category": "fort-character",
+      "prompt": "Obtain an agent fort_character and handle failure correctly."
+    },
+    {
+      "id": "G003",
+      "category": "player-lifecycle",
+      "prompt": "Initialize existing players, joiners and leavers without duplicate state."
+    },
+    {
+      "id": "G004",
+      "category": "player-ui",
+      "prompt": "Create and remove per-player UI safely."
+    },
+    {
+      "id": "G005",
+      "category": "team",
+      "prompt": "Read a player team using documented team collection APIs."
+    },
+    {
+      "id": "G006",
+      "category": "vehicle",
+      "prompt": "Read a player vehicle safely from its character."
+    },
+    {
+      "id": "G007",
+      "category": "async-race",
+      "prompt": "Race player input against a timeout with structured cancellation."
+    },
+    {
+      "id": "G008",
+      "category": "persistence",
+      "prompt": "Design a persistent player profile without persisting runtime references."
+    },
+    {
+      "id": "G009",
+      "category": "teleport",
+      "prompt": "Teleport using only source-supported APIs and report uncertainty if exact API evidence is missing."
+    },
+    {
+      "id": "G010",
+      "category": "inventory",
+      "prompt": "Give/remove/check items using verified device APIs only."
+    },
+    {
+      "id": "G011",
+      "category": "hud",
+      "prompt": "Display a HUD message per player using verified API names."
+    },
+    {
+      "id": "G012",
+      "category": "respawn",
+      "prompt": "Handle respawn without duplicating subscriptions."
+    },
+    {
+      "id": "G013",
+      "category": "scenegraph",
+      "prompt": "Use one SceneGraph lifecycle API with exact effects only if verified."
+    },
+    {
+      "id": "G014",
+      "category": "vehicle-seats",
+      "prompt": "Inspect vehicle seats/drivers without inventing helpers."
+    },
+    {
+      "id": "G015",
+      "category": "ui-event",
+      "prompt": "Bind a UI click event and clean up per-player widgets."
+    },
+    {
+      "id": "G016",
+      "category": "weak-map",
+      "prompt": "Explain a persistable weak_map design and distinguish runtime state."
+    },
+    {
+      "id": "G017",
+      "category": "device-enable",
+      "prompt": "Enable/disable a device using catalog-backed members."
+    },
+    {
+      "id": "G018",
+      "category": "unknown-api",
+      "prompt": "User asks for a nonexistent Verse API; refuse to fabricate and emit TODO(API VERIFY)."
+    },
+    {
+      "id": "G019",
+      "category": "signature-gap",
+      "prompt": "Use a known symbol whose exact signature is not verified; avoid emitting a made-up signature."
+    },
+    {
+      "id": "G020",
+      "category": "effects-gap",
+      "prompt": "Avoid asserting <decides>/<transacts>/<suspends> when evidence does not support them."
+    },
+    {
+      "id": "G021",
+      "category": "event-payload",
+      "prompt": "Use an event but do not guess its payload type if not verified."
+    },
+    {
+      "id": "G022",
+      "category": "current-module",
+      "prompt": "Use current module evidence and flag stale/deprecated aliases."
+    },
+    {
+      "id": "G023",
+      "category": "phone-rp",
+      "prompt": "Architect a modular RP phone while separating unverified API integration points."
+    },
+    {
+      "id": "G024",
+      "category": "garage-rp",
+      "prompt": "Architect garage ownership/keys/cleanup without inventing vehicle ownership APIs."
+    },
+    {
+      "id": "G025",
+      "category": "staff-panel",
+      "prompt": "Build a per-player staff UI plan and isolate all uncertain exact UI calls."
+    }
+  ]
+}

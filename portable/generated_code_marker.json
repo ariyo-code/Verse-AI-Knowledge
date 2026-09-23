@@ -1,8 +1,7 @@
 {
-  "schema_version": 2,
-  "marker_version": "v22",
-  "default_marker": "<!-- verse-ai-generated:v22 -->",
-  "metadata_template": "<!-- verse-ai-generated:v22;lang=verse;status={status} -->",
+  "schema_version": 4,
+  "marker_version": "v24",
+  "language": "verse",
   "default_status": "draft",
   "allowed_statuses": [
     "draft",
@@ -11,7 +10,12 @@
     "verified",
     "multiplayer-verified"
   ],
-  "placement": "Immediately after each generated Verse file section in Markdown when provenance marking is used.",
+  "visible_template": "> **Verse AI Knowledge · V24**  \n> Status: `{status}` · API snapshot: `{api_snapshot}` · UEFN compile: `{compile_label}` · Runtime: `{runtime_label}` · Multiplayer: `{multiplayer_label}`{warning_suffix}",
+  "hidden_template": "<!-- verse-ai-generated:v24;lang=verse;artifact={artifact_id};status={status};api={api_snapshot};compiled={compiled};runtime={runtime};multiplayer={multiplayer};api_verify_required={api_verify_required};uncertain_api_count={uncertain_api_count};claim_resolution=field-level -->",
+  "placement": {
+    "visible": "Immediately before the generated Verse code block.",
+    "hidden": "Immediately after the generated Verse code block."
+  },
   "safety": {
     "html_comment_only": true,
     "invisible_unicode": false,
@@ -20,7 +24,11 @@
     "unicode_tags": false
   },
   "rules": {
+    "generated_code_defaults_to_draft": true,
     "claim_compiled_without_evidence": false,
-    "source_trust_is_not_validation": true
+    "todo_api_verify_sets_warning": true,
+    "source_trust_is_not_validation": true,
+    "field_level_claim_resolution": true,
+    "hidden_unicode_forbidden": true
   }
 }

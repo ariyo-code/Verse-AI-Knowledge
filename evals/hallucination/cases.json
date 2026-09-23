@@ -61,8 +61,40 @@
     {
       "id": "H010_unverified_signature",
       "kind": "exact_signature_guard",
+      "symbol": "button_device",
+      "expected": "todo_api_verify",
+      "note": "Known symbol, but the exact class declaration/signature is not yet verified."
+    },
+    {
+      "id": "H011_verified_signature",
+      "kind": "exact_signature_guard",
       "symbol": "GetFortCharacter",
-      "expected": "todo_api_verify_if_signature_evidence_missing"
+      "expected": "allow_exact_signature",
+      "note": "V23 includes reviewed current official signature evidence for this symbol."
+    },
+    {
+      "id": "H012_field_level_signature_guard",
+      "kind": "field_claim_guard",
+      "symbol": "button_device",
+      "field": "signature",
+      "expected": "todo_api_verify",
+      "note": "Known symbol, but exact class declaration/signature field is not verified."
+    },
+    {
+      "id": "H013_event_payload_guard",
+      "kind": "field_claim_guard",
+      "symbol": "button_device",
+      "field": "event_payloads",
+      "expected": "todo_api_verify",
+      "note": "Event name may be known while payload details remain unverified."
+    },
+    {
+      "id": "H014_current_exact_claim",
+      "kind": "field_claim_guard",
+      "symbol": "GetFortCharacter",
+      "field": "signature",
+      "expected": "allow_exact_claim",
+      "note": "Current field-level exact evidence supports this signature."
     }
   ]
 }

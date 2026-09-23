@@ -1,0 +1,7 @@
+{
+  "schema_version": 1,
+  "knowledge_version": "22.0.0",
+  "status": "not-run",
+  "note": "No V22 model-output baseline is fabricated. Populate this only from a real controlled run using the same task set and model configuration.",
+  "metrics": null
+}

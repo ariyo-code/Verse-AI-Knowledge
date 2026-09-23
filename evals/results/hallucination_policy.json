@@ -1,14 +1,14 @@
 {
-  "suite": "v22-policy-guards",
+  "suite": "v24-policy-guards",
   "note": "Deterministic repository policy eval; no LLM and no UEFN compile were invoked.",
-  "passed": 10,
-  "total": 10,
+  "passed": 14,
+  "total": 14,
   "metrics": {
     "hallucinated_api_rate": 0.0,
     "unsupported_signature_rate": 0.0,
     "false_compile_claim_rate": 0.0,
     "retrieval_precision": null,
-    "verified_source_usage": 1.0,
+    "verified_source_usage": 0.625,
     "TODO_API_VERIFY_precision": 1.0
   },
   "cases": [
@@ -61,6 +61,26 @@
       "id": "H010_unverified_signature",
       "passed": true,
       "action": "todo_api_verify"
+    },
+    {
+      "id": "H011_verified_signature",
+      "passed": true,
+      "action": "allow_exact_signature"
+    },
+    {
+      "id": "H012_field_level_signature_guard",
+      "passed": true,
+      "action": "todo_api_verify"
+    },
+    {
+      "id": "H013_event_payload_guard",
+      "passed": true,
+      "action": "todo_api_verify"
+    },
+    {
+      "id": "H014_current_exact_claim",
+      "passed": true,
+      "action": "allow_exact_claim"
     }
   ],
   "uefn_compile_status": "NOT TESTED"

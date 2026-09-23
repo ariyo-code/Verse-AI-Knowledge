@@ -136,7 +136,7 @@ def main() -> None:
     }
     out = ROOT / "rag/index.json"
     out.write_text(json.dumps(index, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
-    print(f"Indexed {len(docs)} document(s) with V22 two-axis metadata.")
+    print(f"Indexed {len(docs)} document(s) with V24 source-trust, validation and claim-evidence metadata.")
 
 
 if __name__ == "__main__":

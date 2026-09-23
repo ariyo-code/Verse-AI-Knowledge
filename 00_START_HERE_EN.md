@@ -1,9 +1,23 @@
-# START HERE — EN
+# START HERE — V24
 
-For full repository-aware AI usage, start with **`AI_BOOTSTRAP.md`**.
+Repository-aware AI agents should start with:
 
-For the historical portable Verse + UI prompt, use `portable/VERSE_AI_MASTER_PROMPT_v21_WITH_UI.txt`.
+```text
+AI_BOOTSTRAP.md
+```
 
-For UI-only work, use `portable/ui_creator/VERSE_UI_CREATOR_MASTER_PROMPT.txt`.
+Then follow `knowledge/ROUTING.md`, targeted retrieval, API claim resolution, evidence building and validation.
 
-Absolute rule: **never invent a Verse API**. Static validation is not a UEFN compile.
+Useful commands:
+
+```bash
+verse-ai api GetFortCharacter
+verse-ai claim GetFortCharacter --field signature
+verse-ai coverage
+verse-ai doctor
+verse-ai validate
+```
+
+Historical portable prompts remain for compatibility. For repository-aware agents, `AI_BOOTSTRAP.md` is authoritative.
+
+Absolute rule: **never invent a Verse API**.

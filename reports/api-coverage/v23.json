@@ -1,0 +1,39 @@
+{
+  "schema_version": 1,
+  "release": "23.0.0",
+  "api_version": "42.20",
+  "captured_at": "2026-09-23T12:48:05Z",
+  "symbol_count": 164,
+  "module_count": null,
+  "coverage": {
+    "presence": {
+      "count": 164,
+      "percent": 100.0
+    },
+    "signature_verified": {
+      "count": 11,
+      "percent": 6.71
+    },
+    "parameters_structured": {
+      "count": 11,
+      "percent": 6.71
+    },
+    "return_type_structured": {
+      "count": 11,
+      "percent": 6.71
+    },
+    "effects_structured": {
+      "count": 11,
+      "percent": 6.71
+    },
+    "event_names_known": {
+      "count": 24,
+      "percent": 14.63
+    },
+    "event_payloads_verified": {
+      "count": 0,
+      "percent": 0.0
+    }
+  },
+  "note": "Deterministic baseline captured from the V23 release package; describes repository-known evidence only."
+}

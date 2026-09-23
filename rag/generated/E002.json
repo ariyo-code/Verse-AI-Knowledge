@@ -8,18 +8,19 @@
   ],
   "missing_required_roles": [],
   "exact_api_matches": [],
+  "exact_api_claims": {},
   "sources": [
     {
       "role": "api_evidence",
-      "score": 6.675,
-      "source_trust": "official-current",
-      "validation": "static-checked",
-      "path": "knowledge/api/modules.json",
-      "title": "modules"
+      "score": 6.953,
+      "source_trust": "unknown",
+      "validation": "draft",
+      "path": "knowledge/api/verification_records.jsonl",
+      "title": "verification_records"
     },
     {
       "role": "error_memory",
-      "score": 38.688,
+      "score": 39.169,
       "source_trust": "community-verified",
       "validation": "verified",
       "path": "errors/compiler-errors.md",
@@ -27,7 +28,7 @@
     },
     {
       "role": "verification",
-      "score": 27.186,
+      "score": 27.961,
       "source_trust": "unknown",
       "validation": "draft",
       "path": "mcp/ERROR_FEEDBACK_LOOP.md",
@@ -35,7 +36,7 @@
     },
     {
       "role": "project_context",
-      "score": 9.35,
+      "score": 9.953,
       "source_trust": "unknown",
       "validation": "draft",
       "path": "projects/README.md",
@@ -46,12 +47,12 @@
       "score": 6.675,
       "source_trust": "official-current",
       "validation": "static-checked",
-      "path": "knowledge/api/symbols.jsonl",
-      "title": "symbols"
+      "path": "knowledge/api/modules.json",
+      "title": "modules"
     },
     {
       "role": "lifecycle",
-      "score": 9.123,
+      "score": 9.443,
       "source_trust": "unknown",
       "validation": "draft",
       "path": "docs/patterns/device-validity.md",
@@ -59,7 +60,7 @@
     },
     {
       "role": "error_memory",
-      "score": 30.642,
+      "score": 31.671,
       "source_trust": "unknown",
       "validation": "draft",
       "path": "errors/README.md",
@@ -67,7 +68,7 @@
     },
     {
       "role": "verification",
-      "score": 21.107,
+      "score": 21.77,
       "source_trust": "unknown",
       "validation": "draft",
       "path": "lab/README.md",
@@ -75,7 +76,7 @@
     },
     {
       "role": "external_examples",
-      "score": 5.017,
+      "score": 5.122,
       "source_trust": "unknown",
       "validation": "draft",
       "path": "external/corpus/uefncentral-examples/c5fed52f687964fa83035f52423763553b129391/examples/ui-interface/hud-weapon-selector.verse",
@@ -83,7 +84,7 @@
     },
     {
       "role": "supporting",
-      "score": 31.092,
+      "score": 32.102,
       "source_trust": "unknown",
       "validation": "draft",
       "path": "benchmark/tasks/B009-error-learning.md",
@@ -91,7 +92,7 @@
     },
     {
       "role": "supporting",
-      "score": 31.036,
+      "score": 31.434,
       "source_trust": "unknown",
       "validation": "draft",
       "path": ".github/ISSUE_TEMPLATE/compiler-error.md",
@@ -99,7 +100,7 @@
     },
     {
       "role": "supporting",
-      "score": 28.396,
+      "score": 29.154,
       "source_trust": "unknown",
       "validation": "draft",
       "path": "bridge/COMPILE_LOOP.md",

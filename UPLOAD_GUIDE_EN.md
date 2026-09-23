@@ -1,101 +1,34 @@
-# Upload Verse AI Knowledge to GitHub — PC Guide
+# GitHub publication guide — V24
 
-## Folder to upload
+## Before pushing
 
-After extracting the archive, open:
+From the repository root:
 
-```text
-Verse-AI-Knowledge/
+```bash
+python -m pip install -e .
+verse-ai validate
+python tools/check_internal_paths.py
+python tools/scan_secrets.py
 ```
 
-Inside it you should directly see:
+Also confirm that `LICENSE.md` and `THIRD_PARTY_NOTICES.md` are present.
+
+## Suggested commit
 
 ```text
-README.md
-README_FR.md
-README_EN.md
-AGENTS.md
-AI_GUIDE.md
-portable/
-knowledge/
-docs/
-projects/
-rag/
-tools/
-lab/
-.github/
-...
+Release V24 — Claim Resolution, Evidence Graph & Continuous Verification
 ```
 
-**Upload the contents of this folder to the root of your GitHub repository.**
+## After pushing
 
-Do not end up with:
+Open **Actions** and confirm that **V24 CI** is fully green.
+
+The recommended AI entry point is:
 
 ```text
-Verse-AI-Knowledge/
-└── Verse-AI-Knowledge/
-    └── README.md
+AI_BOOTSTRAP.md
 ```
 
-## Recommended method: GitHub Desktop
+Historical Master Prompts remain compatibility / portable packs.
 
-1. Install GitHub Desktop.
-2. Sign in to GitHub.
-3. Clone your `Verse-AI-Knowledge` repository.
-4. Open the cloned local folder.
-5. Copy **all contents** of the provided `Verse-AI-Knowledge/` folder into the cloned repository folder.
-6. Review the changes in GitHub Desktop.
-7. Recommended commit message:
-
-```text
-Initial release - Verse AI Knowledge v21
-```
-
-8. Click `Commit to main`.
-9. Click `Push origin`.
-
-## Suggested branches
-
-Keep `main` stable.
-
-Suggested long-lived branches:
-
-```text
-main
-dev
-ui-creator
-rag
-verselab
-external-corpus
-examples
-experimental
-```
-
-For short-lived work:
-
-```text
-feature/phone-system
-feature/ui-preview
-fix/api-catalog
-fix/ui-cleanup
-```
-
-## After upload
-
-Check that GitHub renders `README.md` and that `portable`, `knowledge`, `docs`, `.github`, and `tools` are visible directly at repository root.
-
-## Never publish secrets
-
-Do not commit:
-
-```text
-.env
-tokens
-passwords
-API keys
-Epic credentials
-private DATABASE_URL
-Discord bot tokens
-```
-
-The project's `.gitignore` already excludes several common sensitive files.
+Green CI validates repository checks; it does not prove arbitrary Verse compiled in UEFN.

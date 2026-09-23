@@ -1,17 +1,29 @@
-# Portable Pack / Pack portable
+# Portable Pack / Pack portable — V24
 
 ## Français
 
-Le dépôt est en **V22**. Le prompt portable complet conserve le nom `VERSE_AI_MASTER_PROMPT_v21_WITH_UI.txt` pour compatibilité.
+Prompt portable actuel Verse + UI + règles V24 :
 
-Pour une IA qui lit le dépôt complet, commence plutôt par `AI_BOOTSTRAP.md`.
+```text
+VERSE_AI_MASTER_PROMPT_v24_WITH_UI.txt
+```
 
-UI Creator uniquement : `ui_creator/VERSE_UI_CREATOR_MASTER_PROMPT.txt`.
+Pour une IA capable de lire le dépôt, `../AI_BOOTSTRAP.md` reste l'entrée autoritaire.
+
+Les prompts V21/V23 restent présents uniquement pour compatibilité.
+
+V24 ajoute la résolution des claims API au niveau du champ et la provenance visible + cachée du code généré.
 
 ## English
 
-The repository is **V22**. The full standalone prompt keeps the filename `VERSE_AI_MASTER_PROMPT_v21_WITH_UI.txt` for compatibility.
+Current portable Verse + UI + V24 rules prompt:
 
-For repository-aware AI agents, start with `AI_BOOTSTRAP.md` instead.
+```text
+VERSE_AI_MASTER_PROMPT_v24_WITH_UI.txt
+```
 
-UI Creator only: `ui_creator/VERSE_UI_CREATOR_MASTER_PROMPT.txt`.
+For repository-aware agents, `../AI_BOOTSTRAP.md` remains authoritative.
+
+V21/V23 prompts remain only for compatibility.
+
+V24 adds field-level API claim resolution and visible + hidden generated-code provenance.

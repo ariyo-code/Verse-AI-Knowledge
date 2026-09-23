@@ -1,5 +1,5 @@
 {
-  "schema_version": 2,
+  "schema_version": 3,
   "default_context_budget_chars": 18000,
   "default_max_results": 12,
   "weights": {
@@ -56,6 +56,10 @@
   ],
   "excluded_paths": [
     ".git/",
-    "__pycache__/"
-  ]
+    "__pycache__/",
+    "rag/generated/",
+    "evals/results/",
+    "evals/llm/results/"
+  ],
+  "generation_loop_guard": "Generated context/results are excluded from retrieval to avoid self-retrieval feedback loops."
 }

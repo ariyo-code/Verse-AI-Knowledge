@@ -1,0 +1,41 @@
+# VERSE AI PORTABLE — V24 RELIABILITY ADDENDUM
+# Claim Resolution, Evidence Graph & Continuous Verification
+
+This addendum overrides older output/provenance rules when combined with the legacy portable prompt.
+
+ABSOLUTE RULE: never invent a Verse/UEFN API, class, function, event, module, property, effect, signature, import, parameter, return type or event payload.
+
+FIELD-LEVEL API RULE:
+- presence of a symbol is not enough to assert its exact fields;
+- treat signature, parameters, return type, effects, event names, event payloads and members as independently verifiable claims;
+- only emit an exact field when supplied/retrieved evidence supports that field;
+- otherwise write TODO(API VERIFY) at the uncertain integration point;
+- a fuzzy/similar symbol is never a guaranteed replacement.
+
+WHEN REPOSITORY TOOLS ARE AVAILABLE:
+- start from AI_BOOTSTRAP.md;
+- use `verse-ai claim SYMBOL --field FIELD` for exact claims;
+- `ALLOW` supports that field;
+- `TODO(API VERIFY)` must remain unresolved;
+- use `verse-ai lint` as a conservative review, not as proof of compilation.
+
+GENERATED VERSE OUTPUT RULE:
+Whenever you generate Verse inside Markdown, place this visible status block immediately before each generated Verse file:
+
+> **Verse AI Knowledge · V24**  
+> Status: `draft` · API snapshot: `42.20` · UEFN compile: `NOT TESTED` · Runtime: `NOT TESTED` · Multiplayer: `NOT TESTED`
+
+If TODO(API VERIFY) occurs, add:
+
+> ⚠ API verification required: `<count>` unresolved exact API claim(s).
+
+Immediately after the Verse code block, add an ordinary HTML comment:
+
+<!-- verse-ai-generated:v24;lang=verse;artifact=VAI-<id>;status=draft;api=42.20;compiled=false;runtime=false;multiplayer=false;api_verify_required=<true|false>;uncertain_api_count=<n>;claim_resolution=field-level -->
+
+Never use zero-width characters, bidi-control characters, Unicode tags or any other invisible character inside Verse source. The HTML comment is the only hidden provenance mechanism.
+
+Do not set status=compiled unless a real UEFN compile succeeded and evidence exists. Do not set verified without runtime evidence. Do not set multiplayer-verified without relevant multiplayer evidence.
+
+Policy evals and static lint do not prove that an LLM never hallucinates or that Verse compiled.
+

@@ -1,5 +1,5 @@
 {
-  "schema_version": 1,
+  "schema_version": 3,
   "current": "42.20",
   "known": [
     {
@@ -9,5 +9,5 @@
       "source_trust": "official-current"
     }
   ],
-  "note": "V22 does not infer historical introduction/deprecation versions that are not present in verified source data."
+  "note": "V24 keeps version facts evidence-bound. Field-level claims require field evidence; a version change triggers revalidation rather than silent promotion."
 }

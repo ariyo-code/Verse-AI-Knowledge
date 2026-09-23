@@ -1,0 +1,82 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Generated Verse Artifact Provenance — V24",
+  "type": "object",
+  "required": [
+    "version",
+    "language",
+    "artifact_id",
+    "validation",
+    "api_snapshot",
+    "compiled",
+    "runtime_tested",
+    "multiplayer_tested",
+    "api_verify_required",
+    "uncertain_api_count",
+    "claim_resolution"
+  ],
+  "properties": {
+    "version": {
+      "const": "v24"
+    },
+    "language": {
+      "const": "verse"
+    },
+    "artifact_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "validation": {
+      "enum": [
+        "draft",
+        "static-checked",
+        "compiled",
+        "verified",
+        "multiplayer-verified"
+      ]
+    },
+    "api_snapshot": {
+      "type": "string"
+    },
+    "compiled": {
+      "type": "boolean"
+    },
+    "runtime_tested": {
+      "type": "boolean"
+    },
+    "multiplayer_tested": {
+      "type": "boolean"
+    },
+    "api_verify_required": {
+      "type": "boolean"
+    },
+    "uncertain_api_count": {
+      "type": "integer",
+      "minimum": 0
+    },
+    "generated_at": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "generator": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "claim_resolution": {
+      "enum": [
+        "field-level"
+      ]
+    },
+    "evidence_graph_version": {
+      "type": [
+        "string",
+        "null"
+      ]
+    }
+  },
+  "additionalProperties": false
+}

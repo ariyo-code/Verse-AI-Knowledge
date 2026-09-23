@@ -2,9 +2,9 @@
 
 # Verse AI Knowledge
 
-**Source-grounded knowledge and tooling for Verse / UEFN agents.**
+**Source-grounded Verse / UEFN knowledge, API evidence, claim resolution and reliability tooling for AI agents.**
 
-🇫🇷 Français · 🇬🇧 English · **V22 — Knowledge Integrity & Agent Reliability**
+🇫🇷 Français · 🇬🇧 English · **V24 — Claim Resolution, Evidence Graph & Continuous Verification**
 
 > **Never invent a Verse API. / Ne jamais inventer une API Verse.**
 
@@ -12,157 +12,139 @@
 
 ---
 
-## 🇫🇷 Français
+## V24
 
-### Qu'est-ce que c'est ?
+V24 builds on V23 API coverage and adds **field-level claim resolution**.
 
-Verse AI Knowledge aide des assistants comme ChatGPT, Codex, Claude ou Gemini à travailler sur **Verse / UEFN** avec des sources, de la provenance, du retrieval, des garde-fous et des preuves de validation.
+A known Verse symbol is no longer treated as if every detail about it were equally verified.
 
-Le dépôt ne remplace pas UEFN et ne garantit pas qu'un code généré compile.
+```text
+presence
+≠ signature
+≠ parameters
+≠ return type
+≠ effects
+≠ event payload
+≠ UEFN behavior
+```
 
-### Démarrage rapide
+The current repository snapshot targets **Verse API 42.20**.
 
-Pour un agent qui peut lire le dépôt, commence par :
+Current V24 stored coverage: **164 known structured symbols**, **12 exact signatures verified**, **24 symbols with known event names**, and **0 verified event payloads**. These figures describe repository-known evidence, not the total Epic API surface.
+
+### Quick start
+
+Repository-aware agents start with:
 
 ```text
 AI_BOOTSTRAP.md
 ```
 
-Puis l'agent suit :
+Install the local CLI:
 
-```text
-AI_BOOTSTRAP → ROUTING → retrieval ciblé → Evidence Pack → Claim Ledger → implémentation → validation UEFN si disponible
+```bash
+python -m pip install -e .
 ```
 
-Pour le pack portable historique Verse + UI, voir :
+Useful commands:
 
-```text
-portable/VERSE_AI_MASTER_PROMPT_v21_WITH_UI.txt
+```bash
+verse-ai api GetFortCharacter
+verse-ai claim GetFortCharacter --field signature
+verse-ai lint path/to/code.verse
+verse-ai coverage
+verse-ai api-queue
+verse-ai doctor
+verse-ai validate
 ```
 
-Il reste disponible pour compatibilité ; **V22 concerne principalement l'intégrité de la base et la fiabilité de l'agent**.
-
-### Comment le grounding fonctionne
-
-V22 sépare deux axes :
-
-- **`source_trust`** : qualité / autorité / fraîcheur de la source ;
-- **`validation`** : ce qui a réellement été validé localement.
-
-Un document officiel ne devient pas « compilé » automatiquement, et un code compilé ne rend pas sa source officielle.
-
-Si une API ou une signature exacte n'est pas suffisamment vérifiée :
+Unknown or unsupported exact API claims remain:
 
 ```text
 TODO(API VERIFY)
 ```
 
-### Capacités principales
+### V24 reliability pipeline
 
-- index API et modules Verse ;
-- base de symboles structurée progressive ;
-- RAG lexical/hybride explicable ;
-- Evidence Packs et Claim Ledger ;
-- mémoire d'erreurs réelles ;
-- mémoire de projets/systèmes ;
-- VerseLab et preuves de compilation ;
-- UI Creator ;
-- evals anti-hallucination ;
-- veille des changements Epic avec revalidation humaine ;
-- CLI unifié `verse-ai`.
-
-### CLI
-
-```bash
-python -m pip install -e .
-verse-ai search "vehicle ownership"
-verse-ai context "create RP phone"
-verse-ai api GetFortCharacter
-verse-ai errors "compiler error"
-verse-ai doctor
-verse-ai validate
+```text
+Retrieve
+→ Resolve API Claims
+→ Verify Sources
+→ Build Evidence
+→ Validate Claims
+→ Implement
+→ Attach Provenance
+→ Static Check
+→ Compile in UEFN
+→ Runtime Test
+→ Multiplayer Test
+→ Promote with Evidence
 ```
 
-Les anciens scripts `tools/*.py` restent disponibles pour compatibilité.
+### API evidence graph
 
-### Validation
+V24 generates:
+
+```text
+knowledge/api/evidence_graph.json
+```
+
+It links individual fields such as signatures, parameters, effects and event payloads to explicit evidence nodes.
+
+Version changes trigger revalidation instead of silently trusting stale exact claims.
+
+### Generated Verse provenance
+
+Generated Verse in Markdown uses a visible block:
+
+```markdown
+> **Verse AI Knowledge · V24**  
+> Status: `draft` · API snapshot: `42.20` · UEFN compile: `NOT TESTED` · Runtime: `NOT TESTED` · Multiplayer: `NOT TESTED`
+```
+
+and a normal HTML comment after the code:
+
+```html
+<!-- verse-ai-generated:v24;lang=verse;artifact=VAI-...;status=draft;api=42.20;compiled=false;runtime=false;multiplayer=false;api_verify_required=false;uncertain_api_count=0;claim_resolution=field-level -->
+```
+
+**No invisible Unicode watermark is used.**
+
+### Coverage
+
+Run:
+
+```bash
+verse-ai coverage
+```
+
+Coverage metrics describe **symbols currently known to this repository**. They do not claim to measure every Verse API published by Epic unless a complete official denominator is available.
+
+### Reliability evaluation
+
+- deterministic policy evals test repository guardrails;
+- `evals/llm/` provides a provider-optional end-to-end harness;
+- without configured responses/provider, LLM evals report `SKIPPED`, never `PASS`;
+- UEFN compile/runtime/multiplayer metrics are populated only from real evidence.
+
+### Validation levels
 
 ```text
 draft → static-checked → compiled → verified → multiplayer-verified
 ```
 
-`compiled`, `verified` et `multiplayer-verified` nécessitent de vraies preuves correspondantes. Une validation statique ne remplace jamais une compilation UEFN.
-
----
-
-## 🇬🇧 English
-
-### What is it?
-
-Verse AI Knowledge helps AI assistants work with **Verse / UEFN** using source-aware retrieval, provenance, validation boundaries, and anti-hallucination guards.
-
-The repository does not replace UEFN and does not guarantee that generated code compiles.
-
-### Quick start
-
-Repository-aware agents should start with:
-
-```text
-AI_BOOTSTRAP.md
-```
-
-The expected flow is:
-
-```text
-AI_BOOTSTRAP → ROUTING → targeted retrieval → Evidence Pack → Claim Ledger → implementation → UEFN validation when available
-```
-
-The historical portable Verse + UI prompt remains available at:
-
-```text
-portable/VERSE_AI_MASTER_PROMPT_v21_WITH_UI.txt
-```
-
-### Grounding model
-
-V22 separates:
-
-- **`source_trust`** — authority/currentness of the source;
-- **`validation`** — what was actually validated locally.
-
-If an exact API or signature cannot be supported:
-
-```text
-TODO(API VERIFY)
-```
-
-### Key capabilities
-
-- Verse API/module knowledge;
-- progressive structured symbol index;
-- explainable local hybrid RAG;
-- Evidence Packs and Claim Ledger;
-- real-error memory;
-- project/system memory;
-- VerseLab and compile evidence workflows;
-- UI Creator;
-- anti-hallucination evals;
-- safe Epic documentation revalidation;
-- unified `verse-ai` CLI.
+Static CI does not equal a UEFN compile.
 
 ### Documentation
 
-- `AI_BOOTSTRAP.md` — AI entry point
-- `AGENTS.md` — complete agent rules
-- `docs/architecture/V22_KNOWLEDGE_INTEGRITY.md` — trust/validation architecture
-- `docs/MIGRATION_V21_TO_V22.md` — migration notes
-- `CONTRIBUTING.md` — evidence requirements
-- `SECURITY.md` — security policy
+- `AI_BOOTSTRAP.md`
+- `AGENTS.md`
+- `docs/architecture/V24_CLAIM_RESOLUTION.md`
+- `docs/GENERATED_CODE_MARKER.md`
+- `knowledge/api/README.md`
+- `evals/llm/README.md`
+- `reports/PUBLIC_RELEASE_AUDIT_V24.md`
 
-### License
+Original repository content is governed by `LICENSE.md`. Third-party material keeps its own license and provenance requirements.
 
-Original repository content is governed by `LICENSE.md`. Third-party material keeps its own license and attribution requirements; see `THIRD_PARTY_NOTICES.md` and provenance files.
-
-### Disclaimer
-
-Verse, Unreal Editor for Fortnite, Fortnite, Epic Games and related marks belong to their respective owners. This is an independent project and is not affiliated with, endorsed by or sponsored by Epic Games.
+Verse, UEFN, Fortnite, Epic Games and related marks belong to their respective owners. This project is independent and is not affiliated with, endorsed by or sponsored by Epic Games.

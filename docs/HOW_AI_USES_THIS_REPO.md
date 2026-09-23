@@ -1,50 +1,87 @@
-# Comment une IA doit utiliser ce repo
+# How an AI should use this repository — V24
 
-## Retrieval first
+Repository-aware agents start with:
 
-Ce dépôt n'est utile que si l'agent le consulte AVANT de générer du code.
-
-Pour toute tâche Verse non triviale :
-
-```bash
-python tools/search_knowledge.py "termes importants"
+```text
+AI_BOOTSTRAP.md
 ```
 
-Exemples :
+## Recommended flow
 
-```bash
-python tools/search_knowledge.py "teleport agent"
-python tools/search_knowledge.py "button event subscription"
-python tools/search_knowledge.py "player ui"
-python tools/search_knowledge.py "failure decides transacts"
+```text
+User task
+↓
+AI_BOOTSTRAP
+↓
+knowledge/ROUTING.md
+↓
+targeted retrieval
+↓
+API claim resolution
+↓
+Evidence Pack
+↓
+Claim Ledger
+↓
+implementation
+↓
+generated-code provenance
+↓
+static validation / API claim lint
+↓
+UEFN compile
+↓
+runtime test
+↓
+multiplayer test when relevant
+↓
+promotion with evidence
 ```
 
-Ensuite :
+## Useful CLI
 
-1. ouvrir les fichiers les mieux classés ;
-2. lire l'API card correspondante ;
-3. lire le système existant si présent ;
-4. vérifier les erreurs/deprecations ;
-5. seulement après, écrire le code.
+```bash
+verse-ai search "vehicle ownership"
+verse-ai context "create RP phone"
+verse-ai api GetFortCharacter
+verse-ai claim GetFortCharacter --field signature
+verse-ai lint path/to/code.verse
+verse-ai coverage
+verse-ai api-queue
+verse-ai errors "compiler error"
+verse-ai doctor
+verse-ai validate
+```
 
-## Pourquoi
+## Exact API rule
 
-Un modèle qui possède beaucoup de connaissances en paramètres peut encore :
+A symbol name being present does not prove:
 
-- se souvenir d'une ancienne API ;
-- confondre deux signatures ;
-- inventer une fonction plausible ;
-- oublier un effet ;
-- oublier un cas multijoueur.
+- its signature;
+- its parameters;
+- its return type;
+- its effects;
+- an event payload.
 
-Le retrieval local réduit ces erreurs.
+Use the V24 claim resolver or inspect `field_evidence`.
 
-## Quand utiliser Internet
+If evidence is insufficient:
 
-Si l'information peut avoir changé depuis `last_verified`, vérifier la documentation officielle Epic actuelle avant de coder.
+```text
+TODO(API VERIFY)
+```
 
-## Règle de version
+## Generated code
 
-Ne jamais supposer que `latest` signifie compatible avec le projet de l'utilisateur.
+Generated Verse in Markdown uses:
 
-Si le projet utilise une version UEFN plus ancienne, comparer les API.
+- a visible V24 status block;
+- a hidden HTML comment after the Verse block.
+
+See `docs/GENERATED_CODE_MARKER.md`.
+
+## UEFN
+
+Repository checks are not a compiler.
+
+Never claim `compiled`, `verified`, or `multiplayer-verified` without the corresponding evidence.

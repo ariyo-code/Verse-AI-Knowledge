@@ -9,6 +9,7 @@
   ],
   "missing_required_roles": [],
   "exact_api_matches": [],
+  "exact_api_claims": {},
   "sources": [
     {
       "role": "api_evidence",
@@ -20,7 +21,7 @@
     },
     {
       "role": "lifecycle",
-      "score": 21.477,
+      "score": 22.302,
       "source_trust": "unknown",
       "validation": "draft",
       "path": "benchmark/tasks/B003-player-lifecycle.md",
@@ -28,7 +29,7 @@
     },
     {
       "role": "project_context",
-      "score": 41.542,
+      "score": 43.835,
       "source_trust": "unknown",
       "validation": "draft",
       "path": "projects/rp-framework/systems/vehicle-manager/system.json",
@@ -36,7 +37,7 @@
     },
     {
       "role": "verification",
-      "score": 13.988,
+      "score": 15.275,
       "source_trust": "unknown",
       "validation": "draft",
       "path": "mcp/QUALITY_GATE.md",
@@ -44,7 +45,7 @@
     },
     {
       "role": "project_context",
-      "score": 29.578,
+      "score": 30.497,
       "source_trust": "unknown",
       "validation": "draft",
       "path": "projects/rp-framework/decisions/ADR-0003-player-lifecycle.md",
@@ -60,7 +61,7 @@
     },
     {
       "role": "lifecycle",
-      "score": 9.858,
+      "score": 10.637,
       "source_trust": "unknown",
       "validation": "draft",
       "path": "docs/patterns/ui-lifecycle.md",
@@ -76,7 +77,7 @@
     },
     {
       "role": "verification",
-      "score": 7.22,
+      "score": 7.658,
       "source_trust": "unknown",
       "validation": "draft",
       "path": "mcp/PROJECT_SYNC.md",
@@ -84,7 +85,7 @@
     },
     {
       "role": "external_examples",
-      "score": 14.448,
+      "score": 15.452,
       "source_trust": "unknown",
       "validation": "draft",
       "path": "external/corpus/uefncentral-examples/c5fed52f687964fa83035f52423763553b129391/examples/player-systems/customcar.verse",
@@ -92,19 +93,19 @@
     },
     {
       "role": "supporting",
-      "score": 40.818,
-      "source_trust": "unknown",
-      "validation": "draft",
-      "path": "reports/CLAIM_LEDGER_SUMMARY.json",
-      "title": "CLAIM_LEDGER_SUMMARY"
-    },
-    {
-      "role": "supporting",
-      "score": 40.58,
+      "score": 43.109,
       "source_trust": "unknown",
       "validation": "draft",
       "path": "evals/retrieval/evidence_composition.json",
       "title": "evidence_composition"
+    },
+    {
+      "role": "supporting",
+      "score": 42.87,
+      "source_trust": "unknown",
+      "validation": "draft",
+      "path": "reports/CLAIM_LEDGER_SUMMARY.json",
+      "title": "CLAIM_LEDGER_SUMMARY"
     }
   ]
 }

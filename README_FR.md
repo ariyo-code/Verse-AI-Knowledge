@@ -1,38 +1,61 @@
 # Verse AI Knowledge — Français
 
-**V22 — Knowledge Integrity & Agent Reliability**
+**V24 — Claim Resolution, Evidence Graph & Continuous Verification**
+
+Verse AI Knowledge aide les agents IA à travailler avec Verse / UEFN en utilisant du retrieval, de la provenance, des preuves et des règles anti-hallucination.
 
 > **Ne jamais inventer une API Verse.**
 
-Verse AI Knowledge est une base de connaissances et un ensemble d'outils pour aider une IA à produire du Verse / UEFN en s'appuyant sur des sources et des preuves explicites.
+## Démarrage
 
-## Commencer
+Pour un agent capable de lire le dépôt :
 
-Un agent qui lit le dépôt doit ouvrir `AI_BOOTSTRAP.md`, puis `knowledge/ROUTING.md` et récupérer uniquement les connaissances pertinentes.
+```text
+AI_BOOTSTRAP.md
+```
 
-V22 sépare :
+Puis :
 
-- `source_trust` : fiabilité/autorité de la source ;
-- `validation` : validation réellement effectuée localement.
+```text
+ROUTING → retrieval ciblé → résolution des claims API → Evidence Pack → Claim Ledger → implémentation → provenance → validation
+```
 
-Si une API exacte n'est pas suffisamment vérifiée : `TODO(API VERIFY)`.
+## Nouveautés V24
 
-## Validation
-
-`draft` → `static-checked` → `compiled` → `verified` → `multiplayer-verified`.
-
-Les trois derniers niveaux exigent des preuves UEFN correspondantes. Une analyse statique n'est jamais une compilation UEFN.
+- résolution des claims au niveau du champ ;
+- graphe de preuves API ;
+- lint conservateur des claims Verse ;
+- revalidation lors d’un changement de snapshot API ;
+- snapshots/diffs de couverture ;
+- récupération Epic sécurisée contre les redirections hors domaine ;
+- marqueur visible + commentaire HTML invisible V24 ;
+- harness d’evals LLM optionnel ;
+- contrôles publication/secrets/liens internes.
 
 ## CLI
 
 ```bash
 python -m pip install -e .
-verse-ai doctor
-verse-ai search "vehicle ownership"
 verse-ai api GetFortCharacter
+verse-ai claim GetFortCharacter --field signature
+verse-ai lint path/to/code.verse
+verse-ai coverage
+verse-ai doctor
 verse-ai validate
 ```
 
-Le prompt portable V21 avec UI reste présent pour compatibilité : `portable/VERSE_AI_MASTER_PROMPT_v21_WITH_UI.txt`.
+Si une information exacte n’est pas suffisamment prouvée :
 
-Voir aussi `README.md`, `AGENTS.md`, `CHANGELOG.md`, `CONTRIBUTING.md` et `docs/architecture/V22_KNOWLEDGE_INTEGRITY.md`.
+```text
+TODO(API VERIFY)
+```
+
+## Validation
+
+```text
+draft → static-checked → compiled → verified → multiplayer-verified
+```
+
+Une validation statique ne remplace jamais une compilation UEFN.
+
+Le contenu original suit `LICENSE.md`. Le contenu tiers conserve ses licences et sa provenance.

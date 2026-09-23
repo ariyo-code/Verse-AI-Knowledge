@@ -1,101 +1,34 @@
-# Mettre Verse AI Knowledge sur GitHub — Guide PC
+# Guide de publication GitHub — V24
 
-## Dossier à envoyer
+## Avant le push
 
-Après avoir décompressé l'archive, ouvre :
+Depuis la racine du dépôt :
 
-```text
-Verse-AI-Knowledge/
+```bash
+python -m pip install -e .
+verse-ai validate
+python tools/check_internal_paths.py
+python tools/scan_secrets.py
 ```
 
-À l'intérieur, tu dois voir directement :
+Vérifie également que `LICENSE.md` et `THIRD_PARTY_NOTICES.md` sont présents.
+
+## Commit conseillé
 
 ```text
-README.md
-README_FR.md
-README_EN.md
-AGENTS.md
-AI_GUIDE.md
-portable/
-knowledge/
-docs/
-projects/
-rag/
-tools/
-lab/
-.github/
-...
+Release V24 — Claim Resolution, Evidence Graph & Continuous Verification
 ```
 
-**C'est le contenu de ce dossier qu'il faut mettre à la racine du dépôt GitHub.**
+## Après le push
 
-Il ne faut pas obtenir :
+Ouvre l'onglet **Actions** et vérifie que **V24 CI** est entièrement vert.
+
+Le démarrage recommandé pour les agents est :
 
 ```text
-Verse-AI-Knowledge/
-└── Verse-AI-Knowledge/
-    └── README.md
+AI_BOOTSTRAP.md
 ```
 
-## Méthode recommandée : GitHub Desktop
+Les anciens Master Prompts restent uniquement des packs de compatibilité / usage portable.
 
-1. Installe GitHub Desktop.
-2. Connecte ton compte GitHub.
-3. Clone ton dépôt `Verse-AI-Knowledge`.
-4. Ouvre le dossier local cloné.
-5. Copie **tout le contenu** du dossier fourni `Verse-AI-Knowledge/` dans le dossier cloné.
-6. Dans GitHub Desktop, vérifie les changements.
-7. Message de commit conseillé :
-
-```text
-Initial release - Verse AI Knowledge v21
-```
-
-8. Clique sur `Commit to main`.
-9. Clique sur `Push origin`.
-
-## Branches conseillées
-
-Garde `main` stable.
-
-Branches principales possibles :
-
-```text
-main
-dev
-ui-creator
-rag
-verselab
-external-corpus
-examples
-experimental
-```
-
-Pour les modifications ponctuelles :
-
-```text
-feature/phone-system
-feature/ui-preview
-fix/api-catalog
-fix/ui-cleanup
-```
-
-## Après l'upload
-
-Vérifie sur GitHub que la page d'accueil affiche bien `README.md` et que les dossiers `portable`, `knowledge`, `docs`, `.github` et `tools` sont directement visibles.
-
-## Ne pas publier de secrets
-
-Ne mets jamais dans GitHub :
-
-```text
-.env
-tokens
-mots de passe
-clés API
-identifiants Epic
-DATABASE_URL privée
-token Discord
-```
-
-Le `.gitignore` du projet bloque déjà plusieurs fichiers sensibles courants.
+Une CI verte reste une validation du dépôt. Elle ne prouve pas une compilation UEFN de tout code Verse.

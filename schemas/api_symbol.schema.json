@@ -1,6 +1,6 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "title": "Structured Verse API Symbol",
+  "title": "Structured Verse API Symbol — V24",
   "type": "object",
   "required": [
     "symbol_id",
@@ -14,30 +14,345 @@
     "exact_signature_claim_allowed"
   ],
   "properties": {
-    "symbol_id": {"type": "string", "minLength": 1},
-    "name": {"type": "string", "minLength": 1},
-    "qualified_name": {"type": ["string", "null"]},
-    "kind": {"type": "string", "minLength": 1},
-    "module": {"type": "string", "minLength": 1},
-    "signature": {"type": ["string", "null"]},
-    "effects": {"type": "array", "items": {"type": "string"}, "uniqueItems": true},
-    "failure_context_required": {"type": "boolean"},
-    "api_version": {"type": "string", "minLength": 1},
-    "introduced_in": {"type": ["string", "null"]},
-    "deprecated_in": {"type": ["string", "null"]},
-    "replacement": {"type": ["string", "null"]},
-    "source_trust": {"$ref": "trust.schema.json"},
-    "validation": {"$ref": "validation_status.schema.json"},
-    "source_url": {"type": ["string", "null"]},
-    "verified_at": {"type": ["string", "null"]},
-    "evidence_basis": {"type": ["string", "null"]},
-    "claim_scope": {"type": "string"},
-    "signature_verified": {"type": "boolean"},
-    "exact_signature_claim_allowed": {"type": "boolean"},
-    "summary": {"type": ["string", "null"]},
-    "cautions": {"type": "array", "items": {"type": "string"}},
-    "member_names": {"type": "array", "items": {"type": "string"}, "uniqueItems": true},
-    "event_names": {"type": "array", "items": {"type": "string"}, "uniqueItems": true}
+    "symbol_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "name": {
+      "type": "string",
+      "minLength": 1
+    },
+    "qualified_name": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "kind": {
+      "type": "string",
+      "minLength": 1
+    },
+    "module": {
+      "type": "string",
+      "minLength": 1
+    },
+    "signature": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "effects": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "uniqueItems": true
+    },
+    "failure_context_required": {
+      "type": "boolean"
+    },
+    "api_version": {
+      "type": "string",
+      "minLength": 1
+    },
+    "introduced_in": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "deprecated_in": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "replacement": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "source_trust": {
+      "$ref": "trust.schema.json"
+    },
+    "validation": {
+      "$ref": "validation_status.schema.json"
+    },
+    "source_url": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "verified_at": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "evidence_basis": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "claim_scope": {
+      "type": "string"
+    },
+    "signature_verified": {
+      "type": "boolean"
+    },
+    "exact_signature_claim_allowed": {
+      "type": "boolean"
+    },
+    "summary": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "cautions": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "member_names": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "uniqueItems": true
+    },
+    "event_names": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "uniqueItems": true
+    },
+    "signature_state": {
+      "enum": [
+        "missing",
+        "candidate",
+        "verified"
+      ]
+    },
+    "parameters": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "name",
+          "type"
+        ],
+        "properties": {
+          "name": {
+            "type": "string"
+          },
+          "type": {
+            "type": "string"
+          },
+          "default": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "optional": {
+            "type": "boolean"
+          }
+        },
+        "additionalProperties": false
+      }
+    },
+    "return_type": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "event_details": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "name"
+        ],
+        "properties": {
+          "name": {
+            "type": "string"
+          },
+          "payload_type": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "signature": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "verified": {
+            "type": "boolean"
+          }
+        },
+        "additionalProperties": false
+      }
+    },
+    "coverage": {
+      "type": "object",
+      "properties": {
+        "presence": {
+          "type": "boolean"
+        },
+        "signature": {
+          "type": "boolean"
+        },
+        "parameters": {
+          "type": "boolean"
+        },
+        "return_type": {
+          "type": "boolean"
+        },
+        "effects": {
+          "type": "boolean"
+        },
+        "event_names": {
+          "type": "boolean"
+        },
+        "event_payloads": {
+          "type": "boolean"
+        }
+      },
+      "additionalProperties": false
+    },
+    "evidence_ids": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "uniqueItems": true
+    },
+    "field_evidence": {
+      "type": "object",
+      "properties": {
+        "presence": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "uniqueItems": true
+        },
+        "module": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "uniqueItems": true
+        },
+        "kind": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "uniqueItems": true
+        },
+        "signature": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "uniqueItems": true
+        },
+        "parameters": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "uniqueItems": true
+        },
+        "return_type": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "uniqueItems": true
+        },
+        "effects": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "uniqueItems": true
+        },
+        "event_names": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "uniqueItems": true
+        },
+        "event_payloads": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "uniqueItems": true
+        },
+        "member_names": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "uniqueItems": true
+        }
+      },
+      "additionalProperties": false
+    },
+    "revalidation": {
+      "type": "object",
+      "required": [
+        "status",
+        "api_version"
+      ],
+      "properties": {
+        "status": {
+          "enum": [
+            "current",
+            "needs-review",
+            "stale",
+            "unknown",
+            "not-applicable"
+          ]
+        },
+        "api_version": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "reason": {
+          "type": [
+            "string",
+            "null"
+          ]
+        }
+      },
+      "additionalProperties": false
+    },
+    "claim_state": {
+      "enum": [
+        "presence-only",
+        "exact-signature",
+        "behavior-verified",
+        "deprecated"
+      ]
+    }
   },
   "additionalProperties": false
 }

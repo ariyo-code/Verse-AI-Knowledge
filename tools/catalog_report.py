@@ -2,22 +2,19 @@
 from pathlib import Path
 import json
 from collections import Counter
-
-ROOT = Path(__file__).resolve().parents[1]
-data = json.loads((ROOT / "knowledge/api_catalog.json").read_text(encoding="utf-8"))
-entries = data["entries"]
-trust = Counter(v.get("source_trust", "unknown") for v in entries.values())
-validation = Counter(v.get("validation", "draft") for v in entries.values())
-legacy_basis = Counter(v.get("evidence_basis", v.get("verification", "unspecified")) for v in entries.values())
-print(f"Verse API snapshot: {data.get('verse_api_version')}")
-print(f"Last verified: {data.get('last_verified')}")
-print(f"Catalog entries: {len(entries)}")
-print("Source trust:")
-for key, count in sorted(trust.items()):
-    print(f"- {key}: {count}")
-print("Local validation:")
-for key, count in sorted(validation.items()):
-    print(f"- {key}: {count}")
-print("Legacy/evidence basis:")
-for key, count in sorted(legacy_basis.items()):
-    print(f"- {key}: {count}")
+ROOT=Path(__file__).resolve().parents[1]
+legacy=json.loads((ROOT/'knowledge/api_catalog.json').read_text(encoding='utf-8'))
+rows=[json.loads(x) for x in (ROOT/'knowledge/api/symbols.jsonl').read_text(encoding='utf-8').splitlines() if x.strip()]
+coverage=json.loads((ROOT/'knowledge/api/coverage.json').read_text(encoding='utf-8'))
+print(f"Verse API snapshot: {coverage.get('api_version')}")
+print(f"Legacy catalog last verified: {legacy.get('last_verified')}")
+print(f"Structured symbols: {len(rows)}")
+print(f"Exact signatures verified: {coverage['coverage']['signature_verified']['count']}/{len(rows)} ({coverage['coverage']['signature_verified']['percent']}%)")
+print(f"Event names known: {coverage['coverage']['event_names_known']['count']}/{len(rows)} ({coverage['coverage']['event_names_known']['percent']}%)")
+print(f"Event payloads verified: {coverage['coverage']['event_payloads_verified']['count']}/{len(rows)} ({coverage['coverage']['event_payloads_verified']['percent']}%)")
+print('Signature states:')
+for k,v in sorted(Counter(r.get('signature_state','missing') for r in rows).items()): print(f'- {k}: {v}')
+print('Source trust:')
+for k,v in sorted(Counter(r.get('source_trust','unknown') for r in rows).items()): print(f'- {k}: {v}')
+print('Local validation:')
+for k,v in sorted(Counter(r.get('validation','draft') for r in rows).items()): print(f'- {k}: {v}')

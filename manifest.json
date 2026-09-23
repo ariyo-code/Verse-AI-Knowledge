@@ -1,6 +1,6 @@
 {
   "name": "Verse AI Knowledge",
-  "schema_version": 22,
+  "schema_version": 24,
   "purpose": "Knowledge base for AI-assisted Verse and UEFN development",
   "rules_file": "AGENTS.md",
   "verification_statuses": [
@@ -11,7 +11,7 @@
     "multiplayer-verified"
   ],
   "knowledge_index": "knowledge/INDEX.md",
-  "last_knowledge_refresh": "2026-09-22",
+  "last_knowledge_refresh": "2026-09-23",
   "last_verified_verse_api_version": "42.20",
   "official_sources": {
     "verse_api": "https://dev.epicgames.com/documentation/fortnite/verse-api",
@@ -41,7 +41,8 @@
     "Vehicles",
     "UnrealEngine Temporary UI",
     "Fortnite UI",
-    "SceneGraph"
+    "SceneGraph",
+    "Chat / Voice"
   ],
   "error_memory": {
     "format": "jsonl",
@@ -181,7 +182,11 @@
   "portable_pack": {
     "master_prompt": "portable/VERSE_AI_MASTER_PROMPT.txt",
     "task_template": "portable/TASK_TEMPLATE.txt",
-    "readme": "portable/README.md"
+    "readme": "portable/README.md",
+    "v23_master_prompt": "portable/VERSE_AI_MASTER_PROMPT_v23_WITH_UI.txt",
+    "v23_addendum": "portable/V23_GENERATION_PROVENANCE_ADDENDUM.txt",
+    "current_combined_prompt": "portable/VERSE_AI_MASTER_PROMPT_v24_WITH_UI.txt",
+    "current_addendum": "portable/V24_GENERATION_PROVENANCE_ADDENDUM.txt"
   },
   "v21_ui_creator": {
     "master_prompt": "portable/ui_creator/VERSE_UI_CREATOR_MASTER_PROMPT.txt",
@@ -215,8 +220,8 @@
     "start_en": "00_START_HERE_EN.md"
   },
   "release": {
-    "version": "22.0.0",
-    "name": "Knowledge Integrity & Agent Reliability"
+    "version": "24.0.0",
+    "name": "Claim Resolution, Evidence Graph & Continuous Verification"
   },
   "entrypoint": "AI_BOOTSTRAP.md",
   "verse_api_version": "42.20",
@@ -256,7 +261,12 @@
     "root": "evals/",
     "hallucination_cases": "evals/hallucination/cases.json",
     "retrieval_evidence": "evals/retrieval/evidence_composition.json",
-    "runner": "tools/run_hallucination_evals.py"
+    "runner": "tools/run_hallucination_evals.py",
+    "generation_tasks": "evals/generation/tasks.json",
+    "generation_schema": "schemas/generation_eval_run.schema.json",
+    "generation_evaluator": "tools/evaluate_generation_run.py",
+    "generation_compare": "tools/compare_generation_runs.py",
+    "baseline": "evals/generation/baseline_v22.json"
   },
   "unified_cli": {
     "package": "src/verse_ai_knowledge/",
@@ -268,5 +278,89 @@
     "integrity_validator": "tools/validate_v22_integrity.py",
     "generated_drift": "tools/check_generated_drift.py",
     "migration_docs": "docs/MIGRATION_V21_TO_V22.md"
+  },
+  "api_knowledge_v23": {
+    "legacy_catalog": "knowledge/api_catalog.json",
+    "symbols": "knowledge/api/symbols.jsonl",
+    "modules": "knowledge/api/modules.json",
+    "versions": "knowledge/api/versions.json",
+    "coverage": "knowledge/api/coverage.json",
+    "verification_queue": "knowledge/api/verification_queue.json",
+    "verification_records": "knowledge/api/verification_records.jsonl",
+    "harvest_candidates": "knowledge/api/candidates/",
+    "symbol_schema": "schemas/api_symbol.schema.json",
+    "evidence_schema": "schemas/api_evidence.schema.json",
+    "migration_tool": "tools/migrate_api_catalog_v23.py",
+    "coverage_tool": "tools/api_coverage_report.py",
+    "queue_tool": "tools/build_api_verification_queue.py",
+    "harvester": "tools/harvest_epic_api.py",
+    "review_tool": "tools/review_api_candidate.py",
+    "rule": "Presence is not signature verification; harvested candidates never auto-promote."
+  },
+  "generated_code_provenance": {
+    "docs": "docs/GENERATED_CODE_MARKER.md",
+    "schema": "schemas/generated_artifact.schema.json",
+    "config": "portable/generated_code_marker.json",
+    "stamp_tool": "tools/stamp_generated_code.py",
+    "read_tool": "tools/read_generated_marker.py",
+    "check_tool": "tools/check_generated_marker.py",
+    "marker_version": "v24",
+    "visible_and_hidden": true,
+    "hidden_mechanism": "HTML comment in Markdown only; no invisible Unicode."
+  },
+  "v23": {
+    "architecture": "docs/architecture/V23_API_COVERAGE.md",
+    "integrity_validator": "tools/validate_v23_integrity.py",
+    "api_coverage": "tools/api_coverage_report.py",
+    "api_queue": "tools/build_api_verification_queue.py",
+    "provenance": "docs/GENERATED_CODE_MARKER.md",
+    "generation_evals": "evals/generation/",
+    "migration_docs": "docs/MIGRATION_V22_TO_V23.md"
+  },
+  "api_knowledge_v24": {
+    "symbols": "knowledge/api/symbols.jsonl",
+    "modules": "knowledge/api/modules.json",
+    "versions": "knowledge/api/versions.json",
+    "coverage": "knowledge/api/coverage.json",
+    "coverage_snapshots": "reports/api-coverage/",
+    "verification_queue": "knowledge/api/verification_queue.json",
+    "verification_records": "knowledge/api/verification_records.jsonl",
+    "evidence_graph": "knowledge/api/evidence_graph.json",
+    "revalidation_state": "knowledge/api/revalidation_state.json",
+    "symbol_schema": "schemas/api_symbol.schema.json",
+    "evidence_schema": "schemas/api_evidence.schema.json",
+    "claim_schema": "schemas/api_claim.schema.json",
+    "migration_tool": "tools/migrate_api_catalog_v24.py",
+    "coverage_tool": "tools/api_coverage_report.py",
+    "claim_tool": "tools/resolve_api_claim.py",
+    "lint_tool": "tools/lint_verse_claims.py",
+    "graph_tool": "tools/build_api_evidence_graph.py",
+    "snapshot_tool": "tools/api_coverage_snapshot.py",
+    "diff_tool": "tools/api_coverage_diff.py",
+    "revalidation_gate": "tools/api_revalidation_gate.py",
+    "rule": "Every exact field-level claim must be supported by matching evidence; presence never implies signature."
+  },
+  "llm_evals": {
+    "root": "evals/llm/",
+    "cases": "evals/llm/cases.json",
+    "schema": "evals/llm/schema.json",
+    "runner": "evals/llm/runner.py",
+    "rule": "Without an explicitly configured provider or saved-output input, the runner reports SKIPPED, never PASS."
+  },
+  "public_release_checks": {
+    "internal_paths": "tools/check_internal_paths.py",
+    "secrets": "tools/scan_secrets.py",
+    "epic_url_security": "tests/test_epic_url_security.py",
+    "report": "reports/PUBLIC_RELEASE_AUDIT_V24.md"
+  },
+  "v24": {
+    "architecture": "docs/architecture/V24_CLAIM_RESOLUTION.md",
+    "integrity_validator": "tools/validate_v24_integrity.py",
+    "claim_resolution": "tools/resolve_api_claim.py",
+    "verse_lint": "tools/lint_verse_claims.py",
+    "evidence_graph": "knowledge/api/evidence_graph.json",
+    "api_revalidation": "tools/api_revalidation_gate.py",
+    "llm_evals": "evals/llm/",
+    "migration_docs": "docs/MIGRATION_V23_TO_V24.md"
   }
 }

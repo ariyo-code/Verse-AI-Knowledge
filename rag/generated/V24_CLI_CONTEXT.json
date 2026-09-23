@@ -1,0 +1,47 @@
+{
+  "schema_version": 2,
+  "query": "create RP phone",
+  "routes": [
+    "project"
+  ],
+  "exact_api_matches": [],
+  "budget_chars": 4000,
+  "used_chars": 3970,
+  "sources": [
+    {
+      "path": "projects/rp-framework/systems/phone-system/README.md",
+      "title": "RP Phone",
+      "score": 28.575,
+      "source_trust": "unknown",
+      "validation": "draft"
+    },
+    {
+      "path": "projects/rp-framework/systems/phone-system/system.json",
+      "title": "system",
+      "score": 24.887,
+      "source_trust": "unknown",
+      "validation": "draft"
+    },
+    {
+      "path": "projects/rp-framework/project.json",
+      "title": "project",
+      "score": 21.391,
+      "source_trust": "unknown",
+      "validation": "draft"
+    },
+    {
+      "path": "projects/rp-framework/dependency_graph.json",
+      "title": "dependency_graph",
+      "score": 17.763,
+      "source_trust": "unknown",
+      "validation": "draft"
+    },
+    {
+      "path": "projects/rp-framework/decisions/ADR-0001-modular-services.md",
+      "title": "ADR-0001 — Modulariser les systèmes RP",
+      "score": 16.979,
+      "source_trust": "unknown",
+      "validation": "draft"
+    }
+  ]
+}

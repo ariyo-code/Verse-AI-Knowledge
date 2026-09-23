@@ -1,0 +1,75 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Verse API Claim Decision — V24",
+  "type": "object",
+  "required": [
+    "symbol",
+    "field",
+    "decision",
+    "supported",
+    "evidence_ids"
+  ],
+  "properties": {
+    "symbol": {
+      "type": "string"
+    },
+    "field": {
+      "enum": [
+        "presence",
+        "module",
+        "kind",
+        "signature",
+        "parameters",
+        "return_type",
+        "effects",
+        "event_names",
+        "event_payloads",
+        "member_names"
+      ]
+    },
+    "decision": {
+      "enum": [
+        "ALLOW",
+        "TODO(API VERIFY)"
+      ]
+    },
+    "supported": {
+      "type": "boolean"
+    },
+    "reason": {
+      "type": "string"
+    },
+    "evidence_ids": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "uniqueItems": true
+    },
+    "source_url": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "api_version": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "claim_scope": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "suggestions": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    }
+  },
+  "additionalProperties": true
+}

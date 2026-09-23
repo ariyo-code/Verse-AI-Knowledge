@@ -1,0 +1,9 @@
+{
+  "schema_version": 1,
+  "api_version": "42.20",
+  "stale_symbol_count": 0,
+  "stale_symbols": [],
+  "stale_verified_evidence_count": 0,
+  "stale_verified_evidence_ids": [],
+  "rule": "Version changes trigger revalidation; they never silently rewrite verified claims."
+}

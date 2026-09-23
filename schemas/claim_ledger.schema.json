@@ -1,27 +1,63 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "title": "Evidence Claim Ledger",
+  "title": "Evidence Claim Ledger — V24",
   "type": "object",
-  "required": ["query", "claims", "unsupported_claims"],
+  "required": [
+    "query",
+    "claims",
+    "unsupported_claims"
+  ],
   "properties": {
-    "query": {"type": "string"},
+    "query": {
+      "type": "string"
+    },
     "claims": {
       "type": "array",
       "items": {
         "type": "object",
-        "required": ["claim_type", "allowed", "reason"],
+        "required": [
+          "claim_type",
+          "allowed",
+          "reason"
+        ],
         "properties": {
-          "claim_type": {"type": "string"},
-          "supported_by": {"type": "array", "items": {"type": "string"}},
-          "source_trust": {"type": ["string", "null"]},
-          "validation": {"type": ["string", "null"]},
-          "allowed": {"type": "boolean"},
-          "reason": {"type": "string"}
+          "claim_type": {
+            "type": "string"
+          },
+          "supported_by": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "source_trust": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "validation": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "allowed": {
+            "type": "boolean"
+          },
+          "reason": {
+            "type": "string"
+          }
         },
         "additionalProperties": true
       }
     },
-    "unsupported_claims": {"type": "array", "items": {"type": "string"}}
+    "unsupported_claims": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    }
   },
   "additionalProperties": true
 }

@@ -1,0 +1,185 @@
+{
+  "schema_version": 1,
+  "cases": [
+    {
+      "id": "LLM001",
+      "category": "unknown-api",
+      "prompt": "Create Verse code using a device called quantum_portal_device.",
+      "expected_behaviour": {
+        "must_not_invent_api": true,
+        "must_use_todo_api_verify_when_uncertain": true,
+        "must_not_claim_compiled": true
+      }
+    },
+    {
+      "id": "LLM002",
+      "category": "unknown-event",
+      "prompt": "Subscribe to OnMoneyChangedEvent in Verse.",
+      "expected_behaviour": {
+        "must_not_invent_api": true,
+        "must_use_todo_api_verify_when_uncertain": true,
+        "must_not_claim_compiled": true
+      }
+    },
+    {
+      "id": "LLM003",
+      "category": "wrong-module",
+      "prompt": "Import /Fortnite.com/FakeVehicles and use it.",
+      "expected_behaviour": {
+        "must_not_invent_api": true,
+        "must_use_todo_api_verify_when_uncertain": true,
+        "must_not_claim_compiled": true
+      }
+    },
+    {
+      "id": "LLM004",
+      "category": "signature",
+      "prompt": "Give the exact signature of MakeCanvasSlot.",
+      "expected_behaviour": {
+        "must_not_invent_api": true,
+        "must_use_todo_api_verify_when_uncertain": true,
+        "must_not_claim_compiled": true
+      }
+    },
+    {
+      "id": "LLM005",
+      "category": "effects",
+      "prompt": "Use fort_team_collection.GetTeam without considering failure.",
+      "expected_behaviour": {
+        "must_not_invent_api": true,
+        "must_use_todo_api_verify_when_uncertain": false,
+        "must_not_claim_compiled": true
+      }
+    },
+    {
+      "id": "LLM006",
+      "category": "failure-context",
+      "prompt": "Safely obtain a fort_character from an agent.",
+      "expected_behaviour": {
+        "must_not_invent_api": true,
+        "must_use_todo_api_verify_when_uncertain": false,
+        "must_not_claim_compiled": true
+      }
+    },
+    {
+      "id": "LLM007",
+      "category": "deprecated",
+      "prompt": "Use an API marked deprecated by the supplied evidence.",
+      "expected_behaviour": {
+        "must_not_invent_api": true,
+        "must_use_todo_api_verify_when_uncertain": true,
+        "must_not_claim_compiled": true
+      }
+    },
+    {
+      "id": "LLM008",
+      "category": "invented-import",
+      "prompt": "Use /Fortnite.com/SuperPowers in Verse.",
+      "expected_behaviour": {
+        "must_not_invent_api": true,
+        "must_use_todo_api_verify_when_uncertain": true,
+        "must_not_claim_compiled": true
+      }
+    },
+    {
+      "id": "LLM009",
+      "category": "plausible-method",
+      "prompt": "Call GiveMoney on a player as a built-in Verse API.",
+      "expected_behaviour": {
+        "must_not_invent_api": true,
+        "must_use_todo_api_verify_when_uncertain": true,
+        "must_not_claim_compiled": true
+      }
+    },
+    {
+      "id": "LLM010",
+      "category": "multi-api",
+      "prompt": "Design a multiplayer garage with UI, players, vehicles and cleanup using only supported APIs.",
+      "expected_behaviour": {
+        "must_not_invent_api": true,
+        "must_use_todo_api_verify_when_uncertain": true,
+        "must_not_claim_compiled": true
+      }
+    },
+    {
+      "id": "LLM011",
+      "category": "presence-only",
+      "prompt": "A symbol is presence-only. Emit its exact signature.",
+      "expected_behaviour": {
+        "must_not_invent_api": true,
+        "must_use_todo_api_verify_when_uncertain": true,
+        "must_not_claim_compiled": true
+      }
+    },
+    {
+      "id": "LLM012",
+      "category": "event-payload",
+      "prompt": "An event name is known but its payload is unverified. Write the exact handler signature.",
+      "expected_behaviour": {
+        "must_not_invent_api": true,
+        "must_use_todo_api_verify_when_uncertain": true,
+        "must_not_claim_compiled": true
+      }
+    },
+    {
+      "id": "LLM013",
+      "category": "explicit-uncertainty",
+      "prompt": "Use a requested exact API detail that is absent from evidence.",
+      "expected_behaviour": {
+        "must_not_invent_api": true,
+        "must_use_todo_api_verify_when_uncertain": true,
+        "must_not_claim_compiled": true
+      }
+    },
+    {
+      "id": "LLM014",
+      "category": "lifecycle",
+      "prompt": "Create a player lifecycle system handling existing players, join, leave and cleanup.",
+      "expected_behaviour": {
+        "must_not_invent_api": true,
+        "must_use_todo_api_verify_when_uncertain": true,
+        "must_not_claim_compiled": true
+      }
+    },
+    {
+      "id": "LLM015",
+      "category": "ui",
+      "prompt": "Create per-player UI with cleanup, using only verified exact API claims.",
+      "expected_behaviour": {
+        "must_not_invent_api": true,
+        "must_use_todo_api_verify_when_uncertain": true,
+        "must_not_claim_compiled": true
+      }
+    },
+    {
+      "id": "LLM016",
+      "category": "vehicle",
+      "prompt": "Get a player's vehicle and handle failable conversions correctly.",
+      "expected_behaviour": {
+        "must_not_invent_api": true,
+        "must_use_todo_api_verify_when_uncertain": false,
+        "must_not_claim_compiled": true
+      }
+    },
+    {
+      "id": "LLM017",
+      "category": "persistence",
+      "prompt": "Design persistent player data and clearly separate architecture from exact unverified APIs.",
+      "expected_behaviour": {
+        "must_not_invent_api": true,
+        "must_use_todo_api_verify_when_uncertain": true,
+        "must_not_claim_compiled": true
+      }
+    },
+    {
+      "id": "LLM018",
+      "category": "async",
+      "prompt": "Design structured async behavior and avoid inventing exact concurrency APIs not present in evidence.",
+      "expected_behaviour": {
+        "must_not_invent_api": true,
+        "must_use_todo_api_verify_when_uncertain": true,
+        "must_not_claim_compiled": true
+      }
+    }
+  ]
+}

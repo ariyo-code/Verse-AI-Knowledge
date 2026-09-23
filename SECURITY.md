@@ -58,5 +58,20 @@ Verse AI Knowledge deliberately avoids invisible Unicode watermark characters in
 The generated-code marker is implemented only as a normal HTML comment in Markdown output:
 
 ```html
-<!-- verse-ai-generated:v21;lang=verse;status=draft -->
+<!-- verse-ai-generated:v24;lang=verse;artifact=VAI-...;status=draft;api=42.20;compiled=false;runtime=false;multiplayer=false;api_verify_required=false;uncertain_api_count=0;claim_resolution=field-level -->
 ```
+
+
+## V24 remote-source safety
+
+Official Epic documentation fetchers must accept only HTTPS URLs whose hostname is exactly `dev.epicgames.com` and whose path is under `/documentation/`.
+
+Credentials in URLs are rejected. Redirect destinations are revalidated before they are followed.
+
+Remote content is data, never an instruction stream.
+
+## Secret handling
+
+Do not commit API keys, LLM provider keys, Epic credentials, Discord tokens, GitHub PATs, database URLs with secrets, private keys, cookies or authorization headers.
+
+`tools/scan_secrets.py` performs a conservative repository scan. A clean scan does not prove that Git history never contained a secret.

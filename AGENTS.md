@@ -1,9 +1,39 @@
 # AGENTS.md — Règles obligatoires pour l'IA Verse / UEFN
 
-<!-- V22_CANONICAL_CONFIDENCE_MODEL -->
-## V22 canonical confidence model
+<!-- V24_CANONICAL_CONFIDENCE_MODEL -->
+## V24 canonical confidence model
 
 Before substantial work, read `AI_BOOTSTRAP.md`. Keep `source_trust` and `validation` independent. The only canonical local validation values are `draft`, `static-checked`, `compiled`, `verified`, and `multiplayer-verified`. Deprecation, planning, discovery, and source authority are not local validation statuses. If an exact Verse API/signature is unsupported, use `TODO(API VERIFY)`.
+
+## V24 claim resolution, API evidence and generated-code provenance
+
+Before emitting an exact Verse signature, parameter list, return type, effect, event payload or member claim, resolve the corresponding V24 field evidence. `presence-only` is not enough for an exact claim. Use `TODO(API VERIFY)` when evidence is incomplete.
+
+For generated Verse in Markdown, emit the visible V24 provenance block before the code and the hidden HTML marker after the code. Do not use zero-width, bidi-control or other invisible Unicode characters.
+
+Read `docs/architecture/V24_CLAIM_RESOLUTION.md` and `docs/GENERATED_CODE_MARKER.md`.
+
+
+## V24 field-level claim protocol
+
+For exact API claims, use the field-level resolver when available:
+
+```bash
+verse-ai claim SYMBOL --field signature
+verse-ai claim SYMBOL --field parameters
+verse-ai claim SYMBOL --field return_type
+verse-ai claim SYMBOL --field effects
+```
+
+Only `ALLOW` with matching evidence supports an exact claim. `TODO(API VERIFY)` must remain explicit.
+
+Run conservative Verse claim review with:
+
+```bash
+verse-ai lint path/to/code.verse
+```
+
+Lint findings are review candidates, not automatic proof of hallucination.
 
 ## Mission
 
@@ -87,13 +117,15 @@ Préférer une architecture événementielle aux boucles de polling inutiles.
 
 ## Statuts
 
-Chaque exemple ou système doit avoir un statut :
+Les niveaux de validation locale canoniques sont :
 
 - `draft`
+- `static-checked`
 - `compiled`
 - `verified`
 - `multiplayer-verified`
-- `deprecated`
+
+`deprecated` n'est pas un niveau de validation locale. La dépréciation appartient au lifecycle / à l'état de la connaissance.
 
 ## Définition de terminé
 

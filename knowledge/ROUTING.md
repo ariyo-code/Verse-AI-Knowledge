@@ -1,9 +1,22 @@
 # Routing table for AI agents
 
-<!-- V22_ROUTING_ENTRY -->
-## V22 entry route
+<!-- V23_ROUTING_ENTRY -->
+## V23 entry route
 
 For a new agent session: `AI_BOOTSTRAP.md` → this routing table → targeted retrieval → Evidence Pack → Claim Ledger → implementation → real UEFN validation when available. Use `verse-ai` as the preferred CLI; legacy `tools/*.py` entry points remain supported.
+
+## V23 API coverage routing
+
+| Besoin | Ouvrir / exécuter |
+|---|---|
+| vérifier une API exacte | `verse-ai api SYMBOL`, `knowledge/api/symbols.jsonl` |
+| voir la couverture | `verse-ai coverage`, `knowledge/api/coverage.json` |
+| prochaine API à vérifier | `verse-ai api-queue` |
+| récolter page Epic | `tools/harvest_epic_api.py` — candidate uniquement |
+| promouvoir après review | `tools/review_api_candidate.py` |
+| provenance code généré | `docs/GENERATED_CODE_MARKER.md` |
+| benchmark génération | `evals/generation/`, `tools/evaluate_generation_run.py` |
+
 
 Quand la demande contient…
 

@@ -1,8 +1,8 @@
 {
-  "schema_version": 2,
+  "schema_version": 3,
   "roles": {
     "project_context": "project intent/actual source",
-    "api_evidence": "API presence/signature evidence according to symbol-level source trust",
+    "api_evidence": "API evidence resolved per field: presence, signature, parameters, return type, effects, events and members.",
     "lifecycle": "cleanup/lifecycle/concurrency patterns",
     "error_memory": "observed errors only",
     "verification": "compile/runtime/MCP procedure and evidence",
@@ -24,6 +24,9 @@
     "semantic_never_overrides_exact_verified_api": true,
     "external_compile_claim_is_not_local_compile": true,
     "static_check_is_not_uefn_compile": true,
-    "unsupported_exact_api_uses": "TODO(API VERIFY)"
+    "unsupported_exact_api_uses": "TODO(API VERIFY)",
+    "field_level_claim_resolution": true,
+    "presence_does_not_imply_signature": true,
+    "version_mismatch_requires_revalidation": true
   }
 }

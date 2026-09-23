@@ -1,9 +1,32 @@
-# V22 Evals
+# V24 Evals
 
-`evals/` contains deterministic policy/retrieval evaluations. These tests do not pretend to measure a model unless a model is actually invoked.
+`evals/` contains several different evaluation layers.
 
-- `hallucination/` — anti-hallucination guard fixtures.
-- `retrieval/` — evidence/retrieval fixtures.
-- `results/` — generated reports (normally not authoritative evidence).
+They must not be confused.
 
-A passing policy eval is **not** a UEFN compile.
+## Deterministic repository checks
+
+- `hallucination/` — policy/guardrail fixtures;
+- `retrieval/` — evidence/retrieval fixtures;
+- `generation/` — saved generation run scoring/comparison;
+- `results/` — generated deterministic reports.
+
+These checks do **not** prove that a model never hallucinates.
+
+## End-to-end LLM harness
+
+`llm/` contains provider-independent prompts and a saved-response runner.
+
+Without explicitly supplied responses/provider integration:
+
+```text
+SKIPPED — no LLM provider or saved responses configured
+```
+
+This is not a PASS.
+
+## UEFN
+
+No eval in this directory automatically proves Verse compilation.
+
+Compile/runtime/multiplayer results require real UEFN evidence.

@@ -1,9 +1,25 @@
-# COMMENCE ICI — FR
+# COMMENCE ICI — V24
 
-Pour utiliser le dépôt complet avec une IA, commence par **`AI_BOOTSTRAP.md`**.
+Pour une IA capable de lire le dépôt :
 
-Pour le prompt portable Verse + UI historique, utilise `portable/VERSE_AI_MASTER_PROMPT_v21_WITH_UI.txt`.
+```text
+AI_BOOTSTRAP.md
+```
 
-Pour créer uniquement une UI, utilise `portable/ui_creator/VERSE_UI_CREATOR_MASTER_PROMPT.txt`.
+C'est l'entrée principale.
 
-Règle absolue : **ne jamais inventer une API Verse**. Une validation statique n'est pas une compilation UEFN.
+Ensuite, l'agent suit `knowledge/ROUTING.md`, utilise le retrieval ciblé, résout les claims API, construit les preuves puis valide.
+
+Commandes utiles :
+
+```bash
+verse-ai api GetFortCharacter
+verse-ai claim GetFortCharacter --field signature
+verse-ai coverage
+verse-ai doctor
+verse-ai validate
+```
+
+Les anciens prompts portables V21/V23 restent disponibles pour compatibilité. Pour un agent repository-aware, `AI_BOOTSTRAP.md` est autoritaire.
+
+Règle absolue : **ne jamais inventer une API Verse**.

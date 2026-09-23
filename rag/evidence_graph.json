@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
-  "node_count": 1020,
-  "edge_count": 2076,
+  "node_count": 1093,
+  "edge_count": 2424,
   "nodes": [
     {
       "id": "doc:5dff151f0518ed34",
@@ -111,7 +111,7 @@
       "id": "doc:b77e80e0578bc04e",
       "kind": "document",
       "path": "00_COMMENCE_ICI_FR.md",
-      "title": "COMMENCE ICI — FR"
+      "title": "COMMENCE ICI — V24"
     },
     {
       "id": "api:AI_BOOTSTRAP.md",
@@ -119,16 +119,26 @@
       "name": "AI_BOOTSTRAP.md"
     },
     {
+      "id": "api:GetFortCharacter",
+      "kind": "api",
+      "name": "GetFortCharacter"
+    },
+    {
       "id": "doc:49eac8aec897fe88",
       "kind": "document",
       "path": "00_START_HERE_EN.md",
-      "title": "START HERE — EN"
+      "title": "START HERE — V24"
     },
     {
       "id": "doc:37dd68363fc1d45d",
       "kind": "document",
       "path": "AGENTS.md",
       "title": "AGENTS.md — Règles obligatoires pour l'IA Verse / UEFN"
+    },
+    {
+      "id": "api:ALLOW",
+      "kind": "api",
+      "name": "ALLOW"
     },
     {
       "id": "api:compiled",
@@ -189,7 +199,7 @@
       "id": "doc:bfac61c2bb6faf94",
       "kind": "document",
       "path": "AI_BOOTSTRAP.md",
-      "title": "AI Bootstrap — Verse AI Knowledge V22"
+      "title": "AI Bootstrap — Verse AI Knowledge V24"
     },
     {
       "id": "api:AGENTS.md",
@@ -197,20 +207,20 @@
       "name": "AGENTS.md"
     },
     {
-      "id": "api:GetFortCharacter",
-      "kind": "api",
-      "name": "GetFortCharacter"
-    },
-    {
       "id": "doc:f3887d0dcd2c7869",
       "kind": "document",
       "path": "AI_GUIDE.md",
-      "title": "AI Guide — V22"
+      "title": "AI Guide — V24"
     },
     {
-      "id": "api:manifest.json",
+      "id": "api:SKIPPED",
       "kind": "api",
-      "name": "manifest.json"
+      "name": "SKIPPED"
+    },
+    {
+      "id": "api:field_evidence",
+      "kind": "api",
+      "name": "field_evidence"
     },
     {
       "id": "doc:ab09011fa121d0a2",
@@ -224,14 +234,39 @@
       "name": "ci.yml"
     },
     {
+      "id": "api:claim_state",
+      "kind": "api",
+      "name": "claim_state"
+    },
+    {
       "id": "api:lifecycle_status",
       "kind": "api",
       "name": "lifecycle_status"
     },
     {
+      "id": "api:overlay",
+      "kind": "api",
+      "name": "overlay"
+    },
+    {
       "id": "api:pyproject.toml",
       "kind": "api",
       "name": "pyproject.toml"
+    },
+    {
+      "id": "api:revalidation",
+      "kind": "api",
+      "name": "revalidation"
+    },
+    {
+      "id": "api:verification_queue.json",
+      "kind": "api",
+      "name": "verification_queue.json"
+    },
+    {
+      "id": "api:verification_records.jsonl",
+      "kind": "api",
+      "name": "verification_records.jsonl"
     },
     {
       "id": "doc:0834ae016f8fea5c",
@@ -257,12 +292,6 @@
       "name": "LICENSE.md"
     },
     {
-      "id": "doc:4a8486805915245b",
-      "kind": "document",
-      "path": "LICENSE.md",
-      "title": "Verse AI Knowledge — Proprietary License"
-    },
-    {
       "id": "api:THIRD_PARTY_NOTICES.md",
       "kind": "api",
       "name": "THIRD_PARTY_NOTICES.md"
@@ -273,10 +302,16 @@
       "name": "origin"
     },
     {
+      "id": "doc:4a8486805915245b",
+      "kind": "document",
+      "path": "LICENSE.md",
+      "title": "Verse AI Knowledge — Proprietary License"
+    },
+    {
       "id": "doc:08282aa1d69b6ce8",
       "kind": "document",
       "path": "PROMPT_AI_CHAT_FR_EN.md",
-      "title": "Prompt IA — Verse AI Knowledge v21"
+      "title": "Verse AI Knowledge V24 — Chat Prompt"
     },
     {
       "id": "doc:8ec9a00bfd09b319",
@@ -285,30 +320,15 @@
       "title": "Verse AI Knowledge"
     },
     {
-      "id": "api:CONTRIBUTING.md",
+      "id": "api:PASS",
       "kind": "api",
-      "name": "CONTRIBUTING.md"
-    },
-    {
-      "id": "api:SECURITY.md",
-      "kind": "api",
-      "name": "SECURITY.md"
+      "name": "PASS"
     },
     {
       "id": "doc:54944635221751e8",
       "kind": "document",
       "path": "README_EN.md",
       "title": "Verse AI Knowledge — English"
-    },
-    {
-      "id": "api:CHANGELOG.md",
-      "kind": "api",
-      "name": "CHANGELOG.md"
-    },
-    {
-      "id": "api:README.md",
-      "kind": "api",
-      "name": "README.md"
     },
     {
       "id": "doc:6734736c70d6b189",
@@ -323,6 +343,11 @@
       "title": "Security Policy"
     },
     {
+      "id": "api:dev.epicgames.com",
+      "kind": "api",
+      "name": "dev.epicgames.com"
+    },
+    {
       "id": "doc:52b5e9fb41c2de16",
       "kind": "document",
       "path": "THIRD_PARTY_NOTICES.md",
@@ -332,38 +357,25 @@
       "id": "doc:b008501ee27c691d",
       "kind": "document",
       "path": "UPLOAD_GUIDE_EN.md",
-      "title": "Upload Verse AI Knowledge to GitHub — PC Guide"
-    },
-    {
-      "id": "api:docs",
-      "kind": "api",
-      "name": "docs"
-    },
-    {
-      "id": "api:knowledge",
-      "kind": "api",
-      "name": "knowledge"
-    },
-    {
-      "id": "api:main",
-      "kind": "api",
-      "name": "main"
-    },
-    {
-      "id": "api:portable",
-      "kind": "api",
-      "name": "portable"
-    },
-    {
-      "id": "api:tools",
-      "kind": "api",
-      "name": "tools"
+      "title": "GitHub publication guide — V24"
     },
     {
       "id": "doc:a0f94f523c580905",
       "kind": "document",
       "path": "UPLOAD_GUIDE_FR.md",
-      "title": "Mettre Verse AI Knowledge sur GitHub — Guide PC"
+      "title": "Guide de publication GitHub — V24"
+    },
+    {
+      "id": "doc:6aa413e05a2fe731",
+      "kind": "document",
+      "path": "V23_INSTALL_FR.md",
+      "title": "Installer V23 manuellement"
+    },
+    {
+      "id": "doc:0eb0a3e329e710f8",
+      "kind": "document",
+      "path": "V24_INSTALL_FR.md",
+      "title": "Installer V24 manuellement"
     },
     {
       "id": "doc:f6f7100f063b1265",
@@ -697,12 +709,7 @@
       "id": "doc:0a2ece2c0b18e021",
       "kind": "document",
       "path": "docs/GENERATED_CODE_MARKER.md",
-      "title": "Generated-Code Marker — V22"
-    },
-    {
-      "id": "api:status",
-      "kind": "api",
-      "name": "status"
+      "title": "Generated Verse Code Provenance — V24"
     },
     {
       "id": "doc:ce04a19a46a23024",
@@ -749,17 +756,7 @@
       "id": "doc:cc1b4f7c6e4b64cd",
       "kind": "document",
       "path": "docs/HOW_AI_USES_THIS_REPO.md",
-      "title": "Comment une IA doit utiliser ce repo"
-    },
-    {
-      "id": "api:last_verified",
-      "kind": "api",
-      "name": "last_verified"
-    },
-    {
-      "id": "api:latest",
-      "kind": "api",
-      "name": "latest"
+      "title": "How an AI should use this repository — V24"
     },
     {
       "id": "doc:a4a553094a543c2d",
@@ -773,9 +770,46 @@
       "name": "evidence_basis"
     },
     {
+      "id": "api:manifest.json",
+      "kind": "api",
+      "name": "manifest.json"
+    },
+    {
+      "id": "api:status",
+      "kind": "api",
+      "name": "status"
+    },
+    {
       "id": "api:verification",
       "kind": "api",
       "name": "verification"
+    },
+    {
+      "id": "doc:1892ab6e685ad03e",
+      "kind": "document",
+      "path": "docs/MIGRATION_V22_TO_V23.md",
+      "title": "Migration V22 → V23"
+    },
+    {
+      "id": "api:schema_version",
+      "kind": "api",
+      "name": "schema_version"
+    },
+    {
+      "id": "doc:947d92d401f8de60",
+      "kind": "document",
+      "path": "docs/MIGRATION_V23_TO_V24.md",
+      "title": "Migration V23 → V24"
+    },
+    {
+      "id": "api:v23",
+      "kind": "api",
+      "name": "v23"
+    },
+    {
+      "id": "api:v24",
+      "kind": "api",
+      "name": "v24"
     },
     {
       "id": "doc:44ed8dec1dec9375",
@@ -2673,11 +2707,6 @@
       "title": "`overlay`"
     },
     {
-      "id": "api:overlay",
-      "kind": "api",
-      "name": "overlay"
-    },
-    {
       "id": "doc:426199814eafba76",
       "kind": "document",
       "path": "docs/api/core/overlay_slot.md",
@@ -3642,6 +3671,18 @@
       "name": "unknown"
     },
     {
+      "id": "doc:6dacce5469579ee5",
+      "kind": "document",
+      "path": "docs/architecture/V23_API_COVERAGE.md",
+      "title": "V23 — API Coverage, Generation Reliability & Provenance"
+    },
+    {
+      "id": "doc:38ccb209e6a177bb",
+      "kind": "document",
+      "path": "docs/architecture/V24_CLAIM_RESOLUTION.md",
+      "title": "V24 Architecture — Claim Resolution, Evidence Graph & Continuous Verification"
+    },
+    {
       "id": "doc:0baa1ed9c23287af",
       "kind": "document",
       "path": "docs/architecture/async-lifetime.md",
@@ -3939,7 +3980,30 @@
       "id": "doc:66e43d460e47ff43",
       "kind": "document",
       "path": "evals/README.md",
-      "title": "V22 Evals"
+      "title": "V24 Evals"
+    },
+    {
+      "id": "doc:a340d71c24d6aa1f",
+      "kind": "document",
+      "path": "evals/generation/README.md",
+      "title": "Generation Reliability Evals"
+    },
+    {
+      "id": "api:tasks.json",
+      "kind": "api",
+      "name": "tasks.json"
+    },
+    {
+      "id": "doc:b5e71bec99f39efb",
+      "kind": "document",
+      "path": "evals/generation/baseline_v22.json",
+      "title": "baseline_v22"
+    },
+    {
+      "id": "doc:a07929de89b3f062",
+      "kind": "document",
+      "path": "evals/generation/tasks.json",
+      "title": "tasks"
     },
     {
       "id": "doc:0bf3be6274476fb4",
@@ -3956,6 +4020,30 @@
       "id": "api:quantum_portal_device",
       "kind": "api",
       "name": "quantum_portal_device"
+    },
+    {
+      "id": "doc:6f1be2edf7076474",
+      "kind": "document",
+      "path": "evals/llm/README.md",
+      "title": "End-to-end LLM evaluation harness — V24"
+    },
+    {
+      "id": "doc:57693d25e529f767",
+      "kind": "document",
+      "path": "evals/llm/cases.json",
+      "title": "cases"
+    },
+    {
+      "id": "doc:9f2560d7444b0b5c",
+      "kind": "document",
+      "path": "evals/llm/runner.py",
+      "title": "runner"
+    },
+    {
+      "id": "doc:8fc0be742f403e0f",
+      "kind": "document",
+      "path": "evals/llm/schema.json",
+      "title": "schema"
     },
     {
       "id": "doc:ac1934533f2a324f",
@@ -4186,22 +4274,30 @@
       "id": "doc:8149e96e7b38af9c",
       "kind": "document",
       "path": "knowledge/api/README.md",
-      "title": "Structured Verse API Knowledge"
+      "title": "Structured Verse API Knowledge — V24"
     },
     {
-      "id": "api:modules.json",
+      "id": "api:revalidation_state.json",
       "kind": "api",
-      "name": "modules.json"
+      "name": "revalidation_state.json"
     },
     {
-      "id": "api:symbols.jsonl",
-      "kind": "api",
-      "name": "symbols.jsonl"
+      "id": "doc:2440dd539dc6ea72",
+      "kind": "document",
+      "path": "knowledge/api/candidates/README.md",
+      "title": "Harvest Candidates"
     },
     {
-      "id": "api:versions.json",
-      "kind": "api",
-      "name": "versions.json"
+      "id": "doc:f64aa6738a90e5e2",
+      "kind": "document",
+      "path": "knowledge/api/coverage.json",
+      "title": "coverage"
+    },
+    {
+      "id": "doc:9d7cf7da56637995",
+      "kind": "document",
+      "path": "knowledge/api/evidence_graph.json",
+      "title": "evidence_graph"
     },
     {
       "id": "doc:ca2c89f3dbe0b51a",
@@ -4210,10 +4306,28 @@
       "title": "modules"
     },
     {
+      "id": "doc:29ed7ea61b053e68",
+      "kind": "document",
+      "path": "knowledge/api/revalidation_state.json",
+      "title": "revalidation_state"
+    },
+    {
       "id": "doc:6280eeee7b55db64",
       "kind": "document",
       "path": "knowledge/api/symbols.jsonl",
       "title": "symbols"
+    },
+    {
+      "id": "doc:25a030ea44884ea4",
+      "kind": "document",
+      "path": "knowledge/api/verification_queue.json",
+      "title": "verification_queue"
+    },
+    {
+      "id": "doc:5694e079b974f334",
+      "kind": "document",
+      "path": "knowledge/api/verification_records.jsonl",
+      "title": "verification_records"
     },
     {
       "id": "doc:da8a42677931017f",
@@ -4434,7 +4548,7 @@
       "id": "doc:69e4f0df44cc76ee",
       "kind": "document",
       "path": "mcp/KNOWLEDGE_SERVER.md",
-      "title": "Optional MCP Knowledge Server — V22 design"
+      "title": "Optional MCP Knowledge Server — V23 design"
     },
     {
       "id": "api:build_evidence_pack",
@@ -4452,6 +4566,16 @@
       "name": "find_verified_example"
     },
     {
+      "id": "api:get_api_coverage",
+      "kind": "api",
+      "name": "get_api_coverage"
+    },
+    {
+      "id": "api:get_api_verification_queue",
+      "kind": "api",
+      "name": "get_api_verification_queue"
+    },
+    {
       "id": "api:get_project_context",
       "kind": "api",
       "name": "get_project_context"
@@ -4465,6 +4589,11 @@
       "id": "api:lookup_verse_module",
       "kind": "api",
       "name": "lookup_verse_module"
+    },
+    {
+      "id": "api:read_generated_provenance",
+      "kind": "api",
+      "name": "read_generated_provenance"
     },
     {
       "id": "api:search_verse_errors",
@@ -4516,24 +4645,24 @@
       "id": "doc:52ccbdc1fcaf948b",
       "kind": "document",
       "path": "portable/README.md",
-      "title": "Verse AI Portable"
-    },
-    {
-      "id": "api:VERSE_AI_MASTER_PROMPT_v21_WITH_UI.txt",
-      "kind": "api",
-      "name": "VERSE_AI_MASTER_PROMPT_v21_WITH_UI.txt"
+      "title": "Verse AI Portable — V24"
     },
     {
       "id": "doc:82331ad04dd6a339",
       "kind": "document",
       "path": "portable/README_FR_EN.md",
-      "title": "Portable Pack / Pack portable"
+      "title": "Portable Pack / Pack portable — V24"
     },
     {
       "id": "doc:42d1d28a939527ef",
       "kind": "document",
       "path": "portable/V21_README.md",
       "title": "Verse AI Portable v21"
+    },
+    {
+      "id": "api:VERSE_AI_MASTER_PROMPT_v21_WITH_UI.txt",
+      "kind": "api",
+      "name": "VERSE_AI_MASTER_PROMPT_v21_WITH_UI.txt"
     },
     {
       "id": "doc:afa23508f6b4a381",
@@ -4915,6 +5044,11 @@
       "name": "my_device"
     },
     {
+      "id": "api:nH001_unknown_device",
+      "kind": "api",
+      "name": "nH001_unknown_device"
+    },
+    {
       "id": "api:per_device",
       "kind": "api",
       "name": "per_device"
@@ -4926,22 +5060,61 @@
       "title": "evidence_policy"
     },
     {
-      "id": "doc:e490dfa7130ffb61",
-      "kind": "document",
-      "path": "rag/generated/SMOKE_CONTEXT.json",
-      "title": "SMOKE_CONTEXT"
-    },
-    {
-      "id": "doc:cbb1c349a887185a",
-      "kind": "document",
-      "path": "rag/generated/SMOKE_CONTEXT.md",
-      "title": "Verse AI Context Pack"
-    },
-    {
       "id": "doc:349d2125fcc4cf77",
       "kind": "document",
       "path": "rag/retrieval_benchmark.json",
       "title": "retrieval_benchmark"
+    },
+    {
+      "id": "doc:21d5747f7ddb623c",
+      "kind": "document",
+      "path": "reports/API_COVERAGE.md",
+      "title": "Verse API Coverage — V24"
+    },
+    {
+      "id": "api:effects_structured",
+      "kind": "api",
+      "name": "effects_structured"
+    },
+    {
+      "id": "api:event_names_known",
+      "kind": "api",
+      "name": "event_names_known"
+    },
+    {
+      "id": "api:event_payloads_verified",
+      "kind": "api",
+      "name": "event_payloads_verified"
+    },
+    {
+      "id": "api:exact_signature_claim_allowed",
+      "kind": "api",
+      "name": "exact_signature_claim_allowed"
+    },
+    {
+      "id": "api:field_evidence_present",
+      "kind": "api",
+      "name": "field_evidence_present"
+    },
+    {
+      "id": "api:parameters_structured",
+      "kind": "api",
+      "name": "parameters_structured"
+    },
+    {
+      "id": "api:presence",
+      "kind": "api",
+      "name": "presence"
+    },
+    {
+      "id": "api:return_type_structured",
+      "kind": "api",
+      "name": "return_type_structured"
+    },
+    {
+      "id": "api:signature_verified",
+      "kind": "api",
+      "name": "signature_verified"
     },
     {
       "id": "doc:2437bb5ee60cd48b",
@@ -4960,6 +5133,60 @@
       "kind": "document",
       "path": "reports/PREFLIGHT.json",
       "title": "PREFLIGHT"
+    },
+    {
+      "id": "doc:c0382a5db8ccfa3d",
+      "kind": "document",
+      "path": "reports/PUBLIC_RELEASE_AUDIT_V24.md",
+      "title": "Public Release Audit — V24"
+    },
+    {
+      "id": "doc:6851e5acbd03d3ab",
+      "kind": "document",
+      "path": "reports/V22_UPGRADE_REPORT.json",
+      "title": "V22_UPGRADE_REPORT"
+    },
+    {
+      "id": "doc:491b1bb8e7120406",
+      "kind": "document",
+      "path": "reports/V22_UPGRADE_REPORT.md",
+      "title": "V22 Upgrade Test Report"
+    },
+    {
+      "id": "doc:6cc4e4d0119d288c",
+      "kind": "document",
+      "path": "reports/V23_RELEASE_VALIDATION.json",
+      "title": "V23_RELEASE_VALIDATION"
+    },
+    {
+      "id": "doc:af6df6258333407b",
+      "kind": "document",
+      "path": "reports/V23_RELEASE_VALIDATION.md",
+      "title": "V23 Release Validation"
+    },
+    {
+      "id": "doc:6681a92c455ccc2e",
+      "kind": "document",
+      "path": "reports/api-coverage/v23.json",
+      "title": "v23"
+    },
+    {
+      "id": "doc:676c8051d7ae210f",
+      "kind": "document",
+      "path": "reports/api-coverage/v24.json",
+      "title": "v24"
+    },
+    {
+      "id": "doc:ca227516894a7e42",
+      "kind": "document",
+      "path": "schemas/api_claim.schema.json",
+      "title": "api_claim.schema"
+    },
+    {
+      "id": "doc:9a38e80904c829d1",
+      "kind": "document",
+      "path": "schemas/api_evidence.schema.json",
+      "title": "api_evidence.schema"
     },
     {
       "id": "doc:8915e9e758c06901",
@@ -5008,6 +5235,18 @@
       "kind": "document",
       "path": "schemas/example.schema.json",
       "title": "example.schema"
+    },
+    {
+      "id": "doc:628443882fb96aba",
+      "kind": "document",
+      "path": "schemas/generated_artifact.schema.json",
+      "title": "generated_artifact.schema"
+    },
+    {
+      "id": "doc:08501533552b47e5",
+      "kind": "document",
+      "path": "schemas/generation_eval_run.schema.json",
+      "title": "generation_eval_run.schema"
     },
     {
       "id": "doc:ec63f279e329911d",
@@ -5064,10 +5303,22 @@
       "title": "api_index"
     },
     {
+      "id": "doc:57c7e864ff0891f2",
+      "kind": "document",
+      "path": "src/verse_ai_knowledge/claims.py",
+      "title": "claims"
+    },
+    {
       "id": "doc:939a4d986befa1ed",
       "kind": "document",
       "path": "src/verse_ai_knowledge/cli.py",
       "title": "cli"
+    },
+    {
+      "id": "doc:9f809158a1fc72bb",
+      "kind": "document",
+      "path": "src/verse_ai_knowledge/epic_http.py",
+      "title": "epic_http"
     },
     {
       "id": "doc:ec720b63be8d4a2d",
@@ -5130,6 +5381,12 @@
       "title": "template"
     },
     {
+      "id": "doc:4ec9b1bc6ba7b229",
+      "kind": "document",
+      "path": "tests/test_claim_resolution_v24.py",
+      "title": "test_claim_resolution_v24"
+    },
+    {
       "id": "doc:0267b21d62688d76",
       "kind": "document",
       "path": "tests/test_cli_contracts.py",
@@ -5142,16 +5399,64 @@
       "title": "test_cli_v22"
     },
     {
+      "id": "doc:6ad7e488e64a2eb7",
+      "kind": "document",
+      "path": "tests/test_cli_v23.py",
+      "title": "test_cli_v23"
+    },
+    {
+      "id": "doc:f45ff54cf15ea125",
+      "kind": "document",
+      "path": "tests/test_cli_v24.py",
+      "title": "test_cli_v24"
+    },
+    {
+      "id": "doc:0e31470d35e52f48",
+      "kind": "document",
+      "path": "tests/test_epic_url_security.py",
+      "title": "test_epic_url_security"
+    },
+    {
+      "id": "doc:376dfaf648703c66",
+      "kind": "document",
+      "path": "tests/test_generated_provenance.py",
+      "title": "test_generated_provenance"
+    },
+    {
+      "id": "doc:ef27feb8120a088c",
+      "kind": "document",
+      "path": "tests/test_generated_provenance_v24.py",
+      "title": "test_generated_provenance_v24"
+    },
+    {
       "id": "doc:54e24fe8075efffa",
       "kind": "document",
       "path": "tests/test_lab_state.py",
       "title": "Valid paths"
     },
     {
+      "id": "doc:45a5091cf9e28f61",
+      "kind": "document",
+      "path": "tests/test_llm_eval_runner_v24.py",
+      "title": "test_llm_eval_runner_v24"
+    },
+    {
       "id": "doc:d57998e99bdc024e",
       "kind": "document",
       "path": "tests/test_v22_integrity.py",
-      "title": "Critical regression: current V21 catalog stored GetFortCharacter signature without classified signature evidence."
+      "title": "test_v22_integrity"
+    },
+    {
+      "id": "doc:e1918a8755b56672",
+      "kind": "document",
+      "path": "tests/test_v23_integrity.py",
+      "title": "test_v23_integrity"
+    },
+    {
+      "id": "doc:40aade4fdfd9c87b",
+      "kind": "document",
+      "path": "tests/test_v24_integrity.py",
+      "title": "test_v24_integrity"
     },
     {
       "id": "doc:9135ba47e242c807",
@@ -5172,10 +5477,34 @@
       "title": "analyze_verse_dependencies"
     },
     {
+      "id": "doc:3f1717321abff11a",
+      "kind": "document",
+      "path": "tools/api_coverage_diff.py",
+      "title": "api_coverage_diff"
+    },
+    {
+      "id": "doc:c3751207373f4983",
+      "kind": "document",
+      "path": "tools/api_coverage_report.py",
+      "title": "api_coverage_report"
+    },
+    {
+      "id": "doc:6465bef9dcaa4777",
+      "kind": "document",
+      "path": "tools/api_coverage_snapshot.py",
+      "title": "api_coverage_snapshot"
+    },
+    {
       "id": "doc:185b59dc8e161c5d",
       "kind": "document",
       "path": "tools/api_lookup.py",
       "title": "api_lookup"
+    },
+    {
+      "id": "doc:c84a483be6501428",
+      "kind": "document",
+      "path": "tools/api_revalidation_gate.py",
+      "title": "api_revalidation_gate"
     },
     {
       "id": "doc:e957dd0c4b13e818",
@@ -5194,6 +5523,18 @@
       "kind": "document",
       "path": "tools/bridge_status.py",
       "title": "bridge_status"
+    },
+    {
+      "id": "doc:20a75ecf14300cbc",
+      "kind": "document",
+      "path": "tools/build_api_evidence_graph.py",
+      "title": "build_api_evidence_graph"
+    },
+    {
+      "id": "doc:3e4ee1073164d888",
+      "kind": "document",
+      "path": "tools/build_api_verification_queue.py",
+      "title": "build_api_verification_queue"
     },
     {
       "id": "doc:eb6425602b857151",
@@ -5256,6 +5597,12 @@
       "title": "check_generated_marker"
     },
     {
+      "id": "doc:26da80fb2f12ec91",
+      "kind": "document",
+      "path": "tools/check_internal_paths.py",
+      "title": "check_internal_paths"
+    },
+    {
       "id": "doc:8fec495b962dedc0",
       "kind": "document",
       "path": "tools/check_verification.py",
@@ -5266,6 +5613,12 @@
       "kind": "document",
       "path": "tools/compare_epic_snapshot.py",
       "title": "compare_epic_snapshot"
+    },
+    {
+      "id": "doc:b299756edf2b4b29",
+      "kind": "document",
+      "path": "tools/compare_generation_runs.py",
+      "title": "compare_generation_runs"
     },
     {
       "id": "doc:0eafa6a47509b6ff",
@@ -5322,6 +5675,12 @@
       "title": "error_memory_lib"
     },
     {
+      "id": "doc:339c47815c39c2ff",
+      "kind": "document",
+      "path": "tools/evaluate_generation_run.py",
+      "title": "Conservative API-looking tokens. Unknown tokens are candidates, not automatic hallucinations."
+    },
+    {
       "id": "doc:746c2648b45ca54e",
       "kind": "document",
       "path": "tools/external_corpus_report.py",
@@ -5338,6 +5697,12 @@
       "kind": "document",
       "path": "tools/generate_compile_prompt.py",
       "title": "generate_compile_prompt"
+    },
+    {
+      "id": "doc:c5e401b4e063c06c",
+      "kind": "document",
+      "path": "tools/harvest_epic_api.py",
+      "title": "harvest_epic_api"
     },
     {
       "id": "doc:da53929974852e98",
@@ -5376,6 +5741,12 @@
       "title": "lab_state"
     },
     {
+      "id": "doc:31c307e8e78759c8",
+      "kind": "document",
+      "path": "tools/lint_verse_claims.py",
+      "title": "lint_verse_claims"
+    },
+    {
       "id": "doc:a4e614a4a1940baa",
       "kind": "document",
       "path": "tools/maintenance_lib.py",
@@ -5386,6 +5757,18 @@
       "kind": "document",
       "path": "tools/migrate_api_catalog_v22.py",
       "title": "migrate_api_catalog_v22"
+    },
+    {
+      "id": "doc:f2857484b1c73267",
+      "kind": "document",
+      "path": "tools/migrate_api_catalog_v23.py",
+      "title": "migrate_api_catalog_v23"
+    },
+    {
+      "id": "doc:376d60fa53570098",
+      "kind": "document",
+      "path": "tools/migrate_api_catalog_v24.py",
+      "title": "migrate_api_catalog_v24"
     },
     {
       "id": "doc:46e407f10f1ccfd1",
@@ -5466,6 +5849,12 @@
       "title": "rag_route_query"
     },
     {
+      "id": "doc:9a165be37d1857bc",
+      "kind": "document",
+      "path": "tools/read_generated_marker.py",
+      "title": "read_generated_marker"
+    },
+    {
       "id": "doc:1f5006ad9e65fd7c",
       "kind": "document",
       "path": "tools/record_playtest.py",
@@ -5478,10 +5867,22 @@
       "title": "record_uefn_compile"
     },
     {
+      "id": "doc:030b4be87ee0b420",
+      "kind": "document",
+      "path": "tools/resolve_api_claim.py",
+      "title": "resolve_api_claim"
+    },
+    {
       "id": "doc:79f406a0b455c138",
       "kind": "document",
       "path": "tools/revalidation_report.py",
       "title": "revalidation_report"
+    },
+    {
+      "id": "doc:67e81e7d8c298a63",
+      "kind": "document",
+      "path": "tools/review_api_candidate.py",
+      "title": "review_api_candidate"
     },
     {
       "id": "doc:d914bebd71ec141c",
@@ -5494,6 +5895,12 @@
       "kind": "document",
       "path": "tools/run_hallucination_evals.py",
       "title": "run_hallucination_evals"
+    },
+    {
+      "id": "doc:b21d35924eef0570",
+      "kind": "document",
+      "path": "tools/scan_secrets.py",
+      "title": "scan_secrets"
     },
     {
       "id": "doc:6d5df60e04fcb60c",
@@ -5544,6 +5951,12 @@
       "title": "staleness_report"
     },
     {
+      "id": "doc:425ff1c5cf215cd4",
+      "kind": "document",
+      "path": "tools/stamp_generated_code.py",
+      "title": "stamp_generated_code"
+    },
+    {
       "id": "doc:b254e7fe1191bae6",
       "kind": "document",
       "path": "tools/sync_external_sources.py",
@@ -5589,7 +6002,19 @@
       "id": "doc:e7c473f80ce3d722",
       "kind": "document",
       "path": "tools/validate_v22_integrity.py",
-      "title": "Manifest path integrity: inspect path-like strings while ignoring URLs, commands and glob-like text."
+      "title": "validate_v22_integrity"
+    },
+    {
+      "id": "doc:5b3b8c405517b962",
+      "kind": "document",
+      "path": "tools/validate_v23_integrity.py",
+      "title": "validate_v23_integrity"
+    },
+    {
+      "id": "doc:179c1b2b4168e0e2",
+      "kind": "document",
+      "path": "tools/validate_v24_integrity.py",
+      "title": "Current authoritative docs must use V24 marker/version language."
     },
     {
       "id": "doc:3e9562e58060c868",
@@ -5667,13 +6092,28 @@
       "type": "mentions_api"
     },
     {
+      "from": "doc:b77e80e0578bc04e",
+      "to": "api:GetFortCharacter",
+      "type": "mentions_api"
+    },
+    {
       "from": "doc:49eac8aec897fe88",
       "to": "api:AI_BOOTSTRAP.md",
       "type": "mentions_api"
     },
     {
+      "from": "doc:49eac8aec897fe88",
+      "to": "api:GetFortCharacter",
+      "type": "mentions_api"
+    },
+    {
       "from": "doc:37dd68363fc1d45d",
       "to": "api:AI_BOOTSTRAP.md",
+      "type": "mentions_api"
+    },
+    {
+      "from": "doc:37dd68363fc1d45d",
+      "to": "api:ALLOW",
       "type": "mentions_api"
     },
     {
@@ -5752,48 +6192,33 @@
       "type": "mentions_api"
     },
     {
-      "from": "doc:bfac61c2bb6faf94",
-      "to": "api:compiled",
-      "type": "mentions_api"
-    },
-    {
-      "from": "doc:bfac61c2bb6faf94",
-      "to": "api:source_trust",
-      "type": "mentions_api"
-    },
-    {
-      "from": "doc:bfac61c2bb6faf94",
-      "to": "api:validation",
-      "type": "mentions_api"
-    },
-    {
-      "from": "doc:bfac61c2bb6faf94",
-      "to": "api:verified",
+      "from": "doc:f3887d0dcd2c7869",
+      "to": "api:GetFortCharacter",
       "type": "mentions_api"
     },
     {
       "from": "doc:f3887d0dcd2c7869",
-      "to": "api:AI_BOOTSTRAP.md",
+      "to": "api:SKIPPED",
       "type": "mentions_api"
     },
     {
       "from": "doc:f3887d0dcd2c7869",
-      "to": "api:manifest.json",
-      "type": "mentions_api"
-    },
-    {
-      "from": "doc:f3887d0dcd2c7869",
-      "to": "api:source_trust",
-      "type": "mentions_api"
-    },
-    {
-      "from": "doc:f3887d0dcd2c7869",
-      "to": "api:validation",
+      "to": "api:field_evidence",
       "type": "mentions_api"
     },
     {
       "from": "doc:ab09011fa121d0a2",
       "to": "api:AI_BOOTSTRAP.md",
+      "type": "mentions_api"
+    },
+    {
+      "from": "doc:ab09011fa121d0a2",
+      "to": "api:ALLOW",
+      "type": "mentions_api"
+    },
+    {
+      "from": "doc:ab09011fa121d0a2",
+      "to": "api:SKIPPED",
       "type": "mentions_api"
     },
     {
@@ -5803,7 +6228,17 @@
     },
     {
       "from": "doc:ab09011fa121d0a2",
+      "to": "api:claim_state",
+      "type": "mentions_api"
+    },
+    {
+      "from": "doc:ab09011fa121d0a2",
       "to": "api:compiled",
+      "type": "mentions_api"
+    },
+    {
+      "from": "doc:ab09011fa121d0a2",
+      "to": "api:field_evidence",
       "type": "mentions_api"
     },
     {
@@ -5813,7 +6248,17 @@
     },
     {
       "from": "doc:ab09011fa121d0a2",
+      "to": "api:overlay",
+      "type": "mentions_api"
+    },
+    {
+      "from": "doc:ab09011fa121d0a2",
       "to": "api:pyproject.toml",
+      "type": "mentions_api"
+    },
+    {
+      "from": "doc:ab09011fa121d0a2",
+      "to": "api:revalidation",
       "type": "mentions_api"
     },
     {
@@ -5824,6 +6269,16 @@
     {
       "from": "doc:ab09011fa121d0a2",
       "to": "api:validation",
+      "type": "mentions_api"
+    },
+    {
+      "from": "doc:ab09011fa121d0a2",
+      "to": "api:verification_queue.json",
+      "type": "mentions_api"
+    },
+    {
+      "from": "doc:ab09011fa121d0a2",
+      "to": "api:verification_records.jsonl",
       "type": "mentions_api"
     },
     {
@@ -5848,7 +6303,22 @@
     },
     {
       "from": "doc:5eed1c729c189278",
+      "to": "api:AI_BOOTSTRAP.md",
+      "type": "mentions_api"
+    },
+    {
+      "from": "doc:5eed1c729c189278",
       "to": "api:LICENSE.md",
+      "type": "mentions_api"
+    },
+    {
+      "from": "doc:5eed1c729c189278",
+      "to": "api:THIRD_PARTY_NOTICES.md",
+      "type": "mentions_api"
+    },
+    {
+      "from": "doc:5eed1c729c189278",
+      "to": "api:origin",
       "type": "mentions_api"
     },
     {
@@ -5862,6 +6332,11 @@
       "type": "mentions_api"
     },
     {
+      "from": "doc:08282aa1d69b6ce8",
+      "to": "api:AI_BOOTSTRAP.md",
+      "type": "mentions_api"
+    },
+    {
       "from": "doc:8ec9a00bfd09b319",
       "to": "api:AGENTS.md",
       "type": "mentions_api"
@@ -5869,11 +6344,6 @@
     {
       "from": "doc:8ec9a00bfd09b319",
       "to": "api:AI_BOOTSTRAP.md",
-      "type": "mentions_api"
-    },
-    {
-      "from": "doc:8ec9a00bfd09b319",
-      "to": "api:CONTRIBUTING.md",
       "type": "mentions_api"
     },
     {
@@ -5888,232 +6358,97 @@
     },
     {
       "from": "doc:8ec9a00bfd09b319",
-      "to": "api:SECURITY.md",
+      "to": "api:PASS",
       "type": "mentions_api"
     },
     {
       "from": "doc:8ec9a00bfd09b319",
+      "to": "api:SKIPPED",
+      "type": "mentions_api"
+    },
+    {
+      "from": "doc:8ec9a00bfd09b319",
+      "to": "api:draft",
+      "type": "mentions_api"
+    },
+    {
+      "from": "doc:54944635221751e8",
+      "to": "api:GetFortCharacter",
+      "type": "mentions_api"
+    },
+    {
+      "from": "doc:54944635221751e8",
+      "to": "api:LICENSE.md",
+      "type": "mentions_api"
+    },
+    {
+      "from": "doc:54944635221751e8",
+      "to": "api:origin",
+      "type": "mentions_api"
+    },
+    {
+      "from": "doc:6734736c70d6b189",
+      "to": "api:GetFortCharacter",
+      "type": "mentions_api"
+    },
+    {
+      "from": "doc:6734736c70d6b189",
+      "to": "api:LICENSE.md",
+      "type": "mentions_api"
+    },
+    {
+      "from": "doc:6734736c70d6b189",
+      "to": "api:origin",
+      "type": "mentions_api"
+    },
+    {
+      "from": "doc:7c875fef54268bc4",
+      "to": "api:compiled",
+      "type": "mentions_api"
+    },
+    {
+      "from": "doc:7c875fef54268bc4",
+      "to": "api:dev.epicgames.com",
+      "type": "mentions_api"
+    },
+    {
+      "from": "doc:7c875fef54268bc4",
+      "to": "api:draft",
+      "type": "mentions_api"
+    },
+    {
+      "from": "doc:7c875fef54268bc4",
+      "to": "api:verified",
+      "type": "mentions_api"
+    },
+    {
+      "from": "doc:b008501ee27c691d",
+      "to": "api:LICENSE.md",
+      "type": "mentions_api"
+    },
+    {
+      "from": "doc:b008501ee27c691d",
       "to": "api:THIRD_PARTY_NOTICES.md",
       "type": "mentions_api"
     },
     {
-      "from": "doc:8ec9a00bfd09b319",
-      "to": "api:compiled",
-      "type": "mentions_api"
-    },
-    {
-      "from": "doc:8ec9a00bfd09b319",
-      "to": "api:source_trust",
-      "type": "mentions_api"
-    },
-    {
-      "from": "doc:8ec9a00bfd09b319",
-      "to": "api:validation",
-      "type": "mentions_api"
-    },
-    {
-      "from": "doc:8ec9a00bfd09b319",
-      "to": "api:verified",
-      "type": "mentions_api"
-    },
-    {
-      "from": "doc:54944635221751e8",
-      "to": "api:AGENTS.md",
-      "type": "mentions_api"
-    },
-    {
-      "from": "doc:54944635221751e8",
-      "to": "api:AI_BOOTSTRAP.md",
-      "type": "mentions_api"
-    },
-    {
-      "from": "doc:54944635221751e8",
-      "to": "api:CHANGELOG.md",
-      "type": "mentions_api"
-    },
-    {
-      "from": "doc:54944635221751e8",
-      "to": "api:CONTRIBUTING.md",
-      "type": "mentions_api"
-    },
-    {
-      "from": "doc:54944635221751e8",
-      "to": "api:GetFortCharacter",
-      "type": "mentions_api"
-    },
-    {
-      "from": "doc:54944635221751e8",
-      "to": "api:README.md",
-      "type": "mentions_api"
-    },
-    {
-      "from": "doc:54944635221751e8",
-      "to": "api:compiled",
-      "type": "mentions_api"
-    },
-    {
-      "from": "doc:54944635221751e8",
-      "to": "api:draft",
-      "type": "mentions_api"
-    },
-    {
-      "from": "doc:54944635221751e8",
-      "to": "api:source_trust",
-      "type": "mentions_api"
-    },
-    {
-      "from": "doc:54944635221751e8",
-      "to": "api:validation",
-      "type": "mentions_api"
-    },
-    {
-      "from": "doc:54944635221751e8",
-      "to": "api:verified",
-      "type": "mentions_api"
-    },
-    {
-      "from": "doc:6734736c70d6b189",
-      "to": "api:AGENTS.md",
-      "type": "mentions_api"
-    },
-    {
-      "from": "doc:6734736c70d6b189",
-      "to": "api:AI_BOOTSTRAP.md",
-      "type": "mentions_api"
-    },
-    {
-      "from": "doc:6734736c70d6b189",
-      "to": "api:CHANGELOG.md",
-      "type": "mentions_api"
-    },
-    {
-      "from": "doc:6734736c70d6b189",
-      "to": "api:CONTRIBUTING.md",
-      "type": "mentions_api"
-    },
-    {
-      "from": "doc:6734736c70d6b189",
-      "to": "api:GetFortCharacter",
-      "type": "mentions_api"
-    },
-    {
-      "from": "doc:6734736c70d6b189",
-      "to": "api:README.md",
-      "type": "mentions_api"
-    },
-    {
-      "from": "doc:6734736c70d6b189",
-      "to": "api:compiled",
-      "type": "mentions_api"
-    },
-    {
-      "from": "doc:6734736c70d6b189",
-      "to": "api:draft",
-      "type": "mentions_api"
-    },
-    {
-      "from": "doc:6734736c70d6b189",
-      "to": "api:source_trust",
-      "type": "mentions_api"
-    },
-    {
-      "from": "doc:6734736c70d6b189",
-      "to": "api:validation",
-      "type": "mentions_api"
-    },
-    {
-      "from": "doc:6734736c70d6b189",
-      "to": "api:verified",
-      "type": "mentions_api"
-    },
-    {
-      "from": "doc:7c875fef54268bc4",
-      "to": "api:compiled",
-      "type": "mentions_api"
-    },
-    {
-      "from": "doc:7c875fef54268bc4",
-      "to": "api:draft",
-      "type": "mentions_api"
-    },
-    {
-      "from": "doc:7c875fef54268bc4",
-      "to": "api:verified",
-      "type": "mentions_api"
-    },
-    {
-      "from": "doc:b008501ee27c691d",
-      "to": "api:README.md",
-      "type": "mentions_api"
-    },
-    {
-      "from": "doc:b008501ee27c691d",
-      "to": "api:docs",
-      "type": "mentions_api"
-    },
-    {
-      "from": "doc:b008501ee27c691d",
-      "to": "api:knowledge",
-      "type": "mentions_api"
-    },
-    {
-      "from": "doc:b008501ee27c691d",
-      "to": "api:main",
-      "type": "mentions_api"
-    },
-    {
-      "from": "doc:b008501ee27c691d",
-      "to": "api:origin",
-      "type": "mentions_api"
-    },
-    {
-      "from": "doc:b008501ee27c691d",
-      "to": "api:portable",
-      "type": "mentions_api"
-    },
-    {
-      "from": "doc:b008501ee27c691d",
-      "to": "api:tools",
+      "from": "doc:a0f94f523c580905",
+      "to": "api:LICENSE.md",
       "type": "mentions_api"
     },
     {
       "from": "doc:a0f94f523c580905",
-      "to": "api:README.md",
+      "to": "api:THIRD_PARTY_NOTICES.md",
       "type": "mentions_api"
     },
     {
-      "from": "doc:a0f94f523c580905",
-      "to": "api:docs",
+      "from": "doc:6aa413e05a2fe731",
+      "to": "api:overlay",
       "type": "mentions_api"
     },
     {
-      "from": "doc:a0f94f523c580905",
-      "to": "api:knowledge",
-      "type": "mentions_api"
-    },
-    {
-      "from": "doc:a0f94f523c580905",
-      "to": "api:main",
-      "type": "mentions_api"
-    },
-    {
-      "from": "doc:a0f94f523c580905",
-      "to": "api:origin",
-      "type": "mentions_api"
-    },
-    {
-      "from": "doc:a0f94f523c580905",
-      "to": "api:portable",
-      "type": "mentions_api"
-    },
-    {
-      "from": "doc:a0f94f523c580905",
-      "to": "api:tools",
-      "type": "mentions_api"
-    },
-    {
-      "from": "doc:f6f7100f063b1265",
-      "to": "api:AI_BOOTSTRAP.md",
+      "from": "doc:0eb0a3e329e710f8",
+      "to": "api:SKIPPED",
       "type": "mentions_api"
     },
     {
@@ -6472,16 +6807,6 @@
       "type": "mentions_api"
     },
     {
-      "from": "doc:0a2ece2c0b18e021",
-      "to": "api:status",
-      "type": "mentions_api"
-    },
-    {
-      "from": "doc:0a2ece2c0b18e021",
-      "to": "api:verified",
-      "type": "mentions_api"
-    },
-    {
       "from": "doc:ce04a19a46a23024",
       "to": "api:ai",
       "type": "mentions_api"
@@ -6518,17 +6843,22 @@
     },
     {
       "from": "doc:cc1b4f7c6e4b64cd",
-      "to": "api:button",
+      "to": "api:GetFortCharacter",
       "type": "mentions_api"
     },
     {
       "from": "doc:cc1b4f7c6e4b64cd",
-      "to": "api:last_verified",
+      "to": "api:compiled",
       "type": "mentions_api"
     },
     {
       "from": "doc:cc1b4f7c6e4b64cd",
-      "to": "api:latest",
+      "to": "api:field_evidence",
+      "type": "mentions_api"
+    },
+    {
+      "from": "doc:cc1b4f7c6e4b64cd",
+      "to": "api:verified",
       "type": "mentions_api"
     },
     {
@@ -6569,6 +6899,31 @@
     {
       "from": "doc:a4a553094a543c2d",
       "to": "api:verified",
+      "type": "mentions_api"
+    },
+    {
+      "from": "doc:1892ab6e685ad03e",
+      "to": "api:schema_version",
+      "type": "mentions_api"
+    },
+    {
+      "from": "doc:947d92d401f8de60",
+      "to": "api:AI_BOOTSTRAP.md",
+      "type": "mentions_api"
+    },
+    {
+      "from": "doc:947d92d401f8de60",
+      "to": "api:origin",
+      "type": "mentions_api"
+    },
+    {
+      "from": "doc:947d92d401f8de60",
+      "to": "api:v23",
+      "type": "mentions_api"
+    },
+    {
+      "from": "doc:947d92d401f8de60",
+      "to": "api:v24",
       "type": "mentions_api"
     },
     {
@@ -9412,6 +9767,31 @@
       "type": "mentions_api"
     },
     {
+      "from": "doc:6dacce5469579ee5",
+      "to": "api:GetFortCharacter",
+      "type": "mentions_api"
+    },
+    {
+      "from": "doc:6dacce5469579ee5",
+      "to": "api:compiled",
+      "type": "mentions_api"
+    },
+    {
+      "from": "doc:6dacce5469579ee5",
+      "to": "api:draft",
+      "type": "mentions_api"
+    },
+    {
+      "from": "doc:38ccb209e6a177bb",
+      "to": "api:field_evidence",
+      "type": "mentions_api"
+    },
+    {
+      "from": "doc:38ccb209e6a177bb",
+      "to": "api:revalidation",
+      "type": "mentions_api"
+    },
+    {
       "from": "doc:0baa1ed9c23287af",
       "to": "api:race",
       "type": "mentions_api"
@@ -9917,6 +10297,31 @@
       "type": "mentions_api"
     },
     {
+      "from": "doc:a340d71c24d6aa1f",
+      "to": "api:null",
+      "type": "mentions_api"
+    },
+    {
+      "from": "doc:a340d71c24d6aa1f",
+      "to": "api:tasks.json",
+      "type": "mentions_api"
+    },
+    {
+      "from": "doc:a07929de89b3f062",
+      "to": "api:button",
+      "type": "mentions_api"
+    },
+    {
+      "from": "doc:a07929de89b3f062",
+      "to": "api:fort_character",
+      "type": "mentions_api"
+    },
+    {
+      "from": "doc:a07929de89b3f062",
+      "to": "api:widget",
+      "type": "mentions_api"
+    },
+    {
       "from": "doc:0bf3be6274476fb4",
       "to": "api:GetFortCharacter",
       "type": "mentions_api"
@@ -9933,6 +10338,16 @@
     },
     {
       "from": "doc:0bf3be6274476fb4",
+      "to": "api:button",
+      "type": "mentions_api"
+    },
+    {
+      "from": "doc:0bf3be6274476fb4",
+      "to": "api:button_device",
+      "type": "mentions_api"
+    },
+    {
+      "from": "doc:0bf3be6274476fb4",
       "to": "api:fort_team_collection",
       "type": "mentions_api"
     },
@@ -9944,6 +10359,36 @@
     {
       "from": "doc:0bf3be6274476fb4",
       "to": "api:quantum_portal_device",
+      "type": "mentions_api"
+    },
+    {
+      "from": "doc:57693d25e529f767",
+      "to": "api:MakeCanvasSlot",
+      "type": "mentions_api"
+    },
+    {
+      "from": "doc:57693d25e529f767",
+      "to": "api:fort_character",
+      "type": "mentions_api"
+    },
+    {
+      "from": "doc:57693d25e529f767",
+      "to": "api:fort_team_collection",
+      "type": "mentions_api"
+    },
+    {
+      "from": "doc:57693d25e529f767",
+      "to": "api:fort_team_collection.GetTeam",
+      "type": "mentions_api"
+    },
+    {
+      "from": "doc:57693d25e529f767",
+      "to": "api:quantum_portal_device",
+      "type": "mentions_api"
+    },
+    {
+      "from": "doc:9f2560d7444b0b5c",
+      "to": "api:player_ui",
       "type": "mentions_api"
     },
     {
@@ -10738,17 +11183,842 @@
     },
     {
       "from": "doc:8149e96e7b38af9c",
-      "to": "api:modules.json",
+      "to": "api:ALLOW",
       "type": "mentions_api"
     },
     {
       "from": "doc:8149e96e7b38af9c",
-      "to": "api:symbols.jsonl",
+      "to": "api:GetFortCharacter",
       "type": "mentions_api"
     },
     {
       "from": "doc:8149e96e7b38af9c",
-      "to": "api:versions.json",
+      "to": "api:field_evidence",
+      "type": "mentions_api"
+    },
+    {
+      "from": "doc:8149e96e7b38af9c",
+      "to": "api:revalidation_state.json",
+      "type": "mentions_api"
+    },
+    {
+      "from": "doc:9d7cf7da56637995",
+      "to": "api:GetFortCharacter",
+      "type": "mentions_api"
+    },
+    {
+      "from": "doc:9d7cf7da56637995",
+      "to": "api:GetPlayerUI",
+      "type": "mentions_api"
+    },
+    {
+      "from": "doc:9d7cf7da56637995",
+      "to": "api:GetPlayspace",
+      "type": "mentions_api"
+    },
+    {
+      "from": "doc:9d7cf7da56637995",
+      "to": "api:GetVehicle",
+      "type": "mentions_api"
+    },
+    {
+      "from": "doc:9d7cf7da56637995",
+      "to": "api:MakeCanvasSlot",
+      "type": "mentions_api"
+    },
+    {
+      "from": "doc:9d7cf7da56637995",
+      "to": "api:anchors",
+      "type": "mentions_api"
+    },
+    {
+      "from": "doc:9d7cf7da56637995",
+      "to": "api:audio_player_device",
+      "type": "mentions_api"
+    },
+    {
+      "from": "doc:9d7cf7da56637995",
+      "to": "api:barrier_device",
+      "type": "mentions_api"
+    },
+    {
+      "from": "doc:9d7cf7da56637995",
+      "to": "api:basic_interactable_component",
+      "type": "mentions_api"
+    },
+    {
+      "from": "doc:9d7cf7da56637995",
+      "to": "api:basic_stackable_component",
+      "type": "mentions_api"
+    },
+    {
+      "from": "doc:9d7cf7da56637995",
+      "to": "api:button",
+      "type": "mentions_api"
+    },
+    {
+      "from": "doc:9d7cf7da56637995",
+      "to": "api:button_device",
+      "type": "mentions_api"
+    },
+    {
+      "from": "doc:9d7cf7da56637995",
+      "to": "api:button_loud",
+      "type": "mentions_api"
+    },
+    {
+      "from": "doc:9d7cf7da56637995",
+      "to": "api:button_quiet",
+      "type": "mentions_api"
+    },
+    {
+      "from": "doc:9d7cf7da56637995",
+      "to": "api:button_regular",
+      "type": "mentions_api"
+    },
+    {
+      "from": "doc:9d7cf7da56637995",
+      "to": "api:button_slot",
+      "type": "mentions_api"
+    },
+    {
+      "from": "doc:9d7cf7da56637995",
+      "to": "api:camera_body",
+      "type": "mentions_api"
+    },
+    {
+      "from": "doc:9d7cf7da56637995",
+      "to": "api:camera_component",
+      "type": "mentions_api"
+    },
+    {
+      "from": "doc:9d7cf7da56637995",
+      "to": "api:camera_director_component",
+      "type": "mentions_api"
+    },
+    {
+      "from": "doc:9d7cf7da56637995",
+      "to": "api:camera_projection_mode",
+      "type": "mentions_api"
+    },
+    {
+      "from": "doc:9d7cf7da56637995",
+      "to": "api:camera_transition_initial_orientation",
+      "type": "mentions_api"
+    },
+    {
+      "from": "doc:9d7cf7da56637995",
+      "to": "api:canvas",
+      "type": "mentions_api"
+    },
+    {
+      "from": "doc:9d7cf7da56637995",
+      "to": "api:canvas_slot",
+      "type": "mentions_api"
+    },
+    {
+      "from": "doc:9d7cf7da56637995",
+      "to": "api:capture_area_device",
+      "type": "mentions_api"
+    },
+    {
+      "from": "doc:9d7cf7da56637995",
+      "to": "api:chair_device",
+      "type": "mentions_api"
+    },
+    {
+      "from": "doc:9d7cf7da56637995",
+      "to": "api:change_max_stack_size_result",
+      "type": "mentions_api"
+    },
+    {
+      "from": "doc:9d7cf7da56637995",
+      "to": "api:change_stack_size_result",
+      "type": "mentions_api"
+    },
+    {
+      "from": "doc:9d7cf7da56637995",
+      "to": "api:character_device",
+      "type": "mentions_api"
+    },
+    {
+      "from": "doc:9d7cf7da56637995",
+      "to": "api:children_streaming_policy",
+      "type": "mentions_api"
+    },
+    {
+      "from": "doc:9d7cf7da56637995",
+      "to": "api:cinematic_sequence_device",
+      "type": "mentions_api"
+    },
+    {
+      "from": "doc:9d7cf7da56637995",
+      "to": "api:class_and_team_selector_device",
+      "type": "mentions_api"
+    },
+    {
+      "from": "doc:9d7cf7da56637995",
+      "to": "api:collision_interaction",
+      "type": "mentions_api"
+    },
+    {
+      "from": "doc:9d7cf7da56637995",
+      "to": "api:color_block",
+      "type": "mentions_api"
+    },
+    {
+      "from": "doc:9d7cf7da56637995",
+      "to": "api:common_rarity",
+      "type": "mentions_api"
+    },
+    {
+      "from": "doc:9d7cf7da56637995",
+      "to": "api:component.OnBeginSimulation",
+      "type": "mentions_api"
+    },
+    {
+      "from": "doc:9d7cf7da56637995",
+      "to": "api:component.OnSimulate",
+      "type": "mentions_api"
+    },
+    {
+      "from": "doc:9d7cf7da56637995",
+      "to": "api:conditional_button_device",
+      "type": "mentions_api"
+    },
+    {
+      "from": "doc:9d7cf7da56637995",
+      "to": "api:conversation_device",
+      "type": "mentions_api"
+    },
+    {
+      "from": "doc:9d7cf7da56637995",
+      "to": "api:creative_device",
+      "type": "mentions_api"
+    },
+    {
+      "from": "doc:9d7cf7da56637995",
+      "to": "api:creative_device_base",
+      "type": "mentions_api"
+    },
+    {
+      "from": "doc:9d7cf7da56637995",
+      "to": "api:creative_hud_identifier_all",
+      "type": "mentions_api"
+    },
+    {
+      "from": "doc:9d7cf7da56637995",
+      "to": "api:creative_hud_identifier_build_menu",
+      "type": "mentions_api"
+    },
+    {
+      "from": "doc:9d7cf7da56637995",
+      "to": "api:creative_hud_identifier_crafting_resources",
+      "type": "mentions_api"
+    },
+    {
+      "from": "doc:9d7cf7da56637995",
+      "to": "api:creative_hud_identifier_elimination_counter",
+      "type": "mentions_api"
+    },
+    {
+      "from": "doc:9d7cf7da56637995",
+      "to": "api:creative_hud_identifier_equipped_item",
+      "type": "mentions_api"
+    },
+    {
+      "from": "doc:9d7cf7da56637995",
+      "to": "api:creative_hud_identifier_experience_level",
+      "type": "mentions_api"
+    },
+    {
+      "from": "doc:9d7cf7da56637995",
+      "to": "api:creative_hud_identifier_team_info",
+      "type": "mentions_api"
+    },
+    {
+      "from": "doc:9d7cf7da56637995",
+      "to": "api:creative_object",
+      "type": "mentions_api"
+    },
+    {
+      "from": "doc:9d7cf7da56637995",
+      "to": "api:cubic_bezier_easing_function",
+      "type": "mentions_api"
+    },
+    {
+      "from": "doc:9d7cf7da56637995",
+      "to": "api:damage_volume_device",
+      "type": "mentions_api"
+    },
+    {
+      "from": "doc:9d7cf7da56637995",
+      "to": "api:ease_cubic_bezier_easing_function",
+      "type": "mentions_api"
+    },
+    {
+      "from": "doc:9d7cf7da56637995",
+      "to": "api:ease_in_cubic_bezier_easing_function",
+      "type": "mentions_api"
+    },
+    {
+      "from": "doc:9d7cf7da56637995",
+      "to": "api:ease_in_out_cubic_bezier_easing_function",
+      "type": "mentions_api"
+    },
+    {
+      "from": "doc:9d7cf7da56637995",
+      "to": "api:ease_out_cubic_bezier_easing_function",
+      "type": "mentions_api"
+    },
+    {
+      "from": "doc:9d7cf7da56637995",
+      "to": "api:easeable",
+      "type": "mentions_api"
+    },
+    {
+      "from": "doc:9d7cf7da56637995",
+      "to": "api:easing_function",
+      "type": "mentions_api"
+    },
+    {
+      "from": "doc:9d7cf7da56637995",
+      "to": "api:elimination_manager_device",
+      "type": "mentions_api"
+    },
+    {
+      "from": "doc:9d7cf7da56637995",
+      "to": "api:end_game_device",
+      "type": "mentions_api"
+    },
+    {
+      "from": "doc:9d7cf7da56637995",
+      "to": "api:entity",
+      "type": "mentions_api"
+    },
+    {
+      "from": "doc:9d7cf7da56637995",
+      "to": "api:entity_origin",
+      "type": "mentions_api"
+    },
+    {
+      "from": "doc:9d7cf7da56637995",
+      "to": "api:entity_prefab",
+      "type": "mentions_api"
+    },
+    {
+      "from": "doc:9d7cf7da56637995",
+      "to": "api:entity_streaming_policy",
+      "type": "mentions_api"
+    },
+    {
+      "from": "doc:9d7cf7da56637995",
+      "to": "api:epic_rarity",
+      "type": "mentions_api"
+    },
+    {
+      "from": "doc:9d7cf7da56637995",
+      "to": "api:execution_listenable",
+      "type": "mentions_api"
+    },
+    {
+      "from": "doc:9d7cf7da56637995",
+      "to": "api:fort_character",
+      "type": "mentions_api"
+    },
+    {
+      "from": "doc:9d7cf7da56637995",
+      "to": "api:fort_hud_controller",
+      "type": "mentions_api"
+    },
+    {
+      "from": "doc:9d7cf7da56637995",
+      "to": "api:fort_playspace",
+      "type": "mentions_api"
+    },
+    {
+      "from": "doc:9d7cf7da56637995",
+      "to": "api:fort_team_collection",
+      "type": "mentions_api"
+    },
+    {
+      "from": "doc:9d7cf7da56637995",
+      "to": "api:fort_team_collection.AddToTeam",
+      "type": "mentions_api"
+    },
+    {
+      "from": "doc:9d7cf7da56637995",
+      "to": "api:fort_team_collection.GetTeam",
+      "type": "mentions_api"
+    },
+    {
+      "from": "doc:9d7cf7da56637995",
+      "to": "api:fort_team_collection.GetTeams",
+      "type": "mentions_api"
+    },
+    {
+      "from": "doc:9d7cf7da56637995",
+      "to": "api:fort_vehicle",
+      "type": "mentions_api"
+    },
+    {
+      "from": "doc:9d7cf7da56637995",
+      "to": "api:fort_vehicle.GetDrivers",
+      "type": "mentions_api"
+    },
+    {
+      "from": "doc:9d7cf7da56637995",
+      "to": "api:fort_vehicle.GetSeats",
+      "type": "mentions_api"
+    },
+    {
+      "from": "doc:9d7cf7da56637995",
+      "to": "api:fort_vehicle_seat",
+      "type": "mentions_api"
+    },
+    {
+      "from": "doc:9d7cf7da56637995",
+      "to": "api:has_camera_modifier",
+      "type": "mentions_api"
+    },
+    {
+      "from": "doc:9d7cf7da56637995",
+      "to": "api:has_merge_rules",
+      "type": "mentions_api"
+    },
+    {
+      "from": "doc:9d7cf7da56637995",
+      "to": "api:horizontal_alignment",
+      "type": "mentions_api"
+    },
+    {
+      "from": "doc:9d7cf7da56637995",
+      "to": "api:hud_element_identifier",
+      "type": "mentions_api"
+    },
+    {
+      "from": "doc:9d7cf7da56637995",
+      "to": "api:hud_identifier_visual_sound_effect_all",
+      "type": "mentions_api"
+    },
+    {
+      "from": "doc:9d7cf7da56637995",
+      "to": "api:hud_identifier_visual_sound_effect_healing",
+      "type": "mentions_api"
+    },
+    {
+      "from": "doc:9d7cf7da56637995",
+      "to": "api:hud_identifier_visual_sound_effect_loot",
+      "type": "mentions_api"
+    },
+    {
+      "from": "doc:9d7cf7da56637995",
+      "to": "api:hud_identifier_visual_sound_effect_movement",
+      "type": "mentions_api"
+    },
+    {
+      "from": "doc:9d7cf7da56637995",
+      "to": "api:hud_identifier_visual_sound_effect_vehicle",
+      "type": "mentions_api"
+    },
+    {
+      "from": "doc:9d7cf7da56637995",
+      "to": "api:hud_identifier_visual_sound_effect_weapons",
+      "type": "mentions_api"
+    },
+    {
+      "from": "doc:9d7cf7da56637995",
+      "to": "api:hud_identifier_world_resource_gold_currency",
+      "type": "mentions_api"
+    },
+    {
+      "from": "doc:9d7cf7da56637995",
+      "to": "api:hud_identifier_world_resource_ingredient",
+      "type": "mentions_api"
+    },
+    {
+      "from": "doc:9d7cf7da56637995",
+      "to": "api:hud_identifier_world_resource_metal",
+      "type": "mentions_api"
+    },
+    {
+      "from": "doc:9d7cf7da56637995",
+      "to": "api:hud_identifier_world_resource_permanite",
+      "type": "mentions_api"
+    },
+    {
+      "from": "doc:9d7cf7da56637995",
+      "to": "api:hud_identifier_world_resource_stone",
+      "type": "mentions_api"
+    },
+    {
+      "from": "doc:9d7cf7da56637995",
+      "to": "api:hud_identifier_world_resource_wood",
+      "type": "mentions_api"
+    },
+    {
+      "from": "doc:9d7cf7da56637995",
+      "to": "api:hud_message_device",
+      "type": "mentions_api"
+    },
+    {
+      "from": "doc:9d7cf7da56637995",
+      "to": "api:icon_component",
+      "type": "mentions_api"
+    },
+    {
+      "from": "doc:9d7cf7da56637995",
+      "to": "api:image_tiling",
+      "type": "mentions_api"
+    },
+    {
+      "from": "doc:9d7cf7da56637995",
+      "to": "api:input_trigger_device",
+      "type": "mentions_api"
+    },
+    {
+      "from": "doc:9d7cf7da56637995",
+      "to": "api:interactable_component",
+      "type": "mentions_api"
+    },
+    {
+      "from": "doc:9d7cf7da56637995",
+      "to": "api:interactable_cooldown",
+      "type": "mentions_api"
+    },
+    {
+      "from": "doc:9d7cf7da56637995",
+      "to": "api:interactable_cooldown_per_agent",
+      "type": "mentions_api"
+    },
+    {
+      "from": "doc:9d7cf7da56637995",
+      "to": "api:interactable_duration",
+      "type": "mentions_api"
+    },
+    {
+      "from": "doc:9d7cf7da56637995",
+      "to": "api:interactable_success_limit",
+      "type": "mentions_api"
+    },
+    {
+      "from": "doc:9d7cf7da56637995",
+      "to": "api:item_granter_device",
+      "type": "mentions_api"
+    },
+    {
+      "from": "doc:9d7cf7da56637995",
+      "to": "api:item_placer_device",
+      "type": "mentions_api"
+    },
+    {
+      "from": "doc:9d7cf7da56637995",
+      "to": "api:item_remover_device",
+      "type": "mentions_api"
+    },
+    {
+      "from": "doc:9d7cf7da56637995",
+      "to": "api:keyframed_movement_component",
+      "type": "mentions_api"
+    },
+    {
+      "from": "doc:9d7cf7da56637995",
+      "to": "api:keyframed_movement_delta",
+      "type": "mentions_api"
+    },
+    {
+      "from": "doc:9d7cf7da56637995",
+      "to": "api:keyframed_movement_playback_mode",
+      "type": "mentions_api"
+    },
+    {
+      "from": "doc:9d7cf7da56637995",
+      "to": "api:legendary_rarity",
+      "type": "mentions_api"
+    },
+    {
+      "from": "doc:9d7cf7da56637995",
+      "to": "api:linear_easing_function",
+      "type": "mentions_api"
+    },
+    {
+      "from": "doc:9d7cf7da56637995",
+      "to": "api:lock_device",
+      "type": "mentions_api"
+    },
+    {
+      "from": "doc:9d7cf7da56637995",
+      "to": "api:loop_keyframed_movement_playback_mode",
+      "type": "mentions_api"
+    },
+    {
+      "from": "doc:9d7cf7da56637995",
+      "to": "api:map_controller_device",
+      "type": "mentions_api"
+    },
+    {
+      "from": "doc:9d7cf7da56637995",
+      "to": "api:map_indicator_device",
+      "type": "mentions_api"
+    },
+    {
+      "from": "doc:9d7cf7da56637995",
+      "to": "api:margin",
+      "type": "mentions_api"
+    },
+    {
+      "from": "doc:9d7cf7da56637995",
+      "to": "api:material_block",
+      "type": "mentions_api"
+    },
+    {
+      "from": "doc:9d7cf7da56637995",
+      "to": "api:mutator_zone_device",
+      "type": "mentions_api"
+    },
+    {
+      "from": "doc:9d7cf7da56637995",
+      "to": "api:oneshot_keyframed_movement_playback_mode",
+      "type": "mentions_api"
+    },
+    {
+      "from": "doc:9d7cf7da56637995",
+      "to": "api:orientation",
+      "type": "mentions_api"
+    },
+    {
+      "from": "doc:9d7cf7da56637995",
+      "to": "api:origin",
+      "type": "mentions_api"
+    },
+    {
+      "from": "doc:9d7cf7da56637995",
+      "to": "api:overlay",
+      "type": "mentions_api"
+    },
+    {
+      "from": "doc:9d7cf7da56637995",
+      "to": "api:overlay_slot",
+      "type": "mentions_api"
+    },
+    {
+      "from": "doc:9d7cf7da56637995",
+      "to": "api:pingpong_keyframed_movement_playback_mode",
+      "type": "mentions_api"
+    },
+    {
+      "from": "doc:9d7cf7da56637995",
+      "to": "api:player_hud_identifier_all",
+      "type": "mentions_api"
+    },
+    {
+      "from": "doc:9d7cf7da56637995",
+      "to": "api:player_reference_device",
+      "type": "mentions_api"
+    },
+    {
+      "from": "doc:9d7cf7da56637995",
+      "to": "api:player_spawner_device",
+      "type": "mentions_api"
+    },
+    {
+      "from": "doc:9d7cf7da56637995",
+      "to": "api:player_ui",
+      "type": "mentions_api"
+    },
+    {
+      "from": "doc:9d7cf7da56637995",
+      "to": "api:player_ui_slot",
+      "type": "mentions_api"
+    },
+    {
+      "from": "doc:9d7cf7da56637995",
+      "to": "api:popup_dialog_device",
+      "type": "mentions_api"
+    },
+    {
+      "from": "doc:9d7cf7da56637995",
+      "to": "api:prop_manipulator_device",
+      "type": "mentions_api"
+    },
+    {
+      "from": "doc:9d7cf7da56637995",
+      "to": "api:rare_rarity",
+      "type": "mentions_api"
+    },
+    {
+      "from": "doc:9d7cf7da56637995",
+      "to": "api:rarity",
+      "type": "mentions_api"
+    },
+    {
+      "from": "doc:9d7cf7da56637995",
+      "to": "api:rarity_component",
+      "type": "mentions_api"
+    },
+    {
+      "from": "doc:9d7cf7da56637995",
+      "to": "api:scene_event",
+      "type": "mentions_api"
+    },
+    {
+      "from": "doc:9d7cf7da56637995",
+      "to": "api:score_manager_device",
+      "type": "mentions_api"
+    },
+    {
+      "from": "doc:9d7cf7da56637995",
+      "to": "api:sentry_device",
+      "type": "mentions_api"
+    },
+    {
+      "from": "doc:9d7cf7da56637995",
+      "to": "api:slider_regular",
+      "type": "mentions_api"
+    },
+    {
+      "from": "doc:9d7cf7da56637995",
+      "to": "api:stack_box",
+      "type": "mentions_api"
+    },
+    {
+      "from": "doc:9d7cf7da56637995",
+      "to": "api:stack_box_slot",
+      "type": "mentions_api"
+    },
+    {
+      "from": "doc:9d7cf7da56637995",
+      "to": "api:stackable_component",
+      "type": "mentions_api"
+    },
+    {
+      "from": "doc:9d7cf7da56637995",
+      "to": "api:switch_device",
+      "type": "mentions_api"
+    },
+    {
+      "from": "doc:9d7cf7da56637995",
+      "to": "api:team_attitude",
+      "type": "mentions_api"
+    },
+    {
+      "from": "doc:9d7cf7da56637995",
+      "to": "api:team_settings_and_inventory_device",
+      "type": "mentions_api"
+    },
+    {
+      "from": "doc:9d7cf7da56637995",
+      "to": "api:teleporter_device",
+      "type": "mentions_api"
+    },
+    {
+      "from": "doc:9d7cf7da56637995",
+      "to": "api:text_base",
+      "type": "mentions_api"
+    },
+    {
+      "from": "doc:9d7cf7da56637995",
+      "to": "api:text_block",
+      "type": "mentions_api"
+    },
+    {
+      "from": "doc:9d7cf7da56637995",
+      "to": "api:text_button_base",
+      "type": "mentions_api"
+    },
+    {
+      "from": "doc:9d7cf7da56637995",
+      "to": "api:text_justification",
+      "type": "mentions_api"
+    },
+    {
+      "from": "doc:9d7cf7da56637995",
+      "to": "api:text_overflow_policy",
+      "type": "mentions_api"
+    },
+    {
+      "from": "doc:9d7cf7da56637995",
+      "to": "api:text_wrapping_policy",
+      "type": "mentions_api"
+    },
+    {
+      "from": "doc:9d7cf7da56637995",
+      "to": "api:texture_block",
+      "type": "mentions_api"
+    },
+    {
+      "from": "doc:9d7cf7da56637995",
+      "to": "api:tick_events",
+      "type": "mentions_api"
+    },
+    {
+      "from": "doc:9d7cf7da56637995",
+      "to": "api:timer_device",
+      "type": "mentions_api"
+    },
+    {
+      "from": "doc:9d7cf7da56637995",
+      "to": "api:tracker_device",
+      "type": "mentions_api"
+    },
+    {
+      "from": "doc:9d7cf7da56637995",
+      "to": "api:transform_component",
+      "type": "mentions_api"
+    },
+    {
+      "from": "doc:9d7cf7da56637995",
+      "to": "api:trigger_base_device",
+      "type": "mentions_api"
+    },
+    {
+      "from": "doc:9d7cf7da56637995",
+      "to": "api:trigger_device",
+      "type": "mentions_api"
+    },
+    {
+      "from": "doc:9d7cf7da56637995",
+      "to": "api:ui_input_mode",
+      "type": "mentions_api"
+    },
+    {
+      "from": "doc:9d7cf7da56637995",
+      "to": "api:uncommon_rarity",
+      "type": "mentions_api"
+    },
+    {
+      "from": "doc:9d7cf7da56637995",
+      "to": "api:vertical_alignment",
+      "type": "mentions_api"
+    },
+    {
+      "from": "doc:9d7cf7da56637995",
+      "to": "api:vfx_creator_device",
+      "type": "mentions_api"
+    },
+    {
+      "from": "doc:9d7cf7da56637995",
+      "to": "api:vfx_spawner_device",
+      "type": "mentions_api"
+    },
+    {
+      "from": "doc:9d7cf7da56637995",
+      "to": "api:volume_device",
+      "type": "mentions_api"
+    },
+    {
+      "from": "doc:9d7cf7da56637995",
+      "to": "api:widget",
+      "type": "mentions_api"
+    },
+    {
+      "from": "doc:9d7cf7da56637995",
+      "to": "api:widget_message",
+      "type": "mentions_api"
+    },
+    {
+      "from": "doc:9d7cf7da56637995",
+      "to": "api:widget_visibility",
       "type": "mentions_api"
     },
     {
@@ -11569,6 +12839,821 @@
     {
       "from": "doc:6280eeee7b55db64",
       "to": "api:widget_visibility",
+      "type": "mentions_api"
+    },
+    {
+      "from": "doc:25a030ea44884ea4",
+      "to": "api:anchors",
+      "type": "mentions_api"
+    },
+    {
+      "from": "doc:25a030ea44884ea4",
+      "to": "api:audio_player_device",
+      "type": "mentions_api"
+    },
+    {
+      "from": "doc:25a030ea44884ea4",
+      "to": "api:barrier_device",
+      "type": "mentions_api"
+    },
+    {
+      "from": "doc:25a030ea44884ea4",
+      "to": "api:basic_interactable_component",
+      "type": "mentions_api"
+    },
+    {
+      "from": "doc:25a030ea44884ea4",
+      "to": "api:basic_stackable_component",
+      "type": "mentions_api"
+    },
+    {
+      "from": "doc:25a030ea44884ea4",
+      "to": "api:button",
+      "type": "mentions_api"
+    },
+    {
+      "from": "doc:25a030ea44884ea4",
+      "to": "api:button_device",
+      "type": "mentions_api"
+    },
+    {
+      "from": "doc:25a030ea44884ea4",
+      "to": "api:button_loud",
+      "type": "mentions_api"
+    },
+    {
+      "from": "doc:25a030ea44884ea4",
+      "to": "api:button_quiet",
+      "type": "mentions_api"
+    },
+    {
+      "from": "doc:25a030ea44884ea4",
+      "to": "api:button_regular",
+      "type": "mentions_api"
+    },
+    {
+      "from": "doc:25a030ea44884ea4",
+      "to": "api:button_slot",
+      "type": "mentions_api"
+    },
+    {
+      "from": "doc:25a030ea44884ea4",
+      "to": "api:camera_body",
+      "type": "mentions_api"
+    },
+    {
+      "from": "doc:25a030ea44884ea4",
+      "to": "api:camera_component",
+      "type": "mentions_api"
+    },
+    {
+      "from": "doc:25a030ea44884ea4",
+      "to": "api:camera_director_component",
+      "type": "mentions_api"
+    },
+    {
+      "from": "doc:25a030ea44884ea4",
+      "to": "api:camera_projection_mode",
+      "type": "mentions_api"
+    },
+    {
+      "from": "doc:25a030ea44884ea4",
+      "to": "api:camera_transition_initial_orientation",
+      "type": "mentions_api"
+    },
+    {
+      "from": "doc:25a030ea44884ea4",
+      "to": "api:canvas",
+      "type": "mentions_api"
+    },
+    {
+      "from": "doc:25a030ea44884ea4",
+      "to": "api:canvas_slot",
+      "type": "mentions_api"
+    },
+    {
+      "from": "doc:25a030ea44884ea4",
+      "to": "api:capture_area_device",
+      "type": "mentions_api"
+    },
+    {
+      "from": "doc:25a030ea44884ea4",
+      "to": "api:chair_device",
+      "type": "mentions_api"
+    },
+    {
+      "from": "doc:25a030ea44884ea4",
+      "to": "api:change_max_stack_size_result",
+      "type": "mentions_api"
+    },
+    {
+      "from": "doc:25a030ea44884ea4",
+      "to": "api:change_stack_size_result",
+      "type": "mentions_api"
+    },
+    {
+      "from": "doc:25a030ea44884ea4",
+      "to": "api:character_device",
+      "type": "mentions_api"
+    },
+    {
+      "from": "doc:25a030ea44884ea4",
+      "to": "api:children_streaming_policy",
+      "type": "mentions_api"
+    },
+    {
+      "from": "doc:25a030ea44884ea4",
+      "to": "api:cinematic_sequence_device",
+      "type": "mentions_api"
+    },
+    {
+      "from": "doc:25a030ea44884ea4",
+      "to": "api:class_and_team_selector_device",
+      "type": "mentions_api"
+    },
+    {
+      "from": "doc:25a030ea44884ea4",
+      "to": "api:collision_interaction",
+      "type": "mentions_api"
+    },
+    {
+      "from": "doc:25a030ea44884ea4",
+      "to": "api:color_block",
+      "type": "mentions_api"
+    },
+    {
+      "from": "doc:25a030ea44884ea4",
+      "to": "api:common_rarity",
+      "type": "mentions_api"
+    },
+    {
+      "from": "doc:25a030ea44884ea4",
+      "to": "api:conditional_button_device",
+      "type": "mentions_api"
+    },
+    {
+      "from": "doc:25a030ea44884ea4",
+      "to": "api:conversation_device",
+      "type": "mentions_api"
+    },
+    {
+      "from": "doc:25a030ea44884ea4",
+      "to": "api:creative_device",
+      "type": "mentions_api"
+    },
+    {
+      "from": "doc:25a030ea44884ea4",
+      "to": "api:creative_device_base",
+      "type": "mentions_api"
+    },
+    {
+      "from": "doc:25a030ea44884ea4",
+      "to": "api:creative_hud_identifier_all",
+      "type": "mentions_api"
+    },
+    {
+      "from": "doc:25a030ea44884ea4",
+      "to": "api:creative_hud_identifier_build_menu",
+      "type": "mentions_api"
+    },
+    {
+      "from": "doc:25a030ea44884ea4",
+      "to": "api:creative_hud_identifier_crafting_resources",
+      "type": "mentions_api"
+    },
+    {
+      "from": "doc:25a030ea44884ea4",
+      "to": "api:creative_hud_identifier_elimination_counter",
+      "type": "mentions_api"
+    },
+    {
+      "from": "doc:25a030ea44884ea4",
+      "to": "api:creative_hud_identifier_equipped_item",
+      "type": "mentions_api"
+    },
+    {
+      "from": "doc:25a030ea44884ea4",
+      "to": "api:creative_hud_identifier_experience_level",
+      "type": "mentions_api"
+    },
+    {
+      "from": "doc:25a030ea44884ea4",
+      "to": "api:creative_hud_identifier_team_info",
+      "type": "mentions_api"
+    },
+    {
+      "from": "doc:25a030ea44884ea4",
+      "to": "api:creative_object",
+      "type": "mentions_api"
+    },
+    {
+      "from": "doc:25a030ea44884ea4",
+      "to": "api:cubic_bezier_easing_function",
+      "type": "mentions_api"
+    },
+    {
+      "from": "doc:25a030ea44884ea4",
+      "to": "api:damage_volume_device",
+      "type": "mentions_api"
+    },
+    {
+      "from": "doc:25a030ea44884ea4",
+      "to": "api:ease_cubic_bezier_easing_function",
+      "type": "mentions_api"
+    },
+    {
+      "from": "doc:25a030ea44884ea4",
+      "to": "api:ease_in_cubic_bezier_easing_function",
+      "type": "mentions_api"
+    },
+    {
+      "from": "doc:25a030ea44884ea4",
+      "to": "api:ease_in_out_cubic_bezier_easing_function",
+      "type": "mentions_api"
+    },
+    {
+      "from": "doc:25a030ea44884ea4",
+      "to": "api:ease_out_cubic_bezier_easing_function",
+      "type": "mentions_api"
+    },
+    {
+      "from": "doc:25a030ea44884ea4",
+      "to": "api:easeable",
+      "type": "mentions_api"
+    },
+    {
+      "from": "doc:25a030ea44884ea4",
+      "to": "api:easing_function",
+      "type": "mentions_api"
+    },
+    {
+      "from": "doc:25a030ea44884ea4",
+      "to": "api:elimination_manager_device",
+      "type": "mentions_api"
+    },
+    {
+      "from": "doc:25a030ea44884ea4",
+      "to": "api:end_game_device",
+      "type": "mentions_api"
+    },
+    {
+      "from": "doc:25a030ea44884ea4",
+      "to": "api:entity",
+      "type": "mentions_api"
+    },
+    {
+      "from": "doc:25a030ea44884ea4",
+      "to": "api:entity_origin",
+      "type": "mentions_api"
+    },
+    {
+      "from": "doc:25a030ea44884ea4",
+      "to": "api:entity_prefab",
+      "type": "mentions_api"
+    },
+    {
+      "from": "doc:25a030ea44884ea4",
+      "to": "api:entity_streaming_policy",
+      "type": "mentions_api"
+    },
+    {
+      "from": "doc:25a030ea44884ea4",
+      "to": "api:epic_rarity",
+      "type": "mentions_api"
+    },
+    {
+      "from": "doc:25a030ea44884ea4",
+      "to": "api:execution_listenable",
+      "type": "mentions_api"
+    },
+    {
+      "from": "doc:25a030ea44884ea4",
+      "to": "api:fort_character",
+      "type": "mentions_api"
+    },
+    {
+      "from": "doc:25a030ea44884ea4",
+      "to": "api:fort_hud_controller",
+      "type": "mentions_api"
+    },
+    {
+      "from": "doc:25a030ea44884ea4",
+      "to": "api:fort_playspace",
+      "type": "mentions_api"
+    },
+    {
+      "from": "doc:25a030ea44884ea4",
+      "to": "api:fort_team_collection",
+      "type": "mentions_api"
+    },
+    {
+      "from": "doc:25a030ea44884ea4",
+      "to": "api:fort_vehicle",
+      "type": "mentions_api"
+    },
+    {
+      "from": "doc:25a030ea44884ea4",
+      "to": "api:fort_vehicle_seat",
+      "type": "mentions_api"
+    },
+    {
+      "from": "doc:25a030ea44884ea4",
+      "to": "api:has_camera_modifier",
+      "type": "mentions_api"
+    },
+    {
+      "from": "doc:25a030ea44884ea4",
+      "to": "api:has_merge_rules",
+      "type": "mentions_api"
+    },
+    {
+      "from": "doc:25a030ea44884ea4",
+      "to": "api:horizontal_alignment",
+      "type": "mentions_api"
+    },
+    {
+      "from": "doc:25a030ea44884ea4",
+      "to": "api:hud_element_identifier",
+      "type": "mentions_api"
+    },
+    {
+      "from": "doc:25a030ea44884ea4",
+      "to": "api:hud_identifier_visual_sound_effect_all",
+      "type": "mentions_api"
+    },
+    {
+      "from": "doc:25a030ea44884ea4",
+      "to": "api:hud_identifier_visual_sound_effect_healing",
+      "type": "mentions_api"
+    },
+    {
+      "from": "doc:25a030ea44884ea4",
+      "to": "api:hud_identifier_visual_sound_effect_loot",
+      "type": "mentions_api"
+    },
+    {
+      "from": "doc:25a030ea44884ea4",
+      "to": "api:hud_identifier_visual_sound_effect_movement",
+      "type": "mentions_api"
+    },
+    {
+      "from": "doc:25a030ea44884ea4",
+      "to": "api:hud_identifier_visual_sound_effect_vehicle",
+      "type": "mentions_api"
+    },
+    {
+      "from": "doc:25a030ea44884ea4",
+      "to": "api:hud_identifier_visual_sound_effect_weapons",
+      "type": "mentions_api"
+    },
+    {
+      "from": "doc:25a030ea44884ea4",
+      "to": "api:hud_identifier_world_resource_gold_currency",
+      "type": "mentions_api"
+    },
+    {
+      "from": "doc:25a030ea44884ea4",
+      "to": "api:hud_identifier_world_resource_ingredient",
+      "type": "mentions_api"
+    },
+    {
+      "from": "doc:25a030ea44884ea4",
+      "to": "api:hud_identifier_world_resource_metal",
+      "type": "mentions_api"
+    },
+    {
+      "from": "doc:25a030ea44884ea4",
+      "to": "api:hud_identifier_world_resource_permanite",
+      "type": "mentions_api"
+    },
+    {
+      "from": "doc:25a030ea44884ea4",
+      "to": "api:hud_identifier_world_resource_stone",
+      "type": "mentions_api"
+    },
+    {
+      "from": "doc:25a030ea44884ea4",
+      "to": "api:hud_identifier_world_resource_wood",
+      "type": "mentions_api"
+    },
+    {
+      "from": "doc:25a030ea44884ea4",
+      "to": "api:hud_message_device",
+      "type": "mentions_api"
+    },
+    {
+      "from": "doc:25a030ea44884ea4",
+      "to": "api:icon_component",
+      "type": "mentions_api"
+    },
+    {
+      "from": "doc:25a030ea44884ea4",
+      "to": "api:image_tiling",
+      "type": "mentions_api"
+    },
+    {
+      "from": "doc:25a030ea44884ea4",
+      "to": "api:input_trigger_device",
+      "type": "mentions_api"
+    },
+    {
+      "from": "doc:25a030ea44884ea4",
+      "to": "api:interactable_component",
+      "type": "mentions_api"
+    },
+    {
+      "from": "doc:25a030ea44884ea4",
+      "to": "api:interactable_cooldown",
+      "type": "mentions_api"
+    },
+    {
+      "from": "doc:25a030ea44884ea4",
+      "to": "api:interactable_cooldown_per_agent",
+      "type": "mentions_api"
+    },
+    {
+      "from": "doc:25a030ea44884ea4",
+      "to": "api:interactable_duration",
+      "type": "mentions_api"
+    },
+    {
+      "from": "doc:25a030ea44884ea4",
+      "to": "api:interactable_success_limit",
+      "type": "mentions_api"
+    },
+    {
+      "from": "doc:25a030ea44884ea4",
+      "to": "api:item_granter_device",
+      "type": "mentions_api"
+    },
+    {
+      "from": "doc:25a030ea44884ea4",
+      "to": "api:item_placer_device",
+      "type": "mentions_api"
+    },
+    {
+      "from": "doc:25a030ea44884ea4",
+      "to": "api:item_remover_device",
+      "type": "mentions_api"
+    },
+    {
+      "from": "doc:25a030ea44884ea4",
+      "to": "api:keyframed_movement_component",
+      "type": "mentions_api"
+    },
+    {
+      "from": "doc:25a030ea44884ea4",
+      "to": "api:keyframed_movement_delta",
+      "type": "mentions_api"
+    },
+    {
+      "from": "doc:25a030ea44884ea4",
+      "to": "api:keyframed_movement_playback_mode",
+      "type": "mentions_api"
+    },
+    {
+      "from": "doc:25a030ea44884ea4",
+      "to": "api:legendary_rarity",
+      "type": "mentions_api"
+    },
+    {
+      "from": "doc:25a030ea44884ea4",
+      "to": "api:linear_easing_function",
+      "type": "mentions_api"
+    },
+    {
+      "from": "doc:25a030ea44884ea4",
+      "to": "api:lock_device",
+      "type": "mentions_api"
+    },
+    {
+      "from": "doc:25a030ea44884ea4",
+      "to": "api:loop_keyframed_movement_playback_mode",
+      "type": "mentions_api"
+    },
+    {
+      "from": "doc:25a030ea44884ea4",
+      "to": "api:map_controller_device",
+      "type": "mentions_api"
+    },
+    {
+      "from": "doc:25a030ea44884ea4",
+      "to": "api:map_indicator_device",
+      "type": "mentions_api"
+    },
+    {
+      "from": "doc:25a030ea44884ea4",
+      "to": "api:margin",
+      "type": "mentions_api"
+    },
+    {
+      "from": "doc:25a030ea44884ea4",
+      "to": "api:material_block",
+      "type": "mentions_api"
+    },
+    {
+      "from": "doc:25a030ea44884ea4",
+      "to": "api:mutator_zone_device",
+      "type": "mentions_api"
+    },
+    {
+      "from": "doc:25a030ea44884ea4",
+      "to": "api:oneshot_keyframed_movement_playback_mode",
+      "type": "mentions_api"
+    },
+    {
+      "from": "doc:25a030ea44884ea4",
+      "to": "api:orientation",
+      "type": "mentions_api"
+    },
+    {
+      "from": "doc:25a030ea44884ea4",
+      "to": "api:origin",
+      "type": "mentions_api"
+    },
+    {
+      "from": "doc:25a030ea44884ea4",
+      "to": "api:overlay",
+      "type": "mentions_api"
+    },
+    {
+      "from": "doc:25a030ea44884ea4",
+      "to": "api:overlay_slot",
+      "type": "mentions_api"
+    },
+    {
+      "from": "doc:25a030ea44884ea4",
+      "to": "api:pingpong_keyframed_movement_playback_mode",
+      "type": "mentions_api"
+    },
+    {
+      "from": "doc:25a030ea44884ea4",
+      "to": "api:player_hud_identifier_all",
+      "type": "mentions_api"
+    },
+    {
+      "from": "doc:25a030ea44884ea4",
+      "to": "api:player_reference_device",
+      "type": "mentions_api"
+    },
+    {
+      "from": "doc:25a030ea44884ea4",
+      "to": "api:player_spawner_device",
+      "type": "mentions_api"
+    },
+    {
+      "from": "doc:25a030ea44884ea4",
+      "to": "api:player_ui",
+      "type": "mentions_api"
+    },
+    {
+      "from": "doc:25a030ea44884ea4",
+      "to": "api:player_ui_slot",
+      "type": "mentions_api"
+    },
+    {
+      "from": "doc:25a030ea44884ea4",
+      "to": "api:popup_dialog_device",
+      "type": "mentions_api"
+    },
+    {
+      "from": "doc:25a030ea44884ea4",
+      "to": "api:prop_manipulator_device",
+      "type": "mentions_api"
+    },
+    {
+      "from": "doc:25a030ea44884ea4",
+      "to": "api:rare_rarity",
+      "type": "mentions_api"
+    },
+    {
+      "from": "doc:25a030ea44884ea4",
+      "to": "api:rarity",
+      "type": "mentions_api"
+    },
+    {
+      "from": "doc:25a030ea44884ea4",
+      "to": "api:rarity_component",
+      "type": "mentions_api"
+    },
+    {
+      "from": "doc:25a030ea44884ea4",
+      "to": "api:scene_event",
+      "type": "mentions_api"
+    },
+    {
+      "from": "doc:25a030ea44884ea4",
+      "to": "api:score_manager_device",
+      "type": "mentions_api"
+    },
+    {
+      "from": "doc:25a030ea44884ea4",
+      "to": "api:sentry_device",
+      "type": "mentions_api"
+    },
+    {
+      "from": "doc:25a030ea44884ea4",
+      "to": "api:slider_regular",
+      "type": "mentions_api"
+    },
+    {
+      "from": "doc:25a030ea44884ea4",
+      "to": "api:stack_box",
+      "type": "mentions_api"
+    },
+    {
+      "from": "doc:25a030ea44884ea4",
+      "to": "api:stack_box_slot",
+      "type": "mentions_api"
+    },
+    {
+      "from": "doc:25a030ea44884ea4",
+      "to": "api:stackable_component",
+      "type": "mentions_api"
+    },
+    {
+      "from": "doc:25a030ea44884ea4",
+      "to": "api:switch_device",
+      "type": "mentions_api"
+    },
+    {
+      "from": "doc:25a030ea44884ea4",
+      "to": "api:team_attitude",
+      "type": "mentions_api"
+    },
+    {
+      "from": "doc:25a030ea44884ea4",
+      "to": "api:team_settings_and_inventory_device",
+      "type": "mentions_api"
+    },
+    {
+      "from": "doc:25a030ea44884ea4",
+      "to": "api:teleporter_device",
+      "type": "mentions_api"
+    },
+    {
+      "from": "doc:25a030ea44884ea4",
+      "to": "api:text_base",
+      "type": "mentions_api"
+    },
+    {
+      "from": "doc:25a030ea44884ea4",
+      "to": "api:text_block",
+      "type": "mentions_api"
+    },
+    {
+      "from": "doc:25a030ea44884ea4",
+      "to": "api:text_button_base",
+      "type": "mentions_api"
+    },
+    {
+      "from": "doc:25a030ea44884ea4",
+      "to": "api:text_justification",
+      "type": "mentions_api"
+    },
+    {
+      "from": "doc:25a030ea44884ea4",
+      "to": "api:text_overflow_policy",
+      "type": "mentions_api"
+    },
+    {
+      "from": "doc:25a030ea44884ea4",
+      "to": "api:text_wrapping_policy",
+      "type": "mentions_api"
+    },
+    {
+      "from": "doc:25a030ea44884ea4",
+      "to": "api:texture_block",
+      "type": "mentions_api"
+    },
+    {
+      "from": "doc:25a030ea44884ea4",
+      "to": "api:tick_events",
+      "type": "mentions_api"
+    },
+    {
+      "from": "doc:25a030ea44884ea4",
+      "to": "api:timer_device",
+      "type": "mentions_api"
+    },
+    {
+      "from": "doc:25a030ea44884ea4",
+      "to": "api:tracker_device",
+      "type": "mentions_api"
+    },
+    {
+      "from": "doc:25a030ea44884ea4",
+      "to": "api:transform_component",
+      "type": "mentions_api"
+    },
+    {
+      "from": "doc:25a030ea44884ea4",
+      "to": "api:trigger_base_device",
+      "type": "mentions_api"
+    },
+    {
+      "from": "doc:25a030ea44884ea4",
+      "to": "api:trigger_device",
+      "type": "mentions_api"
+    },
+    {
+      "from": "doc:25a030ea44884ea4",
+      "to": "api:ui_input_mode",
+      "type": "mentions_api"
+    },
+    {
+      "from": "doc:25a030ea44884ea4",
+      "to": "api:uncommon_rarity",
+      "type": "mentions_api"
+    },
+    {
+      "from": "doc:25a030ea44884ea4",
+      "to": "api:vertical_alignment",
+      "type": "mentions_api"
+    },
+    {
+      "from": "doc:25a030ea44884ea4",
+      "to": "api:vfx_creator_device",
+      "type": "mentions_api"
+    },
+    {
+      "from": "doc:25a030ea44884ea4",
+      "to": "api:vfx_spawner_device",
+      "type": "mentions_api"
+    },
+    {
+      "from": "doc:25a030ea44884ea4",
+      "to": "api:volume_device",
+      "type": "mentions_api"
+    },
+    {
+      "from": "doc:25a030ea44884ea4",
+      "to": "api:widget",
+      "type": "mentions_api"
+    },
+    {
+      "from": "doc:25a030ea44884ea4",
+      "to": "api:widget_message",
+      "type": "mentions_api"
+    },
+    {
+      "from": "doc:25a030ea44884ea4",
+      "to": "api:widget_visibility",
+      "type": "mentions_api"
+    },
+    {
+      "from": "doc:5694e079b974f334",
+      "to": "api:GetFortCharacter",
+      "type": "mentions_api"
+    },
+    {
+      "from": "doc:5694e079b974f334",
+      "to": "api:GetPlayerUI",
+      "type": "mentions_api"
+    },
+    {
+      "from": "doc:5694e079b974f334",
+      "to": "api:GetPlayspace",
+      "type": "mentions_api"
+    },
+    {
+      "from": "doc:5694e079b974f334",
+      "to": "api:MakeCanvasSlot",
+      "type": "mentions_api"
+    },
+    {
+      "from": "doc:5694e079b974f334",
+      "to": "api:canvas",
+      "type": "mentions_api"
+    },
+    {
+      "from": "doc:5694e079b974f334",
+      "to": "api:canvas_slot",
+      "type": "mentions_api"
+    },
+    {
+      "from": "doc:5694e079b974f334",
+      "to": "api:creative_object",
+      "type": "mentions_api"
+    },
+    {
+      "from": "doc:5694e079b974f334",
+      "to": "api:fort_character",
+      "type": "mentions_api"
+    },
+    {
+      "from": "doc:5694e079b974f334",
+      "to": "api:fort_playspace",
+      "type": "mentions_api"
+    },
+    {
+      "from": "doc:5694e079b974f334",
+      "to": "api:player_ui",
+      "type": "mentions_api"
+    },
+    {
+      "from": "doc:5694e079b974f334",
+      "to": "api:widget",
       "type": "mentions_api"
     },
     {
@@ -14333,6 +16418,16 @@
     },
     {
       "from": "doc:69e4f0df44cc76ee",
+      "to": "api:get_api_coverage",
+      "type": "mentions_api"
+    },
+    {
+      "from": "doc:69e4f0df44cc76ee",
+      "to": "api:get_api_verification_queue",
+      "type": "mentions_api"
+    },
+    {
+      "from": "doc:69e4f0df44cc76ee",
       "to": "api:get_project_context",
       "type": "mentions_api"
     },
@@ -14348,27 +16443,17 @@
     },
     {
       "from": "doc:69e4f0df44cc76ee",
+      "to": "api:read_generated_provenance",
+      "type": "mentions_api"
+    },
+    {
+      "from": "doc:69e4f0df44cc76ee",
       "to": "api:search_verse_errors",
       "type": "mentions_api"
     },
     {
       "from": "doc:69e4f0df44cc76ee",
       "to": "api:search_verse_knowledge",
-      "type": "mentions_api"
-    },
-    {
-      "from": "doc:52ccbdc1fcaf948b",
-      "to": "api:VERSE_AI_MASTER_PROMPT_v21_WITH_UI.txt",
-      "type": "mentions_api"
-    },
-    {
-      "from": "doc:82331ad04dd6a339",
-      "to": "api:AI_BOOTSTRAP.md",
-      "type": "mentions_api"
-    },
-    {
-      "from": "doc:82331ad04dd6a339",
-      "to": "api:VERSE_AI_MASTER_PROMPT_v21_WITH_UI.txt",
       "type": "mentions_api"
     },
     {
@@ -14844,6 +16929,11 @@
     {
       "from": "doc:51734ab32253e1e6",
       "to": "api:GetVehicle",
+      "type": "mentions_api"
+    },
+    {
+      "from": "doc:51734ab32253e1e6",
+      "to": "api:H001_unknown_device",
       "type": "mentions_api"
     },
     {
@@ -15413,6 +17503,11 @@
     },
     {
       "from": "doc:51734ab32253e1e6",
+      "to": "api:nH001_unknown_device",
+      "type": "mentions_api"
+    },
+    {
+      "from": "doc:51734ab32253e1e6",
       "to": "api:oneshot_keyframed_movement_playback_mode",
       "type": "mentions_api"
     },
@@ -15484,6 +17579,11 @@
     {
       "from": "doc:51734ab32253e1e6",
       "to": "api:prop_manipulator_device",
+      "type": "mentions_api"
+    },
+    {
+      "from": "doc:51734ab32253e1e6",
+      "to": "api:quantum_portal_device",
       "type": "mentions_api"
     },
     {
@@ -15697,71 +17797,6 @@
       "type": "mentions_api"
     },
     {
-      "from": "doc:cbb1c349a887185a",
-      "to": "api:GetFortCharacter",
-      "type": "mentions_api"
-    },
-    {
-      "from": "doc:cbb1c349a887185a",
-      "to": "api:GetVehicle",
-      "type": "mentions_api"
-    },
-    {
-      "from": "doc:cbb1c349a887185a",
-      "to": "api:README.md",
-      "type": "mentions_api"
-    },
-    {
-      "from": "doc:cbb1c349a887185a",
-      "to": "api:canvas",
-      "type": "mentions_api"
-    },
-    {
-      "from": "doc:cbb1c349a887185a",
-      "to": "api:draft",
-      "type": "mentions_api"
-    },
-    {
-      "from": "doc:cbb1c349a887185a",
-      "to": "api:fort_vehicle",
-      "type": "mentions_api"
-    },
-    {
-      "from": "doc:cbb1c349a887185a",
-      "to": "api:fort_vehicle.GetDrivers",
-      "type": "mentions_api"
-    },
-    {
-      "from": "doc:cbb1c349a887185a",
-      "to": "api:fort_vehicle.GetSeats",
-      "type": "mentions_api"
-    },
-    {
-      "from": "doc:cbb1c349a887185a",
-      "to": "api:interfaces",
-      "type": "mentions_api"
-    },
-    {
-      "from": "doc:cbb1c349a887185a",
-      "to": "api:planned",
-      "type": "mentions_api"
-    },
-    {
-      "from": "doc:cbb1c349a887185a",
-      "to": "api:system.json",
-      "type": "mentions_api"
-    },
-    {
-      "from": "doc:cbb1c349a887185a",
-      "to": "api:verified",
-      "type": "mentions_api"
-    },
-    {
-      "from": "doc:cbb1c349a887185a",
-      "to": "api:widget",
-      "type": "mentions_api"
-    },
-    {
       "from": "doc:349d2125fcc4cf77",
       "to": "api:GetFortCharacter",
       "type": "mentions_api"
@@ -15792,6 +17827,51 @@
       "type": "mentions_api"
     },
     {
+      "from": "doc:21d5747f7ddb623c",
+      "to": "api:effects_structured",
+      "type": "mentions_api"
+    },
+    {
+      "from": "doc:21d5747f7ddb623c",
+      "to": "api:event_names_known",
+      "type": "mentions_api"
+    },
+    {
+      "from": "doc:21d5747f7ddb623c",
+      "to": "api:event_payloads_verified",
+      "type": "mentions_api"
+    },
+    {
+      "from": "doc:21d5747f7ddb623c",
+      "to": "api:exact_signature_claim_allowed",
+      "type": "mentions_api"
+    },
+    {
+      "from": "doc:21d5747f7ddb623c",
+      "to": "api:field_evidence_present",
+      "type": "mentions_api"
+    },
+    {
+      "from": "doc:21d5747f7ddb623c",
+      "to": "api:parameters_structured",
+      "type": "mentions_api"
+    },
+    {
+      "from": "doc:21d5747f7ddb623c",
+      "to": "api:presence",
+      "type": "mentions_api"
+    },
+    {
+      "from": "doc:21d5747f7ddb623c",
+      "to": "api:return_type_structured",
+      "type": "mentions_api"
+    },
+    {
+      "from": "doc:21d5747f7ddb623c",
+      "to": "api:signature_verified",
+      "type": "mentions_api"
+    },
+    {
       "from": "doc:2437bb5ee60cd48b",
       "to": "api:GetVehicle",
       "type": "mentions_api"
@@ -15807,18 +17887,93 @@
       "type": "mentions_api"
     },
     {
+      "from": "doc:6851e5acbd03d3ab",
+      "to": "api:GetFortCharacter",
+      "type": "mentions_api"
+    },
+    {
+      "from": "doc:6851e5acbd03d3ab",
+      "to": "api:button",
+      "type": "mentions_api"
+    },
+    {
+      "from": "doc:6851e5acbd03d3ab",
+      "to": "api:button_device",
+      "type": "mentions_api"
+    },
+    {
+      "from": "doc:6851e5acbd03d3ab",
+      "to": "api:canvas",
+      "type": "mentions_api"
+    },
+    {
+      "from": "doc:6851e5acbd03d3ab",
+      "to": "api:nH001_unknown_device",
+      "type": "mentions_api"
+    },
+    {
+      "from": "doc:6851e5acbd03d3ab",
+      "to": "api:widget",
+      "type": "mentions_api"
+    },
+    {
+      "from": "doc:af6df6258333407b",
+      "to": "api:GetFortCharacter",
+      "type": "mentions_api"
+    },
+    {
+      "from": "doc:af6df6258333407b",
+      "to": "api:GetPlayerUI",
+      "type": "mentions_api"
+    },
+    {
+      "from": "doc:af6df6258333407b",
+      "to": "api:GetPlayspace",
+      "type": "mentions_api"
+    },
+    {
       "from": "doc:a08c31e621756792",
       "to": "api:draft",
       "type": "mentions_api"
     },
     {
-      "from": "doc:ae770b358f797213",
+      "from": "doc:4ec9b1bc6ba7b229",
       "to": "api:GetFortCharacter",
       "type": "mentions_api"
     },
     {
-      "from": "doc:d57998e99bdc024e",
+      "from": "doc:4ec9b1bc6ba7b229",
+      "to": "api:MakeCanvasSlot",
+      "type": "mentions_api"
+    },
+    {
+      "from": "doc:4ec9b1bc6ba7b229",
+      "to": "api:button",
+      "type": "mentions_api"
+    },
+    {
+      "from": "doc:4ec9b1bc6ba7b229",
+      "to": "api:button_device",
+      "type": "mentions_api"
+    },
+    {
+      "from": "doc:6ad7e488e64a2eb7",
       "to": "api:GetFortCharacter",
+      "type": "mentions_api"
+    },
+    {
+      "from": "doc:f45ff54cf15ea125",
+      "to": "api:GetFortCharacter",
+      "type": "mentions_api"
+    },
+    {
+      "from": "doc:f45ff54cf15ea125",
+      "to": "api:button",
+      "type": "mentions_api"
+    },
+    {
+      "from": "doc:f45ff54cf15ea125",
+      "to": "api:button_device",
       "type": "mentions_api"
     },
     {
@@ -15877,6 +18032,11 @@
       "type": "mentions_api"
     },
     {
+      "from": "doc:339c47815c39c2ff",
+      "to": "api:player_ui",
+      "type": "mentions_api"
+    },
+    {
       "from": "doc:84ae37ef69768057",
       "to": "api:compiled",
       "type": "mentions_api"
@@ -15884,6 +18044,11 @@
     {
       "from": "doc:c9e79e057951042c",
       "to": "api:origin",
+      "type": "mentions_api"
+    },
+    {
+      "from": "doc:31c307e8e78759c8",
+      "to": "api:player_ui",
       "type": "mentions_api"
     },
     {

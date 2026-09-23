@@ -1,38 +1,57 @@
 # Verse AI Knowledge — English
 
-**V22 — Knowledge Integrity & Agent Reliability**
+**V24 — Claim Resolution, Evidence Graph & Continuous Verification**
+
+Verse AI Knowledge helps AI agents work with Verse / UEFN using retrieval, provenance, evidence and anti-hallucination guards.
 
 > **Never invent a Verse API.**
 
-Verse AI Knowledge is a knowledge repository and toolset for source-grounded Verse / UEFN assistance.
-
 ## Start here
 
-Repository-aware agents should read `AI_BOOTSTRAP.md`, then `knowledge/ROUTING.md`, and retrieve only relevant evidence.
+Repository-aware agents start with:
 
-V22 separates:
+```text
+AI_BOOTSTRAP.md
+```
 
-- `source_trust`: authority/currentness of a source;
-- `validation`: what was actually validated locally.
+Recommended flow:
 
-If an exact API cannot be verified, use `TODO(API VERIFY)`.
+```text
+ROUTING → targeted retrieval → API claim resolution → Evidence Pack → Claim Ledger → implementation → provenance → validation
+```
 
-## Validation
+## V24
 
-`draft` → `static-checked` → `compiled` → `verified` → `multiplayer-verified`.
+V24 adds:
 
-The last three require real corresponding UEFN evidence. Static analysis is never a UEFN compile.
+- field-level API claim resolution;
+- API evidence graph;
+- conservative Verse claim linting;
+- API-version revalidation;
+- coverage snapshots/diffs;
+- redirect-safe Epic documentation fetching;
+- visible + hidden V24 provenance;
+- optional end-to-end LLM evaluation harness;
+- public-release path/secret checks.
 
 ## CLI
 
 ```bash
 python -m pip install -e .
-verse-ai doctor
-verse-ai search "vehicle ownership"
 verse-ai api GetFortCharacter
+verse-ai claim GetFortCharacter --field signature
+verse-ai lint path/to/code.verse
+verse-ai coverage
+verse-ai doctor
 verse-ai validate
 ```
 
-The V21 portable prompt with UI remains available for compatibility at `portable/VERSE_AI_MASTER_PROMPT_v21_WITH_UI.txt`.
+Unsupported exact claims must remain:
 
-See `README.md`, `AGENTS.md`, `CHANGELOG.md`, `CONTRIBUTING.md`, and `docs/architecture/V22_KNOWLEDGE_INTEGRITY.md`.
+```text
+TODO(API VERIFY)
+```
+
+Static validation does not prove UEFN compilation.
+
+Original project content is governed by `LICENSE.md`; third-party material keeps its original licenses and provenance.

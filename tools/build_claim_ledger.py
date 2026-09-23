@@ -7,7 +7,7 @@ import sys
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT / "src"))
 from verse_ai_knowledge.api_index import load_symbols  # noqa: E402
-from verse_ai_knowledge.policy import exact_signature_allowed  # noqa: E402
+from verse_ai_knowledge.claims import resolve_claim  # noqa: E402
 
 ap = argparse.ArgumentParser()
 ap.add_argument("--evidence", default="rag/generated/EVIDENCE_PACK.json")
@@ -42,23 +42,28 @@ for claim, role_name, reason in [
     claims.append({"claim_type": claim, "supported_by": supporting, "allowed": bool(supporting), "reason": reason})
 
 symbol_rows = load_symbols(ROOT)
-by_id = {x.get("symbol_id"): x for x in symbol_rows}
 exact_names = data.get("exact_api_matches", [])
-exact_ok = []
-exact_blocked = []
-for name in exact_names:
-    row = by_id.get(name)
-    if row and exact_signature_allowed(row):
-        exact_ok.append(f"knowledge/api/symbols.jsonl#{name}")
-    else:
-        exact_blocked.append(name)
-claims.append({
-    "claim_type": "exact_api_signature",
-    "supported_by": exact_ok,
-    "allowed": bool(exact_names) and not exact_blocked,
-    "reason": "Exact signatures require symbol-level signature evidence; otherwise use TODO(API VERIFY).",
-    "blocked_symbols": exact_blocked,
-})
+for field, claim_type in [
+    ("signature", "exact_api_signature"),
+    ("parameters", "exact_api_parameters"),
+    ("return_type", "exact_api_return_type"),
+    ("effects", "exact_api_effects"),
+]:
+    supported = []
+    blocked = []
+    for name in exact_names:
+        result = resolve_claim(name, field, root=ROOT)
+        if result.get("supported"):
+            supported.extend(result.get("evidence_ids") or [])
+        else:
+            blocked.append(name)
+    claims.append({
+        "claim_type": claim_type,
+        "supported_by": sorted(set(supported)),
+        "allowed": bool(exact_names) and not blocked,
+        "reason": f"V24 field-level evidence is required for exact {field} claims; otherwise use TODO(API VERIFY).",
+        "blocked_symbols": blocked,
+    })
 
 local = []
 for source in sources:
@@ -76,7 +81,7 @@ claims.append({
 })
 
 out = {
-    "schema_version": 2,
+    "schema_version": 3,
     "query": data.get("query", ""),
     "claims": claims,
     "unsupported_claims": [x["claim_type"] for x in claims if not x["allowed"]],
