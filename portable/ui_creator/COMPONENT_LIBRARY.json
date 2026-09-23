@@ -1,0 +1,52 @@
+{
+  "layout": [
+    "Screen",
+    "Panel",
+    "Card",
+    "Sidebar",
+    "Header",
+    "Footer",
+    "Navbar",
+    "Grid",
+    "VerticalList",
+    "HorizontalList",
+    "ScrollRegion",
+    "Modal",
+    "Overlay"
+  ],
+  "content": [
+    "Title",
+    "Label",
+    "Value",
+    "IconPlaceholder",
+    "ImagePlaceholder",
+    "Divider",
+    "Badge",
+    "ProgressBar",
+    "StatusPill"
+  ],
+  "input": [
+    "PrimaryButton",
+    "SecondaryButton",
+    "DangerButton",
+    "CloseButton",
+    "SearchBar",
+    "TabButton",
+    "PaginationButton"
+  ],
+  "gameplay": [
+    "PlayerCard",
+    "VehicleCard",
+    "InventorySlot",
+    "StaffActionButton",
+    "ShopItemCard",
+    "Notification",
+    "ConfirmationDialog",
+    "TimerDisplay",
+    "MoneyDisplay",
+    "HealthDisplay",
+    "HungerDisplay",
+    "ThirstDisplay"
+  ],
+  "important_note": "These are logical components, not Epic Verse widget APIs."
+}

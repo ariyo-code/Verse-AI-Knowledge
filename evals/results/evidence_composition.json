@@ -1,0 +1,22 @@
+{
+  "passed": 3,
+  "total": 3,
+  "tasks": [
+    {
+      "id": "E001",
+      "passed": true,
+      "missing": []
+    },
+    {
+      "id": "E002",
+      "passed": true,
+      "missing": []
+    },
+    {
+      "id": "E003",
+      "passed": true,
+      "missing": []
+    }
+  ],
+  "note": "Retrieval/evidence composition eval; not a UEFN compile."
+}

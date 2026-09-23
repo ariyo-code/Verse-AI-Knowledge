@@ -1,0 +1,37 @@
+{
+  "tools/scan_verse_project.py": {
+    "flags_found": [
+      "--output"
+    ],
+    "flags_checked": [
+      "--output"
+    ]
+  },
+  "tools/rag_context_pack.py": {
+    "flags_found": [
+      "--output"
+    ],
+    "flags_checked": [
+      "--output"
+    ]
+  },
+  "tools/add_error.py": {
+    "flags_found": [
+      "--message",
+      "--category"
+    ],
+    "flags_checked": [
+      "--error",
+      "--message",
+      "--category"
+    ]
+  },
+  "tools/update_error.py": {
+    "flags_found": [
+      "--status"
+    ],
+    "flags_checked": [
+      "--status"
+    ]
+  }
+}

@@ -1,0 +1,56 @@
+{
+  "passed": true,
+  "checks": [
+    {
+      "name": "schema",
+      "passed": true,
+      "detail": "schema=22"
+    },
+    {
+      "name": "release",
+      "passed": true,
+      "detail": "release=22.0.0"
+    },
+    {
+      "name": "AI bootstrap",
+      "passed": true,
+      "detail": "AI_BOOTSTRAP.md"
+    },
+    {
+      "name": "compile queue",
+      "passed": true,
+      "detail": "entries=50"
+    },
+    {
+      "name": "starter corpus",
+      "passed": true,
+      "detail": "local examples=10/395"
+    },
+    {
+      "name": "structured API",
+      "passed": true,
+      "detail": "knowledge/api/symbols.jsonl"
+    },
+    {
+      "name": "evidence compiler",
+      "passed": true,
+      "detail": "context compiler present"
+    },
+    {
+      "name": "claim ledger",
+      "passed": true,
+      "detail": "claim ledger present"
+    },
+    {
+      "name": "evals",
+      "passed": true,
+      "detail": "anti-hallucination cases present"
+    },
+    {
+      "name": "unified CI",
+      "passed": true,
+      "detail": ".github/workflows/ci.yml"
+    }
+  ],
+  "uefn_compile_status": "NOT TESTED"
+}

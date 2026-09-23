@@ -1,0 +1,110 @@
+{
+  "schema_version": 2,
+  "query": "player UI cleanup system",
+  "required_roles": [
+    "api_evidence",
+    "lifecycle",
+    "project_context",
+    "verification"
+  ],
+  "missing_required_roles": [],
+  "exact_api_matches": [],
+  "sources": [
+    {
+      "role": "api_evidence",
+      "score": 16.339,
+      "source_trust": "api-page-verified",
+      "validation": "draft",
+      "path": "docs/api/core/player_ui.md",
+      "title": "`player_ui`"
+    },
+    {
+      "role": "lifecycle",
+      "score": 19.483,
+      "source_trust": "unknown",
+      "validation": "draft",
+      "path": "docs/patterns/ui-lifecycle.md",
+      "title": "Pattern — UI par joueur"
+    },
+    {
+      "role": "project_context",
+      "score": 24.678,
+      "source_trust": "unknown",
+      "validation": "draft",
+      "path": "projects/rp-framework/systems/hud-system/system.json",
+      "title": "system"
+    },
+    {
+      "role": "verification",
+      "score": 9.254,
+      "source_trust": "unknown",
+      "validation": "draft",
+      "path": "mcp/QUALITY_GATE.md",
+      "title": "Live UEFN Quality Gate"
+    },
+    {
+      "role": "project_context",
+      "score": 23.678,
+      "source_trust": "unknown",
+      "validation": "draft",
+      "path": "projects/rp-framework/decisions/ADR-0003-player-lifecycle.md",
+      "title": "ADR-0003 — Player lifecycle obligatoire"
+    },
+    {
+      "role": "api_evidence",
+      "score": 13.025,
+      "source_trust": "official-current",
+      "validation": "draft",
+      "path": "docs/api/core/player_ui_slot.md",
+      "title": "`player_ui_slot`"
+    },
+    {
+      "role": "lifecycle",
+      "score": 14.052,
+      "source_trust": "unknown",
+      "validation": "draft",
+      "path": "benchmark/tasks/B003-player-lifecycle.md",
+      "title": "B003-player-lifecycle — Player lifecycle service"
+    },
+    {
+      "role": "error_memory",
+      "score": 5.37,
+      "source_trust": "community-verified",
+      "validation": "verified",
+      "path": "errors/compiler-errors.md",
+      "title": "Verse Compiler Error Knowledge Log"
+    },
+    {
+      "role": "verification",
+      "score": 7.22,
+      "source_trust": "unknown",
+      "validation": "draft",
+      "path": "mcp/PROJECT_SYNC.md",
+      "title": "Sync Project Memory with UEFN"
+    },
+    {
+      "role": "external_examples",
+      "score": 20.676,
+      "source_trust": "unknown",
+      "validation": "draft",
+      "path": "external/corpus/uefncentral-examples/c5fed52f687964fa83035f52423763553b129391/examples/player-systems/ui3-device.verse",
+      "title": "Resource Counter UI"
+    },
+    {
+      "role": "project_context",
+      "score": 23.022,
+      "source_trust": "unknown",
+      "validation": "draft",
+      "path": "projects/rp-framework/systems/hud-system/README.md",
+      "title": "HUD / UI System"
+    },
+    {
+      "role": "project_context",
+      "score": 21.74,
+      "source_trust": "unknown",
+      "validation": "draft",
+      "path": "projects/rp-framework/systems/phone-system/system.json",
+      "title": "system"
+    }
+  ]
+}

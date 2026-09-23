@@ -1,0 +1,38 @@
+name: Accept Epic docs baseline
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  accept:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Fetch current official fingerprints
+        run: python tools/watch_epic_sources.py
+
+      - name: Compare current source state
+        run: python tools/compare_epic_snapshot.py
+
+      - name: Build queue
+        run: |
+          python tools/index_source_dependencies.py
+          python tools/build_revalidation_queue.py
+          python tools/revalidation_report.py
+
+      - name: Stop before baseline mutation
+        run: |
+          echo "Baseline acceptance is deliberately not automated."
+          echo "Resolve revalidation items in a reviewed branch, then run tools/accept_maintenance_baseline.py locally."
+          exit 1

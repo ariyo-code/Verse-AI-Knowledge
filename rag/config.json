@@ -1,0 +1,61 @@
+{
+  "schema_version": 2,
+  "default_context_budget_chars": 18000,
+  "default_max_results": 12,
+  "weights": {
+    "bm25": 1.0,
+    "path_exact": 4.0,
+    "title_exact": 4.0,
+    "api_symbol_exact": 9.0,
+    "project_match": 5.0,
+    "error_match": 5.0,
+    "routing_match": 3.0,
+    "freshness": 1.5,
+    "source_trust": 4.0,
+    "validation": 2.5,
+    "semantic_similarity": 0.5
+  },
+  "source_trust_scores": {
+    "signature-verified": 1.0,
+    "api-page-verified": 0.98,
+    "official-current": 0.95,
+    "community-verified": 0.78,
+    "external-compiler-claimed": 0.7,
+    "official-stale": 0.6,
+    "community-unverified": 0.45,
+    "reference-only": 0.25,
+    "deprecated": 0.1,
+    "unknown": 0.35
+  },
+  "validation_scores": {
+    "multiplayer-verified": 1.0,
+    "verified": 0.9,
+    "compiled": 0.78,
+    "static-checked": 0.55,
+    "draft": 0.25
+  },
+  "legacy_source_trust_aliases": {
+    "module-index-verified": "official-current",
+    "official-guide-presence-verified": "official-current",
+    "external-community": "community-unverified",
+    "unspecified": "unknown"
+  },
+  "semantic": {
+    "enabled": false,
+    "provider": "none",
+    "rule": "Semantic similarity is optional and must never outrank exact verified API evidence."
+  },
+  "preferred_paths": [
+    "docs/api/",
+    "knowledge/",
+    "projects/",
+    "errors/",
+    "mcp/",
+    "docs/architecture/",
+    "docs/patterns/"
+  ],
+  "excluded_paths": [
+    ".git/",
+    "__pycache__/"
+  ]
+}

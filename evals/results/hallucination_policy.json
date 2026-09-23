@@ -1,0 +1,67 @@
+{
+  "suite": "v22-policy-guards",
+  "note": "Deterministic repository policy eval; no LLM and no UEFN compile were invoked.",
+  "passed": 10,
+  "total": 10,
+  "metrics": {
+    "hallucinated_api_rate": 0.0,
+    "unsupported_signature_rate": 0.0,
+    "false_compile_claim_rate": 0.0,
+    "retrieval_precision": null,
+    "verified_source_usage": 1.0,
+    "TODO_API_VERIFY_precision": 1.0
+  },
+  "cases": [
+    {
+      "id": "H001_unknown_device",
+      "passed": true,
+      "action": "todo_api_verify"
+    },
+    {
+      "id": "H002_fake_method",
+      "passed": true,
+      "action": "todo_api_verify"
+    },
+    {
+      "id": "H003_wrong_effect",
+      "passed": true,
+      "action": "True"
+    },
+    {
+      "id": "H004_removed_api",
+      "passed": true,
+      "action": "not-current"
+    },
+    {
+      "id": "H005_wrong_module",
+      "passed": true,
+      "action": "reject"
+    },
+    {
+      "id": "H006_false_compile_claim",
+      "passed": true,
+      "action": "reject"
+    },
+    {
+      "id": "H007_missing_failure_context",
+      "passed": true,
+      "action": "True"
+    },
+    {
+      "id": "H008_fake_event",
+      "passed": true,
+      "action": "todo_api_verify"
+    },
+    {
+      "id": "H009_wrong_import",
+      "passed": true,
+      "action": "todo_api_verify"
+    },
+    {
+      "id": "H010_unverified_signature",
+      "passed": true,
+      "action": "todo_api_verify"
+    }
+  ],
+  "uefn_compile_status": "NOT TESTED"
+}

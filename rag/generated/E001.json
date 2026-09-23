@@ -1,0 +1,110 @@
+{
+  "schema_version": 2,
+  "query": "vehicle ownership system keys player leave cleanup",
+  "required_roles": [
+    "api_evidence",
+    "lifecycle",
+    "project_context",
+    "verification"
+  ],
+  "missing_required_roles": [],
+  "exact_api_matches": [],
+  "sources": [
+    {
+      "role": "api_evidence",
+      "score": 10.425,
+      "source_trust": "signature-verified",
+      "validation": "draft",
+      "path": "docs/api/core/GetVehicle.md",
+      "title": "`GetVehicle`"
+    },
+    {
+      "role": "lifecycle",
+      "score": 21.477,
+      "source_trust": "unknown",
+      "validation": "draft",
+      "path": "benchmark/tasks/B003-player-lifecycle.md",
+      "title": "B003-player-lifecycle — Player lifecycle service"
+    },
+    {
+      "role": "project_context",
+      "score": 41.542,
+      "source_trust": "unknown",
+      "validation": "draft",
+      "path": "projects/rp-framework/systems/vehicle-manager/system.json",
+      "title": "system"
+    },
+    {
+      "role": "verification",
+      "score": 13.988,
+      "source_trust": "unknown",
+      "validation": "draft",
+      "path": "mcp/QUALITY_GATE.md",
+      "title": "Live UEFN Quality Gate"
+    },
+    {
+      "role": "project_context",
+      "score": 29.578,
+      "source_trust": "unknown",
+      "validation": "draft",
+      "path": "projects/rp-framework/decisions/ADR-0003-player-lifecycle.md",
+      "title": "ADR-0003 — Player lifecycle obligatoire"
+    },
+    {
+      "role": "api_evidence",
+      "score": 10.425,
+      "source_trust": "signature-verified",
+      "validation": "draft",
+      "path": "docs/api/core/fort_vehicle.GetDrivers.md",
+      "title": "`fort_vehicle.GetDrivers`"
+    },
+    {
+      "role": "lifecycle",
+      "score": 9.858,
+      "source_trust": "unknown",
+      "validation": "draft",
+      "path": "docs/patterns/ui-lifecycle.md",
+      "title": "Pattern — UI par joueur"
+    },
+    {
+      "role": "error_memory",
+      "score": 5.37,
+      "source_trust": "community-verified",
+      "validation": "verified",
+      "path": "errors/compiler-errors.md",
+      "title": "Verse Compiler Error Knowledge Log"
+    },
+    {
+      "role": "verification",
+      "score": 7.22,
+      "source_trust": "unknown",
+      "validation": "draft",
+      "path": "mcp/PROJECT_SYNC.md",
+      "title": "Sync Project Memory with UEFN"
+    },
+    {
+      "role": "external_examples",
+      "score": 14.448,
+      "source_trust": "unknown",
+      "validation": "draft",
+      "path": "external/corpus/uefncentral-examples/c5fed52f687964fa83035f52423763553b129391/examples/player-systems/customcar.verse",
+      "title": "Car Spawning Button System"
+    },
+    {
+      "role": "supporting",
+      "score": 40.818,
+      "source_trust": "unknown",
+      "validation": "draft",
+      "path": "reports/CLAIM_LEDGER_SUMMARY.json",
+      "title": "CLAIM_LEDGER_SUMMARY"
+    },
+    {
+      "role": "supporting",
+      "score": 40.58,
+      "source_trust": "unknown",
+      "validation": "draft",
+      "path": "evals/retrieval/evidence_composition.json",
+      "title": "evidence_composition"
+    }
+  ]
+}

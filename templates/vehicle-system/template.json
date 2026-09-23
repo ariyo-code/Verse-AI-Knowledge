@@ -1,0 +1,16 @@
+{
+  "status": "template",
+  "responsibilities": [
+    "owner",
+    "keys",
+    "lock",
+    "occupants",
+    "cleanup"
+  ],
+  "tests": [
+    "owner leave",
+    "key revoke",
+    "unauthorized entry",
+    "multiplayer"
+  ]
+}

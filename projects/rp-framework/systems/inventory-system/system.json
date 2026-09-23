@@ -1,0 +1,61 @@
+{
+  "schema_version": 1,
+  "id": "inventory-system",
+  "name": "Inventory System",
+  "status": "planned",
+  "purpose": "Inventaire RP avec conteneurs, quickbar, sac, banque et coffre entreprise.",
+  "responsibilities": [
+    "containers",
+    "quickbar",
+    "bag",
+    "bank",
+    "company storage",
+    "weight",
+    "categories",
+    "UI synchronization",
+    "anti-duplication"
+  ],
+  "runtime_state": [
+    "open container",
+    "drag/drop state",
+    "temporary transfers",
+    "current carried weight"
+  ],
+  "persistent_state": [
+    "inventory items",
+    "bank storage",
+    "company storage where intended"
+  ],
+  "dependencies": [
+    "Persistence",
+    "UI",
+    "item granter/remover or project-specific item layer"
+  ],
+  "related_api": [
+    "item_granter_device",
+    "item_remover_device",
+    "player_ui",
+    "weak_map"
+  ],
+  "edge_cases": [
+    "disconnect during transfer",
+    "duplicate transfer request",
+    "persistence schema migration",
+    "weight recalculation mismatch",
+    "multiple viewers of shared container"
+  ],
+  "public_interfaces": [],
+  "events_consumed": [],
+  "events_emitted": [],
+  "files": [],
+  "devices": [],
+  "architecture_decisions": [],
+  "verification": {
+    "compiled": false,
+    "runtime_tested": false,
+    "multiplayer_tested": false
+  },
+  "validation": "draft",
+  "lifecycle_status": "planned",
+  "source_trust": "unknown"
+}

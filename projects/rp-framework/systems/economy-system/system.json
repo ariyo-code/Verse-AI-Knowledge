@@ -1,0 +1,54 @@
+{
+  "schema_version": 1,
+  "id": "economy-system",
+  "name": "Economy",
+  "status": "planned",
+  "purpose": "Économie RP et transactions internes.",
+  "responsibilities": [
+    "balances",
+    "transfers",
+    "transaction validation",
+    "purchase flows",
+    "logs",
+    "integration with inventory"
+  ],
+  "runtime_state": [
+    "pending transaction",
+    "cooldowns",
+    "temporary purchase state"
+  ],
+  "persistent_state": [
+    "balance",
+    "transaction-derived durable state where required"
+  ],
+  "dependencies": [
+    "Persistence",
+    "Inventory",
+    "UI"
+  ],
+  "related_api": [
+    "weak_map",
+    "player_ui"
+  ],
+  "edge_cases": [
+    "double-submit purchase",
+    "disconnect during transaction",
+    "negative balance",
+    "schema migration",
+    "rollback after failed grant"
+  ],
+  "public_interfaces": [],
+  "events_consumed": [],
+  "events_emitted": [],
+  "files": [],
+  "devices": [],
+  "architecture_decisions": [],
+  "verification": {
+    "compiled": false,
+    "runtime_tested": false,
+    "multiplayer_tested": false
+  },
+  "validation": "draft",
+  "lifecycle_status": "planned",
+  "source_trust": "unknown"
+}

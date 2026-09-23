@@ -1,0 +1,13 @@
+{
+  "schema_version": 1,
+  "current": "42.20",
+  "known": [
+    {
+      "version": "42.20",
+      "verified_at": "2026-09-22",
+      "source_url": "https://dev.epicgames.com/documentation/fortnite/verse-api",
+      "source_trust": "official-current"
+    }
+  ],
+  "note": "V22 does not infer historical introduction/deprecation versions that are not present in verified source data."
+}

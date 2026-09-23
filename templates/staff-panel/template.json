@@ -1,0 +1,16 @@
+{
+  "status": "template",
+  "responsibilities": [
+    "permissions",
+    "targeting",
+    "UI",
+    "logs",
+    "cleanup"
+  ],
+  "tests": [
+    "non-staff denied",
+    "target leaves",
+    "admin leaves",
+    "concurrent actions"
+  ]
+}

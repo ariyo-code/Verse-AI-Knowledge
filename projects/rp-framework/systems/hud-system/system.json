@@ -1,0 +1,55 @@
+{
+  "schema_version": 1,
+  "id": "hud-system",
+  "name": "HUD / UI System",
+  "status": "planned",
+  "purpose": "HUD RP et composants UI réutilisables.",
+  "responsibilities": [
+    "money display",
+    "hunger",
+    "thirst",
+    "notifications",
+    "shared widget factory",
+    "player-specific widget lifecycle"
+  ],
+  "runtime_state": [
+    "root widget per player",
+    "current displayed values",
+    "notification queue"
+  ],
+  "persistent_state": [
+    "none directly; values originate from other systems"
+  ],
+  "dependencies": [
+    "UnrealEngine.com/Temporary/UI",
+    "Fortnite.com/UI"
+  ],
+  "related_api": [
+    "player_ui",
+    "GetPlayerUI",
+    "widget",
+    "canvas",
+    "stack_box",
+    "text_block"
+  ],
+  "edge_cases": [
+    "duplicate root widget",
+    "player leaves",
+    "respawn",
+    "UI updates after source state removed"
+  ],
+  "public_interfaces": [],
+  "events_consumed": [],
+  "events_emitted": [],
+  "files": [],
+  "devices": [],
+  "architecture_decisions": [],
+  "verification": {
+    "compiled": false,
+    "runtime_tested": false,
+    "multiplayer_tested": false
+  },
+  "validation": "draft",
+  "lifecycle_status": "planned",
+  "source_trust": "unknown"
+}

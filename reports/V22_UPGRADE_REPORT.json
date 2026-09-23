@@ -1,0 +1,109 @@
+{
+  "release": "22.0.0",
+  "generated_at": "2026-09-23T11:40:54Z",
+  "tests_executed": 14,
+  "tests_passed": 14,
+  "tests_failed": 0,
+  "uefn_tests_actually_performed": 0,
+  "uefn_compile_status": "NOT TESTED",
+  "tests": [
+    {
+      "test": "tools/validate_v22_integrity.py",
+      "passed": true,
+      "returncode": 0,
+      "stdout": "V22 integrity OK\nUEFN compile status: NOT TESTED by this validator\n",
+      "stderr": ""
+    },
+    {
+      "test": "tools/check_generated_drift.py",
+      "passed": true,
+      "returncode": 0,
+      "stdout": "Generated-file drift OK\n",
+      "stderr": ""
+    },
+    {
+      "test": "tools/self_test.py",
+      "passed": true,
+      "returncode": 0,
+      "stdout": "Static self-test OK\nThis test did not compile Verse in UEFN.\n",
+      "stderr": ""
+    },
+    {
+      "test": "tests/test_v22_integrity.py",
+      "passed": true,
+      "returncode": 0,
+      "stdout": "V22 integrity unit tests OK\n",
+      "stderr": ""
+    },
+    {
+      "test": "tests/test_cli_contracts.py",
+      "passed": true,
+      "returncode": 0,
+      "stdout": "CLI contract tests OK\n",
+      "stderr": ""
+    },
+    {
+      "test": "tests/test_lab_state.py",
+      "passed": true,
+      "returncode": 0,
+      "stdout": "VerseLab state tests OK\n",
+      "stderr": ""
+    },
+    {
+      "test": "tests/test_cli_v22.py",
+      "passed": true,
+      "returncode": 0,
+      "stdout": "V22 CLI tests OK\n",
+      "stderr": ""
+    },
+    {
+      "test": "tools/validate_integrity.py",
+      "passed": true,
+      "returncode": 0,
+      "stdout": "Integrity validation OK\n",
+      "stderr": ""
+    },
+    {
+      "test": "tools/check_verification.py",
+      "passed": true,
+      "returncode": 0,
+      "stdout": "Verification evidence OK\n",
+      "stderr": ""
+    },
+    {
+      "test": "tools/validate_repo.py",
+      "passed": true,
+      "returncode": 0,
+      "stdout": "Repository validation OK\n",
+      "stderr": ""
+    },
+    {
+      "test": "tools/preflight.py",
+      "passed": true,
+      "returncode": 0,
+      "stdout": "Preflight: PASS\n[PASS] schema - schema=22\n[PASS] release - release=22.0.0\n[PASS] AI bootstrap - AI_BOOTSTRAP.md\n[PASS] compile queue - entries=50\n[PASS] starter corpus - local examples=10/395\n[PASS] structured API - knowledge/api/symbols.jsonl\n[PASS] evidence compiler - context compiler present\n[PASS] claim ledger - claim ledger present\n[PASS] evals - anti-hallucination cases present\n[PASS] unified CI - .github/workflows/ci.yml\nUEFN compile status: NOT TESTED\n",
+      "stderr": ""
+    },
+    {
+      "test": "tools/rag_benchmark.py",
+      "passed": true,
+      "returncode": 0,
+      "stdout": "PASS R001 button_device InteractedWithEvent Subscribe agent\nPASS R002 GetFortCharacter decides transacts failure context\nPASS R003 vehicle owner authorized keys locked blocked players\nPASS R004 UEFN compiler error memory exact message\nPASS R005 player ui canvas widget leave cleanup\nPASS R006 Epic update revalidation version API maintenance\nPASS R007 inventory persistence disconnect transfer anti duplication\nPASS R008 SceneGraph OnSimulate suspends lifecycle\n8/8 retrieval cases passed\n",
+      "stderr": ""
+    },
+    {
+      "test": "tools/run_evidence_benchmark.py",
+      "passed": true,
+      "returncode": 0,
+      "stdout": "Evidence benchmark: 3/3\nE001 PASS []\nE002 PASS []\nE003 PASS []\n",
+      "stderr": ""
+    },
+    {
+      "test": "tools/run_hallucination_evals.py",
+      "passed": true,
+      "returncode": 0,
+      "stdout": "Anti-hallucination policy eval: 10/10\nH001_unknown_device PASS todo_api_verify\nH002_fake_method PASS todo_api_verify\nH003_wrong_effect PASS True\nH004_removed_api PASS not-current\nH005_wrong_module PASS reject\nH006_false_compile_claim PASS reject\nH007_missing_failure_context PASS True\nH008_fake_event PASS todo_api_verify\nH009_wrong_import PASS todo_api_verify\nH010_unverified_signature PASS todo_api_verify\nUEFN compile status: NOT TESTED\n",
+      "stderr": ""
+    }
+  ]
+}

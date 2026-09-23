@@ -1,0 +1,45 @@
+{
+  "schema_version": 1,
+  "rules": [
+    {
+      "match_kind": "verse-api-version",
+      "priority": "critical",
+      "invalidate": [
+        "version-freshness"
+      ],
+      "revalidate_paths": [
+        "knowledge/api_catalog.json",
+        "docs/api/",
+        "examples/",
+        "systems/",
+        "projects/"
+      ]
+    },
+    {
+      "match_source_id": "uefn-mcp",
+      "priority": "high",
+      "revalidate_paths": [
+        "mcp/",
+        "prompts/UEFN_MCP_AGENT.md"
+      ]
+    },
+    {
+      "match_source_id": "verse-persistence",
+      "priority": "high",
+      "revalidate_paths": [
+        "docs/uefn/persistence.md",
+        "projects/rp-framework/systems/inventory-system/",
+        "projects/rp-framework/systems/economy-system/",
+        "projects/rp-framework/systems/whitelist-system/"
+      ]
+    },
+    {
+      "match_source_id": "verse-style",
+      "priority": "medium",
+      "revalidate_paths": [
+        "docs/language/style.md",
+        "AGENTS.md"
+      ]
+    }
+  ]
+}

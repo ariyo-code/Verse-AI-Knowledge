@@ -1,0 +1,63 @@
+{
+  "schema_version": 1,
+  "id": "phone-system",
+  "name": "RP Phone",
+  "status": "planned",
+  "purpose": "Téléphone RP avec appels, messages, contacts, radio et UI par joueur.",
+  "responsibilities": [
+    "contacts",
+    "messages",
+    "call state",
+    "radio/messages audio",
+    "PIN/cooldown",
+    "UI lifecycle",
+    "anti-duplication related integration"
+  ],
+  "runtime_state": [
+    "open/closed UI state",
+    "active call",
+    "current screen",
+    "temporary notification queue"
+  ],
+  "persistent_state": [
+    "contacts if desired",
+    "message history if desired",
+    "phone settings",
+    "PIN if project explicitly persists it"
+  ],
+  "dependencies": [
+    "UnrealEngine.com/Temporary/UI",
+    "Fortnite.com/UI",
+    "Playspaces/player lifecycle"
+  ],
+  "related_api": [
+    "player_ui",
+    "GetPlayerUI",
+    "widget",
+    "canvas",
+    "stack_box",
+    "button",
+    "text_block"
+  ],
+  "edge_cases": [
+    "player closes UI during async task",
+    "player leaves during call",
+    "duplicate UI widgets",
+    "respawn with phone open",
+    "message delivery to offline player"
+  ],
+  "public_interfaces": [],
+  "events_consumed": [],
+  "events_emitted": [],
+  "files": [],
+  "devices": [],
+  "architecture_decisions": [],
+  "verification": {
+    "compiled": false,
+    "runtime_tested": false,
+    "multiplayer_tested": false
+  },
+  "validation": "draft",
+  "lifecycle_status": "planned",
+  "source_trust": "unknown"
+}

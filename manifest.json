@@ -1,0 +1,272 @@
+{
+  "name": "Verse AI Knowledge",
+  "schema_version": 22,
+  "purpose": "Knowledge base for AI-assisted Verse and UEFN development",
+  "rules_file": "AGENTS.md",
+  "verification_statuses": [
+    "draft",
+    "static-checked",
+    "compiled",
+    "verified",
+    "multiplayer-verified"
+  ],
+  "knowledge_index": "knowledge/INDEX.md",
+  "last_knowledge_refresh": "2026-09-22",
+  "last_verified_verse_api_version": "42.20",
+  "official_sources": {
+    "verse_api": "https://dev.epicgames.com/documentation/fortnite/verse-api",
+    "verse_style": "https://dev.epicgames.com/documentation/fortnite/verse-code-style-guide-in-unreal-editor-for-fortnite",
+    "debugging": "https://dev.epicgames.com/documentation/fortnite/debugging-and-troubleshooting-in-verse",
+    "persistence": "https://dev.epicgames.com/documentation/fortnite/using-persistable-data-in-verse",
+    "release_notes_42_20": "https://dev.epicgames.com/documentation/fortnite/42-20-fortnite-ecosystem-updates-and-release-notes"
+  },
+  "api_catalog": "knowledge/api_catalog.json",
+  "routing_table": "knowledge/ROUTING.md",
+  "local_search_tool": "tools/search_knowledge.py",
+  "ci_validation": ".github/workflows/ci.yml",
+  "live_editor_bridge": {
+    "type": "UEFN MCP",
+    "docs": "mcp/SETUP.md",
+    "official_source": "https://dev.epicgames.com/documentation/fortnite/uefn-mcp",
+    "default_endpoint": "http://127.0.0.1:8000/mcp"
+  },
+  "api_lookup_tool": "tools/api_lookup.py",
+  "catalog_report_tool": "tools/catalog_report.py",
+  "module_catalog": "knowledge/module_catalog.json",
+  "coverage_domains": [
+    "Devices",
+    "Characters",
+    "Playspaces",
+    "Teams",
+    "Vehicles",
+    "UnrealEngine Temporary UI",
+    "Fortnite UI",
+    "SceneGraph"
+  ],
+  "error_memory": {
+    "format": "jsonl",
+    "path": "errors/error_memory.jsonl",
+    "schema": "schemas/error_entry.schema.json",
+    "search_tool": "tools/search_errors.py",
+    "add_tool": "tools/add_error.py",
+    "update_tool": "tools/update_error.py",
+    "log_ingest_tool": "tools/ingest_uefn_log.py"
+  },
+  "verification_evidence": {
+    "path": "verification/",
+    "schema": "schemas/verification_evidence.schema.json",
+    "validator": "tools/check_verification.py"
+  },
+  "project_memory": {
+    "registry": "projects/project_registry.json",
+    "project_schema": "schemas/project.schema.json",
+    "system_schema": "schemas/system.schema.json",
+    "search_tool": "tools/search_projects.py",
+    "scan_tool": "tools/scan_verse_project.py",
+    "profile_tool": "tools/create_project_profile.py",
+    "sync_workflow": "mcp/PROJECT_SYNC.md"
+  },
+  "benchmark": {
+    "tasks": "benchmark/tasks.json",
+    "scoring": "benchmark/scoring.md",
+    "run_schema": "schemas/benchmark_run.schema.json",
+    "report_tool": "tools/benchmark_report.py",
+    "note": "Legacy/manual scoring suite; automated policy/retrieval evals live under evals/."
+  },
+  "quality_gate": {
+    "docs": "mcp/QUALITY_GATE.md",
+    "promotion_schema": "schemas/promotion.schema.json",
+    "promotion_tool": "tools/promote_artifact.py",
+    "api_review_tool": "tools/check_api_references.py"
+  },
+  "orchestrator_prompt": "prompts/VERSE_ENGINEERING_ORCHESTRATOR.md",
+  "maintenance": {
+    "sources": "maintenance/sources.json",
+    "baseline": "maintenance/baseline.json",
+    "watch_tool": "tools/watch_epic_sources.py",
+    "compare_tool": "tools/compare_epic_snapshot.py",
+    "dependency_index_tool": "tools/index_source_dependencies.py",
+    "revalidation_queue_tool": "tools/build_revalidation_queue.py",
+    "revalidation_report_tool": "tools/revalidation_report.py",
+    "maintenance_prompt": "prompts/MAINTENANCE_AGENT.md",
+    "scheduled_workflow": ".github/workflows/watch-epic-docs.yml"
+  },
+  "rag": {
+    "config": "rag/config.json",
+    "index": "rag/index.json",
+    "build_tool": "tools/rag_build_index.py",
+    "query_tool": "tools/rag_query.py",
+    "context_pack_tool": "tools/rag_context_pack.py",
+    "codex_context_tool": "tools/prepare_codex_context.py",
+    "retrieval_benchmark": "rag/retrieval_benchmark.json",
+    "retrieval_benchmark_tool": "tools/rag_benchmark.py",
+    "agent_prompt": "prompts/RAG_FIRST_CODEX_AGENT.md"
+  },
+  "real_project_bridge": {
+    "setup": "bridge/SETUP_WINDOWS.md",
+    "bootstrap_powershell": "bridge/bootstrap-project.ps1",
+    "bootstrap_batch": "bridge/bootstrap-project.bat",
+    "status_tool": "tools/bridge_status.py",
+    "task_context_tool": "tools/project_context_query.py",
+    "codex_prompt": "bridge/CODEX_START_PROMPT.md"
+  },
+  "external_corpus": {
+    "registry": "external/sources.json",
+    "sync_tool": "tools/sync_external_sources.py",
+    "report_tool": "tools/external_corpus_report.py",
+    "trust_policy": "docs/architecture/EXTERNAL_CORPUS_TRUST.md",
+    "curation_plan": "external/CURATION_PLAN.md"
+  },
+  "curation": {
+    "policy": "curation/policy.json",
+    "curator": "tools/curate_external_examples.py",
+    "catalog": "curation/curated_examples.json",
+    "report": "curation/REPORT.md"
+  },
+  "uefn_recompilation": {
+    "queue": "lab/compile_queue.json",
+    "queue_builder": "tools/build_compile_queue.py",
+    "queue_cli": "tools/compile_queue.py",
+    "stager": "tools/stage_compile_candidate.py",
+    "compile_recorder": "tools/record_uefn_compile.py",
+    "compile_prompt": "tools/generate_compile_prompt.py",
+    "promoter": "tools/promote_compiled_candidate.py",
+    "progress_report": "tools/compile_progress_report.py"
+  },
+  "verselab_runner": {
+    "setup": "lab/setup-verselab.ps1",
+    "next_candidate": "lab/next-candidate.ps1",
+    "runner_docs": "lab/RUNNER.md",
+    "state_machine": "tools/lab_state.py",
+    "result_recorder": "tools/lab_result.py",
+    "playtest_recorder": "tools/record_playtest.py",
+    "doctor": "tools/lab_doctor.py",
+    "dashboard": "tools/lab_dashboard.py",
+    "agent_prompt": "prompts/VERSELAB_RUNNER_AGENT.md"
+  },
+  "offline_starter_batch": {
+    "candidate_manifest": "lab/OFFLINE_BATCH_001.json",
+    "embedded_source_count": 10,
+    "revision": "c5fed52f687964fa83035f52423763553b129391",
+    "semantic_duplicate_detector": "tools/detect_semantic_duplicates.py",
+    "duplicate_policy": "tools/apply_duplicate_policy.py"
+  },
+  "one_click_verselab": {
+    "launcher": "lab/START_VERSELAB.bat",
+    "guide": "lab/ONE_CLICK_GUIDE.md",
+    "detector": "tools/detect_uefn_verse_dir.py",
+    "post_compile_instructions": "tools/generate_active_candidate_instructions.py",
+    "status": "tools/verselab_status.py"
+  },
+  "v18": {
+    "corpus_manifest": "external/corpus_manifest.json",
+    "coverage": "tools/corpus_coverage.py",
+    "full_sync": "tools/ensure_full_corpus.py",
+    "dependency_analyzer": "tools/analyze_verse_dependencies.py",
+    "evidence_graph": "rag/evidence_graph.json",
+    "context_compiler": "tools/rag_context_compiler.py",
+    "benchmark": "tools/run_evidence_benchmark.py",
+    "templates": "templates/"
+  },
+  "v19": {
+    "claim_ledger": "tools/build_claim_ledger.py",
+    "claim_schema": "schemas/claim_ledger.schema.json",
+    "preflight": "tools/preflight.py",
+    "validation_suite": "tools/validate_all.py",
+    "integrity": "tools/validate_integrity.py",
+    "cli_contracts": "tests/test_cli_contracts.py",
+    "self_test": "tools/self_test.py",
+    "cli_audit": "reports/CLI_AUDIT.json"
+  },
+  "portable_pack": {
+    "master_prompt": "portable/VERSE_AI_MASTER_PROMPT.txt",
+    "task_template": "portable/TASK_TEMPLATE.txt",
+    "readme": "portable/README.md"
+  },
+  "v21_ui_creator": {
+    "master_prompt": "portable/ui_creator/VERSE_UI_CREATOR_MASTER_PROMPT.txt",
+    "combined_prompt": "portable/VERSE_AI_MASTER_PROMPT_v21_WITH_UI.txt",
+    "ui_schema": "portable/ui_creator/UI_SPEC.schema.json",
+    "component_library": "portable/ui_creator/COMPONENT_LIBRARY.json",
+    "task_template": "portable/ui_creator/TASK_TEMPLATE.txt",
+    "example": "portable/ui_creator/examples/GARAGE_UI_SPEC.json"
+  },
+  "github_edition": {
+    "readme": "README.md",
+    "gitignore": ".gitignore",
+    "license_notice": "LICENSE.md",
+    "third_party": "THIRD_PARTY_NOTICES.md",
+    "contributing": "CONTRIBUTING.md",
+    "security": "SECURITY.md",
+    "workflow": ".github/workflows/ci.yml",
+    "generated_marker": {
+      "docs": "docs/GENERATED_CODE_MARKER.md",
+      "config": "portable/generated_code_marker.json",
+      "checker": "tools/check_generated_marker.py"
+    }
+  },
+  "bilingual_docs": {
+    "landing": "README.md",
+    "french": "README_FR.md",
+    "english": "README_EN.md",
+    "upload_fr": "UPLOAD_GUIDE_FR.md",
+    "upload_en": "UPLOAD_GUIDE_EN.md",
+    "start_fr": "00_COMMENCE_ICI_FR.md",
+    "start_en": "00_START_HERE_EN.md"
+  },
+  "release": {
+    "version": "22.0.0",
+    "name": "Knowledge Integrity & Agent Reliability"
+  },
+  "entrypoint": "AI_BOOTSTRAP.md",
+  "verse_api_version": "42.20",
+  "trust_model": {
+    "source_trust": [
+      "official-current",
+      "official-stale",
+      "signature-verified",
+      "api-page-verified",
+      "community-verified",
+      "community-unverified",
+      "external-compiler-claimed",
+      "reference-only",
+      "deprecated",
+      "unknown"
+    ],
+    "validation": [
+      "draft",
+      "static-checked",
+      "compiled",
+      "verified",
+      "multiplayer-verified"
+    ],
+    "source_trust_schema": "schemas/trust.schema.json",
+    "validation_schema": "schemas/validation_status.schema.json",
+    "rule": "Source trust and local validation are independent axes."
+  },
+  "api_knowledge_v22": {
+    "legacy_catalog": "knowledge/api_catalog.json",
+    "symbols": "knowledge/api/symbols.jsonl",
+    "modules": "knowledge/api/modules.json",
+    "versions": "knowledge/api/versions.json",
+    "symbol_schema": "schemas/api_symbol.schema.json",
+    "migration_tool": "tools/migrate_api_catalog_v22.py"
+  },
+  "evals": {
+    "root": "evals/",
+    "hallucination_cases": "evals/hallucination/cases.json",
+    "retrieval_evidence": "evals/retrieval/evidence_composition.json",
+    "runner": "tools/run_hallucination_evals.py"
+  },
+  "unified_cli": {
+    "package": "src/verse_ai_knowledge/",
+    "entrypoint": "verse-ai",
+    "pyproject": "pyproject.toml"
+  },
+  "v22": {
+    "bootstrap": "AI_BOOTSTRAP.md",
+    "integrity_validator": "tools/validate_v22_integrity.py",
+    "generated_drift": "tools/check_generated_drift.py",
+    "migration_docs": "docs/MIGRATION_V21_TO_V22.md"
+  }
+}
