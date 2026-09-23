@@ -1,168 +1,373 @@
 <div align="center">
 
-# Verse AI Knowledge
+# 🤖 Verse AI Knowledge
 
-**Source-grounded knowledge and tooling for Verse / UEFN agents.**
+AI knowledge base for Verse / UEFN — source-grounded prompts, API references, UI tools, RAG and validation.
 
 🇫🇷 Français · 🇬🇧 English · **V22 — Knowledge Integrity & Agent Reliability**
 
-> **Never invent a Verse API. / Ne jamais inventer une API Verse.**
+> 🧠 **Règle principale / Core rule:**  
+> **Ne jamais inventer une API Verse. / Never invent a Verse API.**
+
+</div>
 
 </div>
 
 ---
 
-## 🇫🇷 Français
+# 🇫🇷 Français
 
-### Qu'est-ce que c'est ?
+## ✨ Qu'est-ce que Verse AI Knowledge ?
 
-Verse AI Knowledge aide des assistants comme ChatGPT, Codex, Claude ou Gemini à travailler sur **Verse / UEFN** avec des sources, de la provenance, du retrieval, des garde-fous et des preuves de validation.
+**Verse AI Knowledge** est une base de connaissances structurée conçue pour aider les IA comme **ChatGPT, Codex, Claude, Gemini** et d'autres modèles capables de lire un dépôt GitHub à générer du code **Verse / UEFN** plus propre, plus fiable et plus maintenable.
 
-Le dépôt ne remplace pas UEFN et ne garantit pas qu'un code généré compile.
+Le projet ne “réentraîne” pas directement une IA.
 
-### Démarrage rapide
+Il lui fournit plutôt :
 
-Pour un agent qui peut lire le dépôt, commence par :
-
-```text
-AI_BOOTSTRAP.md
-```
-
-Puis l'agent suit :
-
-```text
-AI_BOOTSTRAP → ROUTING → retrieval ciblé → Evidence Pack → Claim Ledger → implémentation → validation UEFN si disponible
-```
-
-Pour le pack portable historique Verse + UI, voir :
-
-```text
-portable/VERSE_AI_MASTER_PROMPT_v21_WITH_UI.txt
-```
-
-Il reste disponible pour compatibilité ; **V22 concerne principalement l'intégrité de la base et la fiabilité de l'agent**.
-
-### Comment le grounding fonctionne
-
-V22 sépare deux axes :
-
-- **`source_trust`** : qualité / autorité / fraîcheur de la source ;
-- **`validation`** : ce qui a réellement été validé localement.
-
-Un document officiel ne devient pas « compilé » automatiquement, et un code compilé ne rend pas sa source officielle.
-
-Si une API ou une signature exacte n'est pas suffisamment vérifiée :
-
-```text
-TODO(API VERIFY)
-```
-
-### Capacités principales
-
-- index API et modules Verse ;
-- base de symboles structurée progressive ;
-- RAG lexical/hybride explicable ;
-- Evidence Packs et Claim Ledger ;
-- mémoire d'erreurs réelles ;
-- mémoire de projets/systèmes ;
-- VerseLab et preuves de compilation ;
-- UI Creator ;
-- evals anti-hallucination ;
-- veille des changements Epic avec revalidation humaine ;
-- CLI unifié `verse-ai`.
-
-### CLI
-
-```bash
-python -m pip install -e .
-verse-ai search "vehicle ownership"
-verse-ai context "create RP phone"
-verse-ai api GetFortCharacter
-verse-ai errors "compiler error"
-verse-ai doctor
-verse-ai validate
-```
-
-Les anciens scripts `tools/*.py` restent disponibles pour compatibilité.
-
-### Validation
-
-```text
-draft → static-checked → compiled → verified → multiplayer-verified
-```
-
-`compiled`, `verified` et `multiplayer-verified` nécessitent de vraies preuves correspondantes. Une validation statique ne remplace jamais une compilation UEFN.
+- 📚 une base de connaissances Verse / UEFN ;
+- 🧠 un Master Prompt spécialisé ;
+- 🔎 des règles de recherche et de priorité des sources ;
+- 🧩 un créateur d'interfaces UI ;
+- 🛡️ des règles anti-hallucination ;
+- 🧪 des outils de validation statique ;
+- 🗂️ des catalogues d'API et de modules ;
+- 🔗 de la provenance pour les sources externes ;
+- 🧰 des patterns et exemples de projets ;
+- 📊 du RAG, de l'Evidence et des outils VerseLab.
 
 ---
 
-## 🇬🇧 English
+## 🚨 Règle absolue
 
-### What is it?
+> ### ❌ Ne jamais inventer une API Verse.
 
-Verse AI Knowledge helps AI assistants work with **Verse / UEFN** using source-aware retrieval, provenance, validation boundaries, and anti-hallucination guards.
+Une IA utilisant ce dépôt ne doit jamais inventer :
 
-The repository does not replace UEFN and does not guarantee that generated code compiles.
+- une classe ;
+- une fonction ;
+- un événement ;
+- un module ;
+- une signature ;
+- un effet ;
+- un import ;
+- une propriété Verse.
 
-### Quick start
-
-Repository-aware agents should start with:
-
-```text
-AI_BOOTSTRAP.md
-```
-
-The expected flow is:
-
-```text
-AI_BOOTSTRAP → ROUTING → targeted retrieval → Evidence Pack → Claim Ledger → implementation → UEFN validation when available
-```
-
-The historical portable Verse + UI prompt remains available at:
-
-```text
-portable/VERSE_AI_MASTER_PROMPT_v21_WITH_UI.txt
-```
-
-### Grounding model
-
-V22 separates:
-
-- **`source_trust`** — authority/currentness of the source;
-- **`validation`** — what was actually validated locally.
-
-If an exact API or signature cannot be supported:
+Si une API exacte n'est pas vérifiable :
 
 ```text
 TODO(API VERIFY)
 ```
 
-### Key capabilities
+doit être utilisé à la place d'une API inventée.
 
-- Verse API/module knowledge;
-- progressive structured symbol index;
-- explainable local hybrid RAG;
-- Evidence Packs and Claim Ledger;
-- real-error memory;
-- project/system memory;
-- VerseLab and compile evidence workflows;
-- UI Creator;
-- anti-hallucination evals;
-- safe Epic documentation revalidation;
-- unified `verse-ai` CLI.
+---
 
-### Documentation
+## 🚀 Démarrage rapide
 
-- `AI_BOOTSTRAP.md` — AI entry point
-- `AGENTS.md` — complete agent rules
-- `docs/architecture/V22_KNOWLEDGE_INTEGRITY.md` — trust/validation architecture
-- `docs/MIGRATION_V21_TO_V22.md` — migration notes
-- `CONTRIBUTING.md` — evidence requirements
-- `SECURITY.md` — security policy
+### 1️⃣ Donne le dépôt à ton IA
 
-### License
+```text
+https://github.com/ariyo-code/Verse-AI-Knowledge
+```
 
-Original repository content is governed by `LICENSE.md`. Third-party material keeps its own license and attribution requirements; see `THIRD_PARTY_NOTICES.md` and provenance files.
+Puis demande-lui de lire en priorité :
 
-### Disclaimer
+```text
+AGENTS.md
+AI_GUIDE.md
+portable/VERSE_AI_MASTER_PROMPT_v21_WITH_UI.txt
+knowledge/ROUTING.md
+knowledge/api_catalog.json
+knowledge/module_catalog.json
+```
 
-Verse, Unreal Editor for Fortnite, Fortnite, Epic Games and related marks belong to their respective owners. This is an independent project and is not affiliated with, endorsed by or sponsored by Epic Games.
+### 2️⃣ Pour une interface UI
+
+L'IA doit aussi lire :
+
+```text
+portable/ui_creator/VERSE_UI_CREATOR_MASTER_PROMPT.txt
+portable/ui_creator/COMPONENT_LIBRARY.json
+portable/ui_creator/UI_SPEC.schema.json
+```
+
+### 3️⃣ Prompt prêt à copier
+
+Le prompt complet à donner à une IA est disponible ici :
+
+```text
+PROMPT_AI_CHAT_FR_EN.md
+```
+
+---
+
+## 💬 Exemple de demande
+
+```text
+=== USER TASK ===
+
+Crée un système complet de garage RP en Verse.
+
+Fonctionnalités :
+- véhicules possédés par joueur ;
+- persistance ;
+- verrouillage / déverrouillage ;
+- clés temporaires ;
+- menu de garage ;
+- un seul véhicule actif par joueur ;
+- gestion des respawns ;
+- nettoyage à la déconnexion ;
+- compatibilité multijoueur.
+```
+
+---
+
+## 🧠 Priorité des connaissances
+
+Quand l'IA doit générer du Verse, elle doit suivre cet ordre :
+
+1. 🥇 le code fourni directement par l'utilisateur ;
+2. 🥈 le contenu vérifié du dépôt ;
+3. 🥉 les API / documentations référencées dans le dépôt ;
+4. 📚 les exemples disposant d'une provenance claire ;
+5. 🤖 les connaissances générales du modèle uniquement si elles ne contredisent pas le dépôt.
+
+---
+
+## ✅ Statuts de validation
+
+| Statut | Signification |
+|---|---|
+| 📝 `draft` | Code généré ou écrit, non validé dans UEFN |
+| 🔍 `static-checked` | Vérifications statiques du dépôt effectuées |
+| 📚 `upstream-verified` | Soutenu par une source upstream fiable |
+| 🛠️ `compiled` | Une vraie compilation UEFN existe |
+| ✅ `verified` | Compilé et testé fonctionnellement |
+| 🌐 `multiplayer-verified` | Testé dans un contexte multijoueur pertinent |
+
+> ⚠️ Une validation statique ne remplace jamais une vraie compilation UEFN.
+
+Tout nouveau code généré commence par défaut avec :
+
+```text
+draft
+```
+
+---
+
+## 🧩 UI Creator
+
+Le projet contient un système spécialisé pour créer et structurer des interfaces Verse / UEFN.
+
+### Pipeline
+
+```text
+Demande / Image / Référence
+            ↓
+        UI Spec
+            ↓
+   Hiérarchie composants
+            ↓
+       État + événements
+            ↓
+ Implémentation Verse vérifiée
+```
+
+Il inclut :
+
+- 🧱 bibliothèque logique de composants ;
+- 🧾 schéma UI structuré ;
+- 🎨 création d'interface ;
+- ♻️ refonte d'interface ;
+- 🖼️ génération depuis une référence visuelle ;
+- 🔗 planification des événements ;
+- 📱 responsive design ;
+- 🧹 refactorisation ;
+- 🛡️ règles anti-hallucination des widgets Verse.
+
+Dossier :
+
+```text
+portable/ui_creator/
+```
+
+---
+
+## 🧠 Master Prompt Verse
+
+Le fichier principal est :
+
+```text
+portable/VERSE_AI_MASTER_PROMPT_v21_WITH_UI.txt
+```
+
+Il couvre notamment :
+
+- 📦 imports et modules ;
+- ⚠️ failure contexts ;
+- ⚙️ effets et signatures ;
+- 👤 état joueur ;
+- 🔄 lifecycle ;
+- ⏳ concurrence et tâches async ;
+- 🧹 cleanup ;
+- 💾 persistance ;
+- 🚗 véhicules ;
+- 👥 équipes ;
+- 🎮 Creative Devices ;
+- 🌐 multijoueur ;
+- 🧩 UI ;
+- 🏗️ architecture maintenable ;
+- 🧪 vérification avant réponse.
+
+---
+
+## 🔎 Base de connaissances
+
+Les fichiers principaux sont :
+
+```text
+knowledge/ROUTING.md
+knowledge/api_catalog.json
+knowledge/module_catalog.json
+knowledge/index.json
+```
+
+---
+
+## 🧪 RAG, Evidence & VerseLab
+
+Le projet contient également plusieurs systèmes de recherche, d'analyse et de validation :
+
+```text
+rag/
+curation/
+verification/
+reports/
+lab/
+benchmark/
+benchmarks/
+tests/
+tools/
+```
+
+🎯 Objectif : récupérer les meilleures preuves disponibles avant de produire du code.
+
+---
+
+## 📂 Structure du projet
+
+```text
+Verse-AI-Knowledge/
+├── 📁 .github/
+├── 📁 benchmark/
+├── 📁 benchmarks/
+├── 📁 bridge/
+├── 📁 curation/
+├── 📁 dependencies/
+├── 📁 docs/
+├── 📁 errors/
+├── 📁 examples/
+├── 📁 external/
+├── 📁 knowledge/
+├── 📁 lab/
+├── 📁 maintenance/
+├── 📁 mcp/
+├── 📁 portable/
+│   └── 📁 ui_creator/
+├── 📁 projects/
+├── 📁 prompts/
+├── 📁 rag/
+├── 📁 reports/
+├── 📁 schemas/
+├── 📁 staging/
+├── 📁 systems/
+├── 📁 templates/
+├── 📁 tests/
+├── 📁 tools/
+├── 📁 verification/
+├── 📄 AGENTS.md
+├── 📄 AI_GUIDE.md
+├── 📄 README.md
+├── 📄 README_FR.md
+├── 📄 README_EN.md
+├── 📄 SECURITY.md
+├── 📄 LICENSE.md
+├── 📄 THIRD_PARTY_NOTICES.md
+├── 📄 VERSION.md
+└── 📄 manifest.json
+```
+
+---
+
+## 🔐 Sécurité
+
+Ne publie jamais :
+
+- 🔑 clés API ;
+- 🎮 identifiants Epic Games ;
+- 🤖 token Discord ;
+- 🗄️ URL de base de données contenant des identifiants ;
+- 🔒 mots de passe ;
+- 📄 fichiers `.env` privés ;
+- 🪪 tokens d'authentification ;
+- 🔐 clés SSH privées.
+
+Voir :
+
+```text
+SECURITY.md
+```
+
+---
+
+## 📜 Licence
+
+**Verse AI Knowledge n'est pas un projet open-source sauf si le propriétaire du dépôt change explicitement sa licence.**
+
+Les conditions applicables au contenu original du projet sont définies dans :
+
+```text
+LICENSE.md
+```
+
+Le fait que le dépôt soit public ne donne pas automatiquement le droit de :
+
+- redistribuer le projet ;
+- republier le ZIP ;
+- créer un mirror public ;
+- revendre le projet ;
+- republier une copie substantielle ;
+- supprimer les mentions de copyright ou de provenance.
+
+Les contenus tiers conservent leurs propres licences.
+
+Voir :
+
+```text
+THIRD_PARTY_NOTICES.md
+```
+
+---
+
+## ⚠️ Disclaimer
+
+Verse, Unreal Editor for Fortnite, Fortnite, Epic Games ainsi que les marques et technologies associées appartiennent à leurs propriétaires respectifs.
+
+**Verse AI Knowledge est un projet indépendant et n'est ni affilié, ni approuvé, ni sponsorisé par Epic Games.**
+
+Le code généré par une IA peut contenir des erreurs.  
+Pour un projet important, compile et teste toujours le code dans UEFN.
+
+---
+
+<div align="center">
+
+# 🧠 Verse AI Knowledge v22
+
+### 🇫🇷 Du Verse basé sur des sources, pas sur des API inventées.  
+### 🇬🇧 Source-grounded Verse generation. No invented APIs.
+
+⭐ If this project helps you, consider starring the repository.
+
+</div>
