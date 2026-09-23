@@ -2,48 +2,41 @@
 
 Thanks for helping improve Verse AI Knowledge.
 
-## Accepted contributions
+## Core rule
 
-Useful contributions include:
+Do not submit fabricated APIs or guessed signatures presented as facts.
 
-- verified Verse API information;
-- compiler errors copied exactly from UEFN;
-- fixes backed by UEFN evidence;
-- clean Verse architecture patterns;
-- multiplayer lifecycle cases;
-- UI Creator improvements;
-- documentation corrections.
+## Evidence model
 
-## Do not submit
+Every API/knowledge contribution should distinguish:
 
-- fabricated APIs;
-- guessed signatures presented as facts;
-- private credentials;
+**Source trust** — for example `official-current`, `signature-verified`, `api-page-verified`, `community-unverified`, or `reference-only`.
+
+**Local validation** — one of `draft`, `static-checked`, `compiled`, `verified`, or `multiplayer-verified`.
+
+These are independent axes.
+
+## API contributions
+
+Include:
+
+- exact symbol/module involved;
+- source URL or provenance;
+- Verse/UEFN API version when known;
+- the scope actually supported by the source (presence vs exact signature);
+- local compile/runtime/multiplayer evidence only if it truly exists.
+
+If an exact claim cannot be verified, use `TODO(API VERIFY)` rather than guessing.
+
+## Never submit
+
+- credentials, tokens, private `.env` files, or private project secrets;
 - copyrighted code without permission;
-- generated examples described as compiled when they were not compiled.
+- fabricated compiler output;
+- code labelled `compiled` without real UEFN compile evidence;
+- code labelled `verified` without relevant runtime evidence;
+- code labelled `multiplayer-verified` without relevant multiplayer evidence.
 
-## Evidence Levels
+## Pull requests
 
-When submitting Verse knowledge, state the strongest evidence available:
-
-```text
-discovered
-static-checked
-upstream-verified
-compiled
-verified
-multiplayer-verified
-```
-
-`compiled`, `verified`, and `multiplayer-verified` require actual corresponding evidence.
-
-## Pull Requests
-
-Keep PRs focused.
-
-Explain:
-- what changed;
-- why;
-- source/evidence;
-- UEFN version if relevant;
-- whether the change was actually compiled or runtime-tested.
+Keep changes focused. Explain what changed, why, evidence/provenance, API version if relevant, and the strongest **actual** validation performed.

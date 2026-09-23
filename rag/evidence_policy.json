@@ -1,20 +1,29 @@
 {
-  "schema_version": 1,
+  "schema_version": 2,
   "roles": {
     "project_context": "project intent/actual source",
-    "api_evidence": "API presence/signature evidence according to verification level",
+    "api_evidence": "API presence/signature evidence according to symbol-level source trust",
     "lifecycle": "cleanup/lifecycle/concurrency patterns",
     "error_memory": "observed errors only",
-    "verification": "compile/runtime/MCP procedure",
+    "verification": "compile/runtime/MCP procedure and evidence",
     "external_examples": "pattern/upstream evidence only"
   },
   "priority": [
-    "UEFN compiler/runtime",
+    "UEFN compiler/runtime evidence for local behavior",
     "actual project source",
-    "official/current API",
-    "verified repo",
-    "external examples",
+    "exact verified current API evidence",
+    "current official documentation",
+    "verified local repository artifacts",
+    "optional semantic similarity",
+    "unverified external examples",
     "planned architecture",
     "model memory"
-  ]
+  ],
+  "rules": {
+    "separate_source_trust_and_validation": true,
+    "semantic_never_overrides_exact_verified_api": true,
+    "external_compile_claim_is_not_local_compile": true,
+    "static_check_is_not_uefn_compile": true,
+    "unsupported_exact_api_uses": "TODO(API VERIFY)"
+  }
 }

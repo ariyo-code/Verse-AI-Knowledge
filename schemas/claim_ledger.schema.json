@@ -2,20 +2,26 @@
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "title": "Evidence Claim Ledger",
   "type": "object",
-  "required": [
-    "query",
-    "claims",
-    "unsupported_claims"
-  ],
+  "required": ["query", "claims", "unsupported_claims"],
   "properties": {
-    "query": {
-      "type": "string"
-    },
+    "query": {"type": "string"},
     "claims": {
-      "type": "array"
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["claim_type", "allowed", "reason"],
+        "properties": {
+          "claim_type": {"type": "string"},
+          "supported_by": {"type": "array", "items": {"type": "string"}},
+          "source_trust": {"type": ["string", "null"]},
+          "validation": {"type": ["string", "null"]},
+          "allowed": {"type": "boolean"},
+          "reason": {"type": "string"}
+        },
+        "additionalProperties": true
+      }
     },
-    "unsupported_claims": {
-      "type": "array"
-    }
-  }
+    "unsupported_claims": {"type": "array", "items": {"type": "string"}}
+  },
+  "additionalProperties": true
 }

@@ -1,0 +1,19 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/ariyo-code/Verse-AI-Knowledge/schemas/trust.schema.json",
+  "title": "Verse AI Source Trust",
+  "description": "Authority/currentness of a knowledge source. This is independent from local validation.",
+  "type": "string",
+  "enum": [
+    "official-current",
+    "official-stale",
+    "signature-verified",
+    "api-page-verified",
+    "community-verified",
+    "community-unverified",
+    "external-compiler-claimed",
+    "reference-only",
+    "deprecated",
+    "unknown"
+  ]
+}

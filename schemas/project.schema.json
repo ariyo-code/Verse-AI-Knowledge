@@ -2,73 +2,25 @@
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "title": "UEFN Project Memory",
   "type": "object",
-  "required": [
-    "id",
-    "name",
-    "status",
-    "systems",
-    "verification"
-  ],
+  "required": ["id", "name", "lifecycle_status", "validation", "systems", "verification"],
   "properties": {
-    "id": {
-      "type": "string",
-      "minLength": 1
-    },
-    "name": {
-      "type": "string",
-      "minLength": 1
-    },
-    "status": {
-      "enum": [
-        "template",
-        "planned",
-        "discovered",
-        "compiled",
-        "verified"
-      ]
-    },
-    "type": {
-      "type": [
-        "string",
-        "null"
-      ]
-    },
-    "description": {
-      "type": [
-        "string",
-        "null"
-      ]
-    },
-    "verse_api_snapshot": {
-      "type": [
-        "string",
-        "null"
-      ]
-    },
-    "systems": {
-      "type": "array",
-      "items": {
-        "type": "string"
-      },
-      "uniqueItems": true
-    },
+    "id": {"type": "string", "minLength": 1},
+    "name": {"type": "string", "minLength": 1},
+    "lifecycle_status": {"enum": ["template", "planned", "discovered", "active", "deprecated"]},
+    "validation": {"$ref": "validation_status.schema.json"},
+    "source_trust": {"$ref": "trust.schema.json"},
+    "status": {"type": "string", "description": "Legacy compatibility field."},
+    "type": {"type": ["string", "null"]},
+    "description": {"type": ["string", "null"]},
+    "verse_api_snapshot": {"type": ["string", "null"]},
+    "systems": {"type": "array", "items": {"type": "string"}, "uniqueItems": true},
     "verification": {
       "type": "object",
-      "required": [
-        "compiled",
-        "runtime_tested",
-        "multiplayer_tested"
-      ],
+      "required": ["compiled", "runtime_tested", "multiplayer_tested"],
       "properties": {
-        "compiled": {
-          "type": "boolean"
-        },
-        "runtime_tested": {
-          "type": "boolean"
-        },
-        "multiplayer_tested": {
-          "type": "boolean"
-        }
+        "compiled": {"type": "boolean"},
+        "runtime_tested": {"type": "boolean"},
+        "multiplayer_tested": {"type": "boolean"}
       }
     }
   },

@@ -2,71 +2,22 @@
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "title": "Curated External Verse Example",
   "type": "object",
-  "required": [
-    "id",
-    "source_id",
-    "path",
-    "category",
-    "score",
-    "devices",
-    "api_symbols",
-    "status"
-  ],
+  "required": ["id", "source_id", "path", "category", "score", "devices", "api_symbols", "source_trust", "validation"],
   "properties": {
-    "id": {
-      "type": "string"
-    },
-    "source_id": {
-      "type": "string"
-    },
-    "path": {
-      "type": "string"
-    },
-    "category": {
-      "type": "string"
-    },
-    "score": {
-      "type": "number"
-    },
-    "line_count": {
-      "type": "integer"
-    },
-    "devices": {
-      "type": "array",
-      "items": {
-        "type": "string"
-      }
-    },
-    "api_symbols": {
-      "type": "array",
-      "items": {
-        "type": "string"
-      }
-    },
-    "imports": {
-      "type": "array",
-      "items": {
-        "type": "string"
-      }
-    },
-    "features": {
-      "type": "array",
-      "items": {
-        "type": "string"
-      }
-    },
-    "project_relevance": {
-      "type": "array",
-      "items": {
-        "type": "string"
-      }
-    },
-    "status": {
-      "enum": [
-        "external-compiler-claimed",
-        "external-community"
-      ]
-    }
+    "id": {"type": "string"},
+    "source_id": {"type": "string"},
+    "path": {"type": "string"},
+    "category": {"type": "string"},
+    "score": {"type": "number"},
+    "line_count": {"type": "integer"},
+    "devices": {"type": "array", "items": {"type": "string"}},
+    "api_symbols": {"type": "array", "items": {"type": "string"}},
+    "imports": {"type": "array", "items": {"type": "string"}},
+    "features": {"type": "array", "items": {"type": "string"}},
+    "project_relevance": {"type": "array", "items": {"type": "string"}},
+    "source_trust": {"$ref": "trust.schema.json"},
+    "validation": {"$ref": "validation_status.schema.json"},
+    "status": {"type": "string", "description": "Legacy compatibility only."}
   },
   "additionalProperties": true
 }

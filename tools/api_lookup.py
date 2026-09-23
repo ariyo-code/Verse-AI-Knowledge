@@ -1,18 +1,24 @@
 #!/usr/bin/env python3
 from pathlib import Path
-import json, sys, difflib
-ROOT=Path(__file__).resolve().parents[1]
-entries=json.loads((ROOT/"knowledge/api_catalog.json").read_text(encoding="utf-8"))["entries"]
-if len(sys.argv)<2:
+import json
+import sys
+
+ROOT = Path(__file__).resolve().parents[1]
+sys.path.insert(0, str(ROOT / "src"))
+from verse_ai_knowledge.api_index import lookup  # noqa: E402
+
+if len(sys.argv) < 2:
     print("Usage: python tools/api_lookup.py <api-name>")
     raise SystemExit(2)
-q=" ".join(sys.argv[1:]).strip()
-if q in entries:
-    print(json.dumps({q:entries[q]},indent=2,ensure_ascii=False))
+query = " ".join(sys.argv[1:]).strip()
+row, suggestions = lookup(query, ROOT)
+if row:
+    print(json.dumps(row, indent=2, ensure_ascii=False))
+    if row.get("signature") and not row.get("exact_signature_claim_allowed"):
+        print("WARNING: exact signature not verified. TODO(API VERIFY)")
 else:
-    matches=difflib.get_close_matches(q,entries.keys(),n=8,cutoff=.35)
-    if matches:
-        print("No exact match. Closest entries:")
-        for x in matches: print("-",x)
-    else:
-        print("No local match. Verify current Epic Verse API.")
+    print("No exact structured match.")
+    for item in suggestions:
+        print("-", item)
+    print("TODO(API VERIFY)")
+    raise SystemExit(2)

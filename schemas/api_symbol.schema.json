@@ -1,0 +1,43 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Structured Verse API Symbol",
+  "type": "object",
+  "required": [
+    "symbol_id",
+    "name",
+    "kind",
+    "module",
+    "api_version",
+    "source_trust",
+    "validation",
+    "source_url",
+    "exact_signature_claim_allowed"
+  ],
+  "properties": {
+    "symbol_id": {"type": "string", "minLength": 1},
+    "name": {"type": "string", "minLength": 1},
+    "qualified_name": {"type": ["string", "null"]},
+    "kind": {"type": "string", "minLength": 1},
+    "module": {"type": "string", "minLength": 1},
+    "signature": {"type": ["string", "null"]},
+    "effects": {"type": "array", "items": {"type": "string"}, "uniqueItems": true},
+    "failure_context_required": {"type": "boolean"},
+    "api_version": {"type": "string", "minLength": 1},
+    "introduced_in": {"type": ["string", "null"]},
+    "deprecated_in": {"type": ["string", "null"]},
+    "replacement": {"type": ["string", "null"]},
+    "source_trust": {"$ref": "trust.schema.json"},
+    "validation": {"$ref": "validation_status.schema.json"},
+    "source_url": {"type": ["string", "null"]},
+    "verified_at": {"type": ["string", "null"]},
+    "evidence_basis": {"type": ["string", "null"]},
+    "claim_scope": {"type": "string"},
+    "signature_verified": {"type": "boolean"},
+    "exact_signature_claim_allowed": {"type": "boolean"},
+    "summary": {"type": ["string", "null"]},
+    "cautions": {"type": "array", "items": {"type": "string"}},
+    "member_names": {"type": "array", "items": {"type": "string"}, "uniqueItems": true},
+    "event_names": {"type": "array", "items": {"type": "string"}, "uniqueItems": true}
+  },
+  "additionalProperties": false
+}

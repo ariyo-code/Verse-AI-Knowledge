@@ -1,0 +1,14 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/ariyo-code/Verse-AI-Knowledge/schemas/validation_status.schema.json",
+  "title": "Verse AI Local Validation Status",
+  "description": "What has actually been validated locally. It does not describe source authority.",
+  "type": "string",
+  "enum": [
+    "draft",
+    "static-checked",
+    "compiled",
+    "verified",
+    "multiplayer-verified"
+  ]
+}

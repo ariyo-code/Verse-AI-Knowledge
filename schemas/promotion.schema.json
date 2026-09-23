@@ -2,68 +2,26 @@
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "title": "Artifact Promotion Record",
   "type": "object",
-  "required": [
-    "artifact",
-    "from_status",
-    "to_status",
-    "checks"
-  ],
+  "required": ["artifact", "from_status", "to_status", "checks"],
   "properties": {
-    "artifact": {
-      "type": "string",
-      "minLength": 1
-    },
-    "from_status": {
-      "enum": [
-        "draft",
-        "compiled",
-        "verified"
-      ]
-    },
-    "to_status": {
-      "enum": [
-        "compiled",
-        "verified",
-        "multiplayer-verified"
-      ]
-    },
-    "verse_api": {
-      "type": "string"
-    },
-    "promoted_at": {
-      "type": "string"
-    },
+    "artifact": {"type": "string", "minLength": 1},
+    "from_status": {"enum": ["draft", "static-checked", "compiled", "verified"]},
+    "to_status": {"enum": ["static-checked", "compiled", "verified", "multiplayer-verified"]},
+    "verse_api": {"type": "string"},
+    "promoted_at": {"type": "string"},
     "checks": {
       "type": "object",
-      "required": [
-        "compiled",
-        "runtime_tested",
-        "multiplayer_tested"
-      ],
+      "required": ["static_checked", "compiled", "runtime_tested", "multiplayer_tested"],
       "properties": {
-        "compiled": {
-          "type": "boolean"
-        },
-        "runtime_tested": {
-          "type": "boolean"
-        },
-        "multiplayer_tested": {
-          "type": "boolean"
-        }
-      }
+        "static_checked": {"type": "boolean"},
+        "compiled": {"type": "boolean"},
+        "runtime_tested": {"type": "boolean"},
+        "multiplayer_tested": {"type": "boolean"}
+      },
+      "additionalProperties": false
     },
-    "evidence": {
-      "type": "array",
-      "items": {
-        "type": "string"
-      }
-    },
-    "notes": {
-      "type": [
-        "string",
-        "null"
-      ]
-    }
+    "evidence": {"type": "array", "items": {"type": "string"}},
+    "notes": {"type": ["string", "null"]}
   },
   "additionalProperties": true
 }

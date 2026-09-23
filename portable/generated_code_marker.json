@@ -1,21 +1,26 @@
 {
-  "schema_version": 1,
-  "marker_version": "v21",
-  "default_marker": "<!-- verse-ai-generated:v21 -->",
-  "metadata_template": "<!-- verse-ai-generated:v21;lang=verse;status={status} -->",
+  "schema_version": 2,
+  "marker_version": "v22",
+  "default_marker": "<!-- verse-ai-generated:v22 -->",
+  "metadata_template": "<!-- verse-ai-generated:v22;lang=verse;status={status} -->",
+  "default_status": "draft",
   "allowed_statuses": [
     "draft",
     "static-checked",
-    "upstream-verified",
     "compiled",
     "verified",
     "multiplayer-verified"
   ],
-  "default_status": "draft",
+  "placement": "Immediately after each generated Verse file section in Markdown when provenance marking is used.",
+  "safety": {
+    "html_comment_only": true,
+    "invisible_unicode": false,
+    "zero_width_characters": false,
+    "bidi_controls": false,
+    "unicode_tags": false
+  },
   "rules": {
-    "use_html_comment_in_markdown": true,
-    "use_invisible_unicode": false,
     "claim_compiled_without_evidence": false,
-    "one_marker_per_generated_file_section": true
+    "source_trust_is_not_validation": true
   }
 }

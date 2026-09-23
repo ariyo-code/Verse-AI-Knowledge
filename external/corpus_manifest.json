@@ -1,9 +1,0 @@
-{
-  "schema_version": 1,
-  "source_id": "uefncentral-examples",
-  "source_revision": "c5fed52f687964fa83035f52423763553b129391",
-  "expected_examples": 395,
-  "expected_snippets": 400,
-  "expected_total_verse": 795,
-  "required_lab_scope": "examples"
-}

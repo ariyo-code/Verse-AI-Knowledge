@@ -1,65 +1,48 @@
-# AI Guide
+# AI Guide — V22
 
-## Principe
+This repository is a retrieval and evidence system. It does not replace the Verse compiler or UEFN runtime.
 
-Ce dépôt est une mémoire de travail et une base de récupération de connaissances.
+Start with `AI_BOOTSTRAP.md`.
 
-Il ne remplace pas le compilateur Verse.
-
-## Boucle recommandée
+## Core workflow
 
 ```text
-Demande utilisateur
-      ↓
-Identifier les concepts nécessaires
-      ↓
-Chercher docs + exemples + systèmes
-      ↓
-Vérifier les erreurs connues
-      ↓
-Écrire l'implémentation
-      ↓
-Compiler dans UEFN
-      ↓
-Récupérer les erreurs réelles
-      ↓
-Corriger
-      ↓
-Enregistrer la correction
-      ↓
-Promouvoir l'exemple si validé
+request
+  → routing
+  → targeted retrieval
+  → Evidence Pack
+  → Claim Ledger
+  → implementation
+  → static checks
+  → UEFN compile/runtime/multiplayer evidence when available
 ```
 
-## Ne pas apprendre du mauvais code
+## Confidence model
 
-Le volume n'est pas la qualité.
+Never mix source authority with local validation.
 
-Un grand dossier rempli de snippets Internet non vérifiés peut dégrader la fiabilité de l'IA.
+`source_trust` answers **why the source is credible/current**. `validation` answers **what was actually tested locally**.
 
-Classer les sources :
+Canonical vocabularies live in `manifest.json`, `schemas/trust.schema.json`, and `schemas/validation_status.schema.json`.
 
-- `official`
-- `verified`
-- `community-unverified`
-- `deprecated`
+## Exact API claims
 
-## Recherche recommandée
+Presence evidence does not automatically prove an exact signature. If a signature, effect, module, event, property, or other exact API detail is not supported at the required evidence level, use:
 
-Exemple de demande :
+```text
+TODO(API VERIFY)
+```
 
-> Crée un système de véhicule avec propriétaire, clés autorisées et verrouillage.
+## Source priority
 
-Ordre :
+Prefer, in context:
 
-1. `/systems/vehicle-system`
-2. `/examples/verified`
-3. `/docs/uefn`
-4. `/docs/language`
-5. `/errors`
-6. documentation Epic actuelle
+1. actual UEFN compiler/runtime evidence for local behavior;
+2. actual project source for project state;
+3. exact current official API evidence;
+4. verified repository knowledge;
+5. external examples according to provenance;
+6. planned architecture;
+7. model memory only as non-authoritative fallback.
 
-## Règle de confiance
-
-Si l'IA n'est pas sûre : elle doit le dire.
-
-Une incertitude explicitement signalée est préférable à une API inventée.
+A remote Epic documentation change triggers revalidation; it does not automatically rewrite verified truth.

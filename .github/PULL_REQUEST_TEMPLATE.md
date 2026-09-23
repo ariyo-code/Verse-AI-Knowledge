@@ -1,24 +1,29 @@
 ## What changed?
 
-Describe the change.
+Describe the change and why it is needed.
 
-## Evidence
+## Source trust / provenance
 
-- [ ] Official API/documentation evidence
-- [ ] Static analysis only
-- [ ] Upstream compile claim
-- [ ] Locally compiled in UEFN
-- [ ] Runtime tested
-- [ ] Multiplayer tested
+State the relevant `source_trust` and provide source URLs/provenance for API claims.
 
-UEFN version, if applicable:
+## Local validation actually performed
 
-## API Safety
+- [ ] draft only
+- [ ] static checks executed
+- [ ] locally compiled in UEFN
+- [ ] runtime tested
+- [ ] multiplayer tested
 
-- [ ] No invented Verse APIs
-- [ ] Exact signatures are sourced/verified
-- [ ] Uncertain APIs are clearly marked
+Attach/reference evidence for any compile/runtime/multiplayer claim.
 
-## Generated-code marker
+## API safety
 
-- [ ] Generated Markdown includes the hidden provenance marker when appropriate
+- [ ] No invented Verse APIs.
+- [ ] Exact signatures are supported by signature-level evidence.
+- [ ] Unsupported exact API details use `TODO(API VERIFY)`.
+- [ ] Source trust is not being used as a substitute for local validation.
+- [ ] Static validation is not described as a UEFN compile.
+
+## Generated files
+
+- [ ] `python tools/check_generated_drift.py` passes.

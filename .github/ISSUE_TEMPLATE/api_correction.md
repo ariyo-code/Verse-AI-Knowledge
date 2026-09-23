@@ -1,6 +1,6 @@
 ---
 name: Verse API correction
-about: Correct or add verified Verse API knowledge
+about: Correct or add source-grounded Verse API knowledge
 title: "[API] "
 labels: api
 ---
@@ -11,13 +11,33 @@ labels: api
 
 ## Correct information
 
-## Evidence source
+## Source / provenance
 
-## UEFN version
+## Verse / UEFN API version
 
-## Verification
+## Source trust
 
-- [ ] Official API page
-- [ ] Official digest
-- [ ] UEFN compiler
-- [ ] Runtime test
+Choose the strongest supported value, not the most flattering one.
+
+- [ ] official-current
+- [ ] official-stale
+- [ ] signature-verified
+- [ ] api-page-verified
+- [ ] community-verified
+- [ ] community-unverified
+- [ ] external-compiler-claimed
+- [ ] reference-only
+- [ ] deprecated
+- [ ] unknown
+
+## Local validation actually performed
+
+- [ ] draft only
+- [ ] static-checked
+- [ ] compiled in UEFN (attach/reference evidence)
+- [ ] runtime tested (attach/reference evidence)
+- [ ] multiplayer tested (attach/reference evidence)
+
+## Exact signature evidence
+
+If an exact signature is proposed, link the source that supports the exact signature. Otherwise use `TODO(API VERIFY)`.

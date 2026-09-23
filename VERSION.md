@@ -1,16 +1,28 @@
 # Knowledge Base Version
 
-Schema: **21**
+Release: **22.0.0**  
+Schema: **22**  
+Codename: **Knowledge Integrity & Agent Reliability**  
+Verse API snapshot: **42.20**
 
-## V21 — UI Creator
+## V22 focus
 
-- portable Verse UI Creator prompt;
-- prompt-to-UI;
-- image-to-UI planning;
-- redesign/refactor mode;
-- reusable logical component library;
-- UI Specification JSON schema;
-- per-player UI session rules;
-- pagination, garage, inventory, phone and staff-panel patterns;
-- event binding and gameplay/UI separation;
-- combined Verse + UI master prompt.
+V22 prioritizes knowledge integrity rather than raw corpus growth:
+
+- independent source-trust and local-validation axes;
+- `AI_BOOTSTRAP.md` as the AI entry point;
+- progressive structured Verse symbol index;
+- stricter exact-signature claim guards;
+- anti-hallucination policy evals;
+- unified `verse-ai` CLI;
+- unified static CI;
+- deterministic generated-file drift checks;
+- preserved UEFN compiler/runtime evidence boundaries.
+
+## UEFN status
+
+This release metadata does not claim that the repository has been compiled as a UEFN project.
+
+```text
+UEFN compile status: NOT TESTED
+```

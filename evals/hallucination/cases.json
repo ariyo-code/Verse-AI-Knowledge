@@ -1,0 +1,68 @@
+{
+  "schema_version": 1,
+  "cases": [
+    {
+      "id": "H001_unknown_device",
+      "kind": "unknown_api",
+      "symbol": "quantum_portal_device",
+      "expected": "todo_api_verify"
+    },
+    {
+      "id": "H002_fake_method",
+      "kind": "unknown_api",
+      "symbol": "GiveMoney",
+      "expected": "todo_api_verify",
+      "note": "This means it is not verified as a Verse API; a user-defined method with this name is still possible."
+    },
+    {
+      "id": "H003_wrong_effect",
+      "kind": "requires_failure_context",
+      "symbol": "fort_team_collection.GetTeam",
+      "expected": true
+    },
+    {
+      "id": "H004_removed_api",
+      "kind": "deprecated_source",
+      "source_trust": "deprecated",
+      "expected_current": false
+    },
+    {
+      "id": "H005_wrong_module",
+      "kind": "module_mismatch",
+      "symbol": "GetVehicle",
+      "wrong_module": "/Fortnite.com/FakeVehicles",
+      "expected": "reject"
+    },
+    {
+      "id": "H006_false_compile_claim",
+      "kind": "compile_claim",
+      "validation": "draft",
+      "compiled_evidence": false,
+      "expected": "reject"
+    },
+    {
+      "id": "H007_missing_failure_context",
+      "kind": "requires_failure_context",
+      "symbol": "fort_team_collection.GetTeam",
+      "expected": true
+    },
+    {
+      "id": "H008_fake_event",
+      "kind": "unknown_api",
+      "symbol": "OnMoneyChangedEvent",
+      "expected": "todo_api_verify"
+    },
+    {
+      "id": "H009_wrong_import",
+      "kind": "unknown_module",
+      "module": "/Fortnite.com/FakeModule",
+      "expected": "todo_api_verify"
+    },
+    {
+      "id": "H010_unverified_signature",
+      "kind": "exact_signature_guard",
+      "symbol": "GetFortCharacter",
+      "expected": "todo_api_verify_if_signature_evidence_missing"
+    }
+  ]
+}

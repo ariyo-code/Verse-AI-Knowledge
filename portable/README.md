@@ -1,51 +1,9 @@
-# Verse AI Portable v20
+# Verse AI Portable
 
-Objectif : rendre le savoir Verse utilisable dans **n'importe quel LLM** sans avoir besoin du repo complet.
+The repository release is **V22**, while the existing all-in-one portable Verse + UI prompt remains named `VERSE_AI_MASTER_PROMPT_v21_WITH_UI.txt` for backward compatibility.
 
-## Le plus simple
+For repository-aware agents, use `../AI_BOOTSTRAP.md` instead of treating the portable prompt as the source of truth.
 
-Ouvre :
+For standalone use, copy the portable prompt into the target LLM and append your task after `=== USER TASK ===`.
 
-`VERSE_AI_MASTER_PROMPT.txt`
-
-Copie tout le contenu dans :
-- ChatGPT
-- Gemini
-- Codex
-- Claude
-- autre assistant IA
-
-Puis ajoute ton besoin après `=== USER TASK ===`.
-
-## Exemple
-
-```text
-=== USER TASK ===
-
-Fais-moi un système de véhicules RP.
-Chaque joueur peut acheter 2 véhicules.
-Il peut donner une clé, la retirer, verrouiller le véhicule,
-transférer le véhicule et le vendre.
-Nettoie tout quand le joueur quitte.
-```
-
-## Ce que le prompt force
-
-- ne pas inventer d'API Verse;
-- architecture modulaire;
-- gestion correcte des joueurs;
-- UI propre;
-- gestion async;
-- cleanup;
-- failure contexts;
-- séparation runtime/persistence;
-- prise en compte du multijoueur;
-- explication du setup UEFN;
-- signalement clair des APIs incertaines.
-
-## Limite
-
-Aucun prompt ne peut garantir qu'un code Verse compile sans disposer de la version exacte d'UEFN et de ses APIs.
-
-Le but de ce pack est donc :
-**réduire fortement les hallucinations et obtenir du code beaucoup plus propre**, quel que soit le modèle utilisé.
+The portable prompt cannot prove compilation. Exact uncertain APIs must remain explicit (`TODO(API VERIFY)`), and UEFN is required for real compile/runtime evidence.
