@@ -1,170 +1,113 @@
-# V25 Final Engineering Report
+# V25 Final Engineering Report — stabilization candidate
 
 ## Release
 
-- Release: **25.0.0**
-- Schema: **25**
-- Codename: **Professionalization, API Expansion & Reproducible Verification**
-- Verse API snapshot: **42.20**
-- Source baseline: V24 commit `1928e298a52414f27464aaa388456dd56e264cb4`
-- V25 GitHub CI: **UNKNOWN until this package is pushed**
+```text
+Release: 25.0.0
+Schema: 25
+Codename: Professionalization, API Expansion & Reproducible Verification
+Verse API snapshot: 42.20
+```
 
-## What changed
+No V26 work is included. This package is a V25 stabilization candidate.
 
-V25 keeps the V24 evidence model and professionalizes the repository around reproducibility, current-vs-legacy separation, packaging, prompt generation, SDK/CLI/MCP access, security, release automation, documentation, and measurable retrieval quality.
+## Main correction
 
-Compared with the V24 source package used for this build:
+The GitHub V25 failures on the latest checked `main` HEAD were cascading from missing canonical portable prompt files. This candidate includes the current portable pack in the repository tree and validates it locally.
 
-- source files: **597**
-- V25 package files: **701**
-- files created: **104**
-- files modified: **69**
-- files removed: **0**
+Required files present:
 
-No compatibility file was silently deleted.
+```text
+portable/current/VERSE_AI_MASTER_PROMPT.txt
+portable/current/VERSE_AI_MASTER_PROMPT_WITH_UI.txt
+portable/current/TASK_TEMPLATE.txt
+```
 
-## Major implementation areas
+Prompt generation is deterministic in the candidate environment.
 
-### Prompt architecture
+## GitHub state before candidate push
 
-- Canonical `prompt_sources/` introduced.
-- `tools/build_prompts.py` deterministically generates the public/current portable prompts.
-- `portable/current/` is the current pack; historical material is retained under `portable/archive/`.
-- Prompt consistency and prompt-injection boundary tests were added.
+```text
+HEAD: 80b8140ee718aa5aa390ac03f9cf73aae60b7973
+V25 CI: FAIL
+Docs: PASS
+CodeQL: PASS
+lint-types-package: PASS
+retrieval-policy: PASS
+```
 
-### Python product surface
+The candidate GitHub CI status is **UNKNOWN until pushed**.
 
-- `KnowledgeBase` SDK façade.
-- Expanded `verse-ai` CLI: version, explain, status, evidence, provenance, API diff, snapshot and JSON-oriented workflows.
-- Optional official MCP Python SDK server in `mcp/server.py`, with read-only evidence-aware tools.
-- Package metadata and optional dependency groups for dev/docs/MCP use.
+## Local validation actually executed
 
-### API knowledge
+```text
+V25 integrity: PASS
+Repository integrity: PASS
+Verification evidence: PASS
+API revalidation gate: PASS
+Prompt consistency/drift: PASS
+Prompt generation deterministic: PASS
+Internal paths: PASS
+Secret scan: PASS
+pytest: 13/13 PASS
+Legacy RAG benchmark: 8/8 PASS
+Evidence benchmark: 3/3 PASS
+Anti-hallucination policy: 14/14 PASS
+verse-ai doctor: PASS
+verse-ai validate: PASS
+Python compileall: PASS
+```
 
-- Existing field-level evidence model retained.
-- Candidate/review/versioning scaffolding added.
-- API snapshots and diff tooling added.
-- Event-payload, enum/inheritance and versioning work are explicitly separated from verified knowledge.
-- Automated harvesting remains candidate-only; it does not auto-promote exact claims.
+GitHub's latest `lint-types-package` job independently reports:
 
-### RAG / evaluation
-
-- Retrieval benchmark expanded to **104 cases**.
-- Current measured retrieval metrics:
-  - Recall@1: **0.1346**
-  - Recall@5: **1.0000**
-  - Recall@10: **1.0000**
-  - MRR: **0.4905**
-  - nDCG@10: **0.6194**
-- Hard-negative coverage is included.
-- RAG indexing excludes tests, eval corpora, generated reports, caches, build artifacts and other self-retrieval leakage paths.
-
-### GitHub / release engineering
-
-- V25 CI workflow.
-- CodeQL workflow.
-- Dependabot for GitHub Actions and pip.
-- CODEOWNERS.
-- Issue Forms + issue configuration.
-- Recommended branch ruleset template.
-- GitHub Pages documentation workflow.
-- Tag-driven release workflow with validation, package build, clean-wheel smoke test, coverage snapshot, release audit, portable artifact and SHA-256 checksums.
-
-### Documentation / governance
-
-- Professional README and roadmap.
-- MkDocs Material site configuration.
-- Current/legacy documentation separation.
-- Improved Security, Contributing and Code of Conduct files.
-- Structured third-party manifest.
-- Supply-chain guidance.
+```text
+Ruff: PASS
+mypy: PASS
+Package build: PASS
+```
 
 ## API coverage
 
-Measured against symbols currently known to this repository — **not** against the unknown total size of Epic's entire API surface:
+```text
+Known structured symbols: 164
+Modules: 9
+Exact signatures verified: 12
+Known event names: 24
+Verified event payloads: 0
+Known members: 42
+Presence-only symbols: 152
+```
 
-- structured symbols: **164**
-- modules represented: **9**
-- symbol presence: **164 / 164**
-- signature verified: **12 / 164**
-- structured parameters: **12 / 164**
-- structured return types: **12 / 164**
-- structured effects: **12 / 164**
-- event names known: **24 / 164**
-- event payloads verified: **0 / 164**
-- members known: **42 / 164**
-- exact signature claims allowed: **12 / 164**
-- presence-only symbols: **152**
+No API claim was fabricated to improve coverage.
 
-V25 deliberately does not fabricate missing API data to increase these numbers.
+## Retrieval metrics measured in this candidate
 
-## Validation actually executed in the build environment
+```text
+Cases: 104
+Recall@1: 0.0096
+Recall@5: 0.8846
+Recall@10: 0.9327
+MRR: 0.3518
+nDCG@10: 0.4956
+```
 
-### PASS
+## Opaque Project Recognition
 
-- Python syntax/compileall for `src`, `tools`, `tests`, `mcp`.
-- V25 integrity validator.
-- generated-file drift and current prompt drift.
-- repository integrity.
-- verification evidence checks.
-- internal-path validation.
-- current-tree high-confidence secret scan.
-- API revalidation gate (`42.20`, no stale verified evidence detected).
-- API coverage report.
-- retrieval benchmark: **8/8** legacy cases.
-- retrieval metrics suite: **104 cases**.
-- evidence benchmark: **3/3**.
-- deterministic anti-hallucination policy eval: **14/14**.
-- preflight.
-- pytest: **13/13 passed**.
-- Python coverage was measured during validation: **41%** over `src/verse_ai_knowledge/` in this environment.
-- full `tools/validate_all.py` suite.
-- editable package installation smoke test.
-- wheel build with `pip wheel --no-build-isolation`: **PASS**.
+The privacy-preserving opaque recognition layer is preserved. The public repository contains opaque fingerprints and generic recognition metadata, but no real project name, private project source, identity mapping, or private project registry. An opaque pattern match is not API evidence.
 
-### NOT RUN in this local build environment
+## Validation boundaries
 
-- Ruff: dependency not available in the execution environment.
-- mypy: dependency not available in the execution environment.
-- MkDocs strict build: documentation dependencies not available in the execution environment.
-- official MCP SDK runtime/Inspector test: optional MCP dependency not installed locally.
+```text
+UEFN compile: NOT TESTED
+Runtime: NOT TESTED
+Multiplayer: NOT TESTED
+LLM end-to-end benchmark: SKIPPED
+```
 
-The V25 GitHub workflows install these dependencies and are configured to run the corresponding checks after push. They are **not** marked PASS here.
-
-## External / unavailable validation
-
-- UEFN compile: **NOT TESTED**
-- Runtime: **NOT TESTED**
-- Multiplayer: **NOT TESTED**
-- End-to-end live LLM benchmark: **SKIPPED — no provider configured**
-- GitHub V25 CI: **UNKNOWN — package not yet pushed**
-- GitHub Pages activation/settings: **MANUAL ACTION REQUIRED** if not already enabled
-- Branch protection/ruleset application: **MANUAL ACTION REQUIRED**
-- Private Vulnerability Reporting setting: **MANUAL ACTION REQUIRED** if unavailable
-- PyPI publication: **NOT PERFORMED** by design
-
-## Security notes
-
-The current working tree passed the repository high-confidence secret scanner. This does **not** prove historical Git commits never contained secrets. A historical scan with a tool such as gitleaks is recommended in a Git-enabled environment.
-
-Remote documentation and retrieved material remain **data, not instructions**. Exact Verse claims still require evidence, and unverified exact claims must remain `TODO(API VERIFY)`.
-
-## Publication state
-
-The package itself passed the static/repository tests available in this environment. Final GitHub publication readiness remains:
+## Publication readiness
 
 ```text
 PUBLICATION READINESS: UNKNOWN
 ```
 
-until the V25 package is pushed and the actual V25 GitHub CI run succeeds.
-
-## Recommended next milestone
-
-Do not perform another broad structural rewrite. The highest-value next work is evidence acquisition:
-
-1. expand verified API signatures/parameters/returns/effects;
-2. verify event payloads;
-3. add real UEFN compile/runtime/multiplayer evidence through VerseLab/self-hosted Windows infrastructure;
-4. run the provider-neutral LLM benchmark with real model outputs;
-5. improve Recall@1 while preserving hard-negative rejection and evidence authority.
+A real green V25 GitHub Actions run on the candidate commit is still required before preparing the `v25.0.0` GitHub Release.
