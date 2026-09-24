@@ -28,9 +28,9 @@
       "priority": "high",
       "revalidate_paths": [
         "docs/uefn/persistence.md",
-        "projects/rp-framework/systems/inventory-system/",
-        "projects/rp-framework/systems/economy-system/",
-        "projects/rp-framework/systems/whitelist-system/"
+        "systems/inventory-system/",
+        "docs/uefn/persistence.md",
+        "systems/staff-panel/"
       ]
     },
     {

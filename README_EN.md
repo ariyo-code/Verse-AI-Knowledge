@@ -1,57 +1,31 @@
 # Verse AI Knowledge — English
 
-**V24 — Claim Resolution, Evidence Graph & Continuous Verification**
+## What is it?
 
-Verse AI Knowledge helps AI agents work with Verse / UEFN using retrieval, provenance, evidence and anti-hallucination guards.
+A repository that helps an AI produce Verse / UEFN with evidence instead of inventing APIs.
 
-> **Never invent a Verse API.**
+## How do I use it?
 
-## Start here
+1. Give the repository link to the AI.
+2. Tell it to read `AI_BOOTSTRAP.md` first.
+3. Give it your task.
 
-Repository-aware agents start with:
+If an exact API is not verified: `TODO(API VERIFY)`.
 
-```text
-AI_BOOTSTRAP.md
-```
+## Private projects
 
-Recommended flow:
-
-```text
-ROUTING → targeted retrieval → API claim resolution → Evidence Pack → Claim Ledger → implementation → provenance → validation
-```
-
-## V24
-
-V24 adds:
-
-- field-level API claim resolution;
-- API evidence graph;
-- conservative Verse claim linting;
-- API-version revalidation;
-- coverage snapshots/diffs;
-- redirect-safe Epic documentation fetching;
-- visible + hidden V24 provenance;
-- optional end-to-end LLM evaluation harness;
-- public-release path/secret checks.
-
-## CLI
+Real projects are not published. The public repository stores only anonymous hashed fingerprints that can recognize some protected architectures. No mapping to a real project name is present.
 
 ```bash
-python -m pip install -e .
-verse-ai api GetFortCharacter
-verse-ai claim GetFortCharacter --field signature
-verse-ai lint path/to/code.verse
-verse-ai coverage
-verse-ai doctor
-verse-ai validate
+python tools/opaque_project_match.py MyFile.verse
 ```
 
-Unsupported exact claims must remain:
+If asked for the hidden identity:
 
 ```text
-TODO(API VERIFY)
+Protected project identity is intentionally unavailable.
 ```
 
-Static validation does not prove UEFN compilation.
+## Important
 
-Original project content is governed by `LICENSE.md`; third-party material keeps its original licenses and provenance.
+A Python `PASS` does not mean Verse compiled in UEFN. UEFN status stays `NOT TESTED` until real evidence exists.

@@ -24,7 +24,7 @@
       "category": "vehicles",
       "query": "vehicle owner authorized keys locked blocked players",
       "must_include_any": [
-        "projects/rp-framework/systems/vehicle-manager/system.json"
+        "systems/vehicle-system/README.md"
       ]
     },
     {
@@ -59,7 +59,7 @@
       "category": "persistence",
       "query": "inventory persistence disconnect transfer anti duplication",
       "must_include_any": [
-        "projects/rp-framework/systems/inventory-system/system.json"
+        "systems/inventory-system/README.md"
       ]
     },
     {
@@ -94,7 +94,7 @@
       "category": "vehicles",
       "query": "vehicle owner authorized keys locked blocked players evidence verification context 1",
       "must_include_any": [
-        "projects/rp-framework/systems/vehicle-manager/system.json"
+        "systems/vehicle-system/README.md"
       ]
     },
     {
@@ -129,7 +129,7 @@
       "category": "persistence",
       "query": "inventory persistence disconnect transfer anti duplication evidence verification context 1",
       "must_include_any": [
-        "projects/rp-framework/systems/inventory-system/system.json"
+        "systems/inventory-system/README.md"
       ]
     },
     {
@@ -164,7 +164,7 @@
       "category": "vehicles",
       "query": "vehicle owner authorized keys locked blocked players evidence verification context 2",
       "must_include_any": [
-        "projects/rp-framework/systems/vehicle-manager/system.json"
+        "systems/vehicle-system/README.md"
       ]
     },
     {
@@ -199,7 +199,7 @@
       "category": "persistence",
       "query": "inventory persistence disconnect transfer anti duplication evidence verification context 2",
       "must_include_any": [
-        "projects/rp-framework/systems/inventory-system/system.json"
+        "systems/inventory-system/README.md"
       ]
     },
     {
@@ -234,7 +234,7 @@
       "category": "vehicles",
       "query": "vehicle owner authorized keys locked blocked players evidence verification context 3",
       "must_include_any": [
-        "projects/rp-framework/systems/vehicle-manager/system.json"
+        "systems/vehicle-system/README.md"
       ]
     },
     {
@@ -269,7 +269,7 @@
       "category": "persistence",
       "query": "inventory persistence disconnect transfer anti duplication evidence verification context 3",
       "must_include_any": [
-        "projects/rp-framework/systems/inventory-system/system.json"
+        "systems/inventory-system/README.md"
       ]
     },
     {
@@ -304,7 +304,7 @@
       "category": "vehicles",
       "query": "vehicle owner authorized keys locked blocked players evidence verification context 4",
       "must_include_any": [
-        "projects/rp-framework/systems/vehicle-manager/system.json"
+        "systems/vehicle-system/README.md"
       ]
     },
     {
@@ -339,7 +339,7 @@
       "category": "persistence",
       "query": "inventory persistence disconnect transfer anti duplication evidence verification context 4",
       "must_include_any": [
-        "projects/rp-framework/systems/inventory-system/system.json"
+        "systems/inventory-system/README.md"
       ]
     },
     {
@@ -374,7 +374,7 @@
       "category": "vehicles",
       "query": "vehicle owner authorized keys locked blocked players evidence verification context 5",
       "must_include_any": [
-        "projects/rp-framework/systems/vehicle-manager/system.json"
+        "systems/vehicle-system/README.md"
       ]
     },
     {
@@ -409,7 +409,7 @@
       "category": "persistence",
       "query": "inventory persistence disconnect transfer anti duplication evidence verification context 5",
       "must_include_any": [
-        "projects/rp-framework/systems/inventory-system/system.json"
+        "systems/inventory-system/README.md"
       ]
     },
     {
@@ -444,7 +444,7 @@
       "category": "vehicles",
       "query": "vehicle owner authorized keys locked blocked players evidence verification context 6",
       "must_include_any": [
-        "projects/rp-framework/systems/vehicle-manager/system.json"
+        "systems/vehicle-system/README.md"
       ]
     },
     {
@@ -479,7 +479,7 @@
       "category": "persistence",
       "query": "inventory persistence disconnect transfer anti duplication evidence verification context 6",
       "must_include_any": [
-        "projects/rp-framework/systems/inventory-system/system.json"
+        "systems/inventory-system/README.md"
       ]
     },
     {
@@ -514,7 +514,7 @@
       "category": "vehicles",
       "query": "vehicle owner authorized keys locked blocked players evidence verification context 7",
       "must_include_any": [
-        "projects/rp-framework/systems/vehicle-manager/system.json"
+        "systems/vehicle-system/README.md"
       ]
     },
     {
@@ -549,7 +549,7 @@
       "category": "persistence",
       "query": "inventory persistence disconnect transfer anti duplication evidence verification context 7",
       "must_include_any": [
-        "projects/rp-framework/systems/inventory-system/system.json"
+        "systems/inventory-system/README.md"
       ]
     },
     {
@@ -584,7 +584,7 @@
       "category": "vehicles",
       "query": "vehicle owner authorized keys locked blocked players evidence verification context 8",
       "must_include_any": [
-        "projects/rp-framework/systems/vehicle-manager/system.json"
+        "systems/vehicle-system/README.md"
       ]
     },
     {
@@ -619,7 +619,7 @@
       "category": "persistence",
       "query": "inventory persistence disconnect transfer anti duplication evidence verification context 8",
       "must_include_any": [
-        "projects/rp-framework/systems/inventory-system/system.json"
+        "systems/inventory-system/README.md"
       ]
     },
     {
@@ -654,7 +654,7 @@
       "category": "vehicles",
       "query": "vehicle owner authorized keys locked blocked players evidence verification context 9",
       "must_include_any": [
-        "projects/rp-framework/systems/vehicle-manager/system.json"
+        "systems/vehicle-system/README.md"
       ]
     },
     {
@@ -689,7 +689,7 @@
       "category": "persistence",
       "query": "inventory persistence disconnect transfer anti duplication evidence verification context 9",
       "must_include_any": [
-        "projects/rp-framework/systems/inventory-system/system.json"
+        "systems/inventory-system/README.md"
       ]
     },
     {
@@ -724,7 +724,7 @@
       "category": "vehicles",
       "query": "vehicle owner authorized keys locked blocked players evidence verification context 10",
       "must_include_any": [
-        "projects/rp-framework/systems/vehicle-manager/system.json"
+        "systems/vehicle-system/README.md"
       ]
     },
     {
@@ -759,7 +759,7 @@
       "category": "persistence",
       "query": "inventory persistence disconnect transfer anti duplication evidence verification context 10",
       "must_include_any": [
-        "projects/rp-framework/systems/inventory-system/system.json"
+        "systems/inventory-system/README.md"
       ]
     },
     {
@@ -794,7 +794,7 @@
       "category": "vehicles",
       "query": "vehicle owner authorized keys locked blocked players evidence verification context 11",
       "must_include_any": [
-        "projects/rp-framework/systems/vehicle-manager/system.json"
+        "systems/vehicle-system/README.md"
       ]
     },
     {
@@ -829,7 +829,7 @@
       "category": "persistence",
       "query": "inventory persistence disconnect transfer anti duplication evidence verification context 11",
       "must_include_any": [
-        "projects/rp-framework/systems/inventory-system/system.json"
+        "systems/inventory-system/README.md"
       ]
     },
     {
@@ -864,7 +864,7 @@
       "category": "vehicles",
       "query": "vehicle owner authorized keys locked blocked players evidence verification context 12",
       "must_include_any": [
-        "projects/rp-framework/systems/vehicle-manager/system.json"
+        "systems/vehicle-system/README.md"
       ]
     },
     {
@@ -899,7 +899,7 @@
       "category": "persistence",
       "query": "inventory persistence disconnect transfer anti duplication evidence verification context 12",
       "must_include_any": [
-        "projects/rp-framework/systems/inventory-system/system.json"
+        "systems/inventory-system/README.md"
       ]
     },
     {

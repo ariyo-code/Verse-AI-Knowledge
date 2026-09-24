@@ -52,3 +52,10 @@ dist/
 !portable/
 !portable/current/
 !portable/current/**
+
+# Private project identity / source mappings — never publish
+.private/
+private_projects/
+local_projects/
+*.project-map.json
+*.private-project.json

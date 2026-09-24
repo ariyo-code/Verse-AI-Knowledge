@@ -11,6 +11,7 @@ from .claims import resolve_claim
 from .knowledge_base import KnowledgeBase
 from .policy import repo_root
 
+
 def run_script(root: Path, rel: str, args: list[str]) -> int:
     return subprocess.run([sys.executable, str(root / rel), *args], cwd=root).returncode
 

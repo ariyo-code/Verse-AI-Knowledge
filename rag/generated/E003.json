@@ -13,7 +13,7 @@
   "sources": [
     {
       "role": "api_evidence",
-      "score": 16.681,
+      "score": 16.871,
       "source_trust": "api-page-verified",
       "validation": "draft",
       "content_role": "data",
@@ -22,7 +22,7 @@
     },
     {
       "role": "lifecycle",
-      "score": 21.984,
+      "score": 22.57,
       "source_trust": "unknown",
       "validation": "draft",
       "content_role": "data",
@@ -31,16 +31,16 @@
     },
     {
       "role": "project_context",
-      "score": 26.253,
+      "score": 10.025,
       "source_trust": "unknown",
       "validation": "draft",
       "content_role": "data",
-      "path": "projects/rp-framework/systems/hud-system/system.json",
-      "title": "system"
+      "path": "projects/README.md",
+      "title": "Projects — public privacy mode"
     },
     {
       "role": "verification",
-      "score": 10.373,
+      "score": 10.975,
       "source_trust": "unknown",
       "validation": "draft",
       "content_role": "data",
@@ -49,12 +49,12 @@
     },
     {
       "role": "project_context",
-      "score": 25.833,
+      "score": 10.025,
       "source_trust": "unknown",
       "validation": "draft",
       "content_role": "data",
-      "path": "projects/rp-framework/decisions/ADR-0003-player-lifecycle.md",
-      "title": "ADR-0003 — Player lifecycle obligatoire"
+      "path": "projects/project_registry.json",
+      "title": "project_registry"
     },
     {
       "role": "api_evidence",
@@ -67,7 +67,7 @@
     },
     {
       "role": "lifecycle",
-      "score": 10.53,
+      "score": 10.858,
       "source_trust": "unknown",
       "validation": "draft",
       "content_role": "data",
@@ -85,7 +85,7 @@
     },
     {
       "role": "verification",
-      "score": 7.866,
+      "score": 8.462,
       "source_trust": "unknown",
       "validation": "draft",
       "content_role": "data",
@@ -94,7 +94,7 @@
     },
     {
       "role": "external_examples",
-      "score": 22.534,
+      "score": 23.092,
       "source_trust": "unknown",
       "validation": "draft",
       "content_role": "data",
@@ -102,22 +102,22 @@
       "title": "Resource Counter UI"
     },
     {
-      "role": "project_context",
-      "score": 23.724,
+      "role": "external_examples",
+      "score": 19.881,
       "source_trust": "unknown",
       "validation": "draft",
       "content_role": "data",
-      "path": "projects/rp-framework/systems/hud-system/README.md",
-      "title": "HUD / UI System"
+      "path": "external/corpus/uefncentral-examples/c5fed52f687964fa83035f52423763553b129391/examples/player-systems/resui-device.verse",
+      "title": "Resource Counter UI"
     },
     {
-      "role": "project_context",
-      "score": 22.653,
+      "role": "external_examples",
+      "score": 19.365,
       "source_trust": "unknown",
       "validation": "draft",
       "content_role": "data",
-      "path": "projects/rp-framework/systems/phone-system/system.json",
-      "title": "system"
+      "path": "external/corpus/uefncentral-examples/c5fed52f687964fa83035f52423763553b129391/examples/player-systems/ui2-device-1.verse",
+      "title": "Resource Counter UI"
     }
   ]
 }

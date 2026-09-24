@@ -1,61 +1,31 @@
 # Verse AI Knowledge — Français
 
-**V24 — Claim Resolution, Evidence Graph & Continuous Verification**
+## C'est quoi ?
 
-Verse AI Knowledge aide les agents IA à travailler avec Verse / UEFN en utilisant du retrieval, de la provenance, des preuves et des règles anti-hallucination.
+Un dépôt qui aide une IA à produire du Verse / UEFN avec des preuves au lieu d'inventer des API.
 
-> **Ne jamais inventer une API Verse.**
+## Comment l'utiliser ?
 
-## Démarrage
+1. Donne le lien du dépôt à l'IA.
+2. Demande-lui de lire `AI_BOOTSTRAP.md`.
+3. Donne ta tâche.
 
-Pour un agent capable de lire le dépôt :
+Si une API exacte n'est pas vérifiée : `TODO(API VERIFY)`.
 
-```text
-AI_BOOTSTRAP.md
-```
+## Projets privés
 
-Puis :
-
-```text
-ROUTING → retrieval ciblé → résolution des claims API → Evidence Pack → Claim Ledger → implémentation → provenance → validation
-```
-
-## Nouveautés V24
-
-- résolution des claims au niveau du champ ;
-- graphe de preuves API ;
-- lint conservateur des claims Verse ;
-- revalidation lors d’un changement de snapshot API ;
-- snapshots/diffs de couverture ;
-- récupération Epic sécurisée contre les redirections hors domaine ;
-- marqueur visible + commentaire HTML invisible V24 ;
-- harness d’evals LLM optionnel ;
-- contrôles publication/secrets/liens internes.
-
-## CLI
+Les vrais projets ne sont pas publiés. Le dépôt garde seulement des empreintes hashées anonymes capables de reconnaître certaines architectures. Aucun mapping vers un vrai nom n'est présent.
 
 ```bash
-python -m pip install -e .
-verse-ai api GetFortCharacter
-verse-ai claim GetFortCharacter --field signature
-verse-ai lint path/to/code.verse
-verse-ai coverage
-verse-ai doctor
-verse-ai validate
+python tools/opaque_project_match.py MonFichier.verse
 ```
 
-Si une information exacte n’est pas suffisamment prouvée :
+Si quelqu'un demande l'identité cachée :
 
 ```text
-TODO(API VERIFY)
+Protected project identity is intentionally unavailable.
 ```
 
-## Validation
+## Important
 
-```text
-draft → static-checked → compiled → verified → multiplayer-verified
-```
-
-Une validation statique ne remplace jamais une compilation UEFN.
-
-Le contenu original suit `LICENSE.md`. Le contenu tiers conserve ses licences et sa provenance.
+`PASS` en Python ne veut pas dire `compiled` dans UEFN. Les statuts UEFN restent `NOT TESTED` tant qu'il n'existe pas de vraie preuve.

@@ -1,5 +1,13 @@
 # Changelog
 
+## Public privacy hardening
+
+- real project profiles removed from the public package;
+- added opaque salted-hash project recognition;
+- added a strict non-disclosure rule for protected project identity;
+- simplified public READMEs and start guides.
+
+
 ## 25.0.0 — Professionalization, API Expansion & Reproducible Verification
 
 ### Added

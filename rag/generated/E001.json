@@ -22,7 +22,7 @@
     },
     {
       "role": "lifecycle",
-      "score": 11.923,
+      "score": 12.293,
       "source_trust": "unknown",
       "validation": "draft",
       "content_role": "data",
@@ -31,16 +31,16 @@
     },
     {
       "role": "project_context",
-      "score": 48.082,
+      "score": 10.025,
       "source_trust": "unknown",
       "validation": "draft",
       "content_role": "data",
-      "path": "projects/rp-framework/systems/vehicle-manager/system.json",
-      "title": "system"
+      "path": "projects/README.md",
+      "title": "Projects — public privacy mode"
     },
     {
       "role": "verification",
-      "score": 16.497,
+      "score": 17.039,
       "source_trust": "unknown",
       "validation": "draft",
       "content_role": "data",
@@ -49,12 +49,12 @@
     },
     {
       "role": "project_context",
-      "score": 32.969,
+      "score": 10.025,
       "source_trust": "unknown",
       "validation": "draft",
       "content_role": "data",
-      "path": "projects/rp-framework/decisions/ADR-0003-player-lifecycle.md",
-      "title": "ADR-0003 — Player lifecycle obligatoire"
+      "path": "projects/project_registry.json",
+      "title": "project_registry"
     },
     {
       "role": "api_evidence",
@@ -67,7 +67,7 @@
     },
     {
       "role": "lifecycle",
-      "score": 7.398,
+      "score": 7.629,
       "source_trust": "unknown",
       "validation": "draft",
       "content_role": "data",
@@ -85,7 +85,7 @@
     },
     {
       "role": "verification",
-      "score": 12.33,
+      "score": 13.12,
       "source_trust": "unknown",
       "validation": "draft",
       "content_role": "data",
@@ -94,7 +94,7 @@
     },
     {
       "role": "external_examples",
-      "score": 16.726,
+      "score": 17.207,
       "source_trust": "unknown",
       "validation": "draft",
       "content_role": "data",
@@ -103,7 +103,7 @@
     },
     {
       "role": "supporting",
-      "score": 30.793,
+      "score": 31.781,
       "source_trust": "unknown",
       "validation": "draft",
       "content_role": "data",
@@ -112,7 +112,7 @@
     },
     {
       "role": "supporting",
-      "score": 29.852,
+      "score": 30.541,
       "source_trust": "unknown",
       "validation": "draft",
       "content_role": "data",

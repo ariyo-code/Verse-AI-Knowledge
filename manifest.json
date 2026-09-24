@@ -65,7 +65,13 @@
     "search_tool": "tools/search_projects.py",
     "scan_tool": "tools/scan_verse_project.py",
     "profile_tool": "tools/create_project_profile.py",
-    "sync_workflow": "mcp/PROJECT_SYNC.md"
+    "sync_workflow": "mcp/PROJECT_SYNC.md",
+    "mode": "opaque-public",
+    "opaque_patterns": "knowledge/project_patterns/",
+    "opaque_pattern_schema": "schemas/opaque_project_pattern.schema.json",
+    "opaque_matcher": "tools/opaque_project_match.py",
+    "privacy_docs": "docs/privacy/OPAQUE_PROJECT_RECOGNITION.md",
+    "identity_mapping_present": false
   },
   "benchmark": {
     "tasks": "benchmark/tasks.json",

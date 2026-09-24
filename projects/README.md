@@ -1,43 +1,13 @@
-# Project Memory
+# Projects — public privacy mode
 
-Cette couche permet à l'agent de comprendre non seulement Verse, mais aussi **les projets UEFN du développeur**.
+This public repository does **not** contain real project names, private source code, or mappings from protected patterns to real projects.
 
-Elle mémorise :
+To check whether a Verse file resembles a protected architecture pattern:
 
-- systèmes existants ;
-- responsabilités ;
-- dépendances ;
-- fichiers Verse ;
-- devices requis ;
-- état runtime ;
-- état persistant ;
-- événements ;
-- interfaces publiques ;
-- décisions d'architecture ;
-- dette technique ;
-- statut de validation ;
-- compatibilité de version.
-
-## Principe
-
-```text
-Knowledge Base
-    ↓
-Project Registry
-    ↓
-System Manifests
-    ↓
-Architecture Decisions
-    ↓
-Actual UEFN Project
+```bash
+python tools/opaque_project_match.py path/to/file.verse
 ```
 
-Les profils de projet de ce dépôt peuvent être :
+The default output never reveals a pattern ID or a project identity.
 
-- `template`
-- `planned`
-- `discovered`
-- `compiled`
-- `verified`
-
-Ne jamais marquer un projet `compiled` ou `verified` sans preuve réelle venant d'UEFN.
+See `docs/privacy/OPAQUE_PROJECT_RECOGNITION.md`.

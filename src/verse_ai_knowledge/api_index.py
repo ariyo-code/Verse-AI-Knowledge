@@ -7,6 +7,7 @@ from typing import Any
 
 from .policy import repo_root
 
+
 def symbols_path(root: Path | None=None) -> Path:
     return (root or repo_root()) / 'knowledge' / 'api' / 'symbols.jsonl'
 

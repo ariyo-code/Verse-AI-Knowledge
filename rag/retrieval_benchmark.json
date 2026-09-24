@@ -21,7 +21,7 @@
       "id": "R003",
       "query": "vehicle owner authorized keys locked blocked players",
       "must_include_any": [
-        "projects/rp-framework/systems/vehicle-manager/system.json"
+        "systems/vehicle-system/README.md"
       ]
     },
     {
@@ -52,7 +52,7 @@
       "id": "R007",
       "query": "inventory persistence disconnect transfer anti duplication",
       "must_include_any": [
-        "projects/rp-framework/systems/inventory-system/system.json"
+        "systems/inventory-system/README.md"
       ]
     },
     {

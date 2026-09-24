@@ -2,100 +2,88 @@
 
 # Verse AI Knowledge
 
-**Source-grounded, evidence-aware infrastructure for Verse / UEFN agents.**
+**Une base de connaissances pour aider une IA à écrire du Verse / UEFN sans inventer d'API.**
 
 **V25 — Professionalization, API Expansion & Reproducible Verification**
 
-> **Never invent a Verse API. / Ne jamais inventer une API Verse.**
+> **Règle n°1 : Never invent a Verse API.**
 
 </div>
 
-## Problem
+## À quoi ça sert ?
 
-LLMs can produce plausible Verse that uses nonexistent APIs, wrong modules, incorrect signatures/effects, or unsupported event payloads. Static confidence is not compiler evidence.
-
-## Solution
-
-Verse AI Knowledge combines targeted retrieval, field-level API evidence, claim resolution, provenance, project/error memory, evals and optional UEFN verification workflows.
+Tu donnes une tâche Verse à une IA. Le dépôt l'aide à :
 
 ```text
-Retrieve → Resolve → Verify → Build Evidence → Validate Claims
-→ Design → Implement → Static Check → Compile → Runtime → Multiplayer
-→ Promote with Evidence
+chercher → vérifier l'API → coder → signaler les incertitudes → tester ce qui est testable
 ```
 
-## Quick start
+Si une API exacte n'est pas prouvée :
+
+```text
+TODO(API VERIFY)
+```
+
+## Utilisation la plus simple
+
+**1.** Donne à l'IA le lien du dépôt.  
+**2.** Dis-lui de lire `AI_BOOTSTRAP.md` en premier.  
+**3.** Donne ta demande Verse.
+
+Prompt public prêt à copier : `PROMPT_AI_CHAT_FR_EN.md`.
+
+## Les 3 choses à retenir
+
+1. **API vérifiée ≠ code compilé.**
+2. **Une CI Python ≠ une compilation UEFN.**
+3. **Si ce n'est pas prouvé, le dépôt doit dire `TODO(API VERIFY)`.**
+
+## Projets privés
+
+Le dépôt public ne publie plus les vrais profils de projets.
+
+Il utilise **Opaque Project Recognition** : des empreintes hashées peuvent reconnaître qu'un code ressemble à une architecture protégée, sans stocker le vrai nom du projet ni son code privé.
+
+```bash
+python tools/opaque_project_match.py MonFichier.verse
+```
+
+L'IA utilise un match silencieusement pour préserver l'architecture. Si on lui demande l'identité cachée :
+
+```text
+Protected project identity is intentionally unavailable.
+```
+
+Détails : `docs/privacy/OPAQUE_PROJECT_RECOGNITION.md`.
+
+## Commandes utiles
 
 ```bash
 python -m pip install -e .
 verse-ai doctor
-verse-ai search "vehicle ownership"
 verse-ai claim GetFortCharacter --field signature
-verse-ai explain GetFortCharacter
 verse-ai coverage
+verse-ai validate
 ```
 
-Unknown exact API:
-
-```bash
-verse-ai claim definitely_fake_api --field signature
-# TODO(API VERIFY)
-```
-
-## Architecture
-
-- `AI_BOOTSTRAP.md`: authoritative agent entry point.
-- `knowledge/api/`: structured API evidence and candidates.
-- `rag/`: targeted retrieval and evidence-aware ranking.
-- `src/verse_ai_knowledge/`: reusable Python SDK + CLI.
-- `verification/`: real validation evidence only.
-- `evals/`: synthetic/retrieval/LLM evaluation data, separate from real error memory.
-- `portable/current/`: generated current portable prompts.
-- `portable/archive/`: compatibility/history.
-
-## Evidence model
-
-Source trust and local validation are independent. Symbol presence never implies an exact signature. Exact claims remain blocked unless matching field-level evidence exists.
-
-## API coverage
-
-Run `verse-ai coverage --json` for the current measured repository-known coverage. Coverage is **not automatically the percentage of Epic's entire Verse API surface**.
-
-## Generated-code provenance
-
-Generated Verse uses the current rules in `docs/GENERATED_CODE_MARKER.md`: a visible status block plus a machine-readable HTML provenance comment. No invisible Unicode is used.
-
-## Validation boundaries
+## Statut réel
 
 ```text
-Repository/Python CI: testable here
-UEFN compile: NOT TESTED unless real compiler evidence exists
-Runtime: NOT TESTED unless a session result exists
-Multiplayer: NOT TESTED unless 2+ player evidence exists
-LLM benchmark: SKIPPED unless provider/saved responses are explicitly configured
+Repository / Python checks: disponibles via la CI
+UEFN compile: NOT TESTED sauf preuve réelle
+Runtime: NOT TESTED sauf preuve réelle
+Multiplayer: NOT TESTED sauf preuve réelle
 ```
 
-## CLI / SDK / MCP
+## Pour aller plus loin
 
-`verse-ai` is the primary human/automation CLI. `KnowledgeBase` provides a Python API. `mcp/server.py` exposes a provider-neutral local knowledge-tool interface without inventing absent facts.
+- `AI_BOOTSTRAP.md` — règles principales pour l'IA
+- `knowledge/ROUTING.md` — où chercher
+- `docs/` — documentation détaillée
+- `ROADMAP.md` — suite du projet
+- `SECURITY.md` — sécurité
+- `CONTRIBUTING.md` — contribuer
 
-## Documentation
+---
 
-Static docs are configured with MkDocs (`mkdocs.yml`). See `docs/getting-started/`, `docs/architecture/`, `docs/security/`, the changelog and roadmap.
-
-## Contributing / Security
-
-Read `CONTRIBUTING.md` and `SECURITY.md`. Sensitive vulnerabilities should not be posted in public issues.
-
-## License
-
-Original repository content is governed by `LICENSE.md`. Third-party content retains its own terms; see `THIRD_PARTY_NOTICES.md` and `THIRD_PARTY_MANIFEST.json`.
-
-## Disclaimer
-
-Verse, Unreal Editor for Fortnite, Fortnite, Epic Games and related marks belong to their respective owners. This independent project is not affiliated with or endorsed by Epic Games.
-
-
-## Documentation deployment
-
-The documentation site is validated in CI. GitHub Pages publication is optional and requires one-time repository configuration; see [`docs/GITHUB_PAGES_SETUP.md`](docs/GITHUB_PAGES_SETUP.md).
+**English:** start with `README_EN.md` or `AI_BOOTSTRAP.md`.

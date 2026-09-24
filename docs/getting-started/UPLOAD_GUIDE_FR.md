@@ -1,34 +1,10 @@
-# Guide de publication GitHub — V24
+# Publier / mettre à jour le dépôt
 
-## Avant le push
+1. Remplace les fichiers de ton clone local par ceux du ZIP public.
+2. Garde le dossier caché `.git`.
+3. Ouvre GitHub Desktop.
+4. Vérifie les changements.
+5. Commit.
+6. Push.
 
-Depuis la racine du dépôt :
-
-```bash
-python -m pip install -e .
-verse-ai validate
-python tools/check_internal_paths.py
-python tools/scan_secrets.py
-```
-
-Vérifie également que `LICENSE.md` et `THIRD_PARTY_NOTICES.md` sont présents.
-
-## Commit conseillé
-
-```text
-Release V24 — Claim Resolution, Evidence Graph & Continuous Verification
-```
-
-## Après le push
-
-Ouvre l'onglet **Actions** et vérifie que **V24 CI** est entièrement vert.
-
-Le démarrage recommandé pour les agents est :
-
-```text
-AI_BOOTSTRAP.md
-```
-
-Les anciens Master Prompts restent uniquement des packs de compatibilité / usage portable.
-
-Une CI verte reste une validation du dépôt. Elle ne prouve pas une compilation UEFN de tout code Verse.
+Ne publie jamais `.private/`, `private_projects/` ou des fichiers contenant les vrais noms/identités de projets protégés.

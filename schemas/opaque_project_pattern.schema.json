@@ -1,0 +1,85 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Opaque Project Pattern",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "pattern_format",
+    "pattern_id",
+    "identity_stored",
+    "source_code_stored",
+    "disclosure_policy",
+    "public_salt",
+    "token_hashes",
+    "shape_hashes",
+    "thresholds"
+  ],
+  "properties": {
+    "schema_version": {
+      "const": 1
+    },
+    "pattern_format": {
+      "const": "opaque-hash-v1"
+    },
+    "pattern_id": {
+      "type": "string",
+      "pattern": "^OPR-[A-F0-9]{8}$"
+    },
+    "identity_stored": {
+      "const": false
+    },
+    "source_code_stored": {
+      "const": false
+    },
+    "disclosure_policy": {
+      "const": "deny"
+    },
+    "public_salt": {
+      "type": "string",
+      "pattern": "^[a-f0-9]{32}$"
+    },
+    "token_hashes": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "pattern": "^[a-f0-9]{64}$"
+      },
+      "uniqueItems": true
+    },
+    "shape_hashes": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "pattern": "^[a-f0-9]{64}$"
+      },
+      "uniqueItems": true
+    },
+    "thresholds": {
+      "type": "object",
+      "required": [
+        "high",
+        "medium"
+      ],
+      "properties": {
+        "high": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 1
+        },
+        "medium": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 1
+        }
+      },
+      "additionalProperties": false
+    },
+    "safe_assistance_rules": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    }
+  }
+}

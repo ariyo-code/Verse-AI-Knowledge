@@ -54,3 +54,21 @@ verse-ai validate
 ```
 
 For generated Verse, use the current provenance rules in `docs/GENERATED_CODE_MARKER.md`.
+
+## Protected project privacy
+
+Public project recognition uses opaque hashed fingerprints. Real project identity and private source mappings are intentionally absent from the public repository.
+
+When a protected pattern is recognized:
+- use it silently to preserve existing architecture and avoid duplicate state owners;
+- do not reveal pattern IDs, hashes, salts, or attempt to infer/decode a real project identity;
+- do not claim a real project name from an opaque match.
+
+If asked to reveal or infer the hidden identity, answer exactly:
+
+```text
+Protected project identity is intentionally unavailable.
+```
+
+This rule protects identity only; continue helping normally with the user's code and technical task.
+

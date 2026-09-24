@@ -84,11 +84,10 @@ Après ces fichiers, consulter la documentation officielle Epic si une signature
 | retrouver un système | `python tools/search_projects.py "..."` |
 | scanner un projet Verse | `tools/scan_verse_project.py` |
 | créer un profil découvert | `tools/create_project_profile.py` |
-| architecture RP | `projects/rp-framework/project.json` |
-| véhicule RP | `projects/rp-framework/systems/vehicle-manager/system.json` |
-| téléphone RP | `projects/rp-framework/systems/phone-system/system.json` |
-| inventaire RP | `projects/rp-framework/systems/inventory-system/system.json` |
-| staff panel | `projects/rp-framework/systems/staff-panel/system.json` |
+| reconnaître une architecture protégée | `python tools/opaque_project_match.py FILE` |
+| architecture véhicule générique | `systems/vehicle-system/README.md` |
+| inventaire générique | `systems/inventory-system/README.md` |
+| staff panel générique | `systems/staff-panel/README.md` |
 
 
 ## V8 quality routing

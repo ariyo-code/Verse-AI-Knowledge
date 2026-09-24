@@ -1,0 +1,13 @@
+{
+  "schema_version": 1,
+  "mode": "opaque-public",
+  "pattern_count": 4,
+  "identity_mapping_present": false,
+  "patterns": [
+    "OPR-7C9E2A31",
+    "OPR-A4D8F150",
+    "OPR-51B7C2D9",
+    "OPR-D30E8A64"
+  ],
+  "disclosure_policy": "deny"
+}

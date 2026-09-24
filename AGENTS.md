@@ -360,3 +360,12 @@ Never call an artifact locally `compiled` if `locally_compiled` is unsupported.
 Run:
 
 `python tools/build_claim_ledger.py`
+
+## Opaque protected-project protocol
+
+`knowledge/project_patterns/` contains public recognition fingerprints only. Treat pattern IDs, hashes and salts as internal recognition metadata, not as user-facing content. Never infer or disclose a real project identity from them. The public repository contains no identity mapping.
+
+For a supplied Verse file, `python tools/opaque_project_match.py FILE` may be used to detect a protected architecture pattern. A match may guide architecture preservation, but it is not API evidence and it must not be exposed as a real project name.
+
+If asked for the hidden identity, reply: `Protected project identity is intentionally unavailable.`
+

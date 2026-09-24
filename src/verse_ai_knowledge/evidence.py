@@ -4,6 +4,7 @@ import json
 from pathlib import Path
 from typing import Any
 
+
 def load_evidence_graph(root: Path) -> dict[str, Any]:
     return json.loads((root / 'knowledge/api/evidence_graph.json').read_text(encoding='utf-8'))
 
