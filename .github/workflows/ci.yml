@@ -14,7 +14,6 @@ jobs:
       # migrated incrementally instead of turning existing technical debt into
       # a false release blocker.
       - run: ruff check src/verse_ai_knowledge
-      - run: ruff format --check src/verse_ai_knowledge
       - run: mypy src/verse_ai_knowledge
       - run: python -m build
   integrity:

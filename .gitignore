@@ -47,3 +47,8 @@ htmlcov/
 build/
 dist/
 *.egg-info/
+
+# V25 canonical portable prompts must be versioned.
+!portable/
+!portable/current/
+!portable/current/**
