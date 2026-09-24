@@ -1,0 +1,26 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "required": [
+    "release",
+    "api_version",
+    "symbol_count",
+    "coverage"
+  ],
+  "properties": {
+    "release": {
+      "type": "string"
+    },
+    "api_version": {
+      "type": "string"
+    },
+    "symbol_count": {
+      "type": "integer",
+      "minimum": 0
+    },
+    "coverage": {
+      "type": "object"
+    }
+  },
+  "additionalProperties": true
+}

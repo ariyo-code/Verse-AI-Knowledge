@@ -1,0 +1,36 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "required": [
+    "release",
+    "schema",
+    "api_snapshot",
+    "checks",
+    "validation_boundaries"
+  ],
+  "properties": {
+    "release": {
+      "type": "string"
+    },
+    "schema": {
+      "type": "integer"
+    },
+    "api_snapshot": {
+      "type": "string"
+    },
+    "checks": {
+      "type": "object"
+    },
+    "validation_boundaries": {
+      "type": "object"
+    },
+    "publication_readiness": {
+      "enum": [
+        "READY",
+        "BLOCKED",
+        "UNKNOWN"
+      ]
+    }
+  },
+  "additionalProperties": true
+}

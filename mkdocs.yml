@@ -1,0 +1,28 @@
+site_name: Verse AI Knowledge
+site_description: Source-grounded Verse / UEFN knowledge and verification tooling
+repo_url: https://github.com/ariyo-code/Verse-AI-Knowledge
+theme:
+  name: material
+nav:
+  - Home: index.md
+  - Getting Started: getting-started/README.md
+  - How It Works: how-it-works.md
+  - Architecture: architecture/V25_PROFESSIONALIZATION.md
+  - API Knowledge:
+      - Versioning: api/API_VERSIONING.md
+      - Event Payloads: api/EVENT_PAYLOAD_VERIFICATION.md
+  - Evidence Model: architecture/CLAIM_LEDGER.md
+  - RAG: architecture/RAG_INDEX_POLICY.md
+  - CLI: cli.md
+  - UEFN Integration: uefn/README.md
+  - VerseLab: verselab.md
+  - UI Creator: ui/CURRENT_UI_API.md
+  - Benchmarks: benchmarks.md
+  - External Corpus: external-corpus.md
+  - Security:
+      - Prompt Injection: security/PROMPT_INJECTION.md
+      - Branch Protection: security/BRANCH_PROTECTION.md
+      - Supply Chain: security/SUPPLY_CHAIN.md
+  - Contributing: contributing.md
+  - Changelog: changelog.md
+  - Roadmap: roadmap.md

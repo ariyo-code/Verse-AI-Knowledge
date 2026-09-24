@@ -37,3 +37,13 @@ DerivedDataCache/
 
 # Archives
 *.zip
+
+# Python tooling output
+.coverage
+coverage.xml
+htmlcov/
+.mypy_cache/
+.ruff_cache/
+build/
+dist/
+*.egg-info/

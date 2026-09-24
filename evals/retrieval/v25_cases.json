@@ -1,0 +1,916 @@
+{
+  "schema_version": 1,
+  "cases": [
+    {
+      "id": "V25R001",
+      "category": "devices",
+      "query": "button_device InteractedWithEvent Subscribe agent",
+      "must_include_any": [
+        "docs/api/core/button_device.md",
+        "examples/draft/button_event/README.md"
+      ]
+    },
+    {
+      "id": "V25R002",
+      "category": "characters",
+      "query": "GetFortCharacter decides transacts failure context",
+      "must_include_any": [
+        "docs/api/core/GetFortCharacter.md",
+        "docs/language/failure-and-effects.md"
+      ]
+    },
+    {
+      "id": "V25R003",
+      "category": "vehicles",
+      "query": "vehicle owner authorized keys locked blocked players",
+      "must_include_any": [
+        "projects/rp-framework/systems/vehicle-manager/system.json"
+      ]
+    },
+    {
+      "id": "V25R004",
+      "category": "errors",
+      "query": "UEFN compiler error memory exact message",
+      "must_include_any": [
+        "mcp/ERROR_FEEDBACK_LOOP.md",
+        "errors/README.md"
+      ]
+    },
+    {
+      "id": "V25R005",
+      "category": "ui",
+      "query": "player ui canvas widget leave cleanup",
+      "must_include_any": [
+        "docs/ui/CURRENT_UI_API.md",
+        "docs/patterns/ui-lifecycle.md"
+      ]
+    },
+    {
+      "id": "V25R006",
+      "category": "maintenance",
+      "query": "Epic update revalidation version API maintenance",
+      "must_include_any": [
+        "maintenance/README.md",
+        "prompts/MAINTENANCE_AGENT.md"
+      ]
+    },
+    {
+      "id": "V25R007",
+      "category": "persistence",
+      "query": "inventory persistence disconnect transfer anti duplication",
+      "must_include_any": [
+        "projects/rp-framework/systems/inventory-system/system.json"
+      ]
+    },
+    {
+      "id": "V25R008",
+      "category": "scenegraph",
+      "query": "SceneGraph OnSimulate suspends lifecycle",
+      "must_include_any": [
+        "docs/scenegraph/LIFECYCLE.md",
+        "docs/api/core/component.OnSimulate.md"
+      ]
+    },
+    {
+      "id": "V25R009",
+      "category": "devices",
+      "query": "button_device InteractedWithEvent Subscribe agent evidence verification context 1",
+      "must_include_any": [
+        "docs/api/core/button_device.md",
+        "examples/draft/button_event/README.md"
+      ]
+    },
+    {
+      "id": "V25R010",
+      "category": "characters",
+      "query": "GetFortCharacter decides transacts failure context evidence verification context 1",
+      "must_include_any": [
+        "docs/api/core/GetFortCharacter.md",
+        "docs/language/failure-and-effects.md"
+      ]
+    },
+    {
+      "id": "V25R011",
+      "category": "vehicles",
+      "query": "vehicle owner authorized keys locked blocked players evidence verification context 1",
+      "must_include_any": [
+        "projects/rp-framework/systems/vehicle-manager/system.json"
+      ]
+    },
+    {
+      "id": "V25R012",
+      "category": "errors",
+      "query": "UEFN compiler error memory exact message evidence verification context 1",
+      "must_include_any": [
+        "mcp/ERROR_FEEDBACK_LOOP.md",
+        "errors/README.md"
+      ]
+    },
+    {
+      "id": "V25R013",
+      "category": "ui",
+      "query": "player ui canvas widget leave cleanup evidence verification context 1",
+      "must_include_any": [
+        "docs/ui/CURRENT_UI_API.md",
+        "docs/patterns/ui-lifecycle.md"
+      ]
+    },
+    {
+      "id": "V25R014",
+      "category": "maintenance",
+      "query": "Epic update revalidation version API maintenance evidence verification context 1",
+      "must_include_any": [
+        "maintenance/README.md",
+        "prompts/MAINTENANCE_AGENT.md"
+      ]
+    },
+    {
+      "id": "V25R015",
+      "category": "persistence",
+      "query": "inventory persistence disconnect transfer anti duplication evidence verification context 1",
+      "must_include_any": [
+        "projects/rp-framework/systems/inventory-system/system.json"
+      ]
+    },
+    {
+      "id": "V25R016",
+      "category": "scenegraph",
+      "query": "SceneGraph OnSimulate suspends lifecycle evidence verification context 1",
+      "must_include_any": [
+        "docs/scenegraph/LIFECYCLE.md",
+        "docs/api/core/component.OnSimulate.md"
+      ]
+    },
+    {
+      "id": "V25R017",
+      "category": "devices",
+      "query": "button_device InteractedWithEvent Subscribe agent evidence verification context 2",
+      "must_include_any": [
+        "docs/api/core/button_device.md",
+        "examples/draft/button_event/README.md"
+      ]
+    },
+    {
+      "id": "V25R018",
+      "category": "characters",
+      "query": "GetFortCharacter decides transacts failure context evidence verification context 2",
+      "must_include_any": [
+        "docs/api/core/GetFortCharacter.md",
+        "docs/language/failure-and-effects.md"
+      ]
+    },
+    {
+      "id": "V25R019",
+      "category": "vehicles",
+      "query": "vehicle owner authorized keys locked blocked players evidence verification context 2",
+      "must_include_any": [
+        "projects/rp-framework/systems/vehicle-manager/system.json"
+      ]
+    },
+    {
+      "id": "V25R020",
+      "category": "errors",
+      "query": "UEFN compiler error memory exact message evidence verification context 2",
+      "must_include_any": [
+        "mcp/ERROR_FEEDBACK_LOOP.md",
+        "errors/README.md"
+      ]
+    },
+    {
+      "id": "V25R021",
+      "category": "ui",
+      "query": "player ui canvas widget leave cleanup evidence verification context 2",
+      "must_include_any": [
+        "docs/ui/CURRENT_UI_API.md",
+        "docs/patterns/ui-lifecycle.md"
+      ]
+    },
+    {
+      "id": "V25R022",
+      "category": "maintenance",
+      "query": "Epic update revalidation version API maintenance evidence verification context 2",
+      "must_include_any": [
+        "maintenance/README.md",
+        "prompts/MAINTENANCE_AGENT.md"
+      ]
+    },
+    {
+      "id": "V25R023",
+      "category": "persistence",
+      "query": "inventory persistence disconnect transfer anti duplication evidence verification context 2",
+      "must_include_any": [
+        "projects/rp-framework/systems/inventory-system/system.json"
+      ]
+    },
+    {
+      "id": "V25R024",
+      "category": "scenegraph",
+      "query": "SceneGraph OnSimulate suspends lifecycle evidence verification context 2",
+      "must_include_any": [
+        "docs/scenegraph/LIFECYCLE.md",
+        "docs/api/core/component.OnSimulate.md"
+      ]
+    },
+    {
+      "id": "V25R025",
+      "category": "devices",
+      "query": "button_device InteractedWithEvent Subscribe agent evidence verification context 3",
+      "must_include_any": [
+        "docs/api/core/button_device.md",
+        "examples/draft/button_event/README.md"
+      ]
+    },
+    {
+      "id": "V25R026",
+      "category": "characters",
+      "query": "GetFortCharacter decides transacts failure context evidence verification context 3",
+      "must_include_any": [
+        "docs/api/core/GetFortCharacter.md",
+        "docs/language/failure-and-effects.md"
+      ]
+    },
+    {
+      "id": "V25R027",
+      "category": "vehicles",
+      "query": "vehicle owner authorized keys locked blocked players evidence verification context 3",
+      "must_include_any": [
+        "projects/rp-framework/systems/vehicle-manager/system.json"
+      ]
+    },
+    {
+      "id": "V25R028",
+      "category": "errors",
+      "query": "UEFN compiler error memory exact message evidence verification context 3",
+      "must_include_any": [
+        "mcp/ERROR_FEEDBACK_LOOP.md",
+        "errors/README.md"
+      ]
+    },
+    {
+      "id": "V25R029",
+      "category": "ui",
+      "query": "player ui canvas widget leave cleanup evidence verification context 3",
+      "must_include_any": [
+        "docs/ui/CURRENT_UI_API.md",
+        "docs/patterns/ui-lifecycle.md"
+      ]
+    },
+    {
+      "id": "V25R030",
+      "category": "maintenance",
+      "query": "Epic update revalidation version API maintenance evidence verification context 3",
+      "must_include_any": [
+        "maintenance/README.md",
+        "prompts/MAINTENANCE_AGENT.md"
+      ]
+    },
+    {
+      "id": "V25R031",
+      "category": "persistence",
+      "query": "inventory persistence disconnect transfer anti duplication evidence verification context 3",
+      "must_include_any": [
+        "projects/rp-framework/systems/inventory-system/system.json"
+      ]
+    },
+    {
+      "id": "V25R032",
+      "category": "scenegraph",
+      "query": "SceneGraph OnSimulate suspends lifecycle evidence verification context 3",
+      "must_include_any": [
+        "docs/scenegraph/LIFECYCLE.md",
+        "docs/api/core/component.OnSimulate.md"
+      ]
+    },
+    {
+      "id": "V25R033",
+      "category": "devices",
+      "query": "button_device InteractedWithEvent Subscribe agent evidence verification context 4",
+      "must_include_any": [
+        "docs/api/core/button_device.md",
+        "examples/draft/button_event/README.md"
+      ]
+    },
+    {
+      "id": "V25R034",
+      "category": "characters",
+      "query": "GetFortCharacter decides transacts failure context evidence verification context 4",
+      "must_include_any": [
+        "docs/api/core/GetFortCharacter.md",
+        "docs/language/failure-and-effects.md"
+      ]
+    },
+    {
+      "id": "V25R035",
+      "category": "vehicles",
+      "query": "vehicle owner authorized keys locked blocked players evidence verification context 4",
+      "must_include_any": [
+        "projects/rp-framework/systems/vehicle-manager/system.json"
+      ]
+    },
+    {
+      "id": "V25R036",
+      "category": "errors",
+      "query": "UEFN compiler error memory exact message evidence verification context 4",
+      "must_include_any": [
+        "mcp/ERROR_FEEDBACK_LOOP.md",
+        "errors/README.md"
+      ]
+    },
+    {
+      "id": "V25R037",
+      "category": "ui",
+      "query": "player ui canvas widget leave cleanup evidence verification context 4",
+      "must_include_any": [
+        "docs/ui/CURRENT_UI_API.md",
+        "docs/patterns/ui-lifecycle.md"
+      ]
+    },
+    {
+      "id": "V25R038",
+      "category": "maintenance",
+      "query": "Epic update revalidation version API maintenance evidence verification context 4",
+      "must_include_any": [
+        "maintenance/README.md",
+        "prompts/MAINTENANCE_AGENT.md"
+      ]
+    },
+    {
+      "id": "V25R039",
+      "category": "persistence",
+      "query": "inventory persistence disconnect transfer anti duplication evidence verification context 4",
+      "must_include_any": [
+        "projects/rp-framework/systems/inventory-system/system.json"
+      ]
+    },
+    {
+      "id": "V25R040",
+      "category": "scenegraph",
+      "query": "SceneGraph OnSimulate suspends lifecycle evidence verification context 4",
+      "must_include_any": [
+        "docs/scenegraph/LIFECYCLE.md",
+        "docs/api/core/component.OnSimulate.md"
+      ]
+    },
+    {
+      "id": "V25R041",
+      "category": "devices",
+      "query": "button_device InteractedWithEvent Subscribe agent evidence verification context 5",
+      "must_include_any": [
+        "docs/api/core/button_device.md",
+        "examples/draft/button_event/README.md"
+      ]
+    },
+    {
+      "id": "V25R042",
+      "category": "characters",
+      "query": "GetFortCharacter decides transacts failure context evidence verification context 5",
+      "must_include_any": [
+        "docs/api/core/GetFortCharacter.md",
+        "docs/language/failure-and-effects.md"
+      ]
+    },
+    {
+      "id": "V25R043",
+      "category": "vehicles",
+      "query": "vehicle owner authorized keys locked blocked players evidence verification context 5",
+      "must_include_any": [
+        "projects/rp-framework/systems/vehicle-manager/system.json"
+      ]
+    },
+    {
+      "id": "V25R044",
+      "category": "errors",
+      "query": "UEFN compiler error memory exact message evidence verification context 5",
+      "must_include_any": [
+        "mcp/ERROR_FEEDBACK_LOOP.md",
+        "errors/README.md"
+      ]
+    },
+    {
+      "id": "V25R045",
+      "category": "ui",
+      "query": "player ui canvas widget leave cleanup evidence verification context 5",
+      "must_include_any": [
+        "docs/ui/CURRENT_UI_API.md",
+        "docs/patterns/ui-lifecycle.md"
+      ]
+    },
+    {
+      "id": "V25R046",
+      "category": "maintenance",
+      "query": "Epic update revalidation version API maintenance evidence verification context 5",
+      "must_include_any": [
+        "maintenance/README.md",
+        "prompts/MAINTENANCE_AGENT.md"
+      ]
+    },
+    {
+      "id": "V25R047",
+      "category": "persistence",
+      "query": "inventory persistence disconnect transfer anti duplication evidence verification context 5",
+      "must_include_any": [
+        "projects/rp-framework/systems/inventory-system/system.json"
+      ]
+    },
+    {
+      "id": "V25R048",
+      "category": "scenegraph",
+      "query": "SceneGraph OnSimulate suspends lifecycle evidence verification context 5",
+      "must_include_any": [
+        "docs/scenegraph/LIFECYCLE.md",
+        "docs/api/core/component.OnSimulate.md"
+      ]
+    },
+    {
+      "id": "V25R049",
+      "category": "devices",
+      "query": "button_device InteractedWithEvent Subscribe agent evidence verification context 6",
+      "must_include_any": [
+        "docs/api/core/button_device.md",
+        "examples/draft/button_event/README.md"
+      ]
+    },
+    {
+      "id": "V25R050",
+      "category": "characters",
+      "query": "GetFortCharacter decides transacts failure context evidence verification context 6",
+      "must_include_any": [
+        "docs/api/core/GetFortCharacter.md",
+        "docs/language/failure-and-effects.md"
+      ]
+    },
+    {
+      "id": "V25R051",
+      "category": "vehicles",
+      "query": "vehicle owner authorized keys locked blocked players evidence verification context 6",
+      "must_include_any": [
+        "projects/rp-framework/systems/vehicle-manager/system.json"
+      ]
+    },
+    {
+      "id": "V25R052",
+      "category": "errors",
+      "query": "UEFN compiler error memory exact message evidence verification context 6",
+      "must_include_any": [
+        "mcp/ERROR_FEEDBACK_LOOP.md",
+        "errors/README.md"
+      ]
+    },
+    {
+      "id": "V25R053",
+      "category": "ui",
+      "query": "player ui canvas widget leave cleanup evidence verification context 6",
+      "must_include_any": [
+        "docs/ui/CURRENT_UI_API.md",
+        "docs/patterns/ui-lifecycle.md"
+      ]
+    },
+    {
+      "id": "V25R054",
+      "category": "maintenance",
+      "query": "Epic update revalidation version API maintenance evidence verification context 6",
+      "must_include_any": [
+        "maintenance/README.md",
+        "prompts/MAINTENANCE_AGENT.md"
+      ]
+    },
+    {
+      "id": "V25R055",
+      "category": "persistence",
+      "query": "inventory persistence disconnect transfer anti duplication evidence verification context 6",
+      "must_include_any": [
+        "projects/rp-framework/systems/inventory-system/system.json"
+      ]
+    },
+    {
+      "id": "V25R056",
+      "category": "scenegraph",
+      "query": "SceneGraph OnSimulate suspends lifecycle evidence verification context 6",
+      "must_include_any": [
+        "docs/scenegraph/LIFECYCLE.md",
+        "docs/api/core/component.OnSimulate.md"
+      ]
+    },
+    {
+      "id": "V25R057",
+      "category": "devices",
+      "query": "button_device InteractedWithEvent Subscribe agent evidence verification context 7",
+      "must_include_any": [
+        "docs/api/core/button_device.md",
+        "examples/draft/button_event/README.md"
+      ]
+    },
+    {
+      "id": "V25R058",
+      "category": "characters",
+      "query": "GetFortCharacter decides transacts failure context evidence verification context 7",
+      "must_include_any": [
+        "docs/api/core/GetFortCharacter.md",
+        "docs/language/failure-and-effects.md"
+      ]
+    },
+    {
+      "id": "V25R059",
+      "category": "vehicles",
+      "query": "vehicle owner authorized keys locked blocked players evidence verification context 7",
+      "must_include_any": [
+        "projects/rp-framework/systems/vehicle-manager/system.json"
+      ]
+    },
+    {
+      "id": "V25R060",
+      "category": "errors",
+      "query": "UEFN compiler error memory exact message evidence verification context 7",
+      "must_include_any": [
+        "mcp/ERROR_FEEDBACK_LOOP.md",
+        "errors/README.md"
+      ]
+    },
+    {
+      "id": "V25R061",
+      "category": "ui",
+      "query": "player ui canvas widget leave cleanup evidence verification context 7",
+      "must_include_any": [
+        "docs/ui/CURRENT_UI_API.md",
+        "docs/patterns/ui-lifecycle.md"
+      ]
+    },
+    {
+      "id": "V25R062",
+      "category": "maintenance",
+      "query": "Epic update revalidation version API maintenance evidence verification context 7",
+      "must_include_any": [
+        "maintenance/README.md",
+        "prompts/MAINTENANCE_AGENT.md"
+      ]
+    },
+    {
+      "id": "V25R063",
+      "category": "persistence",
+      "query": "inventory persistence disconnect transfer anti duplication evidence verification context 7",
+      "must_include_any": [
+        "projects/rp-framework/systems/inventory-system/system.json"
+      ]
+    },
+    {
+      "id": "V25R064",
+      "category": "scenegraph",
+      "query": "SceneGraph OnSimulate suspends lifecycle evidence verification context 7",
+      "must_include_any": [
+        "docs/scenegraph/LIFECYCLE.md",
+        "docs/api/core/component.OnSimulate.md"
+      ]
+    },
+    {
+      "id": "V25R065",
+      "category": "devices",
+      "query": "button_device InteractedWithEvent Subscribe agent evidence verification context 8",
+      "must_include_any": [
+        "docs/api/core/button_device.md",
+        "examples/draft/button_event/README.md"
+      ]
+    },
+    {
+      "id": "V25R066",
+      "category": "characters",
+      "query": "GetFortCharacter decides transacts failure context evidence verification context 8",
+      "must_include_any": [
+        "docs/api/core/GetFortCharacter.md",
+        "docs/language/failure-and-effects.md"
+      ]
+    },
+    {
+      "id": "V25R067",
+      "category": "vehicles",
+      "query": "vehicle owner authorized keys locked blocked players evidence verification context 8",
+      "must_include_any": [
+        "projects/rp-framework/systems/vehicle-manager/system.json"
+      ]
+    },
+    {
+      "id": "V25R068",
+      "category": "errors",
+      "query": "UEFN compiler error memory exact message evidence verification context 8",
+      "must_include_any": [
+        "mcp/ERROR_FEEDBACK_LOOP.md",
+        "errors/README.md"
+      ]
+    },
+    {
+      "id": "V25R069",
+      "category": "ui",
+      "query": "player ui canvas widget leave cleanup evidence verification context 8",
+      "must_include_any": [
+        "docs/ui/CURRENT_UI_API.md",
+        "docs/patterns/ui-lifecycle.md"
+      ]
+    },
+    {
+      "id": "V25R070",
+      "category": "maintenance",
+      "query": "Epic update revalidation version API maintenance evidence verification context 8",
+      "must_include_any": [
+        "maintenance/README.md",
+        "prompts/MAINTENANCE_AGENT.md"
+      ]
+    },
+    {
+      "id": "V25R071",
+      "category": "persistence",
+      "query": "inventory persistence disconnect transfer anti duplication evidence verification context 8",
+      "must_include_any": [
+        "projects/rp-framework/systems/inventory-system/system.json"
+      ]
+    },
+    {
+      "id": "V25R072",
+      "category": "scenegraph",
+      "query": "SceneGraph OnSimulate suspends lifecycle evidence verification context 8",
+      "must_include_any": [
+        "docs/scenegraph/LIFECYCLE.md",
+        "docs/api/core/component.OnSimulate.md"
+      ]
+    },
+    {
+      "id": "V25R073",
+      "category": "devices",
+      "query": "button_device InteractedWithEvent Subscribe agent evidence verification context 9",
+      "must_include_any": [
+        "docs/api/core/button_device.md",
+        "examples/draft/button_event/README.md"
+      ]
+    },
+    {
+      "id": "V25R074",
+      "category": "characters",
+      "query": "GetFortCharacter decides transacts failure context evidence verification context 9",
+      "must_include_any": [
+        "docs/api/core/GetFortCharacter.md",
+        "docs/language/failure-and-effects.md"
+      ]
+    },
+    {
+      "id": "V25R075",
+      "category": "vehicles",
+      "query": "vehicle owner authorized keys locked blocked players evidence verification context 9",
+      "must_include_any": [
+        "projects/rp-framework/systems/vehicle-manager/system.json"
+      ]
+    },
+    {
+      "id": "V25R076",
+      "category": "errors",
+      "query": "UEFN compiler error memory exact message evidence verification context 9",
+      "must_include_any": [
+        "mcp/ERROR_FEEDBACK_LOOP.md",
+        "errors/README.md"
+      ]
+    },
+    {
+      "id": "V25R077",
+      "category": "ui",
+      "query": "player ui canvas widget leave cleanup evidence verification context 9",
+      "must_include_any": [
+        "docs/ui/CURRENT_UI_API.md",
+        "docs/patterns/ui-lifecycle.md"
+      ]
+    },
+    {
+      "id": "V25R078",
+      "category": "maintenance",
+      "query": "Epic update revalidation version API maintenance evidence verification context 9",
+      "must_include_any": [
+        "maintenance/README.md",
+        "prompts/MAINTENANCE_AGENT.md"
+      ]
+    },
+    {
+      "id": "V25R079",
+      "category": "persistence",
+      "query": "inventory persistence disconnect transfer anti duplication evidence verification context 9",
+      "must_include_any": [
+        "projects/rp-framework/systems/inventory-system/system.json"
+      ]
+    },
+    {
+      "id": "V25R080",
+      "category": "scenegraph",
+      "query": "SceneGraph OnSimulate suspends lifecycle evidence verification context 9",
+      "must_include_any": [
+        "docs/scenegraph/LIFECYCLE.md",
+        "docs/api/core/component.OnSimulate.md"
+      ]
+    },
+    {
+      "id": "V25R081",
+      "category": "devices",
+      "query": "button_device InteractedWithEvent Subscribe agent evidence verification context 10",
+      "must_include_any": [
+        "docs/api/core/button_device.md",
+        "examples/draft/button_event/README.md"
+      ]
+    },
+    {
+      "id": "V25R082",
+      "category": "characters",
+      "query": "GetFortCharacter decides transacts failure context evidence verification context 10",
+      "must_include_any": [
+        "docs/api/core/GetFortCharacter.md",
+        "docs/language/failure-and-effects.md"
+      ]
+    },
+    {
+      "id": "V25R083",
+      "category": "vehicles",
+      "query": "vehicle owner authorized keys locked blocked players evidence verification context 10",
+      "must_include_any": [
+        "projects/rp-framework/systems/vehicle-manager/system.json"
+      ]
+    },
+    {
+      "id": "V25R084",
+      "category": "errors",
+      "query": "UEFN compiler error memory exact message evidence verification context 10",
+      "must_include_any": [
+        "mcp/ERROR_FEEDBACK_LOOP.md",
+        "errors/README.md"
+      ]
+    },
+    {
+      "id": "V25R085",
+      "category": "ui",
+      "query": "player ui canvas widget leave cleanup evidence verification context 10",
+      "must_include_any": [
+        "docs/ui/CURRENT_UI_API.md",
+        "docs/patterns/ui-lifecycle.md"
+      ]
+    },
+    {
+      "id": "V25R086",
+      "category": "maintenance",
+      "query": "Epic update revalidation version API maintenance evidence verification context 10",
+      "must_include_any": [
+        "maintenance/README.md",
+        "prompts/MAINTENANCE_AGENT.md"
+      ]
+    },
+    {
+      "id": "V25R087",
+      "category": "persistence",
+      "query": "inventory persistence disconnect transfer anti duplication evidence verification context 10",
+      "must_include_any": [
+        "projects/rp-framework/systems/inventory-system/system.json"
+      ]
+    },
+    {
+      "id": "V25R088",
+      "category": "scenegraph",
+      "query": "SceneGraph OnSimulate suspends lifecycle evidence verification context 10",
+      "must_include_any": [
+        "docs/scenegraph/LIFECYCLE.md",
+        "docs/api/core/component.OnSimulate.md"
+      ]
+    },
+    {
+      "id": "V25R089",
+      "category": "devices",
+      "query": "button_device InteractedWithEvent Subscribe agent evidence verification context 11",
+      "must_include_any": [
+        "docs/api/core/button_device.md",
+        "examples/draft/button_event/README.md"
+      ]
+    },
+    {
+      "id": "V25R090",
+      "category": "characters",
+      "query": "GetFortCharacter decides transacts failure context evidence verification context 11",
+      "must_include_any": [
+        "docs/api/core/GetFortCharacter.md",
+        "docs/language/failure-and-effects.md"
+      ]
+    },
+    {
+      "id": "V25R091",
+      "category": "vehicles",
+      "query": "vehicle owner authorized keys locked blocked players evidence verification context 11",
+      "must_include_any": [
+        "projects/rp-framework/systems/vehicle-manager/system.json"
+      ]
+    },
+    {
+      "id": "V25R092",
+      "category": "errors",
+      "query": "UEFN compiler error memory exact message evidence verification context 11",
+      "must_include_any": [
+        "mcp/ERROR_FEEDBACK_LOOP.md",
+        "errors/README.md"
+      ]
+    },
+    {
+      "id": "V25R093",
+      "category": "ui",
+      "query": "player ui canvas widget leave cleanup evidence verification context 11",
+      "must_include_any": [
+        "docs/ui/CURRENT_UI_API.md",
+        "docs/patterns/ui-lifecycle.md"
+      ]
+    },
+    {
+      "id": "V25R094",
+      "category": "maintenance",
+      "query": "Epic update revalidation version API maintenance evidence verification context 11",
+      "must_include_any": [
+        "maintenance/README.md",
+        "prompts/MAINTENANCE_AGENT.md"
+      ]
+    },
+    {
+      "id": "V25R095",
+      "category": "persistence",
+      "query": "inventory persistence disconnect transfer anti duplication evidence verification context 11",
+      "must_include_any": [
+        "projects/rp-framework/systems/inventory-system/system.json"
+      ]
+    },
+    {
+      "id": "V25R096",
+      "category": "scenegraph",
+      "query": "SceneGraph OnSimulate suspends lifecycle evidence verification context 11",
+      "must_include_any": [
+        "docs/scenegraph/LIFECYCLE.md",
+        "docs/api/core/component.OnSimulate.md"
+      ]
+    },
+    {
+      "id": "V25R097",
+      "category": "devices",
+      "query": "button_device InteractedWithEvent Subscribe agent evidence verification context 12",
+      "must_include_any": [
+        "docs/api/core/button_device.md",
+        "examples/draft/button_event/README.md"
+      ]
+    },
+    {
+      "id": "V25R098",
+      "category": "characters",
+      "query": "GetFortCharacter decides transacts failure context evidence verification context 12",
+      "must_include_any": [
+        "docs/api/core/GetFortCharacter.md",
+        "docs/language/failure-and-effects.md"
+      ]
+    },
+    {
+      "id": "V25R099",
+      "category": "vehicles",
+      "query": "vehicle owner authorized keys locked blocked players evidence verification context 12",
+      "must_include_any": [
+        "projects/rp-framework/systems/vehicle-manager/system.json"
+      ]
+    },
+    {
+      "id": "V25R100",
+      "category": "errors",
+      "query": "UEFN compiler error memory exact message evidence verification context 12",
+      "must_include_any": [
+        "mcp/ERROR_FEEDBACK_LOOP.md",
+        "errors/README.md"
+      ]
+    },
+    {
+      "id": "V25R101",
+      "category": "ui",
+      "query": "player ui canvas widget leave cleanup evidence verification context 12",
+      "must_include_any": [
+        "docs/ui/CURRENT_UI_API.md",
+        "docs/patterns/ui-lifecycle.md"
+      ]
+    },
+    {
+      "id": "V25R102",
+      "category": "maintenance",
+      "query": "Epic update revalidation version API maintenance evidence verification context 12",
+      "must_include_any": [
+        "maintenance/README.md",
+        "prompts/MAINTENANCE_AGENT.md"
+      ]
+    },
+    {
+      "id": "V25R103",
+      "category": "persistence",
+      "query": "inventory persistence disconnect transfer anti duplication evidence verification context 12",
+      "must_include_any": [
+        "projects/rp-framework/systems/inventory-system/system.json"
+      ]
+    },
+    {
+      "id": "V25R104",
+      "category": "scenegraph",
+      "query": "SceneGraph OnSimulate suspends lifecycle evidence verification context 12",
+      "must_include_any": [
+        "docs/scenegraph/LIFECYCLE.md",
+        "docs/api/core/component.OnSimulate.md"
+      ]
+    }
+  ],
+  "note": "Expanded retrieval stress set derived from reviewed V24 expectations; no success metric is predeclared."
+}

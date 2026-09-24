@@ -1,0 +1,7 @@
+{
+  "title": "Provenance",
+  "lines": [
+    "Use the current provenance rules defined by docs/GENERATED_CODE_MARKER.md.",
+    "Never use invisible Unicode, zero-width or bidi-control characters as provenance."
+  ]
+}

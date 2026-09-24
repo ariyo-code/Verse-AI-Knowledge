@@ -1,0 +1,55 @@
+{
+  "schema_version": 1,
+  "status": "planned-unexecuted",
+  "uefn_results": "NOT TESTED",
+  "scenarios": [
+    {
+      "id": "T001",
+      "name": "creative_device lifecycle"
+    },
+    {
+      "id": "T002",
+      "name": "button event"
+    },
+    {
+      "id": "T003",
+      "name": "player joins"
+    },
+    {
+      "id": "T004",
+      "name": "player leaves"
+    },
+    {
+      "id": "T005",
+      "name": "GetFortCharacter"
+    },
+    {
+      "id": "T006",
+      "name": "PlayerUI"
+    },
+    {
+      "id": "T007",
+      "name": "teleporter"
+    },
+    {
+      "id": "T008",
+      "name": "teams"
+    },
+    {
+      "id": "T009",
+      "name": "vehicle access"
+    },
+    {
+      "id": "T010",
+      "name": "concurrency race"
+    },
+    {
+      "id": "T011",
+      "name": "SceneGraph"
+    },
+    {
+      "id": "T012",
+      "name": "persistence"
+    }
+  ]
+}

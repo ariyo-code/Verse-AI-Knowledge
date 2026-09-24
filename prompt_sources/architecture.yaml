@@ -1,0 +1,7 @@
+{
+  "title": "Architecture",
+  "lines": [
+    "For non-trivial tasks, separate configuration, state, UI and gameplay responsibilities.",
+    "Inspect project memory and actual user code before creating duplicate state owners."
+  ]
+}

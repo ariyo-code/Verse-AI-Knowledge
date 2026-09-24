@@ -1,3 +1,4 @@
-"""Verse AI Knowledge V24 tooling."""
+from .knowledge_base import KnowledgeBase
 
-__version__ = "24.0.0"
+__all__ = ["KnowledgeBase"]
+__version__ = "25.0.0"

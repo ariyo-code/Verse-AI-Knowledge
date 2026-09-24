@@ -1,0 +1,8 @@
+# Replace @ariyo-code if ownership changes.
+* @ariyo-code
+/knowledge/api/ @ariyo-code
+/schemas/ @ariyo-code
+/.github/ @ariyo-code
+/LICENSE.md @ariyo-code
+/SECURITY.md @ariyo-code
+/tools/ @ariyo-code

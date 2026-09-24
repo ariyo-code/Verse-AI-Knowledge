@@ -5,7 +5,7 @@ import sys
 
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT / "tools"))
-from migrate_api_catalog_v24 import build_generated, build_evidence_graph  # noqa: E402
+from migrate_api_catalog_v25 import build_generated, build_evidence_graph  # noqa: E402
 
 rows, _, _ = build_generated(ROOT)
 graph = build_evidence_graph(rows, ROOT)

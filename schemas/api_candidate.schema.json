@@ -1,0 +1,42 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Verse API Candidate",
+  "type": "object",
+  "required": [
+    "symbol_id",
+    "api_version",
+    "source_url",
+    "status"
+  ],
+  "properties": {
+    "symbol_id": {
+      "type": "string"
+    },
+    "api_version": {
+      "type": "string"
+    },
+    "source_url": {
+      "type": "string",
+      "pattern": "^https://dev\\.epicgames\\.com/"
+    },
+    "status": {
+      "const": "unverified"
+    },
+    "candidate": {
+      "type": "object"
+    },
+    "source_hash": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "review_notes": {
+      "type": [
+        "string",
+        "null"
+      ]
+    }
+  },
+  "additionalProperties": true
+}

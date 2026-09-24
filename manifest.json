@@ -1,6 +1,6 @@
 {
   "name": "Verse AI Knowledge",
-  "schema_version": 24,
+  "schema_version": 25,
   "purpose": "Knowledge base for AI-assisted Verse and UEFN development",
   "rules_file": "AGENTS.md",
   "verification_statuses": [
@@ -11,7 +11,7 @@
     "multiplayer-verified"
   ],
   "knowledge_index": "knowledge/INDEX.md",
-  "last_knowledge_refresh": "2026-09-23",
+  "last_knowledge_refresh": "2026-09-24",
   "last_verified_verse_api_version": "42.20",
   "official_sources": {
     "verse_api": "https://dev.epicgames.com/documentation/fortnite/verse-api",
@@ -180,13 +180,17 @@
     "cli_audit": "reports/CLI_AUDIT.json"
   },
   "portable_pack": {
-    "master_prompt": "portable/VERSE_AI_MASTER_PROMPT.txt",
-    "task_template": "portable/TASK_TEMPLATE.txt",
+    "current": "portable/current/",
+    "current_version_file": "portable/CURRENT",
+    "master_prompt": "portable/current/VERSE_AI_MASTER_PROMPT.txt",
+    "combined_prompt": "portable/current/VERSE_AI_MASTER_PROMPT_WITH_UI.txt",
+    "task_template": "portable/current/TASK_TEMPLATE.txt",
     "readme": "portable/README.md",
-    "v23_master_prompt": "portable/VERSE_AI_MASTER_PROMPT_v23_WITH_UI.txt",
-    "v23_addendum": "portable/V23_GENERATION_PROVENANCE_ADDENDUM.txt",
-    "current_combined_prompt": "portable/VERSE_AI_MASTER_PROMPT_v24_WITH_UI.txt",
-    "current_addendum": "portable/V24_GENERATION_PROVENANCE_ADDENDUM.txt"
+    "legacy": {
+      "v21": "portable/archive/v21/",
+      "v23": "portable/archive/v23/",
+      "v24": "portable/archive/v24/"
+    }
   },
   "v21_ui_creator": {
     "master_prompt": "portable/ui_creator/VERSE_UI_CREATOR_MASTER_PROMPT.txt",
@@ -214,14 +218,14 @@
     "landing": "README.md",
     "french": "README_FR.md",
     "english": "README_EN.md",
-    "upload_fr": "UPLOAD_GUIDE_FR.md",
-    "upload_en": "UPLOAD_GUIDE_EN.md",
-    "start_fr": "00_COMMENCE_ICI_FR.md",
-    "start_en": "00_START_HERE_EN.md"
+    "upload_fr": "docs/getting-started/UPLOAD_GUIDE_FR.md",
+    "upload_en": "docs/getting-started/UPLOAD_GUIDE_EN.md",
+    "start_fr": "docs/getting-started/COMMENCE_ICI_FR.md",
+    "start_en": "docs/getting-started/START_HERE_EN.md"
   },
   "release": {
-    "version": "24.0.0",
-    "name": "Claim Resolution, Evidence Graph & Continuous Verification"
+    "version": "25.0.0",
+    "name": "Professionalization, API Expansion & Reproducible Verification"
   },
   "entrypoint": "AI_BOOTSTRAP.md",
   "verse_api_version": "42.20",
@@ -304,9 +308,9 @@
     "stamp_tool": "tools/stamp_generated_code.py",
     "read_tool": "tools/read_generated_marker.py",
     "check_tool": "tools/check_generated_marker.py",
-    "marker_version": "v24",
+    "marker_version": "v25",
     "visible_and_hidden": true,
-    "hidden_mechanism": "HTML comment in Markdown only; no invisible Unicode."
+    "hidden_mechanism": "Machine-readable HTML provenance comment in Markdown only; no invisible Unicode."
   },
   "v23": {
     "architecture": "docs/architecture/V23_API_COVERAGE.md",
@@ -351,7 +355,7 @@
     "internal_paths": "tools/check_internal_paths.py",
     "secrets": "tools/scan_secrets.py",
     "epic_url_security": "tests/test_epic_url_security.py",
-    "report": "reports/PUBLIC_RELEASE_AUDIT_V24.md"
+    "report": "reports/PUBLIC_RELEASE_AUDIT_CURRENT.md"
   },
   "v24": {
     "architecture": "docs/architecture/V24_CLAIM_RESOLUTION.md",
@@ -362,5 +366,63 @@
     "api_revalidation": "tools/api_revalidation_gate.py",
     "llm_evals": "evals/llm/",
     "migration_docs": "docs/MIGRATION_V23_TO_V24.md"
+  },
+  "canonical_entrypoints": {
+    "agent": "AI_BOOTSTRAP.md",
+    "rules": "AGENTS.md",
+    "routing": "knowledge/ROUTING.md",
+    "public_prompt": "PROMPT_AI_CHAT_FR_EN.md",
+    "portable_current": "portable/current/VERSE_AI_MASTER_PROMPT.txt"
+  },
+  "current_prompt": "PROMPT_AI_CHAT_FR_EN.md",
+  "current_portable_pack": "portable/current/",
+  "current_docs_version": "v25",
+  "supported_python": ">=3.11",
+  "generated_files": [
+    "PROMPT_AI_CHAT_FR_EN.md",
+    "portable/current/VERSE_AI_MASTER_PROMPT.txt",
+    "portable/current/VERSE_AI_MASTER_PROMPT_WITH_UI.txt",
+    "portable/current/TASK_TEMPLATE.txt",
+    "knowledge/api/symbols.jsonl",
+    "knowledge/api/modules.json",
+    "knowledge/api/versions.json",
+    "knowledge/api/coverage.json",
+    "knowledge/api/verification_queue.json",
+    "knowledge/api/evidence_graph.json",
+    "knowledge/api/revalidation_state.json"
+  ],
+  "prompt_compiler": {
+    "sources": "prompt_sources/",
+    "builder": "tools/build_prompts.py",
+    "consistency_test": "tests/prompts/test_prompt_consistency.py"
+  },
+  "python_sdk": {
+    "package": "src/verse_ai_knowledge/",
+    "primary_class": "verse_ai_knowledge.KnowledgeBase"
+  },
+  "mcp_knowledge_server": {
+    "implementation": "mcp/server.py",
+    "contract": "mcp/KNOWLEDGE_SERVER.md"
+  },
+  "api_knowledge_v25": {
+    "symbols": "knowledge/api/symbols.jsonl",
+    "candidates": "knowledge/api/candidates/",
+    "evidence_graph": "knowledge/api/evidence_graph.json",
+    "verification_queue": "knowledge/api/verification_queue.json",
+    "versions": "knowledge/api/versions.json",
+    "coverage": "knowledge/api/coverage.json",
+    "crawler": "tools/harvest_epic_api.py",
+    "review": "tools/review_api_candidate.py",
+    "api_diff": "tools/api_version_diff.py",
+    "rule": "Automated discovery creates unverified candidates only; exact claims require field-level evidence."
+  },
+  "v25": {
+    "architecture": "docs/architecture/V25_PROFESSIONALIZATION.md",
+    "integrity_validator": "tools/validate_v25_integrity.py",
+    "prompt_compiler": "tools/build_prompts.py",
+    "sdk": "src/verse_ai_knowledge/knowledge_base.py",
+    "mcp": "mcp/server.py",
+    "release_audit": "tools/generate_release_audit.py",
+    "migration_docs": "docs/releases/V24_TO_V25.md"
   }
 }

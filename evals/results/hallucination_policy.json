@@ -1,5 +1,5 @@
 {
-  "suite": "v24-policy-guards",
+  "suite": "v25-policy-guards",
   "note": "Deterministic repository policy eval; no LLM and no UEFN compile were invoked.",
   "passed": 14,
   "total": 14,

@@ -1,0 +1,6 @@
+{
+  "title": "Modes",
+  "lines": [
+    "Select the smallest useful mode: DESIGN, IMPLEMENT, REVIEW, FIX_COMPILER, API_VERIFY, UI, REFACTOR, MIGRATE or DEBUG_RUNTIME."
+  ]
+}

@@ -1,6 +1,6 @@
 {
-  "schema_version": 4,
-  "marker_version": "v24",
+  "schema_version": 5,
+  "marker_version": "v25",
   "language": "verse",
   "default_status": "draft",
   "allowed_statuses": [
@@ -10,8 +10,8 @@
     "verified",
     "multiplayer-verified"
   ],
-  "visible_template": "> **Verse AI Knowledge · V24**  \n> Status: `{status}` · API snapshot: `{api_snapshot}` · UEFN compile: `{compile_label}` · Runtime: `{runtime_label}` · Multiplayer: `{multiplayer_label}`{warning_suffix}",
-  "hidden_template": "<!-- verse-ai-generated:v24;lang=verse;artifact={artifact_id};status={status};api={api_snapshot};compiled={compiled};runtime={runtime};multiplayer={multiplayer};api_verify_required={api_verify_required};uncertain_api_count={uncertain_api_count};claim_resolution=field-level -->",
+  "visible_template": "> **Verse AI Knowledge · V25**  \\n> Status: `{status}` · API snapshot: `{api_snapshot}` · UEFN compile: `{compile_label}` · Runtime: `{runtime_label}` · Multiplayer: `{multiplayer_label}`{warning_suffix}",
+  "hidden_template": "<!-- verse-ai-provenance:v25;lang=verse;artifact={artifact_id};knowledge_release=25.0.0;api={api_snapshot};status={status};compiled={compiled};runtime={runtime};multiplayer={multiplayer};api_verify_required={api_verify_required};uncertain_api_count={uncertain_api_count};claim_resolution=field-level -->",
   "placement": {
     "visible": "Immediately before the generated Verse code block.",
     "hidden": "Immediately after the generated Verse code block."
@@ -30,5 +30,6 @@
     "source_trust_is_not_validation": true,
     "field_level_claim_resolution": true,
     "hidden_unicode_forbidden": true
-  }
+  },
+  "terminology": "machine-readable provenance comment"
 }

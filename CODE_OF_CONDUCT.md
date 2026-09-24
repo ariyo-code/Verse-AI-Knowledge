@@ -1,5 +1,16 @@
 # Code of Conduct
 
-Be respectful, constructive, and focused on improving the project.
+## Scope
+This policy applies to repository discussions, issues, pull requests and project communication spaces.
 
-Technical disagreements should be resolved through reproducible evidence, documentation, compiler output, and clear reasoning rather than personal attacks.
+## Expected behavior
+Be respectful, specific, evidence-oriented and constructive. Critique code and claims rather than people.
+
+## Unacceptable behavior
+Harassment, threats, discriminatory abuse, doxxing, deliberate credential exposure, spam and knowingly fabricated technical evidence are not acceptable.
+
+## Reporting
+For conduct issues, contact the repository owner through a private channel where available. For sensitive security issues, use GitHub Private Vulnerability Reporting rather than a public issue.
+
+## Enforcement
+Maintainers may edit/remove content, lock discussions, reject contributions or restrict participation when needed to protect contributors and repository integrity.

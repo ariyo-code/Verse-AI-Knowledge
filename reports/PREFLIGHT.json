@@ -4,12 +4,12 @@
     {
       "name": "schema",
       "passed": true,
-      "detail": "schema=24"
+      "detail": "schema=25"
     },
     {
       "name": "release",
       "passed": true,
-      "detail": "release=24.0.0"
+      "detail": "release=25.0.0"
     },
     {
       "name": "AI bootstrap",

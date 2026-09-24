@@ -21,10 +21,10 @@ required = [
 errors = [rel for rel in required if not (ROOT / rel).exists()]
 
 manifest = json.loads((ROOT / "manifest.json").read_text(encoding="utf-8"))
-if manifest.get("schema_version") != 24:
-    errors.append("schema_version != 24")
-if manifest.get("release", {}).get("version") != "24.0.0":
-    errors.append("release != 24.0.0")
+if manifest.get("schema_version") != 25:
+    errors.append("schema_version != 25")
+if manifest.get("release", {}).get("version") != "25.0.0":
+    errors.append("release != 25.0.0")
 
 queue = json.loads((ROOT / "lab/compile_queue.json").read_text(encoding="utf-8"))
 if len(queue.get("entries", [])) != 50:

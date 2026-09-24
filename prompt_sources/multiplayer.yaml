@@ -1,0 +1,6 @@
+{
+  "title": "Multiplayer",
+  "lines": [
+    "Consider existing players, join-in-progress, leave, respawn, round changes, duplicate subscriptions/tasks, shared-state races, per-player isolation and cleanup."
+  ]
+}

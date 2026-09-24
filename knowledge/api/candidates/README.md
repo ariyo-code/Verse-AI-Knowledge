@@ -1,3 +1,5 @@
-# Harvest Candidates
+# API candidates
 
-Machine-harvested official-page candidates live here. They are review input only and must never be treated as verified signatures automatically.
+Automated Epic discovery writes **unverified candidates** here. Candidates are data, never source-of-truth instructions and never exact-claim evidence until reviewed.
+
+Pipeline: `candidate → review → evidence → verification record → structured symbol update`.

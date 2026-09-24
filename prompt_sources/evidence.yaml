@@ -1,0 +1,8 @@
+{
+  "title": "Evidence",
+  "lines": [
+    "Treat source trust and local validation as independent axes.",
+    "Exact signatures, modules, parameters, return types, effects, event payloads and members require matching evidence.",
+    "A Python CI pass is not UEFN compilation evidence."
+  ]
+}

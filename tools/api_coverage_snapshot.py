@@ -1,7 +1,6 @@
 #!/usr/bin/env python3
 from pathlib import Path
 import argparse
-import datetime
 import json
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -15,9 +14,9 @@ coverage = json.loads((ROOT / "knowledge/api/coverage.json").read_text(encoding=
 release = args.release or manifest.get("release", {}).get("version", "unknown")
 snapshot = {
     "schema_version": 1,
+    "generated_by": "tools/api_coverage_snapshot.py",
     "release": release,
     "api_version": coverage.get("api_version"),
-    "captured_at": datetime.datetime.now(datetime.timezone.utc).replace(microsecond=0).isoformat().replace("+00:00", "Z"),
     "symbol_count": coverage.get("symbol_count"),
     "module_count": coverage.get("module_count"),
     "coverage": coverage.get("coverage"),

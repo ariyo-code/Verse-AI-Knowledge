@@ -1,5 +1,5 @@
 {
-  "schema_version": 3,
+  "schema_version": 4,
   "current": "42.20",
   "known": [
     {
@@ -9,5 +9,5 @@
       "source_trust": "official-current"
     }
   ],
-  "note": "V24 keeps version facts evidence-bound. Field-level claims require field evidence; a version change triggers revalidation rather than silent promotion."
+  "note": "V25 preserves V24 field-level evidence and adds professionalized tooling/multi-version diff infrastructure."
 }

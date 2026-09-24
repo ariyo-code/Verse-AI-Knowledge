@@ -1,0 +1,7 @@
+{
+  "environment_note": "Local package-build environment; metrics are comparative diagnostics, not service SLOs.",
+  "api_lookup_ms_mean": 2.1761,
+  "claim_resolution_ms_mean": 1.7097,
+  "rag_query_ms_mean": 8.9199,
+  "rag_document_count": 457
+}

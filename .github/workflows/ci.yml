@@ -1,101 +1,78 @@
-name: V24 CI
-
-on:
-  push:
-  pull_request:
-  workflow_dispatch:
-
+name: V25 CI
+on: [push, pull_request, workflow_dispatch]
 permissions:
   contents: read
-
 jobs:
-  v24-integrity:
+  lint-types-package:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
         with: { python-version: "3.12" }
-      - run: python tools/validate_v24_integrity.py
+      - run: python -m pip install -e ".[dev]"
+      - run: ruff check src tools tests
+      - run: ruff format --check src tools tests
+      - run: mypy src/verse_ai_knowledge
+      - run: python -m build
+  integrity:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: { python-version: "3.12" }
+      - run: python tools/validate_v25_integrity.py
       - run: python tools/validate_integrity.py
       - run: python tools/check_verification.py
       - run: python tools/api_revalidation_gate.py --strict
-
-  api-coverage-and-evidence:
+  prompts-generated:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
         with: { python-version: "3.12" }
-      - run: python tools/check_generated_drift.py
-      - run: python tools/api_coverage_report.py
-      - run: python tools/build_api_verification_queue.py --limit 10
-      - run: python tools/build_api_evidence_graph.py
-      - run: git diff --exit-code -- knowledge/api/evidence_graph.json
-
-  schemas-claims-and-provenance:
+      - run: python tools/build_prompts.py
+      - run: git diff --exit-code
+      - run: python tests/prompts/test_prompt_consistency.py || python -m pytest -q tests/prompts
+  schemas-tests:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
         with: { python-version: "3.12" }
-      - run: python tests/test_v24_integrity.py
-      - run: python tests/test_claim_resolution_v24.py
-      - run: python tests/test_api_coverage_v24.py
-      - run: python tests/test_generated_provenance_v24.py
-
-  security-and-publication:
+      - run: python -m pip install -e ".[dev]"
+      - run: pytest --cov=src/verse_ai_knowledge --cov-report=term --cov-report=xml tests
+  security:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+        with: { fetch-depth: 0 }
       - uses: actions/setup-python@v5
         with: { python-version: "3.12" }
       - run: python tests/test_epic_url_security.py
       - run: python tools/check_internal_paths.py
       - run: python tools/scan_secrets.py
-
-  unit-and-cli:
+  retrieval-policy:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
         with: { python-version: "3.12" }
-      - run: python -m pip install -e .
-      - run: python tests/test_cli_contracts.py
-      - run: python tests/test_lab_state.py
-      - run: python tests/test_cli_v24.py
-      - run: verse-ai doctor
-
-  knowledge-and-rag:
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v4
-      - uses: actions/setup-python@v5
-        with: { python-version: "3.12" }
-      - run: python tools/validate_repo.py
-      - run: python tools/catalog_report.py
-      - run: python tools/staleness_report.py
       - run: python tools/rag_benchmark.py
+      - run: python tools/rag_metrics_v25.py
       - run: python tools/run_evidence_benchmark.py
-
-  evals:
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v4
-      - uses: actions/setup-python@v5
-        with: { python-version: "3.12" }
       - run: python tools/run_hallucination_evals.py
-      - run: python tests/test_llm_eval_runner_v24.py
       - run: python evals/llm/runner.py
-      - run: python tools/self_test.py
-
   preflight:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
         with: { python-version: "3.12" }
-      - run: python tools/preflight.py
-      - run: python tools/validate_all.py
+      - run: python -m pip install -e .
+      - run: verse-ai doctor
+      - run: verse-ai validate
       - run: |
-          echo "UEFN compile status: NOT TESTED"
-          echo "LLM end-to-end benchmark: SKIPPED unless explicitly configured"
+          echo "UEFN compile: NOT TESTED"
+          echo "Runtime: NOT TESTED"
+          echo "Multiplayer: NOT TESTED"
+          echo "LLM benchmark: SKIPPED unless explicitly configured"

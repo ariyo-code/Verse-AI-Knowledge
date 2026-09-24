@@ -8,7 +8,7 @@ ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT / "src"))
 from verse_ai_knowledge.claims import resolve_claim  # noqa: E402
 
-ap = argparse.ArgumentParser(description="Resolve one Verse API claim against V24 field-level evidence.")
+ap = argparse.ArgumentParser(description="Resolve one Verse API claim against current field-level evidence.")
 ap.add_argument("symbol")
 ap.add_argument("--field", default="presence", choices=[
     "presence", "module", "kind", "signature", "parameters",

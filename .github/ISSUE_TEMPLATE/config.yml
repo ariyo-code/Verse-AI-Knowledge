@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Security vulnerability
+    url: https://github.com/ariyo-code/Verse-AI-Knowledge/security/advisories/new
+    about: Report sensitive vulnerabilities privately.
+  - name: Documentation
+    url: https://github.com/ariyo-code/Verse-AI-Knowledge/tree/main/docs
+    about: Read the repository documentation.

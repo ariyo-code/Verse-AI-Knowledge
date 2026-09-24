@@ -37,7 +37,7 @@ def fetch_epic(
     timeout: int = 20,
     max_bytes: int = DEFAULT_MAX_BYTES,
     allowed_content_types: Iterable[str] = DEFAULT_CONTENT_TYPES,
-    user_agent: str = "Verse-AI-Knowledge-V24/1.0",
+    user_agent: str = "Verse-AI-Knowledge-V25/1.0",
 ) -> tuple[bytes, str, str | None]:
     url = validate_epic_url(url)
     opener = urllib.request.build_opener(StrictEpicRedirectHandler())

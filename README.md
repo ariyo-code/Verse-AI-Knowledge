@@ -2,149 +2,95 @@
 
 # Verse AI Knowledge
 
-**Source-grounded Verse / UEFN knowledge, API evidence, claim resolution and reliability tooling for AI agents.**
+**Source-grounded, evidence-aware infrastructure for Verse / UEFN agents.**
 
-🇫🇷 Français · 🇬🇧 English · **V24 — Claim Resolution, Evidence Graph & Continuous Verification**
+**V25 — Professionalization, API Expansion & Reproducible Verification**
 
 > **Never invent a Verse API. / Ne jamais inventer une API Verse.**
 
 </div>
 
----
+## Problem
 
-## V24
+LLMs can produce plausible Verse that uses nonexistent APIs, wrong modules, incorrect signatures/effects, or unsupported event payloads. Static confidence is not compiler evidence.
 
-V24 builds on V23 API coverage and adds **field-level claim resolution**.
+## Solution
 
-A known Verse symbol is no longer treated as if every detail about it were equally verified.
-
-```text
-presence
-≠ signature
-≠ parameters
-≠ return type
-≠ effects
-≠ event payload
-≠ UEFN behavior
-```
-
-The current repository snapshot targets **Verse API 42.20**.
-
-Current V24 stored coverage: **164 known structured symbols**, **12 exact signatures verified**, **24 symbols with known event names**, and **0 verified event payloads**. These figures describe repository-known evidence, not the total Epic API surface.
-
-### Quick start
-
-Repository-aware agents start with:
+Verse AI Knowledge combines targeted retrieval, field-level API evidence, claim resolution, provenance, project/error memory, evals and optional UEFN verification workflows.
 
 ```text
-AI_BOOTSTRAP.md
-```
-
-Install the local CLI:
-
-```bash
-python -m pip install -e .
-```
-
-Useful commands:
-
-```bash
-verse-ai api GetFortCharacter
-verse-ai claim GetFortCharacter --field signature
-verse-ai lint path/to/code.verse
-verse-ai coverage
-verse-ai api-queue
-verse-ai doctor
-verse-ai validate
-```
-
-Unknown or unsupported exact API claims remain:
-
-```text
-TODO(API VERIFY)
-```
-
-### V24 reliability pipeline
-
-```text
-Retrieve
-→ Resolve API Claims
-→ Verify Sources
-→ Build Evidence
-→ Validate Claims
-→ Implement
-→ Attach Provenance
-→ Static Check
-→ Compile in UEFN
-→ Runtime Test
-→ Multiplayer Test
+Retrieve → Resolve → Verify → Build Evidence → Validate Claims
+→ Design → Implement → Static Check → Compile → Runtime → Multiplayer
 → Promote with Evidence
 ```
 
-### API evidence graph
-
-V24 generates:
-
-```text
-knowledge/api/evidence_graph.json
-```
-
-It links individual fields such as signatures, parameters, effects and event payloads to explicit evidence nodes.
-
-Version changes trigger revalidation instead of silently trusting stale exact claims.
-
-### Generated Verse provenance
-
-Generated Verse in Markdown uses a visible block:
-
-```markdown
-> **Verse AI Knowledge · V24**  
-> Status: `draft` · API snapshot: `42.20` · UEFN compile: `NOT TESTED` · Runtime: `NOT TESTED` · Multiplayer: `NOT TESTED`
-```
-
-and a normal HTML comment after the code:
-
-```html
-<!-- verse-ai-generated:v24;lang=verse;artifact=VAI-...;status=draft;api=42.20;compiled=false;runtime=false;multiplayer=false;api_verify_required=false;uncertain_api_count=0;claim_resolution=field-level -->
-```
-
-**No invisible Unicode watermark is used.**
-
-### Coverage
-
-Run:
+## Quick start
 
 ```bash
+python -m pip install -e .
+verse-ai doctor
+verse-ai search "vehicle ownership"
+verse-ai claim GetFortCharacter --field signature
+verse-ai explain GetFortCharacter
 verse-ai coverage
 ```
 
-Coverage metrics describe **symbols currently known to this repository**. They do not claim to measure every Verse API published by Epic unless a complete official denominator is available.
+Unknown exact API:
 
-### Reliability evaluation
-
-- deterministic policy evals test repository guardrails;
-- `evals/llm/` provides a provider-optional end-to-end harness;
-- without configured responses/provider, LLM evals report `SKIPPED`, never `PASS`;
-- UEFN compile/runtime/multiplayer metrics are populated only from real evidence.
-
-### Validation levels
-
-```text
-draft → static-checked → compiled → verified → multiplayer-verified
+```bash
+verse-ai claim definitely_fake_api --field signature
+# TODO(API VERIFY)
 ```
 
-Static CI does not equal a UEFN compile.
+## Architecture
 
-### Documentation
+- `AI_BOOTSTRAP.md`: authoritative agent entry point.
+- `knowledge/api/`: structured API evidence and candidates.
+- `rag/`: targeted retrieval and evidence-aware ranking.
+- `src/verse_ai_knowledge/`: reusable Python SDK + CLI.
+- `verification/`: real validation evidence only.
+- `evals/`: synthetic/retrieval/LLM evaluation data, separate from real error memory.
+- `portable/current/`: generated current portable prompts.
+- `portable/archive/`: compatibility/history.
 
-- `AI_BOOTSTRAP.md`
-- `AGENTS.md`
-- `docs/architecture/V24_CLAIM_RESOLUTION.md`
-- `docs/GENERATED_CODE_MARKER.md`
-- `knowledge/api/README.md`
-- `evals/llm/README.md`
-- `reports/PUBLIC_RELEASE_AUDIT_V24.md`
+## Evidence model
 
-Original repository content is governed by `LICENSE.md`. Third-party material keeps its own license and provenance requirements.
+Source trust and local validation are independent. Symbol presence never implies an exact signature. Exact claims remain blocked unless matching field-level evidence exists.
 
-Verse, UEFN, Fortnite, Epic Games and related marks belong to their respective owners. This project is independent and is not affiliated with, endorsed by or sponsored by Epic Games.
+## API coverage
+
+Run `verse-ai coverage --json` for the current measured repository-known coverage. Coverage is **not automatically the percentage of Epic's entire Verse API surface**.
+
+## Generated-code provenance
+
+Generated Verse uses the current rules in `docs/GENERATED_CODE_MARKER.md`: a visible status block plus a machine-readable HTML provenance comment. No invisible Unicode is used.
+
+## Validation boundaries
+
+```text
+Repository/Python CI: testable here
+UEFN compile: NOT TESTED unless real compiler evidence exists
+Runtime: NOT TESTED unless a session result exists
+Multiplayer: NOT TESTED unless 2+ player evidence exists
+LLM benchmark: SKIPPED unless provider/saved responses are explicitly configured
+```
+
+## CLI / SDK / MCP
+
+`verse-ai` is the primary human/automation CLI. `KnowledgeBase` provides a Python API. `mcp/server.py` exposes a provider-neutral local knowledge-tool interface without inventing absent facts.
+
+## Documentation
+
+Static docs are configured with MkDocs (`mkdocs.yml`). See `docs/getting-started/`, `docs/architecture/`, `docs/security/`, the changelog and roadmap.
+
+## Contributing / Security
+
+Read `CONTRIBUTING.md` and `SECURITY.md`. Sensitive vulnerabilities should not be posted in public issues.
+
+## License
+
+Original repository content is governed by `LICENSE.md`. Third-party content retains its own terms; see `THIRD_PARTY_NOTICES.md` and `THIRD_PARTY_MANIFEST.json`.
+
+## Disclaimer
+
+Verse, Unreal Editor for Fortnite, Fortnite, Epic Games and related marks belong to their respective owners. This independent project is not affiliated with or endorsed by Epic Games.

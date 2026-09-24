@@ -1,4 +1,4 @@
-# AI Guide — V24
+# AI Guide — V25
 
 Verse AI Knowledge is a retrieval, evidence, claim-resolution and evaluation system.
 
@@ -51,6 +51,6 @@ verse-ai api-queue
 python tools/harvest_epic_api.py --symbol SYMBOL
 # review official evidence
 python tools/review_api_candidate.py SYMBOL --signature "..." --source-url "https://dev.epicgames.com/documentation/..."
-python tools/migrate_api_catalog_v24.py
+python tools/migrate_api_catalog_v25.py
 verse-ai validate
 ```

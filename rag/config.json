@@ -59,7 +59,21 @@
     "__pycache__/",
     "rag/generated/",
     "evals/results/",
-    "evals/llm/results/"
+    "evals/llm/results/",
+    "evals/",
+    "benchmark/",
+    "reports/",
+    "tests/",
+    "tools/",
+    ".github/",
+    "portable/archive/",
+    "docs/history/",
+    "src/verse_ai_knowledge.egg-info/",
+    ".pytest_cache/",
+    ".mypy_cache/",
+    ".ruff_cache/",
+    "build/",
+    "dist/"
   ],
-  "generation_loop_guard": "Generated context/results are excluded from retrieval to avoid self-retrieval feedback loops."
+  "generation_loop_guard": "Generated output, evaluation corpora, reports, tests and tooling are excluded from retrieval to avoid self-retrieval/test leakage."
 }

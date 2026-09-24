@@ -1,34 +1,3 @@
-# GitHub publication guide — V24
+# Compatibility redirect
 
-## Before pushing
-
-From the repository root:
-
-```bash
-python -m pip install -e .
-verse-ai validate
-python tools/check_internal_paths.py
-python tools/scan_secrets.py
-```
-
-Also confirm that `LICENSE.md` and `THIRD_PARTY_NOTICES.md` are present.
-
-## Suggested commit
-
-```text
-Release V24 — Claim Resolution, Evidence Graph & Continuous Verification
-```
-
-## After pushing
-
-Open **Actions** and confirm that **V24 CI** is fully green.
-
-The recommended AI entry point is:
-
-```text
-AI_BOOTSTRAP.md
-```
-
-Historical Master Prompts remain compatibility / portable packs.
-
-Green CI validates repository checks; it does not prove arbitrary Verse compiled in UEFN.
+The maintained document is now [`docs/getting-started/UPLOAD_GUIDE_EN.md`](docs/getting-started/UPLOAD_GUIDE_EN.md). This root file remains to preserve existing links.

@@ -61,7 +61,7 @@ for field, claim_type in [
         "claim_type": claim_type,
         "supported_by": sorted(set(supported)),
         "allowed": bool(exact_names) and not blocked,
-        "reason": f"V24 field-level evidence is required for exact {field} claims; otherwise use TODO(API VERIFY).",
+        "reason": f"current field-level evidence is required for exact {field} claims; otherwise use TODO(API VERIFY).",
         "blocked_symbols": blocked,
     })
 

@@ -1,65 +1,27 @@
-# Optional MCP Knowledge Server — V24 contract
+# MCP Knowledge Server — V25
 
-This is a knowledge/retrieval MCP concept, not the MCP connection that controls UEFN.
+V25 exposes the repository through an actual **Model Context Protocol** server using the official Python SDK when the optional `mcp` dependency is installed.
 
-Suggested read-oriented tools:
+```bash
+python -m pip install -e ".[mcp]"
+python mcp/server.py
+```
 
-- `search_verse_knowledge`
-- `lookup_verse_api`
-- `lookup_verse_module`
-- `resolve_verse_api_claim`
-- `lint_verse_api_claims`
+The default transport is stdio. The server is read-only and exposes:
+
+- `search_knowledge`
+- `get_api_symbol`
+- `resolve_api_claim`
+- `get_evidence`
 - `get_api_coverage`
-- `get_api_evidence_graph`
-- `get_api_revalidation_state`
-- `get_api_verification_queue`
-- `find_verified_example`
-- `search_verse_errors`
+- `get_verification_queue`
+- `search_errors`
 - `get_project_context`
-- `build_evidence_pack`
-- `read_generated_provenance`
+- `get_routing`
+- `validate_generated_claims`
 
-Each API result should expose, when relevant:
+`resolve_api_claim` uses the canonical field-level resolver. An absent or unsupported exact API claim returns `TODO(API VERIFY)` rather than being inferred.
 
-```text
-source_url
-source_trust
-api_version
-claim_state
-validation
-field_evidence
-revalidation
-signature_state
-exact_signature_claim_allowed
-```
+## Validation boundary
 
-## Claim resolution
-
-The server should resolve exact claims per field:
-
-```text
-presence
-module
-kind
-signature
-parameters
-return_type
-effects
-event_names
-event_payloads
-member_names
-```
-
-A missing field returns the equivalent of:
-
-```text
-TODO(API VERIFY)
-```
-
-It must not synthesize a missing signature.
-
-## Safety
-
-The MCP surface must not silently promote harvested API candidates.
-
-UEFN compile/runtime truth remains outside this knowledge MCP and requires real editor evidence.
+Installing/running the MCP server does not constitute UEFN compilation, runtime testing, or multiplayer verification.

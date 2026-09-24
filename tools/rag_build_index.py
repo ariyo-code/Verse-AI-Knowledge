@@ -81,6 +81,14 @@ def detect_api_symbols(text: str) -> list[str]:
     return sorted(vals)
 
 
+
+def content_role(rel: str) -> str:
+    p = rel.replace("\\", "/")
+    instruction_prefixes = ("prompts/", "prompt_sources/", "portable/current/")
+    if p in {"AI_BOOTSTRAP.md", "AGENTS.md"} or p.startswith(instruction_prefixes):
+        return "instruction"
+    return "data"
+
 def main() -> None:
     catalog_path = ROOT / "knowledge/api_catalog.json"
     catalog = json.loads(catalog_path.read_text(encoding="utf-8")).get("entries", {}) if catalog_path.exists() else {}
@@ -122,13 +130,14 @@ def main() -> None:
             "evidence_basis": evidence_basis,
             "verse_api": detect_version(text),
             "api_symbols": sorted(symbols),
+            "content_role": content_role(rel),
             "sha256": hashlib.sha256(text.encode("utf-8")).hexdigest(),
         }
         docs.append(doc)
 
     avgdl = sum(x["token_count"] for x in docs) / max(len(docs), 1)
     index = {
-        "schema_version": 2,
+        "schema_version": 3,
         "document_count": len(docs),
         "avg_document_length": avgdl,
         "document_frequency": dict(df),
@@ -136,7 +145,7 @@ def main() -> None:
     }
     out = ROOT / "rag/index.json"
     out.write_text(json.dumps(index, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
-    print(f"Indexed {len(docs)} document(s) with V24 source-trust, validation and claim-evidence metadata.")
+    print(f"Indexed {len(docs)} document(s) with V25 source-trust, validation and claim-evidence metadata.")
 
 
 if __name__ == "__main__":

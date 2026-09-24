@@ -1,4 +1,4 @@
-# Verse API Coverage — V24
+# Verse API Coverage — Current
 
 Snapshot: **42.20**
 
@@ -15,6 +15,10 @@ Modules represented: **9**
 | `effects_structured` | 12 | 7.32% |
 | `event_names_known` | 24 | 14.63% |
 | `event_payloads_verified` | 0 | 0.0% |
+| `members_known` | 42 | 25.61% |
+| `member_evidence_verified` | 42 | 25.61% |
+| `enum_values_known` | 0 | 0.0% |
+| `inheritance_known` | 0 | 0.0% |
 | `exact_signature_claim_allowed` | 12 | 7.32% |
 | `field_evidence_present` | 164 | 100.0% |
 

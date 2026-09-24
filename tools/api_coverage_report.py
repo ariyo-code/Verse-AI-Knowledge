@@ -23,7 +23,7 @@ else:
 
 if args.write_md:
     lines = [
-        "# Verse API Coverage — V24", "",
+        "# Verse API Coverage — Current", "",
         f"Snapshot: **{data['api_version']}**", "",
         f"Known structured symbols: **{data['symbol_count']}**", "",
         f"Modules represented: **{data.get('module_count', 0)}**", "",

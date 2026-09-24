@@ -1,5 +1,51 @@
 # Changelog
 
+## 25.0.0 — Professionalization, API Expansion & Reproducible Verification
+
+### Added
+- Canonical prompt compiler and current/archive portable layout.
+- Python `KnowledgeBase` SDK, expanded CLI, evidence/explain/status/version commands.
+- Local provider-neutral knowledge server bridge.
+- V25 API candidate/versioning schemas and diff tooling.
+- 100+ retrieval stress cases and metric runner.
+- MkDocs site configuration, CodeQL, Dependabot, CODEOWNERS, Issue Forms and release workflow.
+- Reproducible release audit generator and structured third-party manifest.
+
+### Changed
+- Public prompt is generated from canonical prompt sources.
+- Generated-code provenance terminology is now “machine-readable provenance comment”.
+- Python packaging/quality configuration is standardized.
+- Current-vs-legacy prompts are explicitly separated.
+
+### Validation
+- Static/Python checks do not constitute UEFN compilation.
+- UEFN compile/runtime/multiplayer remain NOT TESTED unless real evidence is recorded.
+- LLM benchmark remains SKIPPED unless explicitly configured.
+
+
+## 25.0.0 — Professionalization, API Expansion & Reproducible Verification
+
+### Added
+- Canonical prompt compiler and current/archive portable layout.
+- Python `KnowledgeBase` SDK, expanded CLI, evidence/explain/status/version commands.
+- Local provider-neutral knowledge server bridge.
+- V25 API candidate/versioning schemas and diff tooling.
+- 100+ retrieval stress cases and metric runner.
+- MkDocs site configuration, CodeQL, Dependabot, CODEOWNERS, Issue Forms and release workflow.
+- Reproducible release audit generator and structured third-party manifest.
+
+### Changed
+- Public prompt is generated from canonical prompt sources.
+- Generated-code provenance terminology is now “machine-readable provenance comment”.
+- Python packaging/quality configuration is standardized.
+- Current-vs-legacy prompts are explicitly separated.
+
+### Validation
+- Static/Python checks do not constitute UEFN compilation.
+- UEFN compile/runtime/multiplayer remain NOT TESTED unless real evidence is recorded.
+- LLM benchmark remains SKIPPED unless explicitly configured.
+
+
 ## 24.0.0 — Claim Resolution, Evidence Graph & Continuous Verification
 
 ### Added

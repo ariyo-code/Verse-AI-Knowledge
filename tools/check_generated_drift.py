@@ -5,7 +5,7 @@ import sys
 
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT / "tools"))
-from migrate_api_catalog_v24 import (  # noqa: E402
+from migrate_api_catalog_v25 import (  # noqa: E402
     build_generated, build_coverage, build_queue, build_evidence_graph,
     build_revalidation_state, render,
 )
@@ -41,3 +41,21 @@ if errors:
     raise SystemExit(1)
 
 print("Generated-file drift OK")
+
+# V25 prompt compiler drift
+import importlib.util
+spec=importlib.util.spec_from_file_location('build_prompts',ROOT/'tools/build_prompts.py'); mod=importlib.util.module_from_spec(spec); spec.loader.exec_module(mod)
+expected_public=mod.render_public(); expected_master=mod.body('en',False); expected_ui=mod.body('en',True)
+for path,content in {ROOT/'PROMPT_AI_CHAT_FR_EN.md':expected_public,ROOT/'portable/current/VERSE_AI_MASTER_PROMPT.txt':expected_master,ROOT/'portable/current/VERSE_AI_MASTER_PROMPT_WITH_UI.txt':expected_ui}.items():
+    if path.read_text(encoding='utf-8')!=content:
+        print('Generated-file drift FAILED'); print('-',path.relative_to(ROOT),'prompt drift'); raise SystemExit(1)
+print('V25 prompt drift OK')
+
+# V25 prompt compiler drift
+import importlib.util
+spec=importlib.util.spec_from_file_location('build_prompts',ROOT/'tools/build_prompts.py'); mod=importlib.util.module_from_spec(spec); spec.loader.exec_module(mod)
+expected_public=mod.render_public(); expected_master=mod.body('en',False); expected_ui=mod.body('en',True)
+for path,content in {ROOT/'PROMPT_AI_CHAT_FR_EN.md':expected_public,ROOT/'portable/current/VERSE_AI_MASTER_PROMPT.txt':expected_master,ROOT/'portable/current/VERSE_AI_MASTER_PROMPT_WITH_UI.txt':expected_ui}.items():
+    if path.read_text(encoding='utf-8')!=content:
+        print('Generated-file drift FAILED'); print('-',path.relative_to(ROOT),'prompt drift'); raise SystemExit(1)
+print('V25 prompt drift OK')

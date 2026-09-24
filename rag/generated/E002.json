@@ -12,99 +12,111 @@
   "sources": [
     {
       "role": "api_evidence",
-      "score": 6.953,
+      "score": 7.454,
       "source_trust": "unknown",
       "validation": "draft",
+      "content_role": "data",
       "path": "knowledge/api/verification_records.jsonl",
       "title": "verification_records"
     },
     {
       "role": "error_memory",
-      "score": 39.169,
+      "score": 41.232,
       "source_trust": "community-verified",
       "validation": "verified",
+      "content_role": "data",
       "path": "errors/compiler-errors.md",
       "title": "Verse Compiler Error Knowledge Log"
     },
     {
       "role": "verification",
-      "score": 27.961,
+      "score": 30.225,
       "source_trust": "unknown",
       "validation": "draft",
+      "content_role": "data",
       "path": "mcp/ERROR_FEEDBACK_LOOP.md",
       "title": "UEFN MCP Error Feedback Loop"
     },
     {
       "role": "project_context",
-      "score": 9.953,
+      "score": 10.309,
       "source_trust": "unknown",
       "validation": "draft",
+      "content_role": "data",
       "path": "projects/README.md",
       "title": "Project Memory"
     },
     {
       "role": "api_evidence",
-      "score": 6.675,
-      "source_trust": "official-current",
-      "validation": "static-checked",
-      "path": "knowledge/api/modules.json",
-      "title": "modules"
+      "score": 6.79,
+      "source_trust": "unknown",
+      "validation": "draft",
+      "content_role": "data",
+      "path": "knowledge/api/verification_queue.json",
+      "title": "verification_queue"
     },
     {
       "role": "lifecycle",
-      "score": 9.443,
+      "score": 10.78,
       "source_trust": "unknown",
       "validation": "draft",
+      "content_role": "data",
       "path": "docs/patterns/device-validity.md",
       "title": "Pattern — validité d'un creative_object"
     },
     {
       "role": "error_memory",
-      "score": 31.671,
+      "score": 33.767,
       "source_trust": "unknown",
       "validation": "draft",
+      "content_role": "data",
       "path": "errors/README.md",
       "title": "Error Memory"
     },
     {
       "role": "verification",
-      "score": 21.77,
+      "score": 24.268,
       "source_trust": "unknown",
       "validation": "draft",
+      "content_role": "data",
       "path": "lab/README.md",
       "title": "Verse Lab — Recompilation Program"
     },
     {
       "role": "external_examples",
-      "score": 5.122,
+      "score": 5.336,
       "source_trust": "unknown",
       "validation": "draft",
+      "content_role": "data",
       "path": "external/corpus/uefncentral-examples/c5fed52f687964fa83035f52423763553b129391/examples/ui-interface/hud-weapon-selector.verse",
       "title": "Hud Weapon Selector"
     },
     {
       "role": "supporting",
-      "score": 32.102,
+      "score": 31.594,
       "source_trust": "unknown",
       "validation": "draft",
-      "path": "benchmark/tasks/B009-error-learning.md",
-      "title": "B009-error-learning — Learn from compiler feedback"
-    },
-    {
-      "role": "supporting",
-      "score": 31.434,
-      "source_trust": "unknown",
-      "validation": "draft",
-      "path": ".github/ISSUE_TEMPLATE/compiler-error.md",
-      "title": "compiler-error"
-    },
-    {
-      "role": "supporting",
-      "score": 29.154,
-      "source_trust": "unknown",
-      "validation": "draft",
+      "content_role": "data",
       "path": "bridge/COMPILE_LOOP.md",
       "title": "Compile Loop"
+    },
+    {
+      "role": "supporting",
+      "score": 27.951,
+      "source_trust": "unknown",
+      "validation": "draft",
+      "content_role": "data",
+      "path": "bridge/CODEX_START_PROMPT.md",
+      "title": "Codex Start Prompt — Real UEFN Project"
+    },
+    {
+      "role": "supporting",
+      "score": 27.436,
+      "source_trust": "unknown",
+      "validation": "draft",
+      "content_role": "instruction",
+      "path": "prompts/ERROR_LEARNING_AGENT.md",
+      "title": "Error Learning Agent"
     }
   ]
 }

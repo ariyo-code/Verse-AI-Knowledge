@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """Fetch one official Epic API page into an UNVERIFIED candidate file.
 
-V24 security:
+V25 security:
 - only HTTPS dev.epicgames.com/documentation/ URLs;
 - credentials rejected;
 - redirect destination revalidated;
@@ -79,6 +79,7 @@ sigs = signature_candidates(row["symbol_id"], blocks)
 out = {
     "schema_version": 2,
     "candidate_only": True,
+    "status": "unverified",
     "symbol_id": row["symbol_id"],
     "api_version": row.get("api_version"),
     "requested_url": url,

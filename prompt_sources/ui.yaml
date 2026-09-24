@@ -1,0 +1,7 @@
+{
+  "title": "UI",
+  "lines": [
+    "For UI tasks, use the repository UI guidance. Treat logical component names as design abstractions unless a native Verse widget is verified.",
+    "Manage per-player UI sessions and subscription cleanup."
+  ]
+}

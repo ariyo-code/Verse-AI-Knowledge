@@ -54,7 +54,7 @@ metrics={
  'verified_source_usage': verified_source_hits/max(api_cases,1),
  'TODO_API_VERIFY_precision': todo_true/max(todo_predicted,1),
 }
-out={'suite':'v24-policy-guards','note':'Deterministic repository policy eval; no LLM and no UEFN compile were invoked.','passed':passed_count,'total':len(rows),'metrics':metrics,'cases':rows,'uefn_compile_status':'NOT TESTED'}
+out={'suite':'v25-policy-guards','note':'Deterministic repository policy eval; no LLM and no UEFN compile were invoked.','passed':passed_count,'total':len(rows),'metrics':metrics,'cases':rows,'uefn_compile_status':'NOT TESTED'}
 res=ROOT/'evals/results/hallucination_policy.json'; res.parent.mkdir(parents=True,exist_ok=True); res.write_text(json.dumps(out,indent=2,ensure_ascii=False)+'\n',encoding='utf-8')
 print(f'Anti-hallucination policy eval: {passed_count}/{len(rows)}')
 for row in rows: print(row['id'],'PASS' if row['passed'] else 'FAIL',row['action'])

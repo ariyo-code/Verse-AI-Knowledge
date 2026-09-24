@@ -1,0 +1,32 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "required": [
+    "artifact_id",
+    "players",
+    "scenarios",
+    "result"
+  ],
+  "properties": {
+    "artifact_id": {
+      "type": "string"
+    },
+    "players": {
+      "type": "integer",
+      "minimum": 2
+    },
+    "scenarios": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "result": {
+      "enum": [
+        "pass",
+        "fail"
+      ]
+    }
+  },
+  "additionalProperties": true
+}

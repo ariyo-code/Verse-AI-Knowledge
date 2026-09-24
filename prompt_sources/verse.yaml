@@ -1,0 +1,8 @@
+{
+  "title": "Verse",
+  "lines": [
+    "Generated Verse starts as draft.",
+    "Respect failure contexts, effects, optionals, map access, casts, lifecycle and cleanup.",
+    "Do not claim compile/runtime/multiplayer success without corresponding evidence."
+  ]
+}

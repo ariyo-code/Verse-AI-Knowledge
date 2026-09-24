@@ -1,0 +1,15 @@
+name: UEFN compile failure
+description: Report a real UEFN compiler failure with evidence
+title: ""
+labels: []
+body:
+  - type: markdown
+    attributes:
+      value: "Do not include secrets. Sensitive security issues must use private vulnerability reporting."
+  - type: textarea
+    id: details
+    attributes:
+      label: Details
+      description: Provide reproducible, source-grounded details.
+    validations:
+      required: true

@@ -10,8 +10,8 @@ def check(name, ok, detail):
     checks.append({"name": name, "passed": bool(ok), "detail": detail})
 
 manifest = json.loads((ROOT / "manifest.json").read_text(encoding="utf-8"))
-check("schema", manifest.get("schema_version") == 24, f"schema={manifest.get('schema_version')}")
-check("release", manifest.get("release", {}).get("version") == "24.0.0", f"release={manifest.get('release', {}).get('version')}")
+check("schema", manifest.get("schema_version") == 25, f"schema={manifest.get('schema_version')}")
+check("release", manifest.get("release", {}).get("version") == "25.0.0", f"release={manifest.get('release', {}).get('version')}")
 check("AI bootstrap", (ROOT / "AI_BOOTSTRAP.md").exists(), "AI_BOOTSTRAP.md")
 
 queue = json.loads((ROOT / "lab/compile_queue.json").read_text(encoding="utf-8"))

@@ -1,6 +1,6 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "title": "Generated Verse Artifact Provenance — V24",
+  "title": "Generated Verse Artifact Provenance — V25",
   "type": "object",
   "required": [
     "version",
@@ -13,11 +13,12 @@
     "multiplayer_tested",
     "api_verify_required",
     "uncertain_api_count",
-    "claim_resolution"
+    "claim_resolution",
+    "knowledge_release"
   ],
   "properties": {
     "version": {
-      "const": "v24"
+      "const": "v25"
     },
     "language": {
       "const": "verse"
@@ -72,6 +73,27 @@
       ]
     },
     "evidence_graph_version": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "knowledge_release": {
+      "type": "string"
+    },
+    "repo_revision": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "evidence_pack_id": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "claim_ledger_id": {
       "type": [
         "string",
         "null"
