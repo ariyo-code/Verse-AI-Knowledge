@@ -94,3 +94,8 @@ Original repository content is governed by `LICENSE.md`. Third-party content ret
 ## Disclaimer
 
 Verse, Unreal Editor for Fortnite, Fortnite, Epic Games and related marks belong to their respective owners. This independent project is not affiliated with or endorsed by Epic Games.
+
+
+## Documentation deployment
+
+The documentation site is validated in CI. GitHub Pages publication is optional and requires one-time repository configuration; see [`docs/GITHUB_PAGES_SETUP.md`](docs/GITHUB_PAGES_SETUP.md).
